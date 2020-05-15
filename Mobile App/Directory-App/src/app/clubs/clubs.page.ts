@@ -18,7 +18,7 @@ export class ClubsPage {
     var data = this.clubService.getData()
     this.clubData = data;
     this.fullData = data;
-    console.log(data);
+    
   }
 
   gotoClubFullDetails(club){
@@ -32,8 +32,10 @@ export class ClubsPage {
       this.clubData = this.fullData.filter((item) => {
         return (item.clubName.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
+    }else{
+      this.clubData = this.fullData;
     }
-    console.log(this.clubData)
+    
     
   }
 
