@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ClubService } from '../club.service';
+import {ActivatedRoute} from '@angular/router';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import {CallNumber} from '@ionic-native/call-number/ngx';
+import {EmailComposer} from '@ionic-native/email-composer/ngx';
 
 @Component({
   selector: 'app-club-details',
@@ -7,12 +10,41 @@ import { ClubService } from '../club.service';
   styleUrls: ['./club-details.page.scss'],
 })
 export class ClubDetailsPage implements OnInit {
-  clubDetails:any
+  isEmailComposable = false;
+  clubDetails: any;
 
-  constructor(private clubService: ClubService) { }
+  constructor(private route: ActivatedRoute,
+              private statusBar: StatusBar,
+              private callNumber: CallNumber,
+              private emailComposer: EmailComposer) {
+    this.statusBar.backgroundColorByHexString('#ffffff');
+    // read router params
+    route.paramMap.subscribe((data) => {
+        this.clubDetails = JSON.parse(data.get('clubData'));
+      });
 
-  ngOnInit() {
-    this.clubDetails = this.clubService.currentClub
+    // check email composer availability
+    this.emailComposer.isAvailable().then((available: boolean) => {
+      this.isEmailComposable = available;
+    });
   }
 
+  ngOnInit() {
+  }
+
+  // tslint:disable-next-line:variable-name
+  dial(number) {
+    this.callNumber.callNumber(number, true)
+        .then(res => console.log('Launched dialer!', res))
+        .catch(err => console.log('Error launching dialer', err));
+  }
+
+  openEmail(email) {
+    if (this.isEmailComposable) {
+      const template = {
+        to: email
+      };
+      this.emailComposer.open(template);
+    }
+  }
 }

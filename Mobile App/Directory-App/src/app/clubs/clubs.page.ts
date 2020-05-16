@@ -8,33 +8,30 @@ import { Router } from '@angular/router';
   styleUrls: ['clubs.page.scss']
 })
 export class ClubsPage {
-  fullData: any
-  clubData: any
-  
+  allClubsData: any;
+  filteredclubData: any;
+  searchKeyword: string;
+  constructor(private clubService: ClubService, private router: Router) {}
 
-  constructor(private clubService: ClubService, private router:Router) {}
-
-  ngOnInit(){
-    var data = this.clubService.getData()
-    this.clubData = data;
-    this.fullData = data;
-    console.log(data);
+  // tslint:disable-next-line:use-lifecycle-interface
+  ngOnInit() {
+    this.filteredclubData = this.clubService.getData();
+    this.allClubsData = this.clubService.getData();
   }
 
-  gotoClubFullDetails(club){
+  viewClub(club) {
     this.clubService.currentClub = club;
-    this.router.navigate(['/club-details']);
+    this.router.navigate(['/tabs/clubs/club-details', {clubData: JSON.stringify(club)}]);
   }
 
-  getItems(e:any){
-    var val = e.target.value
-    if (val && val.trim() != '') {
-      this.clubData = this.fullData.filter((item) => {
-        return (item.clubName.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
+  filterData() {
+    if (this.searchKeyword && this.searchKeyword.trim().length > 0) {
+      this.filteredclubData = this.allClubsData.filter((club) => {
+        return (club.clubName.toLowerCase().indexOf(this.searchKeyword.toLowerCase()) > -1);
+      });
+    } else {
+      this.filteredclubData = this.allClubsData;
     }
-    console.log(this.clubData)
-    
   }
 
 }

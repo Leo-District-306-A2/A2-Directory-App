@@ -1,41 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>{{clubDetails.clubName}}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding-top ion-padding-bottom pb-3">
 
-<ion-content>
-
-  //styles not add yet
-
-  <h2>President</h2>
-  <p>name : {{clubDetails.president.name}}</p>
-  <p>email : {{clubDetails.president.email}}</p>
-  <p>address : {{clubDetails.president.address}}</p>
-  <p>phone : {{clubDetails.president.phone}}</p>
-
-  <h2>Vice President</h2>
-  <p>name : {{clubDetails.vicePresident.name}}</p>
-  <p>email : {{clubDetails.vicePresident.email}}</p>
-  <p>address : {{clubDetails.vicePresident.address}}</p>
-  <p>phone : {{clubDetails.vicePresident.phone}}</p>
-
-  <h2>Secretary</h2>
-  <p>name : {{clubDetails.secretary.name}}</p>
-  <p>email : {{clubDetails.secretary.email}}</p>
-  <p>address : {{clubDetails.secretary.address}}</p>
-  <p>phone : {{clubDetails.secretary.phone}}</p>
-
-  <h2>treasurer</h2>
-  <p>name : {{clubDetails.treasurer.name}}</p>
-  <p>email : {{clubDetails.treasurer.email}}</p>
-  <p>address : {{clubDetails.treasurer.address}}</p>
-  <p>phone : {{clubDetails.treasurer.phone}}</p>
-
-  <h2>Leo Advisor</h2>
-  <p>name : {{clubDetails.leoAdvisor.name}}</p>
-  <p>email : {{clubDetails.leoAdvisor.email}}</p>
-  <p>address : {{clubDetails.leoAdvisor.address}}</p>
-  <p>phone : {{clubDetails.leoAdvisor.phone}}</p>
-
+    <div class="mt-2 p-4">
+        <img [src]="clubDetails.img" class="mx-auto d-block club-logo mb-1 mt-3">
+        <h5 class="text-center">{{clubDetails.clubName}}</h5>
+        <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">Club Key Officers</h3>
+    </div>
+    <div>
+        <div *ngFor="let user of [1,2,3,4,5]" class="col-md-12">
+            <div class="card profile-card-3 mb-3">
+                <div class="background-block">
+                </div>
+                <div class="profile-thumb-block">
+                    <img [src]="clubDetails.president.img" alt="profile-image" class="profile"/>
+                </div>
+                <div class="card-content">
+                  <small class="text-secondary font-weight-bold text-uppercase">President</small>
+                  <h6 class="pb-0 font-weight-bold">{{clubDetails?.president.name}}</h6>
+                  <small class="d-block text-secondary"><i class="fas fa-phone mr-1"></i>{{clubDetails?.president.phone}}</small>
+                  <small class="d-block text-secondary"><i class="fas fa-envelope mr-1"></i>{{clubDetails?.president.email}}</small>
+                  <small class="d-block text-secondary"><i class="fas fa-map-marked-alt mr-1"></i>{{clubDetails?.president.address}}</small>
+                  <div class="icon-block">
+                    <a (click)="dial(clubDetails?.president.phone)"><i class="fas fa-phone"></i></a>
+                    <a *ngIf="isEmailComposable" (click)="openEmail(clubDetails?.president.email)"><i class="far fa-envelope"></i></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-content>

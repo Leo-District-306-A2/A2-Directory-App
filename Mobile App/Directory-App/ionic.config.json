@@ -1,5 +1,7 @@
 {
   "name": "Directory-App",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

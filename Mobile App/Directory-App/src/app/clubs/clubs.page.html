@@ -1,26 +1,21 @@
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <!-- <ion-title size="large">Clubs</ion-title> -->
-      <ion-title></ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding-top">
+    <div class="pl-2 pr-2">
+        <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
+                       placeholder="Search by club name"></ion-searchbar>
+    </div>
+    <ion-list *ngIf="filteredclubData.length >0">
+        <ion-item *ngFor="let club of filteredclubData" (click)="viewClub(club)" class="ion-activatable ripple-parent">
+            <ion-avatar slot="start">
+                <ion-img [src]="club?.img"></ion-img>
+            </ion-avatar>
+            <ion-label>{{club?.clubName}}</ion-label>
+            <ion-ripple-effect></ion-ripple-effect>
+        </ion-item>
+    </ion-list>
 
-  <ion-searchbar showCancelButton="focus" (ionInput)="getItems($event)"></ion-searchbar>
-
- 
-
-  <ion-list>
-    <ion-item *ngFor="let club of clubData" (click)="gotoClubFullDetails(club)">
-      <ion-avatar item-start>
-        <ion-img [src]="club.img"></ion-img>
-      </ion-avatar>
-      <ion-label>{{club.clubName}}</ion-label>
-    </ion-item>
-  </ion-list>
-  <!-- Searchbar disabled -->
-
-
- 
-
+    <!-- No Results found  -->
+    <div class="not-found-wrapper text-center" *ngIf="filteredclubData.length === 0">
+        <img src="../../assets/logos/gray_leo_logo.png" class="not-found-logo">
+        <p class="text-center text-secondary not-found-text">Oops! Leo club name not found.</p>
+    </div>
 </ion-content>
