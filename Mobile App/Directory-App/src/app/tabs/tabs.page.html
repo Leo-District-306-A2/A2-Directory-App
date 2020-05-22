@@ -1,23 +1,24 @@
 <ion-tabs>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="executive">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Executive</ion-label>
-    </ion-tab-button>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="executive" (click)="routeOther()">
+            <ion-icon src="../../assets/tabs/executive.svg"></ion-icon>
+            <ion-label>Executive</ion-label>
+        </ion-tab-button>
 
-      <ion-tab-button tab="home" class="leo-button">
-          <!-- <ion-icon name="ellipse"></ion-icon> -->
-          <ion-avatar>
-            <img src="../../assets/logos/leo_logo.png">
-          </ion-avatar>
-          
-      </ion-tab-button>
-
-    <ion-tab-button tab="clubs">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Clubs</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
+        <ion-tab-button tab="home" class="home" (click)="routeHome()">
+            <ion-icon src="../../assets/tabs/home.svg"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="clubs" (click)="routeOther()">
+            <ion-icon src="../../assets/tabs/clubs.svg"></ion-icon>
+            <ion-label>Clubs</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
 
 </ion-tabs>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button class="home-button" (click)="routeHome()">
+        <ion-icon [ngStyle]="{'color': isHome? '#1a4b5e': 'lightgray'}"  src="../../assets/tabs/home.svg"></ion-icon>
+    </ion-fab-button>
+</ion-fab>

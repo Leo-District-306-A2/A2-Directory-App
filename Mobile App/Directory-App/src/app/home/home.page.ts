@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeService } from '../home.service';
 import { Router } from '@angular/router';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-tab2',
@@ -9,28 +10,29 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  nationalAnthemEnglish:any
-  nationalAnthemSinhala:any
-  pledgeOfAllegianceEnglish:any
-  pledgeOfAllegianceSinhala:any
-  leoPledge:any
-  leoHistory:any
-  parisaraPrathignawa:any
- 
-
-  constructor(private homeService: HomeService, private router: Router) {}
-
-  ngOnInit(){
-    this.homeService.getNationalAnthemEnglish().then(result=>this.nationalAnthemEnglish = result)
-    this.homeService.getNationalAnthemSinhala().then(result=>this.nationalAnthemSinhala = result)
-    this.homeService.getPledgeOfAllegianceEnglish().then(result=>this.pledgeOfAllegianceEnglish = result)
-    this.homeService.getPledgeOfAllegianceSinhala().then(result=>this.pledgeOfAllegianceSinhala = result)
-    this.homeService.getLeoPledge().then(result=>this.leoPledge = result)
-    this.homeService.getLeoHistory().then(result=>this.leoHistory = result)
-    this.homeService.getParisaraPrathignawa().then(result=>this.parisaraPrathignawa = result)    
+  nationalAnthemEnglish: any;
+  nationalAnthemSinhala: any;
+  pledgeOfAllegianceEnglish: any;
+  pledgeOfAllegianceSinhala: any;
+  leoPledge: any;
+  leoHistory: any;
+  parisaraPrathignawa: any;
+  constructor(private homeService: HomeService, private router: Router, private statusBar: StatusBar) {
+    this.statusBar.backgroundColorByHexString('#ff0000');
   }
 
-  fullView(type){
+  // tslint:disable-next-line:use-lifecycle-interface
+  ngOnInit() {
+    this.homeService.getNationalAnthemEnglish().then((result) => this.nationalAnthemEnglish = result);
+    this.homeService.getNationalAnthemSinhala().then((result) => this.nationalAnthemSinhala = result);
+    this.homeService.getPledgeOfAllegianceEnglish().then((result) => this.pledgeOfAllegianceEnglish = result);
+    this.homeService.getPledgeOfAllegianceSinhala().then((result) => this.pledgeOfAllegianceSinhala = result);
+    this.homeService.getLeoPledge().then((result) => this.leoPledge = result);
+    this.homeService.getLeoHistory().then((result) => this.leoHistory = result);
+    this.homeService.getParisaraPrathignawa().then((result) => this.parisaraPrathignawa = result);
+  }
+
+  fullView(type) {
     switch (type) {
       case 'NATIONAL_ANTHEM_SINHALA':
         this.router.navigate(['./home-details', {data: JSON.stringify(this.nationalAnthemSinhala)}]);
@@ -52,7 +54,7 @@ export class HomePage {
         break;
       case 'PARISARA_PRATHIGNAWA':
         this.router.navigate(['./home-details', {data: JSON.stringify(this.parisaraPrathignawa)}]);
-        break;  
+        break;
       default:
         break;
     }

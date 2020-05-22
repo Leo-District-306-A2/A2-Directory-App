@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ExecutivePage {
 
-  constructor() {}
+  constructor(private statusBar: StatusBar) {
+    this.statusBar.backgroundColorByHexString('#00ff00');
+  }
 
 }

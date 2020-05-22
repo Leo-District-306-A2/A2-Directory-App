@@ -1,4 +1,32 @@
-.leo-button{
-    position: relative;
-    overflow:visible;
+//ion-tab-bar, ion-tab-button, ion-tab-button .button-native{
+//    border-top-left-radius: 15px!important;
+//    border-top-right-radius: 15px!important;
+//}
+
+ion-tab-button {
+    --color: lightgray;
+    --color-selected: #1a4b5e;
+}
+
+ion-fab {
+    position: fixed;
+    bottom: -0.5px;
+
+    .home-button {
+        transform: scale(1.5);
+        --box-shadow:none;
+        --background: white!important;
+        //--background-hover: white!important;
+        --ripple-color: #1a4b5e;
+        //color: #1a4b5e;
+        --border-color:rgba(0,0,0,0.07);
+        --border-width:0.5px;
+        --border-style:solid;
+
+        ion-icon {
+            //color: #1a4b5e;
+            color: lightgray;
+            transform: scale(1.4);
+        }
+    }
 }
