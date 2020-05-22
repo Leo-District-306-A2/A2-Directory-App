@@ -1,14 +1,42 @@
 .tile {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  // width: 100px;
+  // height: 100px;
   //-webkit-box-shadow: -3px -5px 10px -3px rgba(0,0,0,1);
   //-moz-box-shadow: -3px -5px 10px -1px rgba(0,0,0,1);
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
   box-shadow: -3px -3px 10px -5px rgba(0,0,0,1);
   border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
+  
+}
+
+.tile-horizontal{
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+  box-shadow: -3px -3px 10px -5px rgba(0,0,0,1);
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .ripple-parent {
   position: relative;
   overflow: hidden;
+}
+
+.tile-head{
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.tile-content{
+  text-align: left;
+  font-size: 0.7em;
+  padding-bottom: 10px;
+  color: grayscale($color: #706f6f);
 }
