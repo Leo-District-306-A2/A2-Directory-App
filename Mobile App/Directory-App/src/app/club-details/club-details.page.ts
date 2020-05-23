@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
 import {CallNumber} from '@ionic-native/call-number/ngx';
 import {EmailComposer} from '@ionic-native/email-composer/ngx';
 
@@ -14,10 +13,8 @@ export class ClubDetailsPage implements OnInit {
   clubDetails: any;
 
   constructor(private route: ActivatedRoute,
-              private statusBar: StatusBar,
               private callNumber: CallNumber,
               private emailComposer: EmailComposer) {
-    this.statusBar.backgroundColorByHexString('#ffffff');
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));

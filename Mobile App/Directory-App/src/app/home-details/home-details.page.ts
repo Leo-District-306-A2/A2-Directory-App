@@ -8,7 +8,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class HomeDetailsPage implements OnInit {
 
-  viewData:any
+  viewData: any;
 
   constructor(private route: ActivatedRoute) {
     route.paramMap.subscribe((data) => {

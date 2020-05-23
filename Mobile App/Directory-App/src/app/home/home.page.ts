@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { HomeService } from '../home.service';
+import { HomeService } from '../services/home.service';
 import { Router } from '@angular/router';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-tab2',
@@ -10,41 +9,30 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class HomePage {
 
-  nationalAnthemEnglish: any;
-  nationalAnthemSinhala: any;
-  pledgeOfAllegianceEnglish: any;
-  pledgeOfAllegianceSinhala: any;
+  nationalAnthem: any;
+  pledgeOfAllegiance: any;
   leoPledge: any;
   leoHistory: any;
-  parisaraPrathignawa: any;
-  constructor(private homeService: HomeService, private router: Router, private statusBar: StatusBar) {
-    this.statusBar.backgroundColorByHexString('#ff0000');
+  environmantalPledge: any;
+  constructor(private homeService: HomeService, private router: Router) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
-    this.homeService.getNationalAnthemEnglish().then((result) => this.nationalAnthemEnglish = result);
-    this.homeService.getNationalAnthemSinhala().then((result) => this.nationalAnthemSinhala = result);
-    this.homeService.getPledgeOfAllegianceEnglish().then((result) => this.pledgeOfAllegianceEnglish = result);
-    this.homeService.getPledgeOfAllegianceSinhala().then((result) => this.pledgeOfAllegianceSinhala = result);
-    this.homeService.getLeoPledge().then((result) => this.leoPledge = result);
-    this.homeService.getLeoHistory().then((result) => this.leoHistory = result);
-    this.homeService.getParisaraPrathignawa().then((result) => this.parisaraPrathignawa = result);
+    this.homeService.loadStaticData('NationalAnthem').then((result) => this.nationalAnthem = result);
+    this.homeService.loadStaticData('PledgeOfAllegiance').then((result) => this.pledgeOfAllegiance = result);
+    this.homeService.loadStaticData('LeoPledge').then((result) => this.leoPledge = result);
+    this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
+    this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
   }
 
   fullView(type) {
     switch (type) {
-      case 'NATIONAL_ANTHEM_SINHALA':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.nationalAnthemSinhala)}]);
-        break;
       case 'NATIONAL_ANTHEM_ENGLISH':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.nationalAnthemEnglish)}]);
-        break;
-      case 'LEO_PLEDGE_OF_ALLEGIANCE_SINHALA':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.pledgeOfAllegianceSinhala)}]);
+        this.router.navigate(['./home-details', {data: JSON.stringify(this.nationalAnthem)}]);
         break;
       case 'LEO_PLEDGE_OF_ALLEGIANCE_ENGLISH':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.pledgeOfAllegianceEnglish)}]);
+        this.router.navigate(['./home-details', {data: JSON.stringify(this.pledgeOfAllegiance)}]);
         break;
       case 'LEO_PLEDGE':
         this.router.navigate(['./home-details', {data: JSON.stringify(this.leoPledge)}]);
@@ -53,7 +41,7 @@ export class HomePage {
         this.router.navigate(['./home-details', {data: JSON.stringify(this.leoHistory)}]);
         break;
       case 'PARISARA_PRATHIGNAWA':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.parisaraPrathignawa)}]);
+        this.router.navigate(['./home-details', {data: JSON.stringify(this.environmantalPledge)}]);
         break;
       default:
         break;

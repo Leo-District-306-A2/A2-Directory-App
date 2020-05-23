@@ -7,61 +7,41 @@
 
   <ion-grid>
     <ion-row>
-
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('NATIONAL_ANTHEM_ENGLISH')">
-         <div class="tile-head text-secondary font-weight-bold" [innerHTML]="nationalAnthemEnglish?.title">          
+        <div class="tile center ripple-parent ion-padding" (click)="fullView('NATIONAL_ANTHEM')">
+         <div class="tile-head text-secondary font-weight-bold" [innerHTML]="nationalAnthem?.en.title">
          </div> 
-         <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthemEnglish?.content"></div>  
+         <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div>
         </div>  
       </ion-col>
-
-      <ion-col>  
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('NATIONAL_ANTHEM_SINHALA')">
-          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="nationalAnthemSinhala?.title">           
-          </div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthemSinhala?.content"></div>
-         </div>  
-      </ion-col>
-
-    </ion-row>
-    <ion-row>
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('LEO_PLEDGE_OF_ALLEGIANCE_ENGLISH')">
-          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="pledgeOfAllegianceEnglish?.title"></div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegianceEnglish?.content">
+        <div class="tile center ripple-parent ion-padding" (click)="fullView('LEO_PLEDGE_OF_ALLEGIANCE')">
+          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="pledgeOfAllegiance?.en.title"></div>
+          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content">
           </div>
-         </div>  
-      </ion-col>
-      <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('LEO_PLEDGE_OF_ALLEGIANCE_SINHALA')">
-          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="pledgeOfAllegianceSinhala?.title"></div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegianceSinhala?.content">
-          </div>
-         </div>  
+        </div>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
         <div class="tile center ripple-parent ion-padding" (click)="fullView('LEO_PLEDGE')">
-          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoPledge?.title"></div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.content">
+          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoPledge?.en.title"></div>
+          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
           </div>
          </div>  
       </ion-col>
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('PARISARA_PRATHIGNAWA')">
-          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="parisaraPrathignawa?.title"></div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="parisaraPrathignawa?.content">
+        <div class="tile center ripple-parent ion-padding" (click)="fullView('ENVIRONMENTAL_PLEDGE')">
+          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="environmantalPledge?.en.title"></div>
+          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="environmantalPledge?.en.content">
           </div>
          </div>  
       </ion-col>
     </ion-row>
-
     <ion-row>
       <div class="tile-horizontal center ripple-parent ion-padding" (click)="fullView('LEO_HISTORY')">
-          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoHistory?.title"></div>
-        <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoHistory?.content">
+          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoHistory?.en.title"></div>
+        <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoHistory?.en.content">
         </div>
        </div>  
     </ion-row>
@@ -74,8 +54,6 @@
         </div>
        </div>  
     </ion-row>
-
-
   </ion-grid>
 
 </ion-content>
