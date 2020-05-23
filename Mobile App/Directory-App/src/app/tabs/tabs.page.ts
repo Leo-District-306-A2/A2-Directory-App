@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {Router} from '@angular/router';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
@@ -9,7 +10,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class TabsPage {
 
   private isHome = true;
-  constructor(private router: Router) {
+  constructor(private router: Router, private menu: MenuController) {
   }
 
   routeHome() {
@@ -20,6 +21,12 @@ export class TabsPage {
 
   routeOther() {
     this.isHome = false;
+  }
+
+  // menu related functions
+  async toggleMenu() {
+    await this.menu.enable(true, 'sideMenu');
+    await this.menu.toggle('sideMenu');
   }
 }
 

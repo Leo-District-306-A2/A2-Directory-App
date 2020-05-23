@@ -17,7 +17,7 @@ export class ClubService {
    },
    {
     clubName: 'Leo Club of Piliyandala',
-       img: '../../assets/UoM%20Leos(Rounded).png',
+       img: '../../assets/logos/leo_logo.png',
        president: { name: 'Name of President', email: 'Sample Email', address: 'Sample Address', phone: 'Sample Tel', img: '../../assets/user.png'},
        vicePresident:{name:"Name of VP",email:'Sample Email',address:"Sample Address",phone:"Sample Tel",img:"../../assets/user.png"},
        secretary:{name:"Name of Secretary",email:"Sample Email",address:"Sample Address",phone:"Sample Tel",img:"../../assets/user.png"},

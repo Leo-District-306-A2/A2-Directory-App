@@ -1,21 +1,18 @@
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+<!--  <div class="page-header"></div>-->
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('NATIONAL_ANTHEM')">
+        <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(nationalAnthem)">
          <div class="tile-head text-secondary font-weight-bold" [innerHTML]="nationalAnthem?.en.title">
          </div> 
          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div>
         </div>  
       </ion-col>
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('LEO_PLEDGE_OF_ALLEGIANCE')">
+        <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(pledgeOfAllegiance)">
           <div class="tile-head text-secondary font-weight-bold" [innerHTML]="pledgeOfAllegiance?.en.title"></div>
           <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content">
           </div>
@@ -24,22 +21,22 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('LEO_PLEDGE')">
+        <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(leoPledge)">
           <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoPledge?.en.title"></div>
           <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
           </div>
          </div>  
       </ion-col>
       <ion-col>
-        <div class="tile center ripple-parent ion-padding" (click)="fullView('ENVIRONMENTAL_PLEDGE')">
+        <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(environmantalPledge)">
           <div class="tile-head text-secondary font-weight-bold" [innerHTML]="environmantalPledge?.en.title"></div>
           <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="environmantalPledge?.en.content">
           </div>
-         </div>  
+         </div>
       </ion-col>
     </ion-row>
     <ion-row>
-      <div class="tile-horizontal center ripple-parent ion-padding" (click)="fullView('LEO_HISTORY')">
+      <div class="tile-horizontal center ripple-parent ion-padding" (click)="navigateToDetails(leoHistory)">
           <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoHistory?.en.title"></div>
         <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoHistory?.en.content">
         </div>

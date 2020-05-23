@@ -8,7 +8,7 @@ ion-tab-button {
     --color-selected: #1a4b5e;
 }
 
-ion-fab {
+.home-btn {
     position: fixed;
     bottom: -0.5px;
 
@@ -29,4 +29,10 @@ ion-fab {
             transform: scale(1.4);
         }
     }
+}
+
+.nav-buttons {
+    transform: scale(0.7);
+    position: fixed;
+    //bottom: 50px;
 }

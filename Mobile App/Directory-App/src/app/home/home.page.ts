@@ -26,26 +26,8 @@ export class HomePage {
     this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
   }
 
-  fullView(type) {
-    switch (type) {
-      case 'NATIONAL_ANTHEM_ENGLISH':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.nationalAnthem)}]);
-        break;
-      case 'LEO_PLEDGE_OF_ALLEGIANCE_ENGLISH':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.pledgeOfAllegiance)}]);
-        break;
-      case 'LEO_PLEDGE':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.leoPledge)}]);
-        break;
-      case 'LEO_HISTORY':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.leoHistory)}]);
-        break;
-      case 'PARISARA_PRATHIGNAWA':
-        this.router.navigate(['./home-details', {data: JSON.stringify(this.environmantalPledge)}]);
-        break;
-      default:
-        break;
-    }
+  navigateToDetails(data) {
+        this.router.navigate(['tabs/home/home-details', {data: JSON.stringify(data)}]);
   }
 
 }
