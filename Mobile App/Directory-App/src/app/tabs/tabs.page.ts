@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 import { MenuController } from '@ionic/angular';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @Component({
   selector: 'app-tabs',
@@ -10,7 +11,15 @@ import { MenuController } from '@ionic/angular';
 export class TabsPage {
 
   private isHome = true;
-  constructor(private router: Router, private menu: MenuController) {
+  private hideHomeFab = false;
+  constructor(private router: Router, private menu: MenuController, private keyboard: Keyboard) {
+    this.keyboard.onKeyboardShow().subscribe((data) => {
+      this.hideHomeFab = true;
+    });
+
+    this.keyboard.onKeyboardHide().subscribe((data) => {
+      this.hideHomeFab = false;
+    });
   }
 
   routeHome() {
