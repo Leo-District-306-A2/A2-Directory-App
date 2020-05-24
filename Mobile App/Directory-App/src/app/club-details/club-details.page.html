@@ -1,27 +1,27 @@
 <ion-content class="ion-padding-top ion-padding-bottom pb-3">
 
     <div class="mt-2 p-4">
-        <img [src]="clubDetails.img" class="mx-auto d-block club-logo mb-1 mt-3">
-        <h5 class="text-center">{{clubDetails.clubName}}</h5>
+        <img [src]="clubDetails?.img" class="mx-auto d-block club-logo mb-1 mt-3">
+        <h5 class="text-center">{{clubDetails?.clubName}}</h5>
         <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">Club Key Officers</h3>
     </div>
     <div>
-        <div *ngFor="let user of [1,2,3,4,5]" class="col-md-12">
+        <div *ngFor="let officer of this.utilityService.sortJsonArrayByVisibilityOrder(clubDetails?.officers)" class="col-md-12">
             <div class="card profile-card-3 mb-3">
                 <div class="background-block">
                 </div>
                 <div class="profile-thumb-block">
-                    <img [src]="clubDetails.president.img" alt="profile-image" class="profile"/>
+                    <img [src]="officer?.img" alt="profile-image" class="profile"/>
                 </div>
                 <div class="card-content">
-                  <small class="text-secondary font-weight-bold text-uppercase">President</small>
-                  <h6 class="pb-0 font-weight-bold">{{clubDetails?.president.name}}</h6>
-                  <small class="d-block text-secondary"><i class="fas fa-phone mr-1"></i>{{clubDetails?.president.phone}}</small>
-                  <small class="d-block text-secondary"><i class="fas fa-envelope mr-1"></i>{{clubDetails?.president.email}}</small>
-                  <small class="d-block text-secondary"><i class="fas fa-map-marked-alt mr-1"></i>{{clubDetails?.president.address}}</small>
+                  <small class="text-secondary font-weight-bold text-uppercase">{{ officer?.designation }}</small>
+                  <h6 class="pb-0 font-weight-bold">{{officer?.name}}</h6>
+                  <small class="d-block text-secondary"><i class="fas fa-phone mr-1"></i>{{officer?.phone}}</small>
+                  <small class="d-block text-secondary"><i class="fas fa-envelope mr-1"></i>{{officer?.email}}</small>
+                  <small class="d-block text-secondary"><i class="fas fa-map-marked-alt mr-1"></i>{{officer?.address}}</small>
                   <div class="icon-block">
-                    <a (click)="dial(clubDetails?.president.phone)"><i class="fas fa-phone"></i></a>
-                    <a *ngIf="isEmailComposable" (click)="openEmail(clubDetails?.president.email)"><i class="far fa-envelope"></i></a>
+                    <a (click)="dial(officer?.phone)"><i class="fas fa-phone"></i></a>
+                    <a *ngIf="isEmailComposable" (click)="openEmail(officer?.email)"><i class="far fa-envelope"></i></a>
                   </div>
                 </div>
             </div>

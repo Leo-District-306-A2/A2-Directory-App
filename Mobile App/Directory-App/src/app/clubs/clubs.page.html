@@ -3,8 +3,8 @@
         <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
                        placeholder="Search by club name"></ion-searchbar>
     </div>
-    <ion-list *ngIf="filteredclubData.length >0">
-        <ion-item *ngFor="let club of filteredclubData" (click)="viewClub(club)" class="ion-activatable ripple-parent">
+    <ion-list *ngIf="filteredClubData?.length >0">
+        <ion-item *ngFor="let club of filteredClubData" (click)="viewClub(club)" class="ion-activatable ripple-parent">
             <ion-avatar slot="start">
                 <ion-img [src]="club?.img"></ion-img>
             </ion-avatar>
@@ -14,8 +14,8 @@
     </ion-list>
 
     <!-- No Results found  -->
-    <div class="not-found-wrapper text-center" *ngIf="filteredclubData.length === 0">
+    <div class="not-found-wrapper text-center" *ngIf="filteredClubData?.length === 0">
         <img src="../../assets/logos/gray_leo_logo.png" class="not-found-logo">
-        <p class="text-center text-secondary not-found-text">Oops! Leo club name not found.</p>
+        <p class="text-center text-secondary not-found-text">Oops! Leo clubs not found.</p>
     </div>
 </ion-content>

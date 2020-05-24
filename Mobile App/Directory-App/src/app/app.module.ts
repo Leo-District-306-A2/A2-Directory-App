@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
+import {UtilityService} from './services/utility.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,8 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     CallNumber,
     EmailComposer,
-      Keyboard
+      Keyboard,
+      UtilityService
   ],
   bootstrap: [AppComponent]
 })

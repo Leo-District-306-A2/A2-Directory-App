@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {CallNumber} from '@ionic-native/call-number/ngx';
 import {EmailComposer} from '@ionic-native/email-composer/ngx';
+import {UtilityService} from '../services/utility.service';
 
 @Component({
   selector: 'app-club-details',
@@ -11,10 +12,10 @@ import {EmailComposer} from '@ionic-native/email-composer/ngx';
 export class ClubDetailsPage implements OnInit {
   isEmailComposable = false;
   clubDetails: any;
-
   constructor(private route: ActivatedRoute,
               private callNumber: CallNumber,
-              private emailComposer: EmailComposer) {
+              private emailComposer: EmailComposer,
+              private utilityService: UtilityService) {
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));
@@ -44,4 +45,5 @@ export class ClubDetailsPage implements OnInit {
       this.emailComposer.open(template);
     }
   }
+
 }

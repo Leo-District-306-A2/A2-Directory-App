@@ -10,7 +10,7 @@ export class HomeService {
     }
 
     loadStaticData(dataName) {
-        return fetch('./assets/static_data/' + dataName + '.json').then(res => res.json())
+        return fetch('./assets/local_db/home/' + dataName + '.json').then(res => res.json())
             .then(result => {
                 return result;
             })
