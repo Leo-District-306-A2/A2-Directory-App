@@ -19,12 +19,14 @@ export class ClubDetailsPage implements OnInit {
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));
+        console.log(this.clubDetails);
+
       });
 
     // check email composer availability
-    this.emailComposer.isAvailable().then((available: boolean) => {
-      this.isEmailComposable = available;
-    });
+    // this.emailComposer.isAvailable().then((available: boolean) => {
+    //   this.isEmailComposable = available;
+    // });
   }
 
   ngOnInit() {
