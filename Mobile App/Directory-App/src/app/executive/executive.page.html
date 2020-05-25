@@ -5,7 +5,9 @@
   </div>
   <ion-list *ngIf="filteredCouncilData?.length >0">
       <ion-item *ngFor="let council of filteredCouncilData" (click)=" viewCouncil(council)" class="ion-activatable ripple-parent">
-        
+        <ion-avatar slot="start">
+            <img src="../../assets/logos/leo_logo.png" />
+        </ion-avatar>
           <ion-label>{{council?.designationCategory}}</ion-label>
           <ion-ripple-effect></ion-ripple-effect>
       </ion-item>

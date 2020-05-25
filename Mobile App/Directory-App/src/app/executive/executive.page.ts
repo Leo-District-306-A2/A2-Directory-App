@@ -33,7 +33,7 @@ export class ExecutivePage {
     if (this.searchKeyword && this.searchKeyword.trim().length > 0) {
       
       this.filteredCouncilData = this.allCouncilData.filter((council) => {
-    console.log(this.searchKeyword);
+     
 
         return (council.designationCategory.toLowerCase().indexOf(this.searchKeyword.toLowerCase()) > -1);
       });
