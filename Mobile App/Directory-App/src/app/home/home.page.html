@@ -6,16 +6,18 @@
     <ion-row>
       <ion-col>
         <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(nationalAnthem)">
-         <div class="tile-head text-secondary font-weight-bold" [innerHTML]="nationalAnthem?.en.title">
-         </div> 
-         <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div>
+          <div class="inner-tile">
+            <div class="tile-head text-secondary font-weight-bold" [innerHTML]="nationalAnthem?.en.title">
+            </div> 
+          </div>
+         <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div> -->
         </div>  
       </ion-col>
       <ion-col>
         <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(pledgeOfAllegiance)">
           <div class="tile-head text-secondary font-weight-bold" [innerHTML]="pledgeOfAllegiance?.en.title"></div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content">
-          </div>
+          <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
+          <!-- </div> -->
         </div>
       </ion-col>
     </ion-row>
@@ -23,8 +25,8 @@
       <ion-col>
         <div class="tile center ripple-parent ion-padding" (click)="navigateToDetails(leoPledge)">
           <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoPledge?.en.title"></div>
-          <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
-          </div>
+          <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
+          </div> -->
          </div>  
       </ion-col>
       <ion-col>
@@ -50,6 +52,54 @@
         <div class="tile-content ion-padding-top ion-padding-bottom">
         </div>
        </div>  
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="tile-sm ripple-parent ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.multipleCounsilChairman.image + ')'"  (click)="navigateToOfficersDetails(multipleOfficers?.multipleCounsilChairman)">
+          <div class="tile-head left-align text-secondary font-weight-bold" [innerHTML]="multipleOfficers?.multipleCounsilChairman.designation"></div>
+          <div class="tile-content right-align ion-padding-top ion-padding-bottom" [innerHTML]="multipleOfficers?.multipleCounsilChairman.name">
+          </div>
+         </div>  
+      </ion-col>
+      <ion-col>
+        <div class="tile-sm ripple-parent ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.districtGovernor.image + ')'"  (click)="navigateToOfficersDetails(multipleOfficers?.districtGovernor)">
+          <div class="tile-head left-align text-secondary font-weight-bold" [innerHTML]="multipleOfficers?.districtGovernor.designation"></div>
+          <div class="tile-content right-align ion-padding-top ion-padding-bottom" [innerHTML]="multipleOfficers?.districtGovernor.name">
+          </div>
+         </div>  
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="tile-sm ripple-parent ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.districtPresident.image + ')'"  (click)="navigateToOfficersDetails(multipleOfficers?.districtPresident)">
+          <div class="tile-head left-align text-secondary font-weight-bold" [innerHTML]="multipleOfficers?.districtPresident.designation"></div>
+          <div class="tile-content right-align ion-padding-top ion-padding-bottom" [innerHTML]="multipleOfficers?.districtPresident.name">
+          </div>
+         </div>  
+      </ion-col>
+      <ion-col>
+        <div class="tile-sm ripple-parent ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.MultipleDistrictPresident.image + ')'"  (click)="navigateToOfficersDetails(multipleOfficers?.MultipleDistrictPresident)">
+          <div class="tile-head left-align text-secondary font-weight-bold" [innerHTML]="multipleOfficers?.MultipleDistrictPresident.designation"></div>
+          <div class="tile-content right-align ion-padding-top ion-padding-bottom" [innerHTML]="multipleOfficers?.MultipleDistrictPresident.name">
+          </div>
+         </div>  
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="tile-sm ripple-parent ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.immediatePastDistrictPresident.image + ')'"  (click)="navigateToOfficersDetails(multipleOfficers?.immediatePastDistrictPresident)">
+          <div class="tile-head left-align text-secondary font-weight-bold" [innerHTML]="multipleOfficers?.immediatePastDistrictPresident.designation"></div>
+          <div class="tile-content right-align ion-padding-top ion-padding-bottom" [innerHTML]="multipleOfficers?.immediatePastDistrictPresident.name">
+          </div>
+         </div>  
+      </ion-col>
+      <ion-col>
+        <div class="tile-sm ripple-parent ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.districtVicePresident.image + ')'"  (click)="navigateToOfficersDetails(multipleOfficers?.districtVicePresident)">
+          <div class="tile-head left-align text-secondary font-weight-bold" [innerHTML]="multipleOfficers?.districtVicePresident.designation"></div>
+          <div class="tile-content right-align ion-padding-top ion-padding-bottom" [innerHTML]="multipleOfficers?.districtVicePresident.name">
+          </div>
+         </div>  
+      </ion-col>
     </ion-row>
   </ion-grid>
 

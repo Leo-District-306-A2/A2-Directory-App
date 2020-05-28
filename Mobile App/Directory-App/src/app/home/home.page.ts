@@ -14,6 +14,7 @@ export class HomePage {
   leoPledge: any;
   leoHistory: any;
   environmantalPledge: any;
+  multipleOfficers: any;
   constructor(private homeService: HomeService, private router: Router) {
   }
 
@@ -24,10 +25,14 @@ export class HomePage {
     this.homeService.loadStaticData('LeoPledge').then((result) => this.leoPledge = result);
     this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
     this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
+    this.homeService.loadStaticData('MultipleOfficers').then((result) => this.multipleOfficers = result);
   }
 
   navigateToDetails(data) {
         this.router.navigate(['tabs/home/home-details', {data: JSON.stringify(data)}]);
   }
+  navigateToOfficersDetails(data) {
+    this.router.navigate(['tabs/home/head-officers', {data: JSON.stringify(data)}]);
+}
 
 }

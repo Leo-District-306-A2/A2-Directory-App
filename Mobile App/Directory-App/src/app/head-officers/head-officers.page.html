@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mt-2 p-4">
+    <h5 class="text-center">{{viewData.designation}}</h5>
+    <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">{{viewData.name}}</h3>
+  </div>
+ 
+  <div *ngIf="viewData.logo; else noLogo">
+    <ion-row>
+      <ion-col>
+        <div>
+          <img [src]="viewData.image" class="profile-photo">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img [src]="viewData.logo" class="logo">
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ng-template #noLogo>
+    <ion-row>
+      <ion-col class="section">
+        <div>
+          <img [src]="viewData.image" class="profile-photo">
+        </div>
+      </ion-col>      
+    </ion-row>
+  </ng-template>
+  <div class="mt-2 p-3 content">
+    {{viewData.description}}
+  </div>  
+</ion-content>
