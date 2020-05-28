@@ -29,24 +29,9 @@ export class ClubsPage {
   }
 
   filterData() {
-    
+
     this.filteredClubData = this.utilityService.search(this.allClubsData,this.searchKeyword);
     
   }
-
-  innerSearch(officers,searchKeyword){
-      var officerList = officers.filter((officer)=>{
-        return (
-          officer.name.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 ||
-          officer.email.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 ||
-          officer.address.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 ||
-          officer.phone.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 
-          );
-      });
-      if(officerList.length > 0){
-        return officers;
-      }else{
-        return false
-      }
-  }
+  
 }
