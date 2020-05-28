@@ -30,15 +30,8 @@ export class ExecutivePage {
   }
 
   filterData() {
-    if (this.searchKeyword && this.searchKeyword.trim().length > 0) {
-      
-      this.filteredCouncilData = this.allCouncilData.filter((council) => {
-     
 
-        return (council.designationCategory.toLowerCase().indexOf(this.searchKeyword.toLowerCase()) > -1);
-      });
-    } else {
-      this.filteredCouncilData = this.allCouncilData;
-    }
+    this.filteredCouncilData = this.utilityService.search(this.allCouncilData,this.searchKeyword);
+  
   }
 }

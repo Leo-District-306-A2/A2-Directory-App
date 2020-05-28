@@ -29,12 +29,24 @@ export class ClubsPage {
   }
 
   filterData() {
-    if (this.searchKeyword && this.searchKeyword.trim().length > 0) {
-      this.filteredClubData = this.allClubsData.filter((club) => {
-        return (club.clubName.toLowerCase().indexOf(this.searchKeyword.toLowerCase()) > -1);
+    
+    this.filteredClubData = this.utilityService.search(this.allClubsData,this.searchKeyword);
+    
+  }
+
+  innerSearch(officers,searchKeyword){
+      var officerList = officers.filter((officer)=>{
+        return (
+          officer.name.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 ||
+          officer.email.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 ||
+          officer.address.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 ||
+          officer.phone.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 
+          );
       });
-    } else {
-      this.filteredClubData = this.allClubsData;
-    }
+      if(officerList.length > 0){
+        return officers;
+      }else{
+        return false
+      }
   }
 }
