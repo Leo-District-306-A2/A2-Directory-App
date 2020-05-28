@@ -15,6 +15,9 @@ export class HomePage {
   leoHistory: any;
   environmantalPledge: any;
   multipleOfficers: any;
+  leoMap: any;
+  districtPresidentLogo: any;
+
   constructor(private homeService: HomeService, private router: Router) {
   }
 
@@ -26,6 +29,8 @@ export class HomePage {
     this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
     this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
     this.homeService.loadStaticData('MultipleOfficers').then((result) => this.multipleOfficers = result);
+    this.homeService.loadStaticData('LeoMap').then((result) => this.leoMap = result);
+    this.homeService.loadStaticData('DistrictPresidentLogo').then((result) => this.districtPresidentLogo = result);
   }
 
   navigateToDetails(data) {
@@ -33,6 +38,9 @@ export class HomePage {
   }
   navigateToOfficersDetails(data) {
     this.router.navigate(['tabs/home/head-officers', {data: JSON.stringify(data)}]);
-}
+  }
+  navigateToOtherDetails(data){    
+    this.router.navigate(['tabs/home/home-other-details', {data: JSON.stringify(data)}]);
+  }
 
 }

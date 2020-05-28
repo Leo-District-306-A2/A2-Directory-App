@@ -24,6 +24,17 @@
   margin-top: 10px;
   text-align:center;
 }
+.tile-sm-single{
+  width: 50%;
+  height: 150px;
+  max-height: 200px;
+  box-shadow: -3px -3px 10px -5px rgba(0,0,0,1);
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
+  text-align:center;
+
+}
 // .inner-tile{
   // margin: 5px;
   // border-width: 2px;
@@ -40,6 +51,7 @@
   border-radius: 15px;
   margin: auto;
   margin-top: 10px;
+  text-align: center;
 }
 
 .ripple-parent {
