@@ -29,9 +29,6 @@ export class ClubsPage {
   }
 
   filterData() {
-
-    this.filteredClubData = this.utilityService.search(this.allClubsData,this.searchKeyword);
-    
+    this.filteredClubData = this.utilityService.searchClub(this.allClubsData, this.searchKeyword);
   }
-  
 }

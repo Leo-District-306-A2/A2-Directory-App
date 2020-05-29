@@ -25,13 +25,10 @@ export class ExecutivePage {
   }
 
   viewCouncil(council) {
-   
     this.router.navigate(['/tabs/executive/executive-details', {councilData: JSON.stringify(council)}]);
   }
 
   filterData() {
-
-    this.filteredCouncilData = this.utilityService.search(this.allCouncilData,this.searchKeyword);
-  
+    this.filteredCouncilData = this.utilityService.searchCouncil(this.allCouncilData, this.searchKeyword);
   }
 }

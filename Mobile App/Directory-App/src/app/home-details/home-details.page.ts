@@ -22,10 +22,10 @@ export class HomeDetailsPage implements OnInit {
   ngOnInit() {
   }
 
-  segmentChanged(e){
-    if(e.detail.value === "en"){
+  segmentChanged(e) {
+    if (e.detail.value === 'en') {
       this.filteredData = this.viewData.en;
-    }else{
+    } else {
       this.filteredData = this.viewData.si;
     }
   }

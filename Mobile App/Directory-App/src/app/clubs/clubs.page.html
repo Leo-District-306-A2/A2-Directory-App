@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true" class="ion-padding-top">
     <div class="pl-2 pr-2">
         <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
-                       placeholder="Search by club name"></ion-searchbar>
+                       placeholder="Search by club name, officer"></ion-searchbar>
     </div>
     <ion-list *ngIf="filteredClubData?.length >0">
         <ion-item *ngFor="let club of filteredClubData" (click)="viewClub(club)" class="ion-activatable ripple-parent">

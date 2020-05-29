@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true" class="ion-padding-top">
   <div class="pl-2 pr-2">
       <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
-                     placeholder="Search by executive designation name"></ion-searchbar>
+                     placeholder="Search by designation, officer"></ion-searchbar>
   </div>
   <ion-list *ngIf="filteredCouncilData?.length >0">
       <ion-item *ngFor="let council of filteredCouncilData" (click)=" viewCouncil(council)" class="ion-activatable ripple-parent">

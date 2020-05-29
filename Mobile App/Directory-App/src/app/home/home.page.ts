@@ -36,10 +36,12 @@ export class HomePage {
   navigateToDetails(data) {
         this.router.navigate(['tabs/home/home-details', {data: JSON.stringify(data)}]);
   }
+
   navigateToOfficersDetails(data) {
     this.router.navigate(['tabs/home/head-officers', {data: JSON.stringify(data)}]);
   }
-  navigateToOtherDetails(data){    
+
+  navigateToOtherDetails(data) {
     this.router.navigate(['tabs/home/home-other-details', {data: JSON.stringify(data)}]);
   }
 

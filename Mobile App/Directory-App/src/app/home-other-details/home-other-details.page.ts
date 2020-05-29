@@ -9,11 +9,10 @@ import {ActivatedRoute} from '@angular/router';
 export class HomeOtherDetailsPage implements OnInit {
 
   viewData: any;
-  
+
   constructor(private route: ActivatedRoute) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
-      
     });
    }
 
