@@ -44,5 +44,4 @@ export class HomePage {
   navigateToOtherDetails(data) {
     this.router.navigate(['tabs/home/home-other-details', {data: JSON.stringify(data)}]);
   }
-
 }

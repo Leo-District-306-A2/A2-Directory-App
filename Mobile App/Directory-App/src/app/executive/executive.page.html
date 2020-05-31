@@ -1,4 +1,9 @@
-<ion-content [fullscreen]="true" class="ion-padding-top">
+<ion-content [fullscreen]="true">
+
+    <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
+        <img class="mx-auto d-block" src="../../assets/tabs/headers/council.png">
+    </div>
+
   <div class="pl-2 pr-2">
       <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
                      placeholder="Search by designation, officer"></ion-searchbar>
@@ -16,6 +21,6 @@
   <!-- No Results found  -->
   <div class="not-found-wrapper text-center" *ngIf="filteredCouncilData?.length === 0">
       <img src="../../assets/logos/gray_leo_logo.png" class="not-found-logo">
-      <p class="text-center text-secondary not-found-text">Oops! Leo councils not found.</p>
+      <p class="text-center text-secondary not-found-text">Oops! council data not found.</p>
   </div>
 </ion-content>
