@@ -12,6 +12,8 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
 import {UtilityService} from './services/utility.service';
+import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +26,8 @@ import {UtilityService} from './services/utility.service';
     CallNumber,
     EmailComposer,
       Keyboard,
-      UtilityService
+      UtilityService,
+    NativeGeocoder
   ],
   bootstrap: [AppComponent]
 })

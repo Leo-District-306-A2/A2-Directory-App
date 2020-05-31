@@ -11,11 +11,12 @@ import { UtilityService } from '../services/utility.service';
 })
 export class ExecutiveDetailsPage implements OnInit {
     isEmailComposable = false;
+    isNavigatable = false;
     executiveDetails: any;
     constructor(private route: ActivatedRoute,
-        private callNumber: CallNumber,
-        private emailComposer: EmailComposer,
-        private utilityService: UtilityService) {
+                private callNumber: CallNumber,
+                private emailComposer: EmailComposer,
+                private utilityService: UtilityService) {
         // read router params
         route.paramMap.subscribe((data) => {
             this.executiveDetails = JSON.parse(data.get('councilData'));
@@ -46,4 +47,10 @@ export class ExecutiveDetailsPage implements OnInit {
         }
     }
 
+    openLocation(address) {
+        this.utilityService.getLatLongFromAddress(address).then(data => {
+            console.log(data);
+            window.open('geo://' + data[0].latitude + ',' + data[0].longitude + '?q=' + address, '_system');
+        });
+    }
 }

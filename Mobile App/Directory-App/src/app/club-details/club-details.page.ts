@@ -4,6 +4,7 @@ import {CallNumber} from '@ionic-native/call-number/ngx';
 import {EmailComposer} from '@ionic-native/email-composer/ngx';
 import {UtilityService} from '../services/utility.service';
 
+
 @Component({
   selector: 'app-club-details',
   templateUrl: './club-details.page.html',
@@ -11,6 +12,7 @@ import {UtilityService} from '../services/utility.service';
 })
 export class ClubDetailsPage implements OnInit {
   isEmailComposable = false;
+  isNavigatable = false;
   clubDetails: any;
   constructor(private route: ActivatedRoute,
               private callNumber: CallNumber,
@@ -19,8 +21,6 @@ export class ClubDetailsPage implements OnInit {
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));
-        console.log(this.clubDetails);
-
       });
 
     // check email composer availability
@@ -48,4 +48,9 @@ export class ClubDetailsPage implements OnInit {
     }
   }
 
+  openLocation(address) {
+    this.utilityService.getLatLongFromAddress(address).then(data => {
+      window.open('geo://' + data[0].latitude + ',' + data[0].longitude + '?q=' + address, '_system');
+    });
+  }
 }

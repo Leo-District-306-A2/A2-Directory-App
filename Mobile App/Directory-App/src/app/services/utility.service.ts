@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { NativeGeocoder} from '@ionic-native/native-geocoder/ngx';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UtilityService {
 
-  constructor() {
+  constructor(private nativeGeocoder: NativeGeocoder) {
   }
 
   sortJsonArrayByVisibilityOrder(array) {
@@ -38,5 +39,9 @@ searchByOfficerProperties(officers, searchKeyword) {
         );
     });
     return officerList.length > 0;
+}
+
+getLatLongFromAddress(address) {
+  return this.nativeGeocoder.forwardGeocode(address);
 }
 }
