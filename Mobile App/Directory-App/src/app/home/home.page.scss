@@ -12,6 +12,7 @@
   margin: auto;
   margin-top: 10px;
   text-align:center;
+  padding: 2px;
   
 }
 .tile-sm{
@@ -23,6 +24,7 @@
   margin: auto;
   margin-top: 10px;
   text-align:center;
+  padding: 2px;
 }
 .tile-sm-single{
   width: 50%;
@@ -33,14 +35,20 @@
   margin: auto;
   margin-top: 10px;
   text-align:center;
+  padding: 2px;
 
 }
-// .inner-tile{
-  // margin: 5px;
-  // border-width: 2px;
-  // border-color: blue;
-  // background-color: grayscale($color: #000000);
-// }
+.inner-tile{
+ 
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border-style: solid;
+  border-color:darkgrey;
+  border-width: 1px;
+  background-position: center;
+  
+}
 
 .tile-horizontal{
   background-color: white;
@@ -52,6 +60,7 @@
   margin: auto;
   margin-top: 10px;
   text-align: center;
+  padding: 2px;
 }
 
 .ripple-parent {
@@ -61,6 +70,8 @@
 
 .tile-head{
   font-family: 'Open Sans', Arial, sans-serif;
+  // color: white;
+  // text-shadow: 0 0 5px black;
 }
 
 .tile-content{
