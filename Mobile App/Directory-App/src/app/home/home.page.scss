@@ -12,8 +12,7 @@
   margin: auto;
   margin-top: 10px;
   text-align:center;
-  padding: 2px;
-  
+  padding: 8px;
 }
 .tile-sm{
   width: 100%;
@@ -24,30 +23,29 @@
   margin: auto;
   margin-top: 10px;
   text-align:center;
-  padding: 2px;
+  padding: 8px;
 }
 .tile-sm-single{
   width: 50%;
-  height: 150px;
-  max-height: 200px;
-  box-shadow: -3px -3px 10px -5px rgba(0,0,0,1);
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 10px;
-  text-align:center;
-  padding: 2px;
+  height: calc(#{width} * 1.778);
+  max-height: calc(#{width} * 1.778);
+  //box-shadow: -3px -3px 10px -5px rgba(0,0,0,1);
+  //border-radius: 15px;
+  //margin: auto;
+  //margin-top: 10px;
+  //text-align:center;
+  //padding: 2px;
 
 }
 .inner-tile{
- 
   width: 100%;
   height: 100%;
   border-radius: 15px;
   border-style: solid;
-  border-color:darkgrey;
+  border-color:rgba(0,0,0,0.08);
   border-width: 1px;
   background-position: center;
-  
+  display: table;
 }
 
 .tile-horizontal{
@@ -60,7 +58,7 @@
   margin: auto;
   margin-top: 10px;
   text-align: center;
-  padding: 2px;
+  padding: 8px;
 }
 
 .ripple-parent {
@@ -72,6 +70,8 @@
   font-family: 'Open Sans', Arial, sans-serif;
   // color: white;
   // text-shadow: 0 0 5px black;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .tile-content{
@@ -103,4 +103,60 @@
   bottom: 5px;
   right: 5px;
   padding :5px;
+}
+
+.national_anthem_tile {
+  background-image: url("../../assets/tiles/national_anthem.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgba(140,22,61,1);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgba(140,22,61,1) !important;
+  }
+}
+
+.pledge_of_allegiance_tile {
+  background-image: url("../../assets/tiles/pledge_of_alligance.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgba(0,105,170,1);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgba(0,105,170,1) !important;
+  }
+}
+
+.leo_pledge_tile {
+  background-image: url("../../assets/tiles/leo_pledge.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgba(26,75,94,1);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgba(26,75,94,1) !important;
+  }
+}
+
+.environmental_pledge_tile {
+  background-image: url("../../assets/tiles/environmental_pledge.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgba(17,55,40,1);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgba(17,55,40,1) !important;
+  }
 }

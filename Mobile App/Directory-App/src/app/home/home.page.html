@@ -7,18 +7,19 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <div class="tile center ripple-parent" (click)="navigateToDetails(nationalAnthem)">
+        <div class="tile center ripple-parent national_anthem_tile" (click)="navigateToDetails(nationalAnthem)">
           <div class="inner-tile ion-padding text-secondary">
-            <div class="tile-head font-weight-bold" [innerHTML]="nationalAnthem?.en.title">
+            <div class="tile-head font-weight-bold">
+              {{ nationalAnthem?.en.title }}
             </div>
           </div>
           <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div> -->
         </div>
       </ion-col>
       <ion-col>
-        <div class="tile center ripple-parent" (click)="navigateToDetails(pledgeOfAllegiance)">
+        <div class="tile center ripple-parent pledge_of_allegiance_tile" (click)="navigateToDetails(pledgeOfAllegiance)">
           <div class="inner-tile ion-padding">
-            <div class="tile-head font-weight-bold text-secondary" [innerHTML]="pledgeOfAllegiance?.en.title"></div>
+            <div class="tile-head font-weight-bold text-secondary">{{ pledgeOfAllegiance?.en.title }}</div>
             <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
             <!-- </div> -->
           </div>
@@ -27,18 +28,18 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <div class="tile center ripple-parent" (click)="navigateToDetails(leoPledge)">
+        <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToDetails(leoPledge)">
           <div class="inner-tile ion-padding">
-            <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoPledge?.en.title"></div>
+            <div class="tile-head text-secondary font-weight-bold">{{ leoPledge?.en.title }}</div>
             <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
           </div> -->
           </div>
         </div>
       </ion-col>
       <ion-col>
-        <div class="tile center ripple-parent" (click)="navigateToDetails(environmantalPledge)">
+        <div class="tile center ripple-parent environmental_pledge_tile" (click)="navigateToDetails(environmantalPledge)">
           <div class="inner-tile ion-padding">
-            <div class="tile-head text-secondary font-weight-bold" [innerHTML]="environmantalPledge?.en.title"></div>
+            <div class="tile-head text-secondary font-weight-bold animate__bounce">{{ environmantalPledge?.en.title }}</div>
           </div>
         </div>
       </ion-col>
@@ -147,7 +148,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <div class="tile-sm-single ripple-parent ion-padding bg-img"          
+        <div class="tile-sm tile-sm-single ripple-parent ion-padding bg-img"
           (click)="navigateToOfficersDetails(multipleOfficers?.districtChairman)">
           <div class="inner-tile ion-padding bg-img" [style.background-image]="'url(' + multipleOfficers?.districtChairman.image + ')'">
           <div class="tile-head left-align text-secondary font-weight-bold"
