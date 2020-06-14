@@ -160,3 +160,17 @@
     color: rgba(17,55,40,1) !important;
   }
 }
+
+.body{
+  position: fixed;
+}
+
+
+.otherContent{
+  width: 100%;
+  margin-top:15px;
+  height: 168%;
+  z-index:0;
+  position:absolute;
+  overflow: auto;
+}

@@ -1,23 +1,26 @@
 <ion-content [fullscreen]="true">
+    <div class="body">
+        <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
+            <img class="mx-auto d-block" src="../../assets/tabs/headers/clubs.png">
+        </div>
 
-    <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
-        <img class="mx-auto d-block" src="../../assets/tabs/headers/clubs.png">
+        <div class="pl-2 pr-2">
+            <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
+                placeholder="Search by club name, officer"></ion-searchbar>
+        </div>
+        <div class="otherContent">
+            <ion-list *ngIf="filteredClubData?.length >0">
+                <ion-item *ngFor="let club of filteredClubData" (click)="viewClub(club)"
+                    class="ion-activatable ripple-parent">
+                    <ion-avatar slot="start">
+                        <ion-img [src]="club?.img"></ion-img>
+                    </ion-avatar>
+                    <ion-label>{{club?.clubName}}</ion-label>
+                    <ion-ripple-effect></ion-ripple-effect>
+                </ion-item>
+            </ion-list>
+        </div>
     </div>
-
-    <div class="pl-2 pr-2">
-        <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
-                       placeholder="Search by club name, officer"></ion-searchbar>
-    </div>
-    <ion-list *ngIf="filteredClubData?.length >0">
-        <ion-item *ngFor="let club of filteredClubData" (click)="viewClub(club)" class="ion-activatable ripple-parent">
-            <ion-avatar slot="start">
-                <ion-img [src]="club?.img"></ion-img>
-            </ion-avatar>
-            <ion-label>{{club?.clubName}}</ion-label>
-            <ion-ripple-effect></ion-ripple-effect>
-        </ion-item>
-    </ion-list>
-
     <!-- No Results found  -->
     <div class="not-found-wrapper text-center" *ngIf="filteredClubData?.length === 0">
         <img src="../../assets/logos/gray_leo_logo.png" class="not-found-logo">
