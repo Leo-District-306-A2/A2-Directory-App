@@ -47,7 +47,45 @@
             </div>
           </ion-col>
         </ion-row>
+
+
         <ion-row>
+          <ion-col>
+            <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToOtherDetails(leoHistory)">
+              <div class="inner-tile ion-padding">
+                <div class="tile-head text-secondary font-weight-bold">{{ leoHistory?.title }}</div>
+                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
+          </div> -->
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="tile center ripple-parent environmental_pledge_tile"
+              (click)="navigateToOtherDetails(leoMap)">
+              <div class="inner-tile ion-padding">
+                <div class="tile-head text-secondary font-weight-bold animate__bounce">
+                  {{ leoMap?.title}}</div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToOtherDetails(districtPresidentLogo)">
+              <div class="inner-tile ion-padding">
+                <div class="tile-head text-secondary font-weight-bold">{{ districtPresidentLogo?.title}}</div>
+                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
+          </div> -->
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+
+
+
+
+        <!-- <ion-row>
           <div class="tile-horizontal center ripple-parent ion-padding" (click)="navigateToOtherDetails(leoHistory)">
             <div class="inner-tile ion-padding">
               <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoHistory?.title"></div>
@@ -60,15 +98,15 @@
               <div class="tile-head text-secondary font-weight-bold" [innerHTML]="leoMap?.title"></div>
             </div>
           </div>
-        </ion-row>
-        <ion-row>
+        </ion-row> -->
+        <!-- <ion-row>
           <div class="tile-horizontal center ripple-parent ion-padding"
             (click)="navigateToOtherDetails(districtPresidentLogo)">
             <div class="inner-tile ion-padding">
               <div class="tile-head text-secondary font-weight-bold" [innerHTML]="districtPresidentLogo?.title"></div>
             </div>
           </div>
-        </ion-row>
+        </ion-row> -->
         <ion-row>
           <ion-col>
             <div class="tile-sm ripple-parent ion-padding"
