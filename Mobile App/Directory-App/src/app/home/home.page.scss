@@ -77,9 +77,10 @@
 
 .tile-content{
   text-align: left;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-bottom: 10px;
-  color: grayscale($color: #706f6f);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .page-header {
@@ -100,9 +101,12 @@
 
 .designation{
   font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.1em;
   text-align: left !important;
   top: 5px !important;
   display: table-cell;
+  color: rgb(255, 248, 248) ;
+  text-shadow: 2px 2px 4px #000000;
 }
 .right-align{
   text-align: right !important;
@@ -112,6 +116,11 @@
   right: 10px;
   padding :10px;
 }
+.ripple {
+  background-position: center;
+  
+}
+
 
 .national_anthem_tile {
   background-image: url("../../assets/tiles/national_anthem.png");
