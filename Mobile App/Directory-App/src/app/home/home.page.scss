@@ -16,7 +16,7 @@
 }
 .tile-sm{
   width: 100%;
-  height: 150px;
+  height: 200px;
   max-height: 200px;
   box-shadow: -3px -3px 10px -5px rgba(0,0,0,1);
   border-radius: 15px;
@@ -97,13 +97,20 @@
 .left-align{
   text-align: left !important;
 }
+
+.designation{
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-align: left !important;
+  top: 5px !important;
+  display: table-cell;
+}
 .right-align{
   text-align: right !important;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
-  padding :5px;
+  bottom: 10px;
+  right: 10px;
+  padding :10px;
 }
 
 .national_anthem_tile {
@@ -161,6 +168,163 @@
     color: rgba(17,55,40,1) !important;
   }
 }
+
+.leo_history_tile {
+  background-image: url("../../assets/tiles/leo_history.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(245, 136, 13);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(83, 5, 5) !important;
+  }
+}
+
+.leo_map_tile {
+  background-image: url("../../assets/tiles/leo_map.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(215, 219, 4);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(110, 116, 3) !important;
+  }
+}
+
+.dp_logo_tile {
+  background-image: url("../../assets/tiles/dp_logo.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(131, 0, 178);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(81, 1, 64) !important;
+  }
+}
+
+.council_chairman_tile {
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/multiple_counsil_chairman.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+.district_governer_tile {
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/district_governer.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+.dp_tile {
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/district_president.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+.mdp_tile {
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/multiple_district_president.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+.immediate_past_dp_tile {
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/immediate_past_district_president.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+
+.immediate_past_dp_tile {
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/immediate_past_district_president.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+.district_vp_tile{
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/district_vice_president.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+.district_chairman_tile{
+  background-image: url("../../assets/local_db/home/imgs/multipleOfficers/photo/district_chairman_for_leos.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
+  }
+
+  .tile-head {
+    color: rgb(162, 129, 214) !important;
+  }
+}
+
+
 
 .body{
   position: fixed;
