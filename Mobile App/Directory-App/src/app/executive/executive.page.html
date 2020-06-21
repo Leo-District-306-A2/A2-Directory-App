@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true">
-  <div class="body">
+  <div class="header">
 
     <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
       <img class="mx-auto d-block" src="../../assets/tabs/headers/council.png">
@@ -11,7 +11,7 @@
         placeholder="Search by designation, officer"></ion-searchbar>
     </div>
 
-    <div class="otherContent">
+    <div class="scrollable-content">
       <ion-list *ngIf="filteredCouncilData?.length >0">
         <ion-item *ngFor="let council of filteredCouncilData" (click)=" viewCouncil(council)"
           class="ion-activatable ripple-parent">
