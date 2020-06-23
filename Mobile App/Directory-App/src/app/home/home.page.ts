@@ -44,4 +44,26 @@ export class HomePage {
   navigateToOtherDetails(data) {
     this.router.navigate(['tabs/home/home-other-details', {data: JSON.stringify(data)}]);
   }
+  navigateToNationalAnthem(data) {
+    this.router.navigate(['tabs/home/national-anthem', {data: JSON.stringify(data)}]);
+  }
+  navigateToPledgeOfAllegiance(data) {
+    this.router.navigate(['tabs/home/pledge-of-alligiance', {data: JSON.stringify(data)}]);
+  }
+  navigateToLeoPledge(data) {
+    this.router.navigate(['tabs/home/leo-pledge', {data: JSON.stringify(data)}]);
+  }
+  navigateToEnvironmentPledge(data) {
+    this.router.navigate(['tabs/home/environment-pledge', {data: JSON.stringify(data)}]);
+  }
+  navigateToLeoMap(data) {
+    this.router.navigate(['tabs/home/leo-map', {data: JSON.stringify(data)}]);
+  }
+  navigateToLeoHistory(data) {
+    this.router.navigate(['tabs/home/leo-history', {data: JSON.stringify(data)}]);
+  }
+  navigateToDPLogo(data) {
+    this.router.navigate(['tabs/home/district-president-logo', {data: JSON.stringify(data)}]);
+  }
+
 }

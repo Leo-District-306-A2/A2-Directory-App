@@ -7,7 +7,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent national_anthem_tile" (click)="navigateToDetails(nationalAnthem)">
+            <div class="tile center ripple-parent national_anthem_tile" (click)="navigateToNationalAnthem(nationalAnthem)">
               <div class="inner-tile ion-padding text-secondary">
                 <div class="tile-head font-weight-bold">
                   {{ nationalAnthem?.en.title }}
@@ -18,7 +18,7 @@
           </ion-col>
           <ion-col>
             <div class="tile center ripple-parent pledge_of_allegiance_tile"
-              (click)="navigateToDetails(pledgeOfAllegiance)">
+              (click)="navigateToPledgeOfAllegiance(pledgeOfAllegiance)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head font-weight-bold text-secondary">{{ pledgeOfAllegiance?.en.title }}</div>
                 <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
@@ -29,7 +29,7 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToDetails(leoPledge)">
+            <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToLeoPledge(leoPledge)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold">{{ leoPledge?.en.title }}</div>
                 <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
@@ -39,7 +39,7 @@
           </ion-col>
           <ion-col>
             <div class="tile center ripple-parent environmental_pledge_tile"
-              (click)="navigateToDetails(environmantalPledge)">
+              (click)="navigateToEnvironmentPledge(environmantalPledge)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold animate__bounce">
                   {{ environmantalPledge?.en.title }}</div>
@@ -51,7 +51,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent leo_history_tile" (click)="navigateToOtherDetails(leoHistory)">
+            <div class="tile center ripple-parent leo_history_tile" (click)="navigateToLeoHistory(leoHistory)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold">{{ leoHistory?.title }}</div>
                 <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
@@ -61,7 +61,7 @@
           </ion-col>
           <ion-col>
             <div class="tile center ripple-parent leo_map_tile"
-              (click)="navigateToOtherDetails(leoMap)">
+              (click)="navigateToLeoMap(leoMap)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold animate__bounce">
                   {{ leoMap?.title}}</div>
@@ -72,7 +72,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent dp_logo_tile" (click)="navigateToOtherDetails(districtPresidentLogo)">
+            <div class="tile center ripple-parent dp_logo_tile" (click)="navigateToDPLogo(districtPresidentLogo)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold">{{ districtPresidentLogo?.title}}</div>
               </div>
