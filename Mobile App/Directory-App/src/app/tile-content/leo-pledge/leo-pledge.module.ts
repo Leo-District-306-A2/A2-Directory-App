@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LeoPledgePageRoutingModule } from './leo-pledge-routing.module';
 
 import { LeoPledgePage } from './leo-pledge.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LeoPledgePageRoutingModule
+    LeoPledgePageRoutingModule,
+    CommonElementsModule
   ],
   declarations: [LeoPledgePage]
 })

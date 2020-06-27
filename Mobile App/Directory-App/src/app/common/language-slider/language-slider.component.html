@@ -1,0 +1,8 @@
+<div class="wrapper" [ngStyle]="{ 'bottom' : bottom+'px' }">
+<label class="language-switcher mx-auto d-block">
+  <input type="checkbox" (change)="languageChanged()" [(ngModel)]="isChecked">
+  <span class="slider round"></span>
+  <span class="select-fr">En</span>
+  <span class="select-en">සිං</span>
+</label>
+</div>

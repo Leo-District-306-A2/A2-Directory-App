@@ -13,7 +13,6 @@ export class LeoPledgePage implements OnInit {
   constructor(private route: ActivatedRoute) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
-      console.log(this.viewData);
     });
    }
 

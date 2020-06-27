@@ -1,0 +1,6 @@
+<ion-fab class="play-button" vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="light" size="small" (click)="this.audioService.playStopAudio();">
+    <i class="fas fa-play" *ngIf="!audioService.isAudioPlaying"></i>
+    <i class="fas fa-stop" *ngIf="audioService.isAudioPlaying"></i>
+  </ion-fab-button>
+</ion-fab>

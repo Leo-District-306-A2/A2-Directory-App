@@ -1,9 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>leo-pledge</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content [fullscreen]="true">
+    <div class="row align-items-center h-100 vertical-alignment">
+        <div class="col-md-12">
+            <div class="mt-3 p-4">
+                <img src="../../assets/tile-contents/icons/leo_pledge.png"
+                     class="mx-auto d-block header-logo mb-1 mt-3">
+                <h5 class="text-center">{{ viewData.en?.title }}</h5>
+            </div>
+            <div [innerHTML]="viewData.en?.content" class="text-center pr-2 pl-2 content"></div>
+        </div>
+    </div>
 </ion-content>
+<app-audio-button [audioFileUrl]="'../../assets/tile-contents/mp3/leo_pledge.mp3'"></app-audio-button>

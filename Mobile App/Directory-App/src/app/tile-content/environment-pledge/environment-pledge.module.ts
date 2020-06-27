@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { EnvironmentPledgePageRoutingModule } from './environment-pledge-routing.module';
 
 import { EnvironmentPledgePage } from './environment-pledge.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    EnvironmentPledgePageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        EnvironmentPledgePageRoutingModule,
+        CommonElementsModule
+    ],
   declarations: [EnvironmentPledgePage]
 })
 export class EnvironmentPledgePageModule {}
