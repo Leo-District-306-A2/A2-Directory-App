@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomeRoutingModule } from './home-routing.module';
+import {CommonElementsModule} from '../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
