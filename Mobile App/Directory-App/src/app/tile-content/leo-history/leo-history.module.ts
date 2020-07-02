@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LeoHistoryPageRoutingModule } from './leo-history-routing.module';
 
 import { LeoHistoryPage } from './leo-history.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LeoHistoryPageRoutingModule
+    LeoHistoryPageRoutingModule,
+    CommonElementsModule
   ],
   declarations: [LeoHistoryPage]
 })
