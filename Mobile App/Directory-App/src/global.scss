@@ -33,13 +33,26 @@
   border-radius: 50px !important;
 }
 
-//.header{
-//  position: fixed;
-//}
-//
-//.scrollable-content{
-//  width: 100%;
-//  margin-top:15px;
-//  height: 100vh;
-//  overflow-y: auto;
-//}
+.header{
+ position: fixed;
+height:50% ;
+}
+
+.scrollable-content{
+ width: 100vw;
+ margin-top:15px;
+ height: 100%;
+ overflow-y: auto;
+}
+
+.header_home{
+  position: fixed;
+  height: 63%;
+}
+
+.scrollable-content_home{
+  width: 100vw;
+  margin-top:15px;
+  height: 100%;
+  overflow-y: auto;
+}
