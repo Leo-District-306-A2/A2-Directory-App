@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DistrictPresidentLogoPageRoutingModule } from './district-president-logo-routing.module';
 
 import { DistrictPresidentLogoPage } from './district-president-logo.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DistrictPresidentLogoPageRoutingModule
+    DistrictPresidentLogoPageRoutingModule,
+    CommonElementsModule
   ],
   declarations: [DistrictPresidentLogoPage]
 })

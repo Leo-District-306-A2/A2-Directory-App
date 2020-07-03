@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LeoMapPageRoutingModule } from './leo-map-routing.module';
 
 import { LeoMapPage } from './leo-map.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LeoMapPageRoutingModule
+    LeoMapPageRoutingModule,
+    CommonElementsModule
   ],
   declarations: [LeoMapPage]
 })
