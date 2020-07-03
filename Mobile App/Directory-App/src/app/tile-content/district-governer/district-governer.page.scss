@@ -29,8 +29,13 @@
 .logo-name{
     font-size: small;
     color: slategrey;
-    font: italic;
+    font-style: italic;
 }
 .logo{
     margin-bottom: 20px;
+}
+
+.header-logo {
+    width: 80px;
+    height: 75px;
 }
