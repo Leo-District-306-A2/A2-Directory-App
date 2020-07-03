@@ -1,0 +1,22 @@
+.officer-image{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 3px;
+    border-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.officer-name{
+    font-size: medium;
+    font-weight: bold;
+    color: slategrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: small;
+}

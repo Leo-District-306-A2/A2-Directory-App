@@ -65,5 +65,27 @@ export class HomePage {
   navigateToDPLogo(data) {
     this.router.navigate(['tabs/home/district-president-logo', {data: JSON.stringify(data)}]);
   }
+  navigateToMultipleCouncilChairman(data) {
+    this.router.navigate(['tabs/home/multiple-council-chairman', {data: JSON.stringify(data)}]);
+  }
+  navigateToDistrictGoverner(data) {
+    this.router.navigate(['tabs/home/district-governer', {data: JSON.stringify(data)}]);
+  }
+  navigateToDistrictPresident(data) {
+    this.router.navigate(['tabs/home/district-president', {data: JSON.stringify(data)}]);
+  }
+  navigateToMultipleDistrictPresident(data) {
+    this.router.navigate(['tabs/home/multiple-district-president', {data: JSON.stringify(data)}]);
+  }
+  navigateToImmediatePasetDistrictPresident(data) {
+    this.router.navigate(['tabs/home/immediat-past-district-president', {data: JSON.stringify(data)}]);
+  }
+  navigateToDistrictVicePresident(data) {
+    this.router.navigate(['tabs/home/district-vice-president', {data: JSON.stringify(data)}]);
+  }
+  navigateToDistrictChairman(data) {
+    this.router.navigate(['tabs/home/district-chairman', {data: JSON.stringify(data)}]);
+  }
+  
 
 }

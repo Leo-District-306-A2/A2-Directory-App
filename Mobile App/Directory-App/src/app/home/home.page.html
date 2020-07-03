@@ -82,7 +82,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent council_chairman_tile" (click)="navigateToOfficersDetails(multipleOfficers?.multipleCounsilChairman)">
+            <div class="tile center ripple-parent council_chairman_tile" (click)="navigateToMultipleCouncilChairman(multipleOfficers?.multipleCounsilChairman)">
               <div class="inner-tile ion-padding">
                 <div class="designation  font-weight-bold">{{multipleOfficers?.multipleCounsilChairman.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.multipleCounsilChairman.name}} </div>
@@ -91,7 +91,7 @@
           </ion-col>
           <ion-col>
             <div class="tile center ripple-parent district_governer_tile"
-              (click)="navigateToOfficersDetails(multipleOfficers?.districtGovernor)">
+              (click)="navigateToDistrictGoverner(multipleOfficers?.districtGovernor)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{multipleOfficers?.districtGovernor.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.districtGovernor.name}} </div>
@@ -102,7 +102,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent dp_tile" (click)="navigateToOfficersDetails(multipleOfficers?.districtPresident)">
+            <div class="tile center ripple-parent dp_tile" (click)="navigateToDistrictPresident(multipleOfficers?.districtPresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{multipleOfficers?.districtPresident.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.districtPresident.name}} </div>
@@ -111,7 +111,7 @@
           </ion-col>
           <ion-col>
             <div class="tile center ripple-parent mdp_tile"
-              (click)="navigateToOfficersDetails(multipleOfficers?.MultipleDistrictPresident)">
+              (click)="navigateToMultipleDistrictPresident(multipleOfficers?.MultipleDistrictPresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{multipleOfficers?.MultipleDistrictPresident.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.MultipleDistrictPresident.name}} </div>
@@ -122,7 +122,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent immediate_past_dp_tile" (click)="navigateToOfficersDetails(multipleOfficers?.immediatePastDistrictPresident)">
+            <div class="tile center ripple-parent immediate_past_dp_tile" (click)="navigateToImmediatePasetDistrictPresident(multipleOfficers?.immediatePastDistrictPresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{multipleOfficers?.immediatePastDistrictPresident.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.immediatePastDistrictPresident.name}} </div>
@@ -131,7 +131,7 @@
           </ion-col>
           <ion-col>
             <div class="tile center ripple-parent district_vp_tile"
-              (click)="navigateToOfficersDetails(multipleOfficers?.districtVicePresident)">
+              (click)="navigateToDistrictVicePresident(multipleOfficers?.districtVicePresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{multipleOfficers?.districtVicePresident.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.districtVicePresident.name}} </div>
@@ -142,7 +142,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile-sm tile-sm-single center ripple-parent district_chairman_tile" (click)="navigateToOfficersDetails(multipleOfficers?.districtChairman)">
+            <div class="tile-sm tile-sm-single center ripple-parent district_chairman_tile" (click)="navigateToDistrictChairman(multipleOfficers?.districtChairman)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{multipleOfficers?.districtChairman.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.districtChairman.name}} </div>

@@ -12,6 +12,9 @@ const routes: Routes = [
     path: 'initial-slider',
     loadChildren: () => import('./initial-slider/initial-slider.module').then( m => m.InitialSliderPageModule)
   }
+
+
+
 ];
 @NgModule({
   imports: [
