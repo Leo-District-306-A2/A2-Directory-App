@@ -1,12 +1,14 @@
 {
-  "name": "Directory-App",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "name": "A2-Directory",
+  "version": "1.0.0",
+  "author": "IT Team, Leo District 306 A2",
+  "homepage": "http://leodistrict306a2.org",
   "scripts": {
     "ng": "ng",
     "start": "ionic serve --lab",
     "run-on-andorid": "ionic cordova run android --device",
+    "build-android": "ionic cordova build android",
+    "build-android-prod-relase": "ionic cordova build android --prod --release",
     "generate-resources": "ionic cordova resources",
     "build": "ng build",
     "test": "ng test",
