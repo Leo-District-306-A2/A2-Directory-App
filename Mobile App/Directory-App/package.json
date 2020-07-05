@@ -7,7 +7,6 @@
     "ng": "ng",
     "start": "ionic serve --lab",
     "run-on-andorid": "ionic cordova run android --device",
-    "build-android": "ionic cordova build android",
     "build-android-relase-android": "ionic cordova build --release --prod android",
     "build-android-relase-ios": "ionic cordova build --release --prod ios",
     "generate-resources": "ionic cordova resources",

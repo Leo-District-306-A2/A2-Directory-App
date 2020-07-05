@@ -1,16 +1,22 @@
 <ion-content [fullscreen]="true">
-  <div class="row align-items-center h-100 vertical-alignment">
-      <div class="col-md-12">
-          <div class="fixed">
-              <div class="mt-3 p-4">
-                
-                  <h5 class="text-center">{{ viewData.title }}</h5>
-                  <img src="../../../assets/local_db/home/imgs/leo_map.png"
-                  class="mx-auto d-block header-logo mb-1 mt-3">
-              </div>    
-          </div>
-          
-      </div>
-  </div>
+    <div class="col-md-12 align-items-center">
+        <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
+        <div>
+            <h4 class="text-center mb-3">{{ viewData.title }}</h4>
+        </div>
+        <div class="mb-3">
+            <img src="{{ '../../../assets/local_db/home/imgs/leo_map/'+ selectedDistrictImg }}"
+             class="mx-auto d-block map-img">
+        </div>
+        <h6 class="text-center">Leo Districts</h6>
+        <div class="flex-container w-100 mb-3">
+            <div class="a1" (click)="changeDistrict('a1.png')" [ngClass]="{ 'selected': selectedDistrictImg == 'a1.png' }">A1</div>
+            <div class="a2" (click)="changeDistrict('a2.png')" [ngClass]="{ 'selected': selectedDistrictImg == 'a2.png' }">A2</div>
+            <div class="b1" (click)="changeDistrict('b1.png')" [ngClass]="{ 'selected': selectedDistrictImg == 'b1.png' }">B1</div>
+            <div class="b2" (click)="changeDistrict('b2.png')" [ngClass]="{ 'selected': selectedDistrictImg == 'b2.png' }">B2</div>
+            <div class="c1" (click)="changeDistrict('c1.png')" [ngClass]="{ 'selected': selectedDistrictImg == 'c1.png' }">C1</div>
+            <div class="c2" (click)="changeDistrict('c2.png')" [ngClass]="{ 'selected': selectedDistrictImg == 'c2.png' }">C2</div>
+            <div class="all" (click)="changeDistrict('all.png')">X</div>
+        </div>
+    </div>
 </ion-content>
-<app-audio-button [audioFileUrl]="'../../assets/tile-contents/mp3/environmental_pledge.mp3'"></app-audio-button> 

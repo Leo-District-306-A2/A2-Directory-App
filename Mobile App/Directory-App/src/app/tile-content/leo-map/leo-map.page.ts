@@ -9,7 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 export class LeoMapPage implements OnInit {
 
   viewData: any;
-
+  selectedDistrictImg = 'all.png'
   constructor(private route: ActivatedRoute) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
@@ -18,6 +18,10 @@ export class LeoMapPage implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  changeDistrict(district) {
+    this.selectedDistrictImg = district;
   }
 
 }
