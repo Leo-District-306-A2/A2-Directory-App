@@ -16,7 +16,7 @@ export class ExecutiveDetailsPage implements OnInit {
     constructor(private route: ActivatedRoute,
                 private callNumber: CallNumber,
                 private emailComposer: EmailComposer,
-                private utilityService: UtilityService) {
+                public utilityService: UtilityService) {
         // read router params
         route.paramMap.subscribe((data) => {
             this.executiveDetails = JSON.parse(data.get('councilData'));

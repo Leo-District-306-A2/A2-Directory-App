@@ -17,7 +17,7 @@ export class ClubDetailsPage implements OnInit {
   constructor(private route: ActivatedRoute,
               private callNumber: CallNumber,
               private emailComposer: EmailComposer,
-              private utilityService: UtilityService) {
+              public utilityService: UtilityService) {
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));

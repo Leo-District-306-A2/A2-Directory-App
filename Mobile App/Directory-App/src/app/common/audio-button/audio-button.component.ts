@@ -8,7 +8,7 @@ import {AudioService} from '../../services/audio.service';
 })
 export class AudioButtonComponent implements OnInit {
   @Input() audioFileUrl;
-  constructor(private audioService: AudioService) {
+  constructor(public audioService: AudioService) {
     this.audioService.stop();
   }
   ngOnInit() {
