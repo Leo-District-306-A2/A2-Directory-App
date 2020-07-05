@@ -8,7 +8,8 @@
     "start": "ionic serve --lab",
     "run-on-andorid": "ionic cordova run android --device",
     "build-android": "ionic cordova build android",
-    "build-android-prod-relase": "ionic cordova build android --prod --release",
+    "build-android-relase-android": "ionic cordova build --release --prod android",
+    "build-android-relase-ios": "ionic cordova build --release --prod ios",
     "generate-resources": "ionic cordova resources",
     "build": "ng build",
     "test": "ng test",
@@ -77,7 +78,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project",
+  "description": "Mobile app which includes A2 Directory Data",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
