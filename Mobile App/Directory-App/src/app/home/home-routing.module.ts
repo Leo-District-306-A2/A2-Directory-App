@@ -8,18 +8,6 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'home-details',
-    loadChildren: () => import('../home-details/home-details.module').then( m => m.HomeDetailsPageModule)
-  },
-  {
-    path: 'head-officers',
-    loadChildren: () => import('../head-officers/head-officers.module').then( m => m.HeadOfficersPageModule)
-  },
-  {
-    path: 'home-other-details',
-    loadChildren: () => import('../home-other-details/home-other-details.module').then( m => m.HomeOtherDetailsPageModule)
-  },
-  {
     path: 'national-anthem',
     loadChildren: () => import('../tile-content/national-anthem/national-anthem.module').then( m => m.NationalAnthemPageModule)
   },
