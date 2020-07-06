@@ -17,6 +17,13 @@ export class HomePage {
   multipleOfficers: any;
   leoMap: any;
   districtPresidentLogo: any;
+  standardLeoClubConstitution: any;
+  instalationOfClubOfficers: any;
+  initiationOfNewMembers: any;
+  leoClubProtocol: any;
+  generalMeetingAgenda: any;
+  boardMeatingAgenda: any;
+  editorsNote: any;
 
   constructor(private homeService: HomeService, private router: Router) {
   }
@@ -31,6 +38,13 @@ export class HomePage {
     this.homeService.loadStaticData('MultipleOfficers').then((result) => this.multipleOfficers = result);
     this.homeService.loadStaticData('LeoMap').then((result) => this.leoMap = result);
     this.homeService.loadStaticData('DistrictPresidentLogo').then((result) => this.districtPresidentLogo = result);
+    this.homeService.loadStaticData('StandardLeoClubConstitution').then((result) => this.standardLeoClubConstitution = result);
+    this.homeService.loadStaticData('InstallationCeremonyOfLeoClubOfficers').then((result) => this.instalationOfClubOfficers = result);
+    this.homeService.loadStaticData('InitiationCeremonyOfNewMembers').then((result) => this.initiationOfNewMembers = result);
+    this.homeService.loadStaticData('LeoClubProtocol').then((result) => this.leoClubProtocol = result);
+    this.homeService.loadStaticData('GeneralMeetingAgenda').then((result) => this.generalMeetingAgenda = result);
+    this.homeService.loadStaticData('BoardMeetingAgenda').then((result) => this.boardMeatingAgenda = result);
+    this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
   }
 
   navigateToDetails(data) {
