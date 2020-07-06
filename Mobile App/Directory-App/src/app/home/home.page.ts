@@ -100,6 +100,27 @@ export class HomePage {
   navigateToDistrictChairman(data) {
     this.router.navigate(['tabs/home/district-chairman', {data: JSON.stringify(data)}]);
   }
+  navigateToLeoClubConstitution(data) {
+    this.router.navigate(['tabs/home/standerd-leo-club-constitution', {data: JSON.stringify(data)}]);
+  }
+  navigateToInstalationOfClubOfficers(data) {
+    this.router.navigate(['tabs/home/instalation-of-club-officers', {data: JSON.stringify(data)}]);
+  }
+  navigateToInitiationOfNewMembers(data) {
+    this.router.navigate(['tabs/home/initiation-of-new-members', {data: JSON.stringify(data)}]);
+  }
+  navigateToLeoClubProtocol(data) {
+    this.router.navigate(['tabs/home/leo-club-protocol', {data: JSON.stringify(data)}]);
+  }
+  navigateToGeneralMeetingAgenda(data) {
+    this.router.navigate(['tabs/home/general-meeting-agenda', {data: JSON.stringify(data)}]);
+  }
+  navigateToBoardMeatingAgenda(data) {
+    this.router.navigate(['tabs/home/board-meeting-agenda', {data: JSON.stringify(data)}]);
+  }
+  navigateToEditorsNote(data) {
+    this.router.navigate(['tabs/home/editors-note', {data: JSON.stringify(data)}]);
+  }
   
 
 }
