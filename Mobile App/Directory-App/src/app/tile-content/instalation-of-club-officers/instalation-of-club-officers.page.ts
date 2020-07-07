@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {UtilityService} from '../../services/utility.service';
+
 
 @Component({
   selector: 'app-instalation-of-club-officers',
@@ -9,8 +11,8 @@ import {ActivatedRoute} from '@angular/router';
 export class InstalationOfClubOfficersPage implements OnInit {
 
   viewData: any;
-
-  constructor(private route: ActivatedRoute) {
+  lang = 'en';
+  constructor(private route: ActivatedRoute, private utilityService: UtilityService) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
     });
@@ -19,4 +21,7 @@ export class InstalationOfClubOfficersPage implements OnInit {
   ngOnInit() {
   }
 
+  langChanged(event) {
+    this.lang = event;
+  }
 }

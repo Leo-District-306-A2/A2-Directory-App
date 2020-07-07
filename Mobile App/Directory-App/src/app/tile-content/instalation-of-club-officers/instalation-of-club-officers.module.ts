@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { InstalationOfClubOfficersPageRoutingModule } from './instalation-of-club-officers-routing.module';
 
 import { InstalationOfClubOfficersPage } from './instalation-of-club-officers.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InstalationOfClubOfficersPageRoutingModule
+    InstalationOfClubOfficersPageRoutingModule,
+    CommonElementsModule
   ],
   declarations: [InstalationOfClubOfficersPage]
 })
