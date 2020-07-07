@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { InitiationOfNewMembersPageRoutingModule } from './initiation-of-new-members-routing.module';
 
 import { InitiationOfNewMembersPage } from './initiation-of-new-members.page';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InitiationOfNewMembersPageRoutingModule
+    InitiationOfNewMembersPageRoutingModule,
+    CommonElementsModule
   ],
   declarations: [InitiationOfNewMembersPage]
 })

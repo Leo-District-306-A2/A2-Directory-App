@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>board-meeting-agenda</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="col-md-12 align-items-center">
+    <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
+    <div>
+      <h4 class="text-center mb-3">{{ viewData?.title }}</h4>
+    </div>
+    <div [innerHTML]="viewData?.content" class="content"></div>
+  </div>
 </ion-content>

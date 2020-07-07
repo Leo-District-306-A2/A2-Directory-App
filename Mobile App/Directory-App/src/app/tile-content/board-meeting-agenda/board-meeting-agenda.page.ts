@@ -14,6 +14,7 @@ export class BoardMeetingAgendaPage implements OnInit {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
     });
+    console.log(this.viewData);
    }
 
   ngOnInit() {
