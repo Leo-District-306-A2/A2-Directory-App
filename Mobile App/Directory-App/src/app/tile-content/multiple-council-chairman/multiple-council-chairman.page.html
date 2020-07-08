@@ -5,12 +5,11 @@
       <h4 class="text-center mb-3">{{ viewData?.designation }}</h4>
     </div>
     <div>
-      <img src="../../assets/local_db/home/imgs/multipleOfficers/photo/multiple_counsil_chairman.png"
+      <img [src]="viewData?.image"
       class="mx-auto d-block mb-1 officer-image">
     </div>
     <div class="text-center officer-name">{{ viewData?.name }}</div>
-    <div class="description text-justify mb-4">
-      {{ viewData?.description }}
+    <div [innerHTML]="viewData?.description" class="description text-justify mb-4">
     </div>
   </div>
 </ion-content>

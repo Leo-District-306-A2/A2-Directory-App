@@ -90,6 +90,14 @@ const routes: Routes = [
   {
     path: 'editors-note',
     loadChildren: () => import('../tile-content/editors-note/editors-note.module').then( m => m.EditorsNotePageModule)
+  },
+  {
+    path: 'region-and-zone-devision',
+    loadChildren: () => import('../tile-content/region-and-zone-devision/region-and-zone-devision.module').then( m => m.RegionAndZoneDevisionPageModule)
+  },
+  {
+    path: 'event-calendar',
+    loadChildren: () => import('../tile-content/event-calendar/event-calendar.module').then( m => m.EventCalendarPageModule)
   }
 
 ];

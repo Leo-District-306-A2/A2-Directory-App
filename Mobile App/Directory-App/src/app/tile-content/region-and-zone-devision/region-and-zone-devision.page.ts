@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'app-leo-history',
-  templateUrl: './leo-history.page.html',
-  styleUrls: ['./leo-history.page.scss'],
+  selector: 'app-region-and-zone-devision',
+  templateUrl: './region-and-zone-devision.page.html',
+  styleUrls: ['./region-and-zone-devision.page.scss'],
 })
-export class LeoHistoryPage implements OnInit {
+export class RegionAndZoneDevisionPage implements OnInit {
 
   viewData: any;
 
@@ -15,6 +15,7 @@ export class LeoHistoryPage implements OnInit {
       this.viewData = JSON.parse(data.get('data'));
     });
    }
+
 
   ngOnInit() {
   }

@@ -24,6 +24,8 @@ export class HomePage {
   generalMeetingAgenda: any;
   boardMeatingAgenda: any;
   editorsNote: any;
+  RegionAndZone: any;
+  eventCalendar: any;
 
   constructor(private homeService: HomeService, private router: Router) {
   }
@@ -45,6 +47,8 @@ export class HomePage {
     this.homeService.loadStaticData('GeneralMeetingAgenda').then((result) => this.generalMeetingAgenda = result);
     this.homeService.loadStaticData('BoardMeetingAgenda').then((result) => this.boardMeatingAgenda = result);
     this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
+    this.homeService.loadStaticData('regionAndZoneDivision').then((result) => this.RegionAndZone = result);
+    this.homeService.loadStaticData('DistrictCalendarOfEvemts').then((result) => this.eventCalendar = result);
   }
 
   navigateToDetails(data) {
@@ -99,6 +103,12 @@ export class HomePage {
   }
   navigateToDistrictChairman(data) {
     this.router.navigate(['tabs/home/district-chairman', {data: JSON.stringify(data)}]);
+  }
+  navigateToRegionAndZone(data) {
+    this.router.navigate(['tabs/home/region-and-zone-devision', {data: JSON.stringify(data)}]);
+  }
+  navigateToDistrictCalendar(data) {
+    this.router.navigate(['tabs/home/event-calendar', {data: JSON.stringify(data)}]);
   }
   navigateToLeoClubConstitution(data) {
     this.router.navigate(['tabs/home/standerd-leo-club-constitution', {data: JSON.stringify(data)}]);

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute} from '@angular/router'; 
 
 @Component({
-  selector: 'app-leo-history',
-  templateUrl: './leo-history.page.html',
-  styleUrls: ['./leo-history.page.scss'],
+  selector: 'app-event-calendar',
+  templateUrl: './event-calendar.page.html',
+  styleUrls: ['./event-calendar.page.scss'],
 })
-export class LeoHistoryPage implements OnInit {
+export class EventCalendarPage implements OnInit {
 
   viewData: any;
 
