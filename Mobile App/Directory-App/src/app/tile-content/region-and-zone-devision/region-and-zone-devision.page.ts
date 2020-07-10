@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {UtilityService} from '../../services/utility.service';
 
 @Component({
   selector: 'app-region-and-zone-devision',
@@ -9,8 +10,9 @@ import {ActivatedRoute} from '@angular/router';
 export class RegionAndZoneDevisionPage implements OnInit {
 
   viewData: any;
+  region = 'A';
 
-  constructor(private route: ActivatedRoute) {
+  constructor(public route: ActivatedRoute, public utilityService: UtilityService) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
     });
@@ -18,6 +20,10 @@ export class RegionAndZoneDevisionPage implements OnInit {
 
 
   ngOnInit() {
+  }
+
+  changeRegion(region) {
+    this.region = region;
   }
 
 }

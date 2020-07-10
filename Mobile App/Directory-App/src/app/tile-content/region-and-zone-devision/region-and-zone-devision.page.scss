@@ -1,4 +1,61 @@
-.header-logo{
-    width: 75px;
-    height: 75px;
+.header-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.region {
+  height: 5vh;
+  background-color: lightgray;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 2.5vh;
+  padding-top: 0.75vh;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+}
+
+.zone-header {
+  background-color: darkgray;
+  height: 8vh;
+  color: white;
+  border-top-left-radius: 4vh;
+  border-top-right-radius: 4vh;
+  padding-top: 0.25vh;
+}
+
+.zone-header-name {
+  font-size: 3vh;
+  margin-bottom: 0;
+}
+
+.zone-header-director {
+  font-size: 2vh;
+  margin-bottom: 0;
+  position: relative;
+  top: -5px;
+}
+
+.region-header-name {
+  font-size: 4vh;
+  margin-bottom: 0;
+}
+
+.region-header-director {
+  font-size: 2.5vh;
+  margin-bottom: 0;
+  position: relative;
+  top: -5px;
+}
+
+.zone-content {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-bottom-left-radius: 4vh;
+  border-bottom-right-radius: 4vh;
+  font-size: 2vh;
 }

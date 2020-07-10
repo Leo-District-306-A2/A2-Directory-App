@@ -1,9 +1,29 @@
 <ion-content>
-  <div class="col-md-12 align-items-center">
-    <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
-    <div>
-      <h4 class="text-center mb-3">{{ viewData?.title }}</h4>
+    <div class="col-md-12 align-items-center">
+        <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
+        <div>
+            <h4 class="text-center mb-3">{{ viewData?.title }}</h4>
+        </div>
+        <div class="row p-0">
+            <div class="col-4 region" (click)="changeRegion('A')"
+                 [ngClass]="{'active': region === 'A'}">{{ viewData?.regions.A.name }}</div>
+            <div class="col-4 region" (click)="changeRegion('B')"
+                 [ngClass]="{'active': region === 'B'}">{{ viewData?.regions.B.name }}</div>
+            <div class="col-4 region" (click)="changeRegion('C')"
+                 [ngClass]="{'active': region === 'C'}">{{ viewData?.regions.C.name }}</div>
+        </div>
+        <div>
+            <p class="text-center mt-3 mb-0 region-header-name">{{ viewData?.regions[region].name }}</p>
+            <p class="text-center region-header-director mb-2">{{ viewData?.regions[region].director }}</p>
+            <div class="mb-3" *ngFor="let zone of this.utilityService.sortJsonArrayByVisibilityOrder(viewData?.regions[region].zones)">
+                <div class="zone-header">
+                    <p class="text-center zone-header-name">{{ zone?.name }}</p>
+                    <p class="text-center zone-header-director">{{ zone?.director }}</p>
+                </div>
+                <div class="zone-content pt-2 pb-2">
+                    <p class="text-center m-0 p-0" *ngFor="let club of zone?.clubs">{{ club }}</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- <div [innerHTML]="viewData?.content" class="content"></div> -->
-  </div>
 </ion-content>

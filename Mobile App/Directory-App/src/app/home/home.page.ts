@@ -131,6 +131,4 @@ export class HomePage {
   navigateToEditorsNote(data) {
     this.router.navigate(['tabs/home/editors-note', {data: JSON.stringify(data)}]);
   }
-  
-
 }
