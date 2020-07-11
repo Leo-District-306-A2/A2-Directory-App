@@ -49,7 +49,7 @@ export class TabsPage {
 
     navigateToOurTeam() {
         this.closeMenu().then(() => {
-            this.router.navigate(['/tabs/our-team']);
+            this.router.navigate(['/tabs/our-team', {data: JSON.stringify(this.router.url)}]);
         });
     }
 
