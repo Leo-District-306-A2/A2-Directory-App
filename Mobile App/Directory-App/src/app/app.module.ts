@@ -1,6 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
+import {ActivatedRouteSnapshot, RouteReuseStrategy} from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -30,7 +30,8 @@ import {AudioService} from './services/audio.service';
     Keyboard,
     UtilityService,
     NativeGeocoder,
-    AudioService
+    AudioService,
+
   ],
   bootstrap: [AppComponent]
 })

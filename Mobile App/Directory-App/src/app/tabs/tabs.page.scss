@@ -36,3 +36,54 @@ ion-tab-button {
     position: fixed;
     //bottom: 50px;
 }
+
+.footer-line {
+    font-size: 7px;
+    position: absolute;
+    bottom: 5px;
+    line-height: 10px;
+    color: darkgray;
+
+    b {
+        font-size: 8px;
+    }
+}
+
+.footer-line-img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -2px;
+}
+
+.social-media {
+    font-size: 10px;
+    a {
+        font-size: 25px;
+        margin-left: 8px;
+        margin-right: 8px;
+        text-decoration: none;
+        color: rgba(0,0,0, 0.5);
+    }
+}
+
+.social-media:hover {
+    color: #1a4b5e;
+}
+
+.clickable {
+    pointer-events: auto !important;
+}
+
+.menu-close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: darkgray;
+    opacity: 0.5;
+}
+
+.menu-close-button:hover {
+    color: #e57373;
+}

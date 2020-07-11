@@ -1,0 +1,32 @@
+<ion-content>
+    <div class="col-md-12 align-items-center pb-2">
+        <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
+        <div>
+            <h4 class="text-center mb-3">{{ ourTeam?.title }}</h4>
+        </div>
+
+        <div class="w-100 mb-2" *ngFor="let member of ourTeam?.team">
+            <div class="wrapper mx-auto d-block">
+                <img [src]="member?.image"
+                     class="user-img mx-auto d-block">
+                <p class="text-center badge badge-pill badge-primary mx-auto d-block mt-1 mb-0">
+                    {{ member?.designation }}</p>
+                <h6 class="text-center m-0 mt-1">{{ member?.name }}</h6>
+                <div class="social-media text-center">
+                    <a *ngIf="member?.email" href="{{ 'mailto:'+member?.email }}">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a *ngIf="member?.facebook" href="{{ member?.facebook }}">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ion-fab class="nav-buttons" vertical="top" horizontal="start" slot="fixed">
+        <ion-fab-button color="light" size="small" (click)="goBack()">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

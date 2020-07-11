@@ -1,55 +1,88 @@
 <ion-content id="content">
-<ion-tabs>
+    <ion-tabs>
 
-    <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="executive" (click)="routeOther()">
-            <ion-icon src="../../assets/tabs/executive.svg"></ion-icon>
-            <ion-label>A2 Council</ion-label>
-        </ion-tab-button>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="executive" (click)="routeOther()">
+                <ion-icon src="../../assets/tabs/executive.svg"></ion-icon>
+                <ion-label>A2 Council</ion-label>
+            </ion-tab-button>
 
-        <ion-tab-button tab="home" class="home" (click)="routeHome()">
-            <ion-icon src="../../assets/tabs/home.svg"></ion-icon>
-        </ion-tab-button>
-        <ion-tab-button tab="clubs" (click)="routeOther()">
-            <ion-icon src="../../assets/tabs/clubs.svg"></ion-icon>
-            <ion-label>Clubs</ion-label>
-        </ion-tab-button>
-    </ion-tab-bar>
+            <ion-tab-button tab="home" class="home" (click)="routeHome()">
+                <ion-icon src="../../assets/tabs/home.svg"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="clubs" (click)="routeOther()">
+                <ion-icon src="../../assets/tabs/clubs.svg"></ion-icon>
+                <ion-label>Clubs</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
 
-</ion-tabs>
+    </ion-tabs>
 
-<ion-fab vertical="bottom" horizontal="center" class="home-btn" slot="fixed" *ngIf="!hideHomeFab">
-    <ion-fab-button class="home-button" (click)="routeHome()">
-        <ion-icon [ngStyle]="{'color': isHome? '#1a4b5e': 'lightgray'}"  src="../../assets/tabs/home.svg"></ion-icon>
-    </ion-fab-button>
-</ion-fab>
+    <ion-fab vertical="bottom" horizontal="center" class="home-btn" slot="fixed" *ngIf="!hideHomeFab">
+        <ion-fab-button class="home-button" (click)="routeHome()">
+            <ion-icon [ngStyle]="{'color': isHome? '#1a4b5e': 'lightgray'}" src="../../assets/tabs/home.svg"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
 
-<!--Top navigation buttons-->
-<!--<ion-fab class="nav-buttons" vertical="top" horizontal="start" slot="fixed">
-    <ion-fab-button color="light" size="small">
-        <ion-icon name="arrow-back"></ion-icon>
-    </ion-fab-button>
-</ion-fab>-->
+    <!--Top navigation buttons-->
+    <!--<ion-fab class="nav-buttons" vertical="top" horizontal="start" slot="fixed">
+        <ion-fab-button color="light" size="small">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>-->
 
-<ion-fab class="nav-buttons" vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button color="light" size="small" (click)="toggleMenu()">
-        <ion-icon name="menu"></ion-icon>
-    </ion-fab-button>
-</ion-fab>
+    <ion-fab class="nav-buttons" vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button color="light" size="small" (click)="openMenu()">
+            <ion-icon name="menu"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
 
-<!--Side menu-->
-<ion-menu side="end" menuId="sideMenu" contentId="content" >
-    <ion-content>
-        <div class="w-100 pr-4 pl-4 mt-5 mb-1 header-top">
-            <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
-        </div>
-        <ion-list>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-        </ion-list>
-    </ion-content>
-</ion-menu>
+    <!--Side menu-->
+    <ion-menu side="end" menuId="sideMenu" contentId="content">
+        <ion-content>
+            <div class="menu-close-button clickable" (click)="closeMenu()">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="w-100 pr-4 pl-4 mt-5 mb-1 header-top">
+                <img class="mx-auto d-block" src="../../assets/side-menu/header.png">
+            </div>
+            <ion-list>
+                <ion-item class="clickable" (click)="navigateToContactUs()">
+                    <ion-icon name="call-outline" slot="start"></ion-icon>
+                    <ion-label>Contact Us</ion-label>
+                </ion-item>
+                <ion-item class="clickable">
+                    <ion-icon name="megaphone-outline" slot="start"></ion-icon>
+                    <ion-label>Feedback</ion-label>
+                </ion-item>
+                <ion-item class="clickable" (click)="navigateToOurTeam()">
+                    <ion-icon name="people-outline" slot="start"></ion-icon>
+                    <ion-label>Our team</ion-label>
+                </ion-item>
+            </ion-list>
+            <div class="social-media text-center mt-3 clickable">
+                <p class="m-0 p-0">follow us</p>
+                <a href="http://leodistrict306a2.org">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="https://www.facebook.com/leo306a2">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/a2leos">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/A2Buzz">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/user/leo306a2">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="w-100 footer-line text-center">
+                <img class="mx-auto d-block footer-line-img" src="../../assets/logos/gray_leo_logo.png">
+                Designed & developed by<br>
+                <b>IT Team @ Leo District 306 A2, Sri Lanka.</b>
+            </div>
+        </ion-content>
+    </ion-menu>
 </ion-content>

@@ -13,7 +13,11 @@ export class TabsPage {
     isHome = true;
     hideHomeFab = false;
 
-    constructor(private router: Router, private menu: MenuController, private keyboard: Keyboard) {
+    // tslint:disable-next-line:max-line-length
+    constructor(private router: Router,
+                private menu: MenuController,
+                private keyboard: Keyboard
+    ) {
         this.keyboard.onKeyboardShow().subscribe((data) => {
             this.hideHomeFab = true;
         });
@@ -34,9 +38,25 @@ export class TabsPage {
     }
 
     // menu related functions
-    async toggleMenu() {
+    async openMenu() {
         await this.menu.enable(true, 'sideMenu');
-        await this.menu.toggle('sideMenu');
+        await this.menu.open('sideMenu');
+    }
+
+    async closeMenu() {
+        await this.menu.close('sideMenu');
+    }
+
+    navigateToOurTeam() {
+        this.closeMenu().then(() => {
+            this.router.navigate(['/tabs/our-team']);
+        });
+    }
+
+    navigateToContactUs() {
+        this.closeMenu().then(() => {
+            this.router.navigate(['/tabs/contact-us']);
+        });
     }
 }
 

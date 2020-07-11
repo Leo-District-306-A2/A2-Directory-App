@@ -13,6 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'pledge-of-alligiance',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/pledge-of-allegiance/pledge-of-allegiance.module').then( m => m.PledgeOfAllegiancePageModule)
   },
   {

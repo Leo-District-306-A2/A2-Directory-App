@@ -20,6 +20,14 @@ const routes: Routes = [
         loadChildren: () => import('../clubs/clubs.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'contact-us',
+        loadChildren: () => import('../side-menu/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+      },
+      {
+        path: 'our-team',
+        loadChildren: () => import('../side-menu/our-team/our-team.module').then( m => m.OurTeamPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
