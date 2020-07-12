@@ -1,12 +1,32 @@
 <ion-content [fullscreen]="true">
-    <div class="row align-items-center h-100 vertical-alignment">
-        <div class="col-md-12">
-            <div class="mt-3 p-4">
-                <img src="../../assets/tile-contents/icons/district_president_logo.png"
-                     class="mx-auto d-block header-logo mb-1 mt-3">
-                <h5 class="text-center">{{ viewData?.title }}</h5>
+    <div class="col-md-12 align-items-center">
+        <!--            <img src="../../../assets/logos/lion_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">-->
+        <div class="mt-5">
+            <h5 class="text-center">{{ viewData?.title }}</h5>
+        </div>
+        <img [src]="logoUrl" class="mx-auto d-block pl-4 pr-4 mt-2">
+        <div>
+            <div class="text-center">
+                <h6 class="m-0 font-weight-bold">{{ viewData?.title }} Details</h6>
+                <p class="m-0 tag-line">{{ viewData?.tag_line }}</p>
             </div>
-            <div [innerHTML]="viewData?.content" class="text-center mx-auto d-block pr-2 pl-2 content"></div>
+            <ion-list class="mb-2">
+                <ion-item
+                        *ngFor="let property of utilityService.sortJsonArrayByVisibilityOrder(viewData?.properties); let i = index;"
+                        (click)="toggleCollapsing(i+1, property)">
+                    <ion-avatar slot="start">
+                        <h1>{{ i + 1 }}</h1>
+                    </ion-avatar>
+                    <ion-label>
+                        <h3 class="font-weight-bold">{{ property?.property }}</h3>
+                        <p [ngClass]="{ 'invisible' : (i+1) === collapseditemId}"
+                           class="sample-description">{{ property?.description }}</p>
+                        <app-expandable [expanded]="(i+1) === collapseditemId" class="description"
+                                        [content]="property?.description">
+                        </app-expandable>
+                    </ion-label>
+                </ion-item>
+            </ion-list>
         </div>
     </div>
 </ion-content>

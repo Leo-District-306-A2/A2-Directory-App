@@ -1,6 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {ActivatedRouteSnapshot, RouteReuseStrategy} from '@angular/router';
+import { RouteReuseStrategy} from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -16,6 +16,7 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
 import {UtilityService} from './services/utility.service';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import {AudioService} from './services/audio.service';
+import {ExpandableComponent} from './common/expandable/expandable.component';
 
 @NgModule({
   declarations: [AppComponent],

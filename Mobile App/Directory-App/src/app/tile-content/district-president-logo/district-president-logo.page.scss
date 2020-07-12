@@ -1,4 +1,4 @@
-ion-content{
+ion-content {
   //--ion-background-color: #fff;
   //--background: url('../../../assets/tiles/national_anthem.png') no-repeat center center / cover;
 }
@@ -15,4 +15,22 @@ ion-content{
 .vertical-alignment {
   position: relative;
   top: -8vh;
+}
+
+.tag-line {
+  font-size: 12px;
+  color: #666666;
+}
+
+.sample-description {
+  transition: 0.5s linear;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.description {
+  color: #666666;
+  font-size: 14px;
 }

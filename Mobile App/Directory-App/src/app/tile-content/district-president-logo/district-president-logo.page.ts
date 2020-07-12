@@ -1,23 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {UtilityService} from '../../services/utility.service';
 
 @Component({
-  selector: 'app-district-president-logo',
-  templateUrl: './district-president-logo.page.html',
-  styleUrls: ['./district-president-logo.page.scss'],
+    selector: 'app-district-president-logo',
+    templateUrl: './district-president-logo.page.html',
+    styleUrls: ['./district-president-logo.page.scss'],
 })
 export class DistrictPresidentLogoPage implements OnInit {
 
-  viewData: any;
+    viewData: any;
+    collapseditemId = 0;
+    logoUrl: string;
 
-  constructor(private route: ActivatedRoute) {
-    route.paramMap.subscribe((data) => {
-      this.viewData = JSON.parse(data.get('data'));
-      console.log(this.viewData);
-    });
-   }
+    constructor(private route: ActivatedRoute,
+                public utilityService: UtilityService) {
+        route.paramMap.subscribe((data) => {
+            this.viewData = JSON.parse(data.get('data'));
+            this.logoUrl = this.viewData.logo;
+            console.log(this.viewData);
+        });
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    toggleCollapsing(id, property: any) {
+        if (this.collapseditemId === id) {
+            this.collapseditemId = 0;
+            this.logoUrl = this.viewData.logo;
+        } else {
+            this.collapseditemId = id;
+            this.logoUrl = property.logo;
+        }
+    }
 
 }

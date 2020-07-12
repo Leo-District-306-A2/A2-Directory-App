@@ -1,0 +1,11 @@
+.expand-wrapper {
+  height: 0;
+  width: 100%;
+  transition: 0.5s linear;
+  white-space: normal !important;
+  text-align: justify;
+}
+
+.expanded {
+  height: 150px !important;
+}

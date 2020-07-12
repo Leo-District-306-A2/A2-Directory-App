@@ -8,6 +8,7 @@ import { DistrictPresidentLogoPageRoutingModule } from './district-president-log
 
 import { DistrictPresidentLogoPage } from './district-president-logo.page';
 import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
+import {ExpandableComponent} from '../../common/expandable/expandable.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import {CommonElementsModule} from '../../common/common-elements/common-elements
     DistrictPresidentLogoPageRoutingModule,
     CommonElementsModule
   ],
-  declarations: [DistrictPresidentLogoPage]
+  declarations: [DistrictPresidentLogoPage, ExpandableComponent],
+  exports: [ExpandableComponent]
 })
 export class DistrictPresidentLogoPageModule {}
