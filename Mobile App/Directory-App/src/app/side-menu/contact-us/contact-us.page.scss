@@ -1,0 +1,26 @@
+.header-logo {
+  width: 80px;
+  height: 75px;
+}
+
+.nav-buttons {
+  transform: scale(0.7);
+  position: fixed;
+  //bottom: 50px;
+}
+
+.social-media {
+  a {
+    font-size: 12px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgba(0,0,0, 0.5);
+    margin-left: 15vw;
+    i {
+      margin-right: 8px;
+      font-size: 25px;
+      position: relative;
+      bottom: -5px;
+    }
+  }
+}

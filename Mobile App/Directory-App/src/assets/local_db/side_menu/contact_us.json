@@ -1,0 +1,36 @@
+{
+  "title": "Contact Us",
+  "emails": ["council@leodistrict306a2.org", "presidents@leodistrict306a2.org", "orientations@leodistrict306a2.org", "pdps@leodistrict306a2.org", "secretariat@leodistrict306a2.org"],
+  "social_media": [
+    {
+      "name": "web",
+      "icon_class": "fas fa-globe",
+      "visibility_order": 1,
+      "url": "http://leodistrict306a2.org"
+    },
+    {
+      "name": "facebook",
+      "icon_class": "fab fa-facebook",
+      "visibility_order": 2,
+      "url": "https://www.facebook.com/leo306a2"
+    },
+    {
+      "name": "instagram",
+      "icon_class": "fab fa-instagram",
+      "visibility_order": 3,
+      "url": "https://www.instagram.com/a2leos"
+    },
+    {
+      "name": "twitter",
+      "icon_class": "fab fa-twitter",
+      "visibility_order": 4,
+      "url": "https://twitter.com/A2Buzz"
+    },
+    {
+      "name": "youtube",
+      "icon_class": "fab fa-youtube",
+      "visibility_order": 5,
+      "url": "https://www.youtube.com/user/leo306a2"
+    }
+  ]
+}

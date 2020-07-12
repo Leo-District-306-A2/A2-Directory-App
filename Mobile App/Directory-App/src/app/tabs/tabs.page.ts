@@ -55,7 +55,7 @@ export class TabsPage {
 
     navigateToContactUs() {
         this.closeMenu().then(() => {
-            this.router.navigate(['/tabs/contact-us']);
+            this.router.navigate(['/tabs/contact-us', {data: JSON.stringify(this.router.url)}]);
         });
     }
 }
