@@ -346,6 +346,20 @@
   }
 }
 
+.district_calendar_tile{
+  background-image: url("../../assets/tiles/district_calendar.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgba(49, 0, 112,1);
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .tile-head {
+    color: rgb(23, 1, 59) !important;
+  }
+}
+
 
 .leo_club_constitution_tile{
   background-image: url("../../assets/tiles/leo_club_constitution.png");

@@ -149,9 +149,9 @@
               </div>
             </div>
           </ion-col>
-          <!-- start here -->
+         
           <ion-col>
-            <div class="tile center ripple-parent club_officers_instalation_tile" (click)="navigateToRegionAndZone(RegionAndZone)">
+            <div class="tile center ripple-parent region_and_zone_tile" (click)="navigateToRegionAndZone(RegionAndZone)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold">{{ RegionAndZone?.title }}</div>
               </div>
@@ -161,17 +161,17 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent region_and_zone_tile" (click)="navigateToDistrictCalendar(eventCalendar)">
+            <div class="tile center ripple-parent district_calendar_tile" (click)="navigateToDistrictCalendar(eventCalendar)">
               <div class="inner-tile ion-padding">
                 <div class="tile-head text-secondary font-weight-bold">{{ eventCalendar?.title }}</div>
               </div>
             </div>
           </ion-col>
-          <!-- start here first -->
+          
           <ion-col>
-            <div class="tile center ripple-parent club_officers_instalation_tile" (click)="navigateToInstalationOfClubOfficers(instalationOfClubOfficers)">
+            <div class="tile center ripple-parent leo_club_constitution_tile" (click)="navigateToLeoClubConstitution(standardLeoClubConstitution)">
               <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ instalationOfClubOfficers?.en.title }}</div>
+                <div class="tile-head text-secondary font-weight-bold">{{ standardLeoClubConstitution?.title }}</div>
               </div>
             </div>
           </ion-col>
