@@ -1,4 +1,6 @@
 {
     "title": "Editor's Note",
-    "content": ""
+    "img": "../../assets/local_db/home/imgs/editor/editor.png",
+    "name": "editors name",
+    "description": "content"
 }

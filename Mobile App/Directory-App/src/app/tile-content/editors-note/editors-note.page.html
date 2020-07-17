@@ -4,6 +4,13 @@
     <div>
       <h4 class="text-center mb-3">{{ viewData?.title }}</h4>
     </div>
-    <div [innerHTML]="viewData?.content" class="content"></div>
+    <div>
+      <img [src]="viewData?.img"
+      class="mx-auto d-block mb-1 mt-1 officer-image">
+    </div>
+    <div class="text-center officer-name">{{ viewData?.name }}</div>
+    <div [innerHTML]="viewData?.description" class="description text-justify mb-4">
+    </div>
   </div>
 </ion-content>
+
