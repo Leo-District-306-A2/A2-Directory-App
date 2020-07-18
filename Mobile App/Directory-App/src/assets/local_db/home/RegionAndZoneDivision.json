@@ -3,11 +3,11 @@
   "regions": {
     "A": {
       "name": "Region A",
-      "director": "Leo Pemal Yasith",
+      "director": "Leo Ravindu Vishan",
       "zones": [
         {
           "name": "Zone A1",
-          "director": "Leo Kasun Ramanayaka",
+          "director": "Leo Kavishka Herath",
           "visibility_order": 1,
           "clubs": [
             "Leo Club of Mattegoda",
@@ -20,7 +20,7 @@
         },
         {
           "name": "Zone A2",
-          "director": "Leo Stephan Melder",
+          "director": "Leo Savumi Wadduwage",
           "visibility_order": 2,
           "clubs": [
             "Leo Club of Kalubowila",
@@ -33,11 +33,11 @@
     },
     "B": {
       "name": "Region B",
-      "director": "Leo Osura Perera",
+      "director": "Leo Stephan Melder",
       "zones": [
         {
           "name": "Zone B1",
-          "director": "Leo Hasitha Jayanath",
+          "director": "Leo Malki Paranavithana",
           "visibility_order": 1,
           "clubs": [
             "Leo Club of Richmond College",
@@ -49,7 +49,7 @@
         },
         {
           "name": "Zone B2",
-          "director": "Leo Raseema Sugandi",
+          "director": "Leo Dilitha Ranjuna",
           "visibility_order": 2,
           "clubs": [
             "Leo Club of University of Moratuwa",
@@ -63,11 +63,11 @@
     },
     "C": {
       "name": "Region C",
-      "director": "Leo Pramila Bopearachchi",
+      "director": "Leo Yasiru Nilan",
       "zones": [
         {
           "name": "Zone C1",
-          "director": "Leo Praminda Vindika",
+          "director": "Leo Dithira Wellappuli",
           "visibility_order": 1,
           "clubs": [
             "Leo Club of PIliyandala",
@@ -79,7 +79,7 @@
         },
         {
           "name": "Zone C2",
-          "director": "Leo Ravindu Bandara",
+          "director": "Leo Dulan Wickramarathne",
           "visibility_order": 2,
           "clubs": [
             "Leo Club of Polgasowita",
