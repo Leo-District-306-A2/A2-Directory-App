@@ -22,8 +22,8 @@
                         <h3 class="font-weight-bold">{{ chair?.name }}</h3>
                         <p class="m-0 font-weight-bold text-capitalize chair-text">{{ chair?.designation? chair?.designation : 'chairperson' }}</p>
                         <p class="m-0 font-weight-bold chair-text">{{ chair?.club }}</p>
-                        <a href="tel:{{ chair?.phone }}" class="m-0 chair-text"><i class="fas fa-phone mr-1"></i>{{ chair?.phone }}</a>
-                        <a href="mailto:{{ chair?.email }}" class="m-0 chair-text"><i class="fas fa-envelope mr-1"></i>{{ chair?.email }}</a>
+                        <a *ngIf="chair?.phone" href="tel:{{ chair?.phone }}" class="m-0 chair-text"><i class="fas fa-phone mr-1"></i>{{ chair?.phone }}</a>
+                        <a *ngIf="chair?.email" href="mailto:{{ chair?.email }}" class="m-0 chair-text"><i class="fas fa-envelope mr-1"></i>{{ chair?.email }}</a>
                     </ion-label>
                 </ion-item>
             </ion-list>
