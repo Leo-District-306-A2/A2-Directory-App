@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ClubService } from '../services/club.service';
 import { Router } from '@angular/router';
 import {UtilityService} from '../services/utility.service';
+import {Env} from '../services/env';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class ClubsPage {
   filteredClubData: any;
   searchKeyword: string;
   imgBaseUrl: string;
-  constructor(private clubService: ClubService, private router: Router, private utilityService: UtilityService) {
+  constructor(private clubService: ClubService, private router: Router, private utilityService: UtilityService, public env: Env) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface

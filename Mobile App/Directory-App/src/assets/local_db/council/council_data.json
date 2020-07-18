@@ -1,8 +1,9 @@
 {
-  "imgBaseUrl" : "../../assets/local_db/council/imgs",
+  "imgBaseUrl" : "council/imgs",
   "council": [
     {
       "designationCategory": "District Executive Officers",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "District President",
@@ -48,6 +49,7 @@
     },
     {
       "designationCategory": "Key Council Officers",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "District Secretary",
@@ -93,6 +95,7 @@
     },
     {
       "designationCategory": "Chief Council Coordinators",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "Chief Coordinator - Council",
@@ -148,6 +151,7 @@
     },
     {
       "designationCategory": "Region A - Directors",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "Region A - Director",
@@ -183,6 +187,7 @@
     },
     {
       "designationCategory": "Region B - Directors",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "Region B - Director",
@@ -218,6 +223,7 @@
     },
     {
       "designationCategory": "Region C - Directors",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "Region C - Director",
@@ -253,6 +259,7 @@
     },
     {
       "designationCategory": "District Directors",
+      "logo" : "default_data/logo.png",
       "officers": [
         {
           "designation": "Director - District Contest",

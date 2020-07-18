@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {Env} from './env';
 
 
 @Injectable({
@@ -6,11 +7,11 @@ import {Injectable} from '@angular/core';
 })
 export class HomeService {
 
-    constructor() {
+    constructor(private env: Env) {
     }
 
     loadStaticData(dataName) {
-        return fetch('./assets/local_db/home/' + dataName + '.json').then(res => res.json())
+        return fetch(this.env.baseURL + '/home/' + dataName + '.json').then(res => res.json())
             .then(result => {
                 return result;
             })

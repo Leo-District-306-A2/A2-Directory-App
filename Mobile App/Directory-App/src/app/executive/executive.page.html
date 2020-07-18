@@ -16,7 +16,7 @@
         <ion-item *ngFor="let council of filteredCouncilData" (click)=" viewCouncil(council)"
           class="ion-activatable ripple-parent">
           <ion-avatar slot="start">
-            <img src="../../assets/logos/leo_logo.png" />
+            <img src="{{ env.baseURL + '/' + imgBaseUrl + '/' + council?.logo }}" />
           </ion-avatar>
           <ion-label>{{council?.designationCategory}}</ion-label>
           <ion-ripple-effect></ion-ripple-effect>

@@ -17,6 +17,7 @@ import {UtilityService} from './services/utility.service';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import {AudioService} from './services/audio.service';
 import {ExpandableComponent} from './common/expandable/expandable.component';
+import {Env} from './services/env';
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,7 +33,7 @@ import {ExpandableComponent} from './common/expandable/expandable.component';
     UtilityService,
     NativeGeocoder,
     AudioService,
-
+    Env
   ],
   bootstrap: [AppComponent]
 })

@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {CallNumber} from '@ionic-native/call-number/ngx';
 import {EmailComposer} from '@ionic-native/email-composer/ngx';
 import {UtilityService} from '../services/utility.service';
+import {Env} from '../services/env';
 
 
 @Component({
@@ -18,7 +19,8 @@ export class ClubDetailsPage implements OnInit {
   constructor(private route: ActivatedRoute,
               private callNumber: CallNumber,
               private emailComposer: EmailComposer,
-              public utilityService: UtilityService) {
+              public utilityService: UtilityService,
+              public env: Env) {
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));

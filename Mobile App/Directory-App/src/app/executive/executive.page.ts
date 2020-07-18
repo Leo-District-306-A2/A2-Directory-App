@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CouncilService } from '../services/council.service';
 import { Router } from '@angular/router';
 import {UtilityService} from '../services/utility.service';
+import {Env} from '../services/env';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class ExecutivePage {
   filteredCouncilData: any;
   searchKeyword: string;
   imgBaseUrl: string;
-  constructor(private councilService: CouncilService, private router: Router, private utilityService: UtilityService) {
+  constructor(private councilService: CouncilService, private router: Router, private utilityService: UtilityService, public env: Env) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface

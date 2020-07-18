@@ -1,9 +1,10 @@
 {
-  "imgBaseUrl" : "../../assets/local_db/clubs/imgs",
+  "imgBaseUrl" : "clubs/imgs",
   "clubs": [
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -54,7 +55,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -105,7 +107,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -156,7 +159,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -207,7 +211,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -258,7 +263,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -309,7 +315,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -360,7 +367,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -411,7 +419,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -462,7 +471,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -513,7 +523,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -564,7 +575,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -615,7 +627,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -666,7 +679,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -717,7 +731,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -768,7 +783,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -819,7 +835,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -870,7 +887,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -921,7 +939,8 @@
     },
     {
       "clubName": "Leo Club of University of Moratuwa",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
@@ -972,7 +991,8 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "img": "../../assets/logos/leo_logo.png",
+      "logo": "default_data/logo.png",
+
       "officers": [
         {
           "designation": "President",
