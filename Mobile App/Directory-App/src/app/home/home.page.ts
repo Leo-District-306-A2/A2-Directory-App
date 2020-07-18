@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeService } from '../services/home.service';
 import { Router } from '@angular/router';
+import {Env} from '../services/env';
 
 @Component({
   selector: 'app-tab2',
@@ -27,7 +28,7 @@ export class HomePage {
   RegionAndZone: any;
   eventCalendar: any;
 
-  constructor(private homeService: HomeService, private router: Router) {
+  constructor(private homeService: HomeService, private router: Router, public env: Env) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface

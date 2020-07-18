@@ -1,29 +1,32 @@
 {
   "title": "District President Logo",
-  "logo": "../../assets/local_db/home/imgs/dp_logo/logo.png",
+  "imgBaseUrl" : "home/imgs",
+  "image": "districtPresidentLogo/properties/logo.png",
+  "tile": "districtPresidentLogo/tile/dp_tile.png",
+  "tile-content": "districtPresidentLogo/tile-contents/background/dp_logo.png",
   "tag_line": "Prospering Sustainably",
   "properties": [
     {
       "property": "Blue Color",
-      "logo": "../../assets/local_db/home/imgs/dp_logo/blue.png",
+      "image": "districtPresidentLogo/properties/blue.png",
       "description": "Represents Lions whom that are the Guiding Light and the Pillars of Strength of the LEO movement.",
       "visibility_order": 1
     },
     {
       "property": "Green Color",
-      "logo": "../../assets/local_db/home/imgs/dp_logo/green.png",
+      "image": "districtPresidentLogo/properties/green.png",
       "description": "Sustainability in Leadership focus and healthy growth in Membership.",
       "visibility_order": 2
     },
     {
       "property": "Gold Color",
-      "logo": "../../assets/local_db/home/imgs/dp_logo/gold.png",
+      "image": "districtPresidentLogo/properties/gold.png",
       "description": "Sustainability focus to Lead, in the ever-changing macro environment.",
       "visibility_order": 3
     },
     {
       "property": "Four Human figures gathered with a hand held high",
-      "logo": "../../assets/local_db/home/imgs/dp_logo/four_human.png",
+      "image": "districtPresidentLogo/properties/four_human.png",
       "description": "Intent to achieve the four key focus areas of the program;<br><ul><li>Sustainable Skills</li><li>Sustainable Knowledge</li><li>Sustainable Projects</li><li>Sustainable Social Behavioral Lifestyle</li></ul>",
       "visibility_order": 4
     }
