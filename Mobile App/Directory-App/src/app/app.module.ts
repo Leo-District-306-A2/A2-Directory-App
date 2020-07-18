@@ -18,11 +18,12 @@ import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import {AudioService} from './services/audio.service';
 import {ExpandableComponent} from './common/expandable/expandable.component';
 import {Env} from './services/env';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, CommonModule, ReactiveFormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, CommonModule, ReactiveFormsModule, HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen,
