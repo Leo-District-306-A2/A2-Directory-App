@@ -4,7 +4,7 @@
         <div class="mt-5">
             <h5 class="text-center">{{ viewData?.title }}</h5>
         </div>
-        <img [src]="logoUrl" class="mx-auto d-block pl-4 pr-4 mt-2">
+        <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + logoUrl }}" class="mx-auto d-block pl-4 pr-4 mt-2">
         <div>
             <div class="text-center">
                 <h6 class="m-0 font-weight-bold">{{ viewData?.title }} Details</h6>
