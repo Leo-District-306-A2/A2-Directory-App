@@ -6,6 +6,7 @@ import {NativeGeocoder} from '@ionic-native/native-geocoder/ngx';
 })
 export class UtilityService {
     constructor(private nativeGeocoder: NativeGeocoder) {
+        console.log(this.getDateFormatted('22/05/2020', 'm'));
     }
 
     sortJsonArrayByVisibilityOrder(array) {
@@ -42,6 +43,20 @@ export class UtilityService {
 
     getLatLongFromAddress(address) {
         return this.nativeGeocoder.forwardGeocode(address);
+    }
+
+    getDateFormatted(date, type) {
+        const splitted = date.split('/');
+        // tslint:disable-next-line:radix
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        if (type === 'd') {
+            return splitted[0];
+        } else if (type === 'm') {
+            // tslint:disable-next-line:radix
+            return months[(parseInt(splitted[1]) - 1)];
+        } else if (type === 'y') {
+            return splitted[2];
+        }
     }
 
 }

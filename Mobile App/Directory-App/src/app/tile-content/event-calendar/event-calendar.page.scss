@@ -2,3 +2,35 @@
     width: 75px;
     height: 75px;
 }
+
+.date-wrapper {
+    position: relative;
+    top: -15px;
+    transform: scale(0.85);
+}
+
+.month {
+    position: relative;
+    top: 7px;
+    margin: 0;
+    text-transform: capitalize!important;
+    font-size: 12px;
+}
+
+.year {
+    position: relative;
+    top: -8px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.date {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
+.chair-name {
+    font-size: 12px;
+    margin: 0;
+    line-height: 12px;
+}

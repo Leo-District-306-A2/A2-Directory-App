@@ -48,8 +48,8 @@ export class HomePage {
     this.homeService.loadStaticData('GeneralMeetingAgenda').then((result) => this.generalMeetingAgenda = result);
     this.homeService.loadStaticData('BoardMeetingAgenda').then((result) => this.boardMeatingAgenda = result);
     this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
-    this.homeService.loadStaticData('regionAndZoneDivision').then((result) => this.RegionAndZone = result);
-    this.homeService.loadStaticData('DistrictCalendarOfEvemts').then((result) => this.eventCalendar = result);
+    this.homeService.loadStaticData('RegionAndZoneDivision').then((result) => this.RegionAndZone = result);
+    this.homeService.loadStaticData('DistrictCalendarOfEvents').then((result) => this.eventCalendar = result);
   }
 
   navigateToDetails(data) {

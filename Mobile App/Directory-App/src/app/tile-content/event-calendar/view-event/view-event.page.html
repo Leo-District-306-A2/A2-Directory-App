@@ -1,0 +1,35 @@
+<ion-content>
+    <ion-content>
+        <div class="col-md-12 align-items-center ion-no-padding">
+            <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
+            <div>
+                <h4 class="text-center mb-3">{{ viewData?.name }}</h4>
+            </div>
+            <div class="content">
+                <div class="text-center date-wrapper" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + viewData?.imgBaseUrl + '/' + viewData?.bannerImg + '\')' }">
+                    <p class="month text-center font-weight-bold">{{ utilityService.getDateFormatted( viewData?.date , 'm') }}</p>
+                    <h2 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted( viewData?.date , 'd') }}</h2>
+                    <p class="m-0 year text-center font-weight-bold">{{ utilityService.getDateFormatted( viewData?.date , 'y') }}</p>
+                </div>
+            </div>
+            <h5 class="text-center mt-5 font-weight-bold mb-0">Event Chairperson{{ viewData?.chairpersons.length != 1 ? 's' : '' }}</h5>
+            <ion-list class="mt-0">
+                <ion-item *ngFor="let chair of viewData?.chairpersons">
+                    <ion-avatar slot="start" class="chair-img-wrapper">
+                        <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' +chair?.image }}" class="chair-img">
+                    </ion-avatar>
+                    <ion-label>
+                        <h3 class="font-weight-bold">{{ chair?.name }}</h3>
+                        <p class="m-0 font-weight-bold text-capitalize chair-text">{{ chair?.designation? chair?.designation : 'chairperson' }}</p>
+                        <p class="m-0 font-weight-bold chair-text">{{ chair?.club }}</p>
+                        <a href="tel:{{ chair?.phone }}" class="m-0 chair-text"><i class="fas fa-phone mr-1"></i>{{ chair?.phone }}</a>
+                        <a href="mailto:{{ chair?.email }}" class="m-0 chair-text"><i class="fas fa-envelope mr-1"></i>{{ chair?.email }}</a>
+                    </ion-label>
+                </ion-item>
+            </ion-list>
+            <h5 class="text-center mb-2 mt-3 font-weight-bold">About {{ viewData?.name }}</h5>
+            <div [innerHTML]="viewData?.description" class="description text-justify mb-4"></div>
+        </div>
+    </ion-content>
+
+</ion-content>

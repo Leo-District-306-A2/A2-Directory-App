@@ -5,7 +5,8 @@
   "homepage": "http://leodistrict306a2.org",
   "scripts": {
     "ng": "ng",
-    "start": "ionic serve --lab",
+    "start": "ionic serve",
+    "start-lab": "ionic serve --lab",
     "run-on-andorid": "ionic cordova run android --device",
     "build-android-relase-android": "ionic cordova build --release --prod android",
     "build-android-relase-ios": "ionic cordova build --release --prod ios",

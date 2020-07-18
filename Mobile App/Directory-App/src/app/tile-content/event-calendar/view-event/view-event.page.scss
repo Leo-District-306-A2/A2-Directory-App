@@ -1,0 +1,49 @@
+.header-logo{
+  width: 75px;
+  height: 75px;
+}
+
+.date-wrapper {
+  transform: scale(1.5);
+  color: white;
+  margin-top: 35px;
+  background-size: cover;
+}
+
+.month {
+  position: relative;
+  top: 7px;
+  margin: 0;
+  text-transform: capitalize!important;
+  font-size: 12px;
+}
+
+.year {
+  position: relative;
+  top: -8px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.date {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+
+.chair-img, .chair-img-wrapper {
+  width: 60px;
+  height: 60px;
+}
+
+.description{
+  font-size: small;
+  text-align: justify;
+}
+
+.chair-text {
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+}

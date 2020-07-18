@@ -1,0 +1,59 @@
+{
+  "title": "District Calendar of Events",
+  "imgBaseUrl" : "home/imgs/districtCalendarOfEvents",
+  "events": [
+    {
+      "name": "District Bodhi Poojawa",
+      "date": "22/05/2020",
+      "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
+      "bannerImg": "bodhi_poojawa/banner.png",
+      "chairpersons": [
+        {
+          "name": "Leo Tikuli Pitigala",
+          "image": "bodhi_poojawa/tikuli_pitigala.png",
+          "club": "Leo club of university of moratuwa",
+          "email": "test@123.com",
+          "phone": "07156566565"
+        },
+        {
+          "name": "Leo Raseema Sugandi",
+          "image": "bodhi_poojawa/raseema_sugandi.png",
+          "club": "Leo club of sri lanka technological campus",
+          "email": "test@123.com",
+          "phone": "0765456456",
+          "designation": "co-chairperson"
+        }
+      ]
+    },
+    {
+      "name": "Club Officers Workshop",
+      "date": "17/10/2020",
+      "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
+      "bannerImg": "",
+      "chairpersons": [
+        {
+          "name": "Test person",
+          "image": "",
+          "club": "",
+          "email": "",
+          "phone": ""
+        }
+      ]
+    },
+    {
+      "name": "Multiple Council Installation",
+      "date": "22/06/2020",
+      "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
+      "bannerImg": "",
+      "chairpersons": [
+        {
+          "name": "Test person",
+          "image": "",
+          "club": "",
+          "email": "",
+          "phone": ""
+        }
+      ]
+    }
+  ]
+}
