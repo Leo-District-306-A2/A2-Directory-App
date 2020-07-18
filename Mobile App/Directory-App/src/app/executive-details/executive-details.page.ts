@@ -11,8 +11,8 @@ import { UtilityService } from '../services/utility.service';
 })
 export class ExecutiveDetailsPage implements OnInit {
     isEmailComposable = false;
-    isNavigatable = false;
     executiveDetails: any;
+    imgBaseUrl: string;
     constructor(private route: ActivatedRoute,
                 private callNumber: CallNumber,
                 private emailComposer: EmailComposer,
@@ -20,6 +20,7 @@ export class ExecutiveDetailsPage implements OnInit {
         // read router params
         route.paramMap.subscribe((data) => {
             this.executiveDetails = JSON.parse(data.get('councilData'));
+            this.imgBaseUrl = data.get('imgBaseUrl');
         });
 
        // check email composer availability

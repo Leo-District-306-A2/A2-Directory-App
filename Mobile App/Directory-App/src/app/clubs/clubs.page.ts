@@ -13,19 +13,21 @@ export class ClubsPage {
   allClubsData: any;
   filteredClubData: any;
   searchKeyword: string;
+  imgBaseUrl: string;
   constructor(private clubService: ClubService, private router: Router, private utilityService: UtilityService) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
     this.clubService.getData().then((data) => {
-      this.filteredClubData = data;
-      this.allClubsData = data;
+      this.filteredClubData = data.clubs;
+      this.allClubsData = data.clubs;
+      this.imgBaseUrl = data.imgBaseUrl;
     });
   }
 
   viewClub(club) {
-    this.router.navigate(['/tabs/clubs/club-details', {clubData: JSON.stringify(club)}]);
+    this.router.navigate(['/tabs/clubs/club-details', {clubData: JSON.stringify(club), imgBaseUrl: this.imgBaseUrl}]);
   }
 
   filterData() {

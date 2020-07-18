@@ -12,7 +12,7 @@
                 <div class="background-block">
                 </div>
                 <div class="profile-thumb-block">
-                    <img [src]="officer?.img" alt="profile-image" class="profile"/>
+                    <img src="{{ imgBaseUrl + '/' + officer?.img}}" alt="profile-image" class="profile"/>
                 </div>
                 <div class="card-content">
                     <small class="text-secondary font-weight-bold text-uppercase">{{ officer?.designation }}</small>

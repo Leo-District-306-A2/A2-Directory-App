@@ -14,6 +14,7 @@ export class ClubDetailsPage implements OnInit {
   isEmailComposable = false;
   isNavigatable = false;
   clubDetails: any;
+  imgBaseUrl: string;
   constructor(private route: ActivatedRoute,
               private callNumber: CallNumber,
               private emailComposer: EmailComposer,
@@ -21,6 +22,7 @@ export class ClubDetailsPage implements OnInit {
     // read router params
     route.paramMap.subscribe((data) => {
         this.clubDetails = JSON.parse(data.get('clubData'));
+        this.imgBaseUrl = data.get('imgBaseUrl');
       });
 
     // check email composer availability
