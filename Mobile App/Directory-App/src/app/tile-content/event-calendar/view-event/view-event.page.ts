@@ -13,7 +13,6 @@ export class ViewEventPage implements OnInit {
   constructor(private route: ActivatedRoute, public utilityService: UtilityService, public env: Env) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
-      console.log(JSON.parse(data.get('data')));
     });
   }
 
