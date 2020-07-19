@@ -10,12 +10,11 @@
           "director": "Leo Kavishka Herath",
           "visibility_order": 1,
           "clubs": [
+            "Leo Club of Sri Lanka Technological Campus",
+            "Leo Club of Baddegama",
             "Leo Club of Mattegoda",
             "Leo Club of Werahera",
-            "Leo Club of Taxila Central College",
-            "Leo Club of Horana Mid City",
-            "Leo Club of Miriswatta - Piliyandala",
-            "Leo Club of Sri Lanka Technological Campus"
+            "Leo Club of Moragahahena"
           ]
         },
         {
@@ -23,10 +22,10 @@
           "director": "Leo Savumi Wadduwage",
           "visibility_order": 2,
           "clubs": [
+            "Leo Club of Godigamuwa",
             "Leo Club of Kalubowila",
-            "Leo Club of Saegis Campus",
-            "Leo Club of Dehiwala East",
-            "Leo Club of Moragahahena"
+            "Leo Club of Saegies Campus",
+            "Leo Club of Katuwawala"
           ]
         }
       ]
@@ -40,11 +39,10 @@
           "director": "Leo Malki Paranavithana",
           "visibility_order": 1,
           "clubs": [
-            "Leo Club of Richmond College",
-            "Leo Club of Rahula College",
-            "Leo Club of Kesbewa",
-            "Leo Club of Rattanapitiya",
-            "Leo Club of Millaniya"
+            "Leo Club of Piliyandala",
+            "Leo Club of Pepiliyana Woodlands",
+            "Leo Club of Dehiwala East",
+            "Leo Club of Rattanapitiya"
           ]
         },
         {
@@ -52,11 +50,10 @@
           "director": "Leo Dilitha Ranjuna",
           "visibility_order": 2,
           "clubs": [
-            "Leo Club of University of Moratuwa",
-            "Leo Club of Godigamuwa",
-            "Leo Club of Raigampurawaraya",
-            "Leo Club of Bandaragama Central",
-            "Leo Club of Akmeemana"
+            "Leo Club of Matara Nilwala",
+            "Leo Club of Uragasmanhandiya",
+            "Leo Club of Kesbewa",
+            "Leo Club of Richmond College"
           ]
         }
       ]
@@ -70,11 +67,10 @@
           "director": "Leo Dithira Wellappuli",
           "visibility_order": 1,
           "clubs": [
-            "Leo Club of PIliyandala",
+            "Leo Club of University of Moratuwa",
+            "Leo Club of Rahula College",
             "Leo Club of Panadura Alubomulla",
-            "Leo Club of Piliyandala Central College",
-            "Leo Club of Presbyterian",
-            "Leo Club of Matara City"
+            "Leo Club of Ingiriya United"
           ]
         },
         {
@@ -83,10 +79,10 @@
           "visibility_order": 2,
           "clubs": [
             "Leo Club of Polgasowita",
-            "Leo Club of Katuwawala",
-            "Leo Club of Baddegama",
-            "Leo Club of Ingiriya United",
-            "Leo Club of University of Sri Jayewardenapura"
+            "Leo Club of University of Sri Jayewardenepura",
+            "Leo Club of Horana Mid City",
+            "Leo Club of Milleniya",
+            "Leo Club of Piliyandala Central"
           ]
         }
       ]
