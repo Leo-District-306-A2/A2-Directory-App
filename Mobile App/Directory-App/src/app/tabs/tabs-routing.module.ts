@@ -31,6 +31,14 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
+      },
+      {
+        path: 'multiple',
+        loadChildren: () => import('../multiple/multiple.module').then( m => m.MultiplePageModule)
+      },
+      {
+        path: 'docs',
+        loadChildren: () => import('../docs/docs.module').then( m => m.DocsPageModule)
       }
     ]
   },

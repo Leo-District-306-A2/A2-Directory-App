@@ -25,10 +25,10 @@ export class ExecutiveDetailsPage implements OnInit {
             this.imgBaseUrl = data.get('imgBaseUrl');
         });
 
-       // check email composer availability
-        this.emailComposer.isAvailable().then((available: boolean) => {
-            this.isEmailComposable = available;
-        });
+       // // check email composer availability
+       //  this.emailComposer.isAvailable().then((available: boolean) => {
+       //      this.isEmailComposable = available;
+       //  });
     }
 
     ngOnInit() {

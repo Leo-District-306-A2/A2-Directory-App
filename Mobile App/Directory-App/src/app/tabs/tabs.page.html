@@ -2,17 +2,24 @@
     <ion-tabs>
 
         <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="multiple" (click)="routeOther()">
+                <ion-icon src="../../assets/tabs/executive.svg"></ion-icon>
+                <ion-label>Multiple</ion-label>
+            </ion-tab-button>
             <ion-tab-button tab="executive" (click)="routeOther()">
                 <ion-icon src="../../assets/tabs/executive.svg"></ion-icon>
-                <ion-label>A2 Council</ion-label>
+                <ion-label>A2 Team</ion-label>
             </ion-tab-button>
-
             <ion-tab-button tab="home" class="home" (click)="routeHome()">
                 <ion-icon src="../../assets/tabs/home.svg"></ion-icon>
             </ion-tab-button>
             <ion-tab-button tab="clubs" (click)="routeOther()">
                 <ion-icon src="../../assets/tabs/clubs.svg"></ion-icon>
                 <ion-label>Clubs</ion-label>
+            </ion-tab-button>
+            <ion-tab-button tab="docs" (click)="routeOther()">
+                <ion-icon src="../../assets/tabs/docs.svg"></ion-icon>
+                <ion-label>Docs</ion-label>
             </ion-tab-button>
         </ion-tab-bar>
 
