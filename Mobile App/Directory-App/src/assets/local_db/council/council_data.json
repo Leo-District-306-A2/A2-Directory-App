@@ -362,6 +362,146 @@
           "img": "crystal_vanburen.png"
         }
       ]
+    },
+    {
+      "designationCategory": "Past District Presidents",
+      "logo" : "default_data/logo.png",
+      "officers": [
+        {
+          "visibility_order": 1,
+          "name": "PMDP Mr. Sadeepa Palliyaguru",
+          "club": "Leo Club of Polgasowita",
+          "email": "sadeepa.palliyaguru@gmail.com",
+          "address": "9, Attigala Mawata, Kesbewa",
+          "phone": "0716849706",
+          "img": "pdp/sadeepa_ravinath_palliyaguru.png"
+        },
+        {
+          "visibility_order": 2,
+          "name": "PDP Leo Sameera Wijesinghe",
+          "club": "Leo Club of Dehiwala North",
+          "email": "sam_s20002001@yahoo.com",
+          "address": "United Kingdom",
+          "phone": "447595548814",
+          "img": "pdp/sameera_wijesinghe.png"
+        },
+        {
+          "visibility_order": 3,
+          "name": "PDP Mr. Nadeesha Palliyaguru",
+          "club": "Leo Club of Piliyandala",
+          "email": "nadeesha.palli@gmail.com",
+          "address": "1/1, Vishnu Residencies, Shrubbery Garden, Colombo 04",
+          "phone": "0777160782",
+          "img": "pdp/nadeesha_ranganath_palliyaguru.png"
+        },
+        {
+          "visibility_order": 4,
+          "name": "PDP Lion Chathura Deshapriya",
+          "club": "Leo Club of Moragahahena",
+          "email": "deshapriya.Chathura@yahoo.com",
+          "address": "394, Kottawa Rd, Beruketiya, Kiriwattuduwa",
+          "phone": "0718257627",
+          "img": "pdp/chathura_deshapriya.png"
+        },
+        {
+          "visibility_order": 5,
+          "name": "PMDP Lion Dumindu Jayakody",
+          "club": "Leo Club of Werahera",
+          "email": "dumindu@leodistrict306a2.org",
+          "address": "Australia",
+          "img": "pdp/dumindu_jayakodi.png"
+        },
+        {
+          "visibility_order": 6,
+          "name": "PDP Lion Thilini Manamperi",
+          "club": "Leo Club of Kalubowila",
+          "email": "thilini@leodistrict306a2.org",
+          "address": "219, Old Road, Nawinna, Maharagama",
+          "phone": "0772220004",
+          "img": "pdp/thilini_manamperi.png"
+        },
+        {
+          "visibility_order": 7,
+          "name": "PDP Lion Kasun Pathirana",
+          "club": "Leo Club Of Mattegoda",
+          "email": "kasun@leodistrict306a2.org",
+          "address": "35, Araliya Uyana, Mattegoda",
+          "phone": "0775478857",
+          "img": "pdp/kasun_arunoda_pathirana.png"
+        },
+        {
+          "visibility_order": 8,
+          "name": "PDP Lion Isuru Senadheera",
+          "club": "Leo Club of University of Moratuwa",
+          "email": "isuru@leodistrict306a2.org",
+          "address": "“Dharshika”, Station Road, Balapitiya",
+          "phone": "0777392681",
+          "img": "pdp/isuru_senadheera.png"
+        },
+        {
+          "visibility_order": 9,
+          "name": "PDP Lion Kaneel Maddumage",
+          "club": "Leo Club of Moragahahena",
+          "email": "kaneel@leodistrict306a2.org",
+          "address": "63, Kahatapitiya, Kananwila, Horana",
+          "phone": "0773839947",
+          "img": "pdp/kaneel_maddumage.png"
+        },
+        {
+          "visibility_order": 10,
+          "name": "PDP Leo Chandima Vithanage",
+          "club": "Leo Club of Polgasowita",
+          "email": "chandima@leodistrict306a2.org",
+          "address": "Olaboduwa Eastate, Koralaima, Gonapola Junction",
+          "phone": "0777423309",
+          "img": "pdp/chandima_vithanage.png"
+        },
+        {
+          "visibility_order": 11,
+          "name": "PMDP Leo Lion Pramod Wimalatunga",
+          "club": "Leo Club of Rattanapitiya",
+          "email": "pramod@leodistrict306a2.org",
+          "address": "118/3, Pirivena Road, Boralasgamuwa",
+          "phone": "0771129101",
+          "img": "pdp/pramod_wimalatunga.png"
+        },
+        {
+          "visibility_order": 12,
+          "name": "PMDP Leo Lion Kesari Seneviratne PMJF",
+          "club": "Leo Club of Kalubowila",
+          "email": "kesari@leodistrict306a2.org",
+          "address": "222B, Galvihara Road, Dehiwela",
+          "phone": "0777349305",
+          "img": "pdp/kesari_seneviratne.png"
+        },
+        {
+          "visibility_order": 13,
+          "name": "PDP Leo Lion Kalindu Dissanayake",
+          "club": "Leo Club of Moragahahena",
+          "email": "kalindu@leodistrict306a3.org",
+          "address": "394, Kottawa Road, Beruketiya, Kiriwaththuduwa",
+          "phone": "0773158277",
+          "img": "pdp/kalindu_dissanayake.png"
+        },
+        {
+          "visibility_order": 14,
+          "name": "PDP Leo Lion Kasun Lokugamage",
+          "club": "Leo Club of Piliyandala",
+          "email": "kasunl@leodistrict306a2.org",
+          "address": "212, Kandawala Mawatha, Ratmalana",
+          "phone": "0778608928",
+          "img": "pdp/kasun_lokugamage.png"
+        },
+        {
+          "visibility_order": 15,
+          "name": "IPDP Leo Mudith Jayasekara",
+          "club": "Leo Club of Polgasowita",
+          "email": "mudith@leodistrict306a2.org",
+          "address": "291/42, Mandawila Road, Kesbewa, Piliyandala",
+          "phone": "0777336911",
+          "img": "pdp/mudith_jayasekara.png"
+        }
+      ]
     }
   ]
 }
