@@ -6,7 +6,11 @@ import { MultiplePage } from './multiple.page';
 const routes: Routes = [
   {
     path: '',
-    component: MultiplePage
+    component: MultiplePage,
+  },
+  {
+    path: 'multiple-details',
+    loadChildren: () => import('../multiple-details/multiple-details.module').then( m => m.MultipleDetailsPageModule)
   }
 ];
 

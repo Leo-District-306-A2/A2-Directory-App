@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>mutiple</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="header">
 
-<ion-content>
+    <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
+      <img class="mx-auto d-block" src="../../assets/tabs/headers/multiple.png">
+    </div>
+
+
+    <div class="pl-2 pr-2">
+      <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
+                     placeholder="Search by designation, officer"></ion-searchbar>
+    </div>
+
+    <div class="scrollable-content">
+      <ion-list *ngIf="filteredMultipleData?.length >0">
+        <ion-item *ngFor="let multiple of filteredMultipleData" (click)=" viewOfficer(multiple)"
+                  class="ion-activatable ripple-parent">
+          <ion-avatar slot="start">
+            <img src="{{ env.baseURL + '/' + imgBaseUrl + '/' + multiple?.logo }}" />
+          </ion-avatar>
+          <ion-label>{{multiple?.designationCategory}}</ion-label>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+  <!-- No Results found  -->
+  <div class="not-found-wrapper text-center" *ngIf="filteredMultipleData?.length === 0">
+    <img src="../../assets/logos/gray_leo_logo.png" class="not-found-logo">
+    <p class="text-center text-secondary not-found-text">Oops! multiple data not found.</p>
+  </div>
 
 </ion-content>
