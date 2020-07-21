@@ -27,9 +27,9 @@ export class MultipleDetailsPage implements OnInit {
     });
 
     // check email composer availability
-    this.emailComposer.isAvailable().then((available: boolean) => {
-      this.isEmailComposable = available;
-    });
+    // this.emailComposer.isAvailable().then((available: boolean) => {
+    //   this.isEmailComposable = available;
+    // });
   }
 
   ngOnInit() {
