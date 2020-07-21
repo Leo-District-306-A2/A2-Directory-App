@@ -1,28 +1,40 @@
-<ion-content>
-    <div class="col-md-12 align-items-center pb-2">
-        <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
-        <div>
-            <h4 class="text-center mb-3">{{ ourTeam?.title }}</h4>
+<ion-content class="ion-padding-top ion-padding-bottom pb-3">
+    
+        <div class="mt-2 p-4">
+            <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block club-logo mb-1 mt-3">
+            <h5 class="text-center">{{ ourTeam?.title }}</h5>
+            <!-- <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">{{executiveDetails?.designationCategory}}</h3> -->
+    
+    
         </div>
 
-        <div class="w-100 mb-2" *ngFor="let member of ourTeam?.team">
-            <div class="wrapper mx-auto d-block">
-                <img [src]="member?.image"
-                     class="user-img mx-auto d-block">
-                <p class="text-center badge badge-pill badge-primary mx-auto d-block mt-1 mb-0">
-                    {{ member?.designation }}</p>
-                <h6 class="text-center m-0 mt-1">{{ member?.name }}</h6>
-                <div class="social-media text-center">
-                    <a *ngIf="member?.email" href="{{ 'mailto:'+member?.email }}">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a *ngIf="member?.facebook" href="{{ member?.facebook }}">
-                        <i class="fab fa-facebook"></i>
-                    </a>
+        <div class="col-md-12" *ngFor="let member of ourTeam?.team">
+            <div class="card profile-card-3 mb-3">
+                <div class="background-block">
                 </div>
+                <div class="profile-thumb-block">
+                    <img [src]="member?.image"
+                    class="profile">
+                </div>
+                <div class="card-content">
+                    <h4 class="text-center badge badge-pill ">
+                        {{ member?.designation }}</h4>
+                    <h6 class="text-center m-0 mt-1">{{ member?.name }}</h6>
+                    <div class="social-media text-center">
+                        <a *ngIf="member?.email" href="{{ 'mailto:'+member?.email }}">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a *ngIf="member?.facebook" href="{{ member?.facebook }}">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
             </div>
         </div>
-    </div>
+
+        
+    
 
     <ion-fab class="nav-buttons" vertical="top" horizontal="start" slot="fixed">
         <ion-fab-button color="light" size="small" (click)="goBack()">
