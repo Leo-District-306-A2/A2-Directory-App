@@ -81,14 +81,14 @@
         </ion-row>
 
         <ion-row>
-          <ion-col>
+          <!-- <ion-col>
             <div class="tile center ripple-parent council_chairman_tile" [ngStyle]="{ 'background-image' : 'url(' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.multipleCounsilChairman?.tile + ')' }" (click)="multipleOfficers?.multipleCounsilChairman['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToMultipleCouncilChairman(multipleOfficers?.multipleCounsilChairman)">
               <div class="inner-tile ion-padding">
                 <div class="designation  font-weight-bold">{{multipleOfficers?.multipleCounsilChairman.designation}}</div>
                 <div class="tile-content right-align ">{{multipleOfficers?.multipleCounsilChairman.name}} </div>
               </div>
             </div>
-          </ion-col>
+          </ion-col> -->
           <ion-col>
             <div class="tile center ripple-parent district_governer_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.districtGovernor?.tile + '\')' }"
               (click)="multipleOfficers?.districtGovernor['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToDistrictGoverner(multipleOfficers?.districtGovernor)">
@@ -98,9 +98,7 @@
               </div>
             </div>
           </ion-col>
-        </ion-row>
-
-        <ion-row>
+       
           <ion-col>
             <div class="tile center ripple-parent dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.districtPresident?.tile + '\')' }" (click)="multipleOfficers?.districtPresident['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToDistrictPresident(multipleOfficers?.districtPresident)">
               <div class="inner-tile ion-padding">
@@ -109,6 +107,9 @@
               </div>
             </div>
           </ion-col>
+        </ion-row>
+
+        <ion-row>
           <ion-col>
             <div class="tile center ripple-parent mdp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.MultipleDistrictPresident?.tile + '\')' }"
               (click)="multipleOfficers?.MultipleDistrictPresident['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToMultipleDistrictPresident(multipleOfficers?.MultipleDistrictPresident)">
@@ -118,9 +119,7 @@
               </div>
             </div>
           </ion-col>
-        </ion-row>
-
-        <ion-row>
+       
           <ion-col>
             <div class="tile center ripple-parent immediate_past_dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.immediatePastDistrictPresident?.tile + '\')' }" (click)="multipleOfficers?.immediatePastDistrictPresident['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToImmediatePasetDistrictPresident(multipleOfficers?.immediatePastDistrictPresident)">
               <div class="inner-tile ion-padding">
@@ -129,6 +128,9 @@
               </div>
             </div>
           </ion-col>
+        </ion-row>
+
+        <ion-row>
           <ion-col>
             <div class="tile center ripple-parent district_vp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.districtVicePresident?.tile + '\')' }"
               (click)="multipleOfficers?.districtVicePresident['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToDistrictVicePresident(multipleOfficers?.districtVicePresident)">
@@ -138,9 +140,7 @@
               </div>
             </div>
           </ion-col>
-        </ion-row>
-
-        <ion-row>
+        
           <ion-col>
             <div class="tile center ripple-parent district_chairman_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + multipleOfficers?.imgBaseUrl + '/' + multipleOfficers?.districtChairman?.tile + '\')' }" (click)="multipleOfficers?.districtChairman['imgBaseUrl'] = multipleOfficers?.imgBaseUrl;navigateToDistrictChairman(multipleOfficers?.districtChairman)">
               <div class="inner-tile ion-padding">
@@ -149,6 +149,9 @@
               </div>
             </div>
           </ion-col>
+        </ion-row>
+
+        <ion-row>
          
           <ion-col>
             <div class="tile center ripple-parent region_and_zone_tile" (click)="navigateToRegionAndZone(RegionAndZone)">
@@ -157,9 +160,7 @@
               </div>
             </div>
           </ion-col>
-        </ion-row>
-
-        <ion-row>
+       
           <ion-col>
             <div class="tile center ripple-parent district_calendar_tile" (click)="navigateToDistrictCalendar(eventCalendar)">
               <div class="inner-tile ion-padding">
@@ -167,6 +168,9 @@
               </div>
             </div>
           </ion-col>
+        </ion-row>
+
+        <ion-row>
 
           <ion-col>
             <div class="tile center ripple-parent editors_note_tile" (click)="navigateToEditorsNote(editorsNote)">
