@@ -84,7 +84,7 @@
         {
           "designation": "Assistant District Treasurer",
           "visibility_order": 4,
-          "name": "Leo Vihan Rashmika",
+          "name": "Leo Vihan Manage",
           "club": "Leo Club of Godigamuwa",
           "email": "vihan@leodistrict306a2.org",
           "address": "No. 49/5A, Colonel Ave, Nikape, Dehiwala",
@@ -150,11 +150,11 @@
       ]
     },
     {
-      "designationCategory": "Region A - Directors",
+      "designationCategory": "Region A",
       "logo": "default_data/logo.png",
       "officers": [
         {
-          "designation": "Region A - Director",
+          "designation": "Region Director",
           "visibility_order": 1,
           "name": "Leo Ravindu Vishan",
           "club": "Leo Club of Piliyandala",
@@ -164,7 +164,7 @@
           "img": "ravindu_vishan.png"
         },
         {
-          "designation": "Zone A1 - Director",
+          "designation": "Zone Director - Zone A1",
           "visibility_order": 2,
           "name": "Leo Kavishka Herath",
           "club": "Leo Club of Dehiwala East",
@@ -174,7 +174,7 @@
           "img": "kavishka_herath.png"
         },
         {
-          "designation": "Zone A2 - Director",
+          "designation": "Zone Director - Zone A2",
           "visibility_order": 3,
           "name": "Leo Savumi Wadduwage",
           "club": "Leo Club of Kalubowila",
@@ -186,11 +186,11 @@
       ]
     },
     {
-      "designationCategory": "Region B - Directors",
+      "designationCategory": "Region B",
       "logo": "default_data/logo.png",
       "officers": [
         {
-          "designation": "Region B - Director",
+          "designation": "Region Director",
           "visibility_order": 1,
           "name": "Leo Stephan Melder",
           "club": "Leo Club of Kalubowila",
@@ -200,7 +200,7 @@
           "img": "stephan_melder.png"
         },
         {
-          "designation": "Zone B1 - Director",
+          "designation": "Zone Director - Zone B1",
           "visibility_order": 2,
           "name": "Leo Malki Paranavithana",
           "club": "Leo Club of Mattegoda",
@@ -210,7 +210,7 @@
           "img": "malki_paranavithana.png"
         },
         {
-          "designation": "Zone B2 - Director",
+          "designation": "Zone Director - Zone B2",
           "visibility_order": 3,
           "name": "Leo Dilitha Ranjuna",
           "club": "Leo Club of Matara Nilwala",
@@ -222,11 +222,11 @@
       ]
     },
     {
-      "designationCategory": "Region C - Directors",
+      "designationCategory": "Region C",
       "logo": "default_data/logo.png",
       "officers": [
         {
-          "designation": "Region C - Director",
+          "designation": "Region Director",
           "visibility_order": 1,
           "name": "Leo Yasiru Nilan",
           "club": "Leo Club of University of Moratuwa",
@@ -236,7 +236,7 @@
           "img": "yasiru_nilan.png"
         },
         {
-          "designation": "Zone C1 - Director",
+          "designation": "Zone Director - Zone C1",
           "visibility_order": 2,
           "name": "Leo Dithira Wellappuli",
           "club": "Leo Club of Rahula College",
@@ -246,7 +246,7 @@
           "img": "dithira_wellappuli.png"
         },
         {
-          "designation": "Zone C2 - Director",
+          "designation": "Zone Director - Zone C2",
           "visibility_order": 3,
           "name": "Leo Dulan Wickramarathne",
           "club": "Leo Club of Godigamuwa",
