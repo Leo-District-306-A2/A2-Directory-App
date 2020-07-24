@@ -68,7 +68,7 @@
 }
 
 .tile-head{
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: MeriendaOne;
   // color: white;
   // text-shadow: 0 0 5px black;
   display: table-cell;
@@ -76,6 +76,7 @@
 }
 
 .tile-content{
+  font-family: MeriendaOne;
   text-align: left;
   font-size: 0.8em;
   padding-bottom: 10px;
@@ -100,14 +101,17 @@
 }
 
 .designation{
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: MeriendaOne;
   font-size: 1.1em;
   text-align: left !important;
-  top: 5px !important;
+  position: relative;
+  top: 40px !important;
+  left: -5px;
   display: table-cell;
   color: rgb(255, 248, 248) ;
   text-shadow: 2px 2px 4px #000000;
 }
+
 .right-align{
   text-align: right !important;
   padding-bottom: 10px;
