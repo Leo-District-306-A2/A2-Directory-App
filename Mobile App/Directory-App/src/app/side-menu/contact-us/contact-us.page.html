@@ -2,11 +2,11 @@
     <div class="col-md-12 align-items-center pb-2">
         <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
         <div>
-            <h4 class="text-center mb-3">{{ contactData?.title }}</h4>
+            <h4 class="text-center mb-3 meriendaOneFont">{{ contactData?.title }}</h4>
         </div>
         <div class="w-100 mb-4">
 
-            <h6 class="text-center mb-2 title">Email us</h6>
+            <h6 class="text-center mb-2 title kaushanScriptFont">Email us</h6>
             <div class="social-media text-center" *ngFor="let email of contactData?.emails">
                 <a href="{{ 'mailto:'+email }}">
                     <i class="fa fa-envelope mt-2"></i>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="w-100 mb-4">
-            <h6 class="text-center mb-2 title">Reach us on Social Media</h6>
+            <h6 class="text-center mb-2 title kaushanScriptFont">Reach us on Social Media</h6>
             <div class="social-media text-center" *ngFor="let media of contactData?.social_media">
                 <a href="{{ media?.url }}">
                     <i class="{{ media?.icon_class }} mt-2"></i>

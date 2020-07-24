@@ -56,3 +56,43 @@
 //  height: 100%;
 //  overflow-y: auto;
 //}
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('assets/fonts/DancingScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('assets/fonts/KaushanScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MeriendaOne';
+  src: url('assets/fonts/MeriendaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rancho';
+  src: url('assets/fonts/Rancho-Regular.ttf') format('truetype');
+}
+
+.kaushanScriptFont {
+  font-family: KaushanScript!important;
+}
+
+.meriendaOneFont {
+  font-family: MeriendaOne!important;
+}
+
+.dancingScriptFont {
+  font-family: DancingScript!important;
+}
+
+.ranchoFont {
+  font-family: Rancho;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
