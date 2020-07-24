@@ -1,44 +1,35 @@
 <ion-content class="ion-padding-top ion-padding-bottom pb-3">
-    
-        <div class="mt-2 p-4">
-            <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block club-logo mb-1 mt-3">
-            <h5 class="text-center">{{ ourTeam?.title }}</h5>
-            <!-- <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">{{executiveDetails?.designationCategory}}</h3> -->
-    
-    
-        </div>
-
-        <div class="col-md-12" *ngFor="let member of ourTeam?.team">
-            <div class="card profile-card-3 mb-3">
-                <div class="background-block">
-                </div>
-                <div class="profile-thumb-block">
-                    <img [src]="member?.image"
-                    class="profile">
-                </div>
-                <div class="card-content">
-                    <h4 class="text-center badge badge-pill ">
-                        {{ member?.designation }}</h4>
-                    <h6 class="text-center m-0 mt-1">{{ member?.name }}</h6>
-                    <div class="social-media text-center">
-                        <a *ngIf="member?.email" href="{{ 'mailto:'+member?.email }}">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a *ngIf="member?.facebook" href="{{ member?.facebook }}">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-        
-    
-
-    <ion-fab class="nav-buttons" vertical="top" horizontal="start" slot="fixed">
+    <ion-fab class="nav-buttons back-button" vertical="top" horizontal="start" slot="fixed">
         <ion-fab-button color="light" size="small" (click)="goBack()">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </ion-fab-button>
     </ion-fab>
+
+    <div class="mt-2 p-4">
+        <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block club-logo mb-1 mt-3">
+        <h5 class="text-center">{{ ourTeam?.title }}</h5>
+        <!-- <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">{{executiveDetails?.designationCategory}}</h3> -->
+    </div>
+
+    <div class="col-md-12" *ngFor="let member of ourTeam?.team">
+        <div class="card profile-card-3 mb-3">
+            <div class="background-block">
+            </div>
+            <div class="profile-thumb-block">
+                <img [src]="member?.image" class="profile">
+            </div>
+            <div class="card-content">
+                <small class="text-success font-weight-bold text-uppercase">{{ member?.designation }}</small>
+                <h6 class="text-center font-weight-bold mb-0 pb-0">{{ member?.name }}</h6>
+                <div class="social-media text-center">
+                    <a *ngIf="member?.email" href="{{ 'mailto:'+member?.email }}">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a *ngIf="member?.facebook" href="{{ member?.facebook }}">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-content>

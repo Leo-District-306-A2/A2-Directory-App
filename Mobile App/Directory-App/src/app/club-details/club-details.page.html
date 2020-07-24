@@ -17,14 +17,14 @@
                 <div class="card-content">
                     <small class="text-secondary font-weight-bold text-uppercase">{{ officer?.designation }}</small>
                     <h6 class="pb-0 font-weight-bold">{{officer?.name}}</h6>
-                    <small class="d-block text-secondary"><i class="fas fa-phone mr-1"></i>{{officer?.phone}}</small>
-                    <small class="d-block text-secondary"><i class="fas fa-envelope mr-1"></i>{{officer?.email}}</small>
-                    <small class="d-block text-secondary"><i class="fas fa-map-marked-alt mr-1"></i>{{officer?.address}}
+                    <small *ngIf="officer?.phone" class="d-block text-secondary"><i class="fas fa-phone mr-1"></i>{{officer?.phone}}</small>
+                    <small *ngIf="officer?.email" class="d-block text-secondary"><i class="fas fa-envelope mr-1"></i>{{officer?.email}}</small>
+                    <small *ngIf="officer?.address" class="d-block text-secondary"><i class="fas fa-map-marked-alt mr-1"></i>{{officer?.address}}
                     </small>
                     <div class="icon-block">
-                        <a (click)="dial(officer?.phone)"><i class="fas fa-phone"></i></a>
-                        <a *ngIf="isEmailComposable" (click)="openEmail(officer?.email)"><i class="far fa-envelope"></i></a>
-                        <a (click)="openLocation(officer.address)"><i class="fas fa-directions"></i></a>
+                        <a *ngIf="officer?.phone" (click)="dial(officer?.phone)"><i class="fas fa-phone"></i></a>
+                        <a *ngIf="isEmailComposable && officer?.email" (click)="openEmail(officer?.email)"><i class="far fa-envelope"></i></a>
+                        <a *ngIf="officer?.address" (click)="openLocation(officer.address)"><i class="fas fa-directions"></i></a>
                     </div>
                 </div>
             </div>
