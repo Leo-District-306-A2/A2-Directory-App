@@ -6,43 +6,53 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "District President",
+          "designation": "Multiple District President",
           "visibility_order": 1,
-          "name": "Leo Praminda Vindika",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "praminda.vindika@leodistrict306a2.org",
-          "address": "Ananda, Ampegama",
-          "phone": "0716485935",
+          "name": "Leo Champaka Dammage",
+          "club": "Leo District 306 C2",
+          "email": "champaka@leomd306.org",
+          "address": "80/3, Linton House, Wasantharama Road, Wadduwa",
+          "phone": "0778057243",
           "img": "praminda_vindika.png"
         },
         {
-          "designation": "Immediate Past District President",
+          "designation": "Imm. Past Multiple District President",
           "visibility_order": 2,
-          "name": "Leo Mudith Jayasekara",
-          "club": "Leo Club of Polgasowita",
-          "email": "mudith@leodistrict306a2.org",
-          "address": "No. 291/42, Mandawila Road, Kesbewa, Piliyandala",
-          "phone": "0777336911",
+          "name": "Leo Dilruk Tissera",
+          "club": "Leo District 306 C1",
+          "email": "dilruk@leomd306.org",
+          "address": "Thisaragiri, Sudaviala Road, Ranala",
+          "phone": "0716363959",
           "img": "mudith_jayasekara.png"
         },
         {
-          "designation": "District Vice President",
+          "designation": "Multiple District Vice President",
           "visibility_order": 3,
-          "name": "Leo Navod Kiriwaththuduwa",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "navodk@leodistrict306a2.org",
-          "address": "No. 34/A, Winston Wickramasinghe Road, Kegalle",
-          "phone": "0771723911",
+          "name": "Leo Mudith Bimsara Jayasekara",
+          "club": "Lions District 306 A2",
+          "email": "mudith@leomd306.org",
+          "address": "291/42, Mandawila Road, Kesbewa, Piliyandala",
+          "phone": "0777336911",
           "img": "navod_kiriwaththuduwa.png"
         },
         {
-          "designation": "District Chairman for Leos",
+          "designation": "Multiple District Treasurer",
           "visibility_order": 4,
-          "name": "Lion Anura Goonatilleke",
-          "club": "Lions Club of Dampe",
-          "email": "lionanura@gmail.com",
-          "address": "No. 58/43 B, 3rd Lane, Soma Thalagala Mawatha, Gangodawila, Nugegoda",
-          "phone": "0773847574",
+          "name": "Leo Lasitha Viraj Walisingha",
+          "club": "Leo District 306 C2",
+          "email": "lasitha@leomd306.org",
+          "address": "10/14, 1st Lane, Wanatha Rd, Gangodawila, Nugegoda",
+          "phone": "0777255669",
+          "img": "dcl_lion anura goonetilleke_photo.png"
+        },
+        {
+          "designation": "Multiple District Chairman for Leos",
+          "visibility_order": 5,
+          "name": "Lion Widyakeerthi Dissanayake MJF",
+          "club": "Lions District 306 A2",
+          "email": "keerthid.it@gmail.com",
+          "address": "394, Kottawa Road, Beruketiya, Kiriwaththuduwa",
+          "phone": "0773659150",
           "img": "dcl_lion anura goonetilleke_photo.png"
         }
       ]
@@ -52,43 +62,63 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "District Secretary",
+          "designation": "District President",
           "visibility_order": 1,
-          "name": "Leo Raseema Sugandi",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "raseema@leodistrict306a2.org",
-          "address": "No. 126/4, Mahagangoda, Uduwila, Batapola",
-          "phone": "0711122014",
+          "name": "Leo Malinda Ganewatte",
+          "club": "Leo Club of Colombo Millennium",
+          "email": "president@a1.leos.lk",
+          "address": "No 315, Uswella, Maggona",
+          "phone": "0772133525",
           "img": "raseema_sugandi.png"
         },
         {
-          "designation": "District Treasurer",
+          "designation": "Imm. Past District President",
           "visibility_order": 2,
-          "name": "Leo Kasun Ramanayaka",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "kasun.ramanayaka@leodistrict306a2.org",
-          "address": "No. 3, Abagahawatta, Imaduwa",
-          "phone": "0716486071",
+          "name": "Leo Ochintha Nadeeshan",
+          "club": "Leo Club of Mount Lavinia Orient Centennial",
+          "email": "ochinthanadeeshan@gmail.com",
+          "address": "No.531/7 De soysa Road,Molpe,Moratuwa",
+          "phone": "0767966367",
           "img": "kasun_ramanayaka.png"
         },
         {
-          "designation": "Assistant District Secretary",
+          "designation": "District Vice President",
           "visibility_order": 3,
-          "name": "Leo Dinendri Wilegoda Arachchige",
-          "club": "Leo Club of Polgasowita",
-          "email": "dinendri@leodistrict306a2.org",
-          "address": "No. 2463/3, Natures Breeze, Weliwita Rd, Malabe",
-          "phone": "0763259599",
+          "name": "Leo R.P. Gayanga Uththaravi Dias",
+          "club": "Leo Club of Unawatuna Diamond Stars",
+          "email": "Uththaravi95@gmail.com",
+          "address": "Siridevi,Unawatuna,Galle",
+          "phone": "0778430291",
           "img": "dinendri_wilegoda_arachchige.png"
         },
         {
-          "designation": "Assistant District Treasurer",
+          "designation": "District Secretary",
           "visibility_order": 4,
-          "name": "Leo Vihan Rashmika",
-          "club": "Leo Club of Godigamuwa",
-          "email": "vihan@leodistrict306a2.org",
-          "address": "No. 49/5A, Colonel Ave, Nikape, Dehiwala",
-          "phone": "0779715355",
+          "name": "Leo Sachinie Imalka Rajapaksha",
+          "club": "Leo Club of UOC Alumni",
+          "email": "Sachiniimalkarajapaksha@gmail.com",
+          "address": "60,Rajapaksha Rubber Stores,Seeladola,Morapitiya",
+          "phone": "0771041793",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Randeer Samarasinghe",
+          "club": "Leo Club of Colombo Millennium",
+          "email": "randhirsamarasinghr@gmail.com",
+          "address": "102/4A, 1st Lane Laxapathiya Moratuwa",
+          "phone": "0771975806 ",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Chairman for Leos",
+          "visibility_order": 6,
+          "name": "Lion Fauzul Nilaufer",
+          "club": "Leo Club of Galle",
+          "email": "nilaufer@ruhunuhospital.lk",
+          "address": "",
+          "phone": "0772370324",
           "img": "vihan_manage.png"
         }
       ]
@@ -98,54 +128,64 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "Chief Coordinator - Council",
+          "designation": "District President",
           "visibility_order": 1,
-          "name": "Leo Santhrushika De Silva",
-          "club": "Leo Club of Panadura Alubomulla",
-          "email": "santhrushika@leodistrict306a2.org",
-          "address": "No. 7, Nimalka Gardens, Panadura",
-          "phone": "0713544281",
-          "img": "santhrushika_de_silva.png"
-        },
-        {
-          "designation": "Chief Coordinator - Administration",
-          "visibility_order": 2,
-          "name": "Leo Tikuli Pitigala",
-          "club": "Leo Club of Katuwawala",
-          "email": "tikuli@leodistrict306a2.org",
-          "address": "No. 102/7, Kanatta Road, Mavittara, Piliyandala",
-          "phone": "0771138768",
-          "img": "tikuli_pitigala.png"
-        },
-        {
-          "designation": "Chief Coordinator - DP Program",
-          "visibility_order": 3,
-          "name": "Leo Chathuranga Alvis",
-          "club": "Leo Club of Horana Mid City",
-          "email": "chathuranga.alvis@leodistrict306a2.org",
-          "address": "No. 113/B, Market Lane, Bandaragama",
-          "phone": "0716627823",
-          "img": "chathuranga_alvis.png"
-        },
-        {
-          "designation": "Chief Coordinator - Line Officers",
-          "visibility_order": 4,
-          "name": "Leo Shehan Akmeemana",
+          "name": "Leo Praminda Vindika",
           "club": "Leo Club of University of Moratuwa",
-          "email": "shehanakmeemana@leodistrict306a2.org",
-          "address": "\"Saman\", Navinna Road, Uluvitike, Galle",
-          "phone": "0712373186",
-          "img": "shehan_akmeemana.png"
+          "email": "praminda.vindika@leodistrict306a2.org",
+          "address": "Ananda, Ampegama",
+          "phone": "0716485935",
+          "img": "raseema_sugandi.png"
         },
         {
-          "designation": "Chief Coordinator - Retention and Growth",
-          "visibility_order": 5,
-          "name": "Leo Isuri Udithamala",
+          "designation": "Imm. Past District President",
+          "visibility_order": 2,
+          "name": "Leo Mudith Jayasekara",
+          "club": "Leo Club of Polgasowita",
+          "email": "mudith@leodistrict306a2.org",
+          "address": "291/42, Mandawila Road, Kesbewa, Piliyandala",
+          "phone": "0777336911",
+          "img": "kasun_ramanayaka.png"
+        },
+        {
+          "designation": "District Vice President",
+          "visibility_order": 3,
+          "name": "Leo Navod Kiriwaththuduwa",
           "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "isuri.udithamala@leodistrict306a2.org",
-          "address": "No. 69, Gajabapura, Kolonnawa",
-          "phone": "0766291981",
-          "img": "isuri_udithamala.png"
+          "email": "navodk@leodistrict306a2.org",
+          "address": "34/A, Winston Wickramasinghe Road, Kegalle",
+          "phone": "0771723911",
+          "img": "dinendri_wilegoda_arachchige.png"
+        },
+        {
+          "designation": "District Secretary",
+          "visibility_order": 4,
+          "name": "Leo Raseema Sugandi",
+          "club": "Leo Club of Sri Lanka Technological Campus",
+          "email": "raseema@leodistrict306a2.org",
+          "address": "126/4, Mahagangoda, Uduwila, Batapola",
+          "phone": "0711122014",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Kasun Ramanayaka",
+          "club": "Leo Club of University of Moratuwa",
+          "email": "kasun.ramanayaka@leodistrict306a2.org",
+          "address": "03, Abagahawatta, Imaduwa",
+          "phone": "0716486071",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Chairman for Leos",
+          "visibility_order": 6,
+          "name": "Lion Anura Goonetilleke",
+          "club": "Lions Club of Dampe",
+          "email": "lionanura@gmail.com",
+          "address": "58/43 B, 3rd Lane, Soma Thalagala Mawatha, Gangodawila, Nugegoda",
+          "phone": "0773847574",
+          "img": "vihan_manage.png"
         }
       ]
     },
@@ -154,34 +194,54 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "Region A - Director",
+          "designation": "District President",
           "visibility_order": 1,
-          "name": "Leo Ravindu Vishan",
-          "club": "Leo Club of Piliyandala",
-          "email": "ravindu@leodistrict306a2.org",
-          "address": "No. 22/1, Sri Shobitha Road, Mampe, Piliyandala",
-          "phone": "0715873857",
-          "img": "ravindu_vishan.png"
+          "name": "Leo Kunathman Muralitharan",
+          "club": "Kotahena Centennial Genesis",
+          "email": "kuna761@gmail.com",
+          "address": "5/5/1 Rudra mawatha, Colombo 06",
+          "phone": "0773931114",
+          "img": "raseema_sugandi.png"
         },
         {
-          "designation": "Zone A1 - Director",
+          "designation": "Imm. Past District President",
           "visibility_order": 2,
-          "name": "Leo Kavishka Herath",
-          "club": "Leo Club of Dehiwala East",
-          "email": "kavishka.herath@leodistrict306a2.org",
-          "address": "No. 45/13, Mayura Mawatha, Bellanvila, Boralasgamuwa",
-          "phone": "0779720724",
-          "img": "kavishka_herath.png"
+          "name": "Leo Inthiran Sinthujan",
+          "club": "Manipay Memorial English School",
+          "email": "sjsinthu0@gmail.com",
+          "address": "Rajakariyar Lane Manipay, Jaffna",
+          "phone": "0779655924",
+          "img": "kasun_ramanayaka.png"
         },
         {
-          "designation": "Zone A2 - Director",
+          "designation": "District Vice President",
           "visibility_order": 3,
-          "name": "Leo Savumi Wadduwage",
-          "club": "Leo Club of Kalubowila",
-          "email": "savumi@leodistrict306a2.org",
-          "address": "No. 60/8 C, Walapola Pokuna Road, Kuruppumulla, Panadura",
-          "phone": "0769849118",
-          "img": "savumi_wadduwage.png"
+          "name": "Leo Minolee Perera",
+          "club": "Pamunugama Ja Ela",
+          "email": "mizeel.perera9@gmail.com",
+          "address": "244, Lakecity, Ja Ela",
+          "phone": "0769141869",
+          "img": "dinendri_wilegoda_arachchige.png"
+        },
+        {
+          "designation": "District Secretary",
+          "visibility_order": 4,
+          "name": "Leo Rachika Sovis",
+          "club": "Negombo Orient",
+          "email": "rachikasovis@gmail.com",
+          "address": "58 Muruthana, Kochchikade",
+          "phone": "0773066378",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Dushyanthi Pakeerathan",
+          "club": "Kotahena Centennial Genesis",
+          "email": "dushipakir30@gmail.com",
+          "address": "12/3 Athula Mawatha, Templers Road, Mountlavinia",
+          "phone": "0774264259",
+          "img": "vihan_manage.png"
         }
       ]
     },
@@ -190,34 +250,64 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "Region B - Director",
+          "designation": "District President",
           "visibility_order": 1,
-          "name": "Leo Stephan Melder",
-          "club": "Leo Club of Kalubowila",
-          "email": "stephan.melder@leodistrict306a2.org",
-          "address": "No. 12/1/A/1, Seewali Mawatha, Hunupitiya, Wattala",
-          "phone": "0773135625",
-          "img": "stephan_melder.png"
+          "name": "Leo Ruchini Jayasundara",
+          "club": "Leo Club of Biyagama North",
+          "email": "ruchinijayasundara98@gmail.com",
+          "address": "382/1/E, Maharanugegoda, Kadawata 11850",
+          "phone": "0773564416",
+          "img": "raseema_sugandi.png"
         },
         {
-          "designation": "Zone B1 - Director",
+          "designation": "Imm. Past District President",
           "visibility_order": 2,
-          "name": "Leo Malki Paranavithana",
-          "club": "Leo Club of Mattegoda",
-          "email": "malki@leodistrict306a2.org",
-          "address": "No. 17/A, Regal Homes, Mattegoda",
-          "phone": "0713292816",
-          "img": "malki_paranavithana.png"
+          "name": "Leo Lahiru Priyadarshana",
+          "club": "Leo Club of University of Kelaniya",
+          "email": "lahirupriyadarshanauok@gmail.com",
+          "address": "No: 138, Gallewa Road, Ihalagama, Maho",
+          "phone": "0716447756",
+          "img": "kasun_ramanayaka.png"
         },
         {
-          "designation": "Zone B2 - Director",
+          "designation": "District Vice President",
           "visibility_order": 3,
-          "name": "Leo Dilitha Ranjuna",
-          "club": "Leo Club of Matara Nilwala",
-          "email": "dilitha@leodistrict306a2.org",
-          "address": "No. 52/3, Vijaya Place, Rathanapala Mw, Matara",
-          "phone": "0714032531",
-          "img": "dilitha_ranjuna.png"
+          "name": "Leo Balraja Sadurshan",
+          "club": "Leo club of Colombo capital city",
+          "email": "balrajasadursan01@gmail.com",
+          "address": "6/11 umbichi place woulfendhal street Colombo 13",
+          "phone": "0778902677",
+          "img": "dinendri_wilegoda_arachchige.png"
+        },
+        {
+          "designation": "District Secretary",
+          "visibility_order": 4,
+          "name": "Leo Saveen Perera",
+          "club": "Leo Club of Colombo New Century",
+          "email": "saveen.udhashan@gmail.com",
+          "address": "No: 327/1D, Dewala Road, Katuwana, Homagama",
+          "phone": "0779947988",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Chathuri Wickramaaratchi",
+          "club": "Leo Club of Gampaha Metro",
+          "email": "chathuriw16@gmail.com",
+          "address": "10/5, 10th Mile post, Kurunegala road, Galagedara",
+          "phone": "0703783171",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Chairman for Leos",
+          "visibility_order": 6,
+          "name": "Leo Lion Rajitha Abeygunasekara",
+          "club": "Leo Club of Gampaha Metro",
+          "email": "rajitha.dhanushka@gmail.com",
+          "address": "37/2 Pattigoda ,Weyangoda",
+          "phone": "0777462354",
+          "img": "vihan_manage.png"
         }
       ]
     },
@@ -226,34 +316,64 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "Region C - Director",
+          "designation": "District President",
           "visibility_order": 1,
-          "name": "Leo Yasiru Nilan",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "yasirun@leodistrict306a2.org",
-          "address": "Wimalasewana, Hingurupanagala, Kotapola",
-          "phone": "0702132850",
-          "img": "yasiru_nilan.png"
+          "name": "Leo Samitha Perera",
+          "club": "LC Wickramasinghepura",
+          "email": "samithmadusanka109@gmail.com",
+          "address": "22/8, Amaratunga Mawatha, Udahamulla, Nugegoda",
+          "phone": "0777562926",
+          "img": "raseema_sugandi.png"
         },
         {
-          "designation": "Zone C1 - Director",
+          "designation": "Imm. Past District President",
           "visibility_order": 2,
-          "name": "Leo Dithira Wellappuli",
-          "club": "Leo Club of Rahula College",
-          "email": "dithira@leodistrict306a2.org",
-          "address": "Suhada, Kotawila, Kamburugamuwa",
-          "phone": "0711482191",
-          "img": "dithira_wellappuli.png"
+          "name": "Leo Lion Shathika Karunaratne",
+          "club": "LC Battaramulla Synergy",
+          "email": "shathikakarunaratne@yahoo.com",
+          "address": "157/31, Sausiri Uyana, Pittugala, Malabe",
+          "phone": "0779434313",
+          "img": "kasun_ramanayaka.png"
         },
         {
-          "designation": "Zone C2 - Director",
+          "designation": "District Vice President",
           "visibility_order": 3,
-          "name": "Leo Dulan Wickramarathne",
-          "club": "Leo Club of Godigamuwa",
-          "email": "dulan@leodistrict306a2.org",
-          "address": "No. 417/5/1, Alapahala Road, Palanwaththa, Pannipitiya",
-          "phone": "0714299514",
-          "img": "dulan_wickramarathne.png"
+          "name": "Leo Tharindu Jayasinghe",
+          "club": "LC University of Colombo",
+          "email": "tharindusj94@gmail.com",
+          "address": "84/2/C, Naranwala, Gampaha",
+          "phone": "0711659291",
+          "img": "dinendri_wilegoda_arachchige.png"
+        },
+        {
+          "designation": "District Secretary",
+          "visibility_order": 4,
+          "name": "Leo Thanusha Munasinghe",
+          "club": "LC University of Colombo",
+          "email": "thanusham94@gmail.com",
+          "address": "469/26/3, mahaiyawaththa, Aggona, Angoda",
+          "phone": "0713689288",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Thimira Uyanhewage",
+          "club": "LC Thalangama Malabe",
+          "email": "kthimira95@gmail.com",
+          "address": "No 4 zone 4 milleniumcity athurugiriya",
+          "phone": "0770225255",
+          "img": "vihan_manage.png"
+        },
+        {
+          "designation": "District Chairman for Leos",
+          "visibility_order": 6,
+          "name": "Lion Barana Ransen Kithsiri",
+          "club": "Lions Club of Diyawanna Oya horizon",
+          "email": "barana@candyfactorylk.com",
+          "address": "73,Udumulla,Mulleriyawa",
+          "phone": "0712639801",
+          "img": "vihan_manage.png"
         }
       ]
     },
@@ -262,106 +382,66 @@
       "logo" : "default_data/logo.png",
       "officers": [
         {
-          "designation": "Director - District Contest",
+          "designation": "District President",
           "visibility_order": 1,
-          "name": "Leo Tharini Subasinghe",
-          "club": "Leo Club of Baddegama",
-          "email": "tharini@leodistrict306a2.org",
-          "address": "“Bridge View”, Kiribathawila, Baddegama",
-          "phone": "0771269943",
-          "img": "tharini_subhasingha.png"
+          "name": "Leo Rahul Attanayake",
+          "club": "Kottawa Central Golden City",
+          "email": "rahul@leos306c2.org",
+          "address": "24/1, Station Road, Padukka",
+          "phone": "0779118772",
+          "img": "raseema_sugandi.png"
         },
         {
-          "designation": "Director - Membership Growth & Retention",
+          "designation": "Imm. Past District President",
           "visibility_order": 2,
-          "name": "Leo Yuran Deshaka",
-          "club": "Leo Club of Piliyandala",
-          "email": "yuran@leodistrict306a2.org",
-          "address": "No. 36/13 A, Gagabada Road, Wewala, Piliyandala",
-          "phone": "0715714356",
-          "img": "yuran_deshaka.png"
+          "name": "Leo Lasitha Walisingha",
+          "club": "Nawala Metro",
+          "email": "lasitha@leos306c2.org",
+          "address": "10/14, 1st Lane, Wanatha Road, Gangodawila, Nugegoda",
+          "phone": "0777255669",
+          "img": "kasun_ramanayaka.png"
         },
         {
-          "designation": "Director - IT and PR",
+          "designation": "District Vice President",
           "visibility_order": 3,
-          "name": "Leo Thilina Prasad",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "thilina.prasad@leodistrict306a2.org",
-          "address": "No. 17B, Kadewaththa, Imbulgoda, Rathgama",
-          "phone": "0716485403",
-          "img": "thilina_prasad.png"
+          "name": "Leo Hasindu Maharage",
+          "club": "Nawala Metro",
+          "email": "hasindu@leos306c2.org",
+          "address": "49/6, Alhena Road, Maharagama",
+          "phone": "0713881243",
+          "img": "dinendri_wilegoda_arachchige.png"
         },
         {
-          "designation": "Director - Fundraising",
+          "designation": "District Secretary",
           "visibility_order": 4,
-          "name": "Leo Pavan Perera",
-          "club": "Leo Club of Pepiliyana Woodlands",
-          "email": "pavan.perera@leodistrict306a2.org",
-          "address": "No. 45/9, 3rd Lane, Woodland Avenue, Kohuwala",
-          "phone": "0768205590",
-          "img": "pavan_perera.png"
+          "name": "Leo Lakisha Perera",
+          "club": "Pannipitiya Metro Titans",
+          "email": "lakisha@leos306c2.org",
+          "address": "188/2C, Suhada Mawatha, Rathmaldeniya Road, Pannipitiya",
+          "phone": "0718983017",
+          "img": "vihan_manage.png"
         },
         {
-          "designation": "Director - Sports & Fellowship",
+          "designation": "District Treasurer",
           "visibility_order": 5,
-          "name": "Leo Athila Senal",
-          "club": "Leo Club of Kesbewa",
-          "email": "athila.senal@leodistrict306a2.org",
-          "address": "No. 222/C1, Bokundara, Piliyandala",
-          "phone": "0775828727",
-          "img": "athila_senal.png"
+          "name": "Leo Sandaruwan Sooriyabandara",
+          "club": "Homagama Central",
+          "email": "sandaruwan@leos306c2.org",
+          "address": "127,Janatha Mawatha, Maharagama",
+          "phone": "0716285253",
+          "img": "vihan_manage.png"
         },
         {
-          "designation": "Director - Leo Lion Relationship",
+          "designation": "District Chairman for Leos",
           "visibility_order": 6,
-          "name": "Leo Osura Perera",
-          "club": "Leo Club of Godigamuwa",
-          "email": "osuras@leodistrict306a2.org",
-          "address": "Muttettuwa Walawwa, Pepiliyawala",
-          "phone": "0766802595",
-          "img": "osura_perera.png"
-        },
-        {
-          "designation": "Director - Service",
-          "visibility_order": 7,
-          "name": "Leo Navodya Weerapura",
-          "club": "Leo Club of Werahera",
-          "email": "navodyaw@leodistrict306a2.org",
-          "address": "No. 349/4/1, Nirmala Mawatha, Lake Road, Boralasgamuwa",
-          "phone": "0771618914",
-          "img": "navodya_weerapura.png"
-        },
-        {
-          "designation": "Director - Editorial Panel",
-          "visibility_order": 8,
-          "name": "Leo Danushi Wijewardana",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "danushi@leodistrict306a2.org",
-          "address": "No. E/55, Hemmathagama Rd, Maliyaddha, Mawanella",
-          "phone": "0772823550",
-          "img": "danushi_wijewardana.png"
-        },
-        {
-          "designation": "Director - International Relations",
-          "visibility_order": 9,
-          "name": "Leo Kaveen Rathnayake",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "kaveen@leodistrict306a2.org",
-          "address": "No. 68, First Lane, Warakapola",
-          "phone": "0717909332",
-          "img": "kaveen_rathnayake.png"
-        },
-        {
-          "designation": "Director - Quality Education & Literacy",
-          "visibility_order": 10,
-          "name": "Leo Crystal Vanburen",
-          "club": "Leo Club of University of Sri Jayewardenepura",
-          "email": "crystal@leodistrict306a2.org",
-          "address": "No. 57/155, Gamunu Mawatha, Peellawatta, Andiambalama",
-          "phone": "0767255740",
-          "img": "crystal_vanburen.png"
-        }
-      ]
+          "name": "PDG Dr.Lion Lasantha Goonawardene",
+          "club": "Lions Club of Colombo Mid City",
+          "email": "lasa_ray@yahoo.com",
+          "address": "No.330/08, Saman Mawatha, Lake Road, Boralesgamuwa",
+          "phone": "0777727527",
+          "img": "vihan_manage.png"
+        }     
+       ]
     }
   ]
 }
