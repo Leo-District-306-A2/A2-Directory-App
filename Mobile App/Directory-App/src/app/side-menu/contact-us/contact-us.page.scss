@@ -15,12 +15,12 @@
     vertical-align: middle;
     text-decoration: none;
     color: rgba(0,0,0, 0.5);
-    margin-left: 15vw;
+    margin-left: 0;
     i {
       margin-right: 8px;
       font-size: 25px;
       position: relative;
-      bottom: -5px;
+      bottom: 0px;
     }
   }
 }
@@ -38,6 +38,11 @@
   background-color: rgba(169,169,169,0.1);
   color:rgba(105,105,105,1);
 }
+.icon{
+  padding-top: 0px;
+}
+
 .back-button {
   z-index: 9999;
 }
+

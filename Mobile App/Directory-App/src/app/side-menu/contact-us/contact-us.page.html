@@ -5,30 +5,25 @@
             <h4 class="text-center mb-3">{{ contactData?.title }}</h4>
         </div>
         <div class="w-100 mb-4">
-            
-            <h5 class="text-center mb-0 title">Email us</h5>
+
+            <h6 class="text-center mb-1 title">Email us</h6>
             <div class="social-media text-center" *ngFor="let email of contactData?.emails">
                 <a href="{{ 'mailto:'+email }}">
+                    <i class="fa fa-envelope mt-1"></i>
                     <div>
-                        <div class="mb-2">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div>
-                            {{ email }}
-                        </div>
+                        {{ email }}
                     </div>
-                    
                 </a>
             </div>
         </div>
         <div class="w-100 mb-4">
-            <h5 class="text-center title">Reach us on Social Media</h5>
+            <h6 class="text-center mb-1 title">Reach us on Social Media</h6>
             <div class="social-media text-center" *ngFor="let media of contactData?.social_media">
                 <a href="{{ media?.url }}">
+                    <i class="{{ media?.icon_class }} mt-2"></i>
                     <div>
-                    <div><i class="{{ media?.icon_class }} mb-2"></i></div>
-                    <div>{{ media?.url }}</div>
-                </div>
+                        {{ media?.url }}
+                    </div>
                 </a>
             </div>
         </div>
