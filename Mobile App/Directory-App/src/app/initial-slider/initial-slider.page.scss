@@ -32,22 +32,23 @@ p b {
   color: var(--ion-text-color, #000000);
 }
 
-.slider-3 {
-  background: url("../../assets/initial_slider/3/background/slider_3_top.png") left top no-repeat ,url("../../assets/initial_slider/3/background/slider_3_bottom.png") left bottom no-repeat;
-  background-size: contain;
-}
+//.slider {
+//  background: url("../../assets/local_db/initial_slider/3/background/top.png") left top no-repeat ,url("../../assets/local_db/initial_slider/3/background/bottom.png") left bottom no-repeat;
+//  background-size: contain;
+//}
 
-.slider-3-logo {
-  margin-top: 13vh!important;
-}
-
-.slider-4-logo {
-  margin-top: 13vh!important;
+.slider-logo {
   position: relative;
-  top: 5vh;
 }
 
-.slider-4 {
-  background: url("../../assets/initial_slider/4/background/slider_4_top.png") left top no-repeat ,url("../../assets/initial_slider/4/background/slider_4_bottom.png") left bottom no-repeat;
-  background-size: contain;
+@media only screen and (max-width: 600px) {
+  .slider-logo {
+    top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .slider-logo {
+    margin-top: 15vh!important;
+  }
 }

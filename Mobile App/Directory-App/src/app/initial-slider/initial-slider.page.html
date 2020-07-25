@@ -1,34 +1,12 @@
 <ion-content [fullscreen]="true" [scrollY]="false">
-  <ion-slides [pager]="true">
-
-    <ion-slide>
-      <div class="slide">
-        <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/slides/slide-1.png"/>
-        <h2 class="dancingScriptFont">Welcome!</h2>
-        <p class="meriendaOneFont">to the <b>A2 Directory</b> 2020/21.<br>A single place to find all the details of  Leo District 306 A2.</p>
-      </div>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/slides/slide-2.png"/>
-      <h3 class="dancingScriptFont">Why directory as an app?</h3>
-      <p class="meriendaOneFont"><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
-    </ion-slide>
-
-    <ion-slide class="slider-3">
-      <img class="slider-3-logo" src="../../assets/initial_slider/3/think-before-you-print-logo.png"/>
-      <h3 class="dancingScriptFont">Think Before You Print</h3>
-      <p class="meriendaOneFont">1 ream of paper already uses up <b>60%</b> of a tree.
-      </p>
-      <h6 class="text-uppercase text-success"><strong>Save Paper, save trees</strong></h6>
-    </ion-slide>
-
-    <ion-slide class="slider-4">
-      <img class="slider-4-logo" src="../../assets/initial_slider/4/privacy.png"/>
-      <h5 class="text-danger"><strong>Internal Use Only</strong></h5>
-      <p class="mb-1 text-secondary">We respect Leo Officers’ privacy. Please do not share the contact details in this directory with third parties without prior permission from the Leo District Council 306 A2. Also, you have to agree to all the terms and conditions of Leo District Council 306 A2.</p>
-      <button class="btn btn-danger meriendaOneFont agree-btn" (click)="continue()">I Agree&nbsp;&nbsp;<i class="far fa-thumbs-up"></i></button>
-    </ion-slide>
-
-  </ion-slides>
+    <ion-slides [pager]="true">
+        <ion-slide *ngFor="let slider of viewData?.sliders" class="slider"
+                   [ngStyle]="{ 'background' : generateSliderBackgroundStyle(slider?.backgroundImgs) , 'background-size' : '100%' }">
+                <img class="slider-logo" src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + slider?.icon }}"/>
+                <h3 class="dancingScriptFont">{{ slider?.title }}</h3>
+                <p class="meriendaOneFont mb-2" [innerHTML]="slider?.content"></p>
+                <button *ngIf="slider?.agreementButton" class="btn btn-danger meriendaOneFont agree-btn" (click)="continue()">{{ slider?.agreementButton?.text }}&nbsp;&nbsp;<i
+                        class="{{ slider?.agreementButton?.icon }}"></i></button>
+        </ion-slide>
+    </ion-slides>
 </ion-content>

@@ -19,6 +19,7 @@ import {AudioService} from './services/audio.service';
 import {ExpandableComponent} from './common/expandable/expandable.component';
 import {Env} from './services/env';
 import {HttpClientModule} from '@angular/common/http';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import {HttpClientModule} from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
+      ScreenOrientation,
     {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
     CallNumber,
     EmailComposer,

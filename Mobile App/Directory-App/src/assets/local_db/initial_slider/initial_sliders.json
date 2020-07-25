@@ -1,0 +1,69 @@
+{
+    "imgBaseUrl" : "initial_slider",
+    "sliders": [
+        {
+            "title" : "Welcome!",
+            "content": "to the <b>A2 Directory</b> 2020/21.<br>A single place to find all the details of  Leo District 306 A2.",
+            "icon" : "agreement/privacy.png",
+            "backgroundImgs": [
+                {
+                    "position": "top left",
+                    "img" : "3/background/top.png"
+                },
+                {
+                    "position": "bottom left",
+                    "img" : "3/background/bottom.png"
+                }
+            ]
+        },
+        {
+            "title" : "Why directory as an app?",
+            "content": "Faster and easier to use.<br>All details now available on your fingertips.<br>Connect instantly with Leos and Lions.<br>Most importantly, <br><strong class=\"\">It's environmentally friendly!</strong>",
+            "icon" : "2/why_a2_directory.png",
+            "backgroundImgs": [
+                {
+                    "position": "top left",
+                    "img" : "2/background/top.png"
+                },
+                {
+                    "position": "bottom left",
+                    "img" : "2/background/bottom.png"
+                }
+            ]
+        },
+        {
+            "title" : "Think Before You Print",
+            "content": "1 ream of paper already uses up <br><b>60%</b> of a tree.<br><h6 class=\"text-uppercase text-success mt-2\"><strong>Save Paper, save trees</strong></h6>\n",
+            "icon" : "3/think-before-you-print-logo.png",
+            "backgroundImgs": [
+                {
+                    "position": "top left",
+                    "img" : "3/background/top.png"
+                },
+                {
+                    "position": "bottom left",
+                    "img" : "3/background/bottom.png"
+                }
+            ]
+        },
+        {
+            "title" : "Internal Use Only",
+            "content": "We respect Leo Officers’ privacy. Please do not share the contact details in this directory with third parties without prior permission from the Leo District Council 306 A2. Also, you have to agree to all the terms and conditions of Leo District Council 306 A2.",
+            "icon" : "agreement/privacy.png",
+            "agreementButton" : {
+                "text" : "I agree",
+                "icon" : "far fa-thumbs-up"
+            },
+            "backgroundImgs": [
+                {
+                    "position": "top left",
+                    "img" : "agreement/background/top.png"
+                },
+                {
+                    "position": "bottom left",
+                    "img" : "agreement/background/bottom.png"
+                }
+            ]
+        }
+    ]
+}
