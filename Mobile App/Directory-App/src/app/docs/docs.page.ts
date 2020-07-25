@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {HomeService} from '../services/home.service';
 import {Router} from '@angular/router';
 import {Env} from '../services/env';
+import {Platform} from '@ionic/angular';
+import {AlertService} from '../services/alert.service';
 
 @Component({
   selector: 'app-docs',
@@ -16,8 +18,12 @@ export class DocsPage implements OnInit {
   leoClubProtocol: any;
   generalMeetingAgenda: any;
   boardMeatingAgenda: any;
-
-  constructor(private homeService: HomeService, private router: Router, public env: Env) { }
+  backSubscription;
+  constructor(private homeService: HomeService,
+              private router: Router,
+              public env: Env,
+              private platform: Platform,
+              private alertService: AlertService) { }
 
   ngOnInit() {
     this.homeService.loadStaticData('StandardLeoClubConstitution').then((result) => this.standardLeoClubConstitution = result);
@@ -28,23 +34,33 @@ export class DocsPage implements OnInit {
     this.homeService.loadStaticData('BoardMeetingAgenda').then((result) => this.boardMeatingAgenda = result);
   }
 
+  ionViewDidEnter() {
+    this.backSubscription = this.platform.backButton.subscribe(() => {
+      this.alertService.exitAlert();
+    });
+  }
+
+  ionViewWillLeave() {
+    this.backSubscription.unsubscribe();
+  }
+
   navigateToLeoClubConstitution(data) {
-    this.router.navigate(['tabs/home/standerd-leo-club-constitution', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/standerd-leo-club-constitution', {data: JSON.stringify(data)}]);
   }
   navigateToInstalationOfClubOfficers(data) {
-    this.router.navigate(['tabs/home/instalation-of-club-officers', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/instalation-of-club-officers', {data: JSON.stringify(data)}]);
   }
   navigateToInitiationOfNewMembers(data) {
-    this.router.navigate(['tabs/home/initiation-of-new-members', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/initiation-of-new-members', {data: JSON.stringify(data)}]);
   }
   navigateToLeoClubProtocol(data) {
-    this.router.navigate(['tabs/home/leo-club-protocol', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/leo-club-protocol', {data: JSON.stringify(data)}]);
   }
   navigateToGeneralMeetingAgenda(data) {
-    this.router.navigate(['tabs/home/general-meeting-agenda', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/general-meeting-agenda', {data: JSON.stringify(data)}]);
   }
   navigateToBoardMeatingAgenda(data) {
-    this.router.navigate(['tabs/home/board-meeting-agenda', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/board-meeting-agenda', {data: JSON.stringify(data)}]);
   }
 
 }

@@ -19,6 +19,7 @@ import {AudioService} from './services/audio.service';
 import {Env} from './services/env';
 import {HttpClientModule} from '@angular/common/http';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+import {AlertService} from './services/alert.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -35,7 +36,8 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
     UtilityService,
     NativeGeocoder,
     AudioService,
-    Env
+    Env,
+      AlertService
   ],
   bootstrap: [AppComponent]
 })

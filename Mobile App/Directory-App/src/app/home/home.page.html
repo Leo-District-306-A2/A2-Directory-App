@@ -1,188 +1,92 @@
 <ion-content [fullscreen]="true">
-  <div class="header_home">
-    <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
-      <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
+    <div class="header_home">
+        <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
+            <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
+        </div>
+        <div class="scrollable-content_home">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent dp_logo_tile"
+                             [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + districtPresidentLogo?.imgBaseUrl + '/' + districtPresidentLogo?.tile + '\')' }"
+                             (click)="navigateToDPLogo(districtPresidentLogo)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold">{{ districtPresidentLogo?.title}}</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent leo_map_tile"
+                             (click)="navigateToLeoMap(leoMap)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold animate__bounce">
+                                    {{ leoMap?.title}}</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div class="tile center ripple-parent region_and_zone_tile"
+                             (click)="navigateToRegionAndZone(RegionAndZone)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold">{{ RegionAndZone?.title }}</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent district_calendar_tile"
+                             (click)="navigateToDistrictCalendar(eventCalendar)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold">{{ eventCalendar?.title }}</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent national_anthem_tile"
+                             (click)="navigateToNationalAnthem(nationalAnthem)">
+                            <div class="inner-tile ion-padding text-secondary">
+                                <div class="tile-head font-weight-bold">
+                                    {{ nationalAnthem?.en.title }}
+                                </div>
+                            </div>
+                            <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div> -->
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div class="tile center ripple-parent pledges_tile"
+                             (click)="navigateToPledges()">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head font-weight-bold text-secondary">Pledges</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent leo_history_tile"
+                             (click)="navigateToLeoHistory(leoHistory)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold">{{ leoHistory?.title }}</div>
+                                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
+                          </div> -->
+                            </div>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div class="tile center ripple-parent messages_tile" (click)="navigateToMessages()">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold">Bio data</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
     </div>
-    <div class="scrollable-content_home">
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent national_anthem_tile" (click)="navigateToNationalAnthem(nationalAnthem)">
-              <div class="inner-tile ion-padding text-secondary">
-                <div class="tile-head font-weight-bold">
-                  {{ nationalAnthem?.en.title }}
-                </div>
-              </div>
-              <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div> -->
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="tile center ripple-parent pledge_of_allegiance_tile"
-              (click)="navigateToPledgeOfAllegiance(pledgeOfAllegiance)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head font-weight-bold text-secondary">{{ pledgeOfAllegiance?.en.title }}</div>
-                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
-                <!-- </div> -->
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToLeoPledge(leoPledge)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ leoPledge?.en.title }}</div>
-                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
-          </div> -->
-              </div>
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="tile center ripple-parent environmental_pledge_tile"
-              (click)="navigateToEnvironmentPledge(environmantalPledge)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold animate__bounce">
-                  {{ environmantalPledge?.en.title }}</div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent leo_history_tile" (click)="navigateToLeoHistory(leoHistory)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ leoHistory?.title }}</div>
-                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
-          </div> -->
-              </div>
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="tile center ripple-parent leo_map_tile"
-              (click)="navigateToLeoMap(leoMap)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold animate__bounce">
-                  {{ leoMap?.title}}</div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent dp_logo_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + districtPresidentLogo?.imgBaseUrl + '/' + districtPresidentLogo?.tile + '\')' }" (click)="navigateToDPLogo(districtPresidentLogo)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ districtPresidentLogo?.title}}</div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <!-- <ion-col>
-            <div class="tile center ripple-parent council_chairman_tile" [ngStyle]="{ 'background-image' : 'url(' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.multipleCounsilChairman?.tile + ')' }" (click)="messages?.multipleCounsilChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleCouncilChairman(messages?.multipleCounsilChairman)">
-              <div class="inner-tile ion-padding">
-                <div class="designation  font-weight-bold">{{messages?.multipleCounsilChairman.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.multipleCounsilChairman.name}} </div>
-              </div>
-            </div>
-          </ion-col> -->
-          <ion-col>
-            <div class="tile center ripple-parent district_governer_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtGovernor?.tile + '\')' }"
-              (click)="messages?.districtGovernor['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictGoverner(messages?.districtGovernor)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtGovernor.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtGovernor.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-       
-          <ion-col>
-            <div class="tile center ripple-parent dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtPresident?.tile + '\')' }" (click)="messages?.districtPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictPresident(messages?.districtPresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtPresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtPresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent mdp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.MultipleDistrictPresident?.tile + '\')' }"
-              (click)="messages?.MultipleDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleDistrictPresident(messages?.MultipleDistrictPresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.MultipleDistrictPresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.MultipleDistrictPresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-       
-          <ion-col>
-            <div class="tile center ripple-parent immediate_past_dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.immediatePastDistrictPresident?.tile + '\')' }" (click)="messages?.immediatePastDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToImmediatePasetDistrictPresident(messages?.immediatePastDistrictPresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.immediatePastDistrictPresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.immediatePastDistrictPresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent district_vp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtVicePresident?.tile + '\')' }"
-              (click)="messages?.districtVicePresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictVicePresident(messages?.districtVicePresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtVicePresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtVicePresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        
-          <ion-col>
-            <div class="tile center ripple-parent district_chairman_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtChairman?.tile + '\')' }" (click)="messages?.districtChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictChairman(messages?.districtChairman)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtChairman.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtChairman.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-         
-          <ion-col>
-            <div class="tile center ripple-parent region_and_zone_tile" (click)="navigateToRegionAndZone(RegionAndZone)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ RegionAndZone?.title }}</div>
-              </div>
-            </div>
-          </ion-col>
-       
-          <ion-col>
-            <div class="tile center ripple-parent district_calendar_tile" (click)="navigateToDistrictCalendar(eventCalendar)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ eventCalendar?.title }}</div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-
-          <ion-col>
-            <div class="tile center ripple-parent editors_note_tile" (click)="navigateToEditorsNote(editorsNote)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ editorsNote?.title }}</div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-      </ion-grid>
-    </div>
-  </div>
 
 </ion-content>
