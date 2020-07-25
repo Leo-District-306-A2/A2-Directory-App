@@ -3,10 +3,10 @@
         <ion-slide *ngFor="let slider of viewData?.sliders; let i = index;" class="slider"
                    [ngStyle]="{ 'background' : generateSliderBackgroundStyle(slider?.backgroundImgs) , 'background-size' : '100%' }">
                 <img class="slider-logo" src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + slider?.icon }}"/>
-                <h3 class="dancingScriptFont">{{ slider?.title }}</h3>
-                <p class="meriendaOneFont mb-2" [innerHTML]="slider?.content"></p>
+                <h3 class="dancingScriptFont title-text">{{ slider?.title }}</h3>
+                <p class="meriendaOneFont mb-2 content-text" [innerHTML]="slider?.content"></p>
                 <img class="swipe-animation mx-auto d-block" *ngIf="i != ((viewData.sliders).length - 1)" src="../../assets/gifs/swipe_ani.gif">
-                <button *ngIf="slider?.agreementButton" class="btn btn-danger meriendaOneFont agree-btn" (click)="continue()">{{ slider?.agreementButton?.text }}&nbsp;&nbsp;<i
+                <button *ngIf="slider?.agreementButton" class="btn btn-danger meriendaOneFont agree-btn content-text" (click)="continue()">{{ slider?.agreementButton?.text }}&nbsp;&nbsp;<i
                         class="{{ slider?.agreementButton?.icon }}"></i></button>
         </ion-slide>
     </ion-slides>

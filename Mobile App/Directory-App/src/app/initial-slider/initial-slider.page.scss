@@ -47,6 +47,18 @@ p b {
   }
 }
 
+@media (max-width: 395px) and (min-width: 450px) {
+  .slider-logo {
+    margin-top: 8vh!important;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 300px) {
+  .slider-logo {
+    margin-top: 2vh!important;
+  }
+}
+
 @media only screen and (min-width: 650px) {
   .slider-logo {
     margin-top: 15vh!important;
@@ -62,4 +74,12 @@ p b {
   right: 0;
   left: 0;
   z-index: 999;
+}
+
+.title-text {
+  font-size: 5vh;
+}
+
+.content-text {
+  font-size: 1.8vh;
 }
