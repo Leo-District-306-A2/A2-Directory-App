@@ -2155,6 +2155,90 @@
           "img": "default_data/default_male_user.png"
         }
       ]
+    },
+    {
+      "clubName": "Leo Club of Piliyandala",
+      "logo": "default_data/logo.png",
+      "officers": [
+        {
+          "designation": "President",
+          "visibility_order": 1,
+          "name": "Leo Isuru Gayan Sapuarachchi",
+          "gender": "Male",
+          "phone": "0772560305",
+          "email": "isapuarachchi@gmail.com",
+          "mylci": 4244828,
+          "address": "No. 311/1G, Wawanawatta Road, Mampe, Piliyandala",
+          "img": "leo_club_of_piliyandala/president.png"
+        },
+        {
+          "designation": "Vice President",
+          "visibility_order": 2,
+          "name": "Leo Bhanuka Perera",
+          "gender": "Male",
+          "phone": "0710959915",
+          "email": "leobhanuka@gmail.com",
+          "mylci": 4073710,
+          "address": "No. 95/1, Namaluwa, Kothalawala, Bandaragama",
+          "img": "leo_club_of_piliyandala/vice_president.png"
+        },
+        {
+          "designation": "Secretary",
+          "visibility_order": 3,
+          "name": "Leo Kalhari Rajapaksha",
+          "gender": "Female",
+          "phone": "0717790031",
+          "email": "kalhariwasu@gmail.com",
+          "mylci": 5263708,
+          "address": "No. 576, Kelimadala, Thummodara",
+          "img": "leo_club_of_piliyandala/secretary.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 4,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
+        },
+        {
+          "designation": "Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Teresha Piumi Dias",
+          "gender": "Female",
+          "phone": "0766539939",
+          "email": "piumiteresha@gmail.com",
+          "mylci": 5263808,
+          "address": "No. 294/B, Kurunduwaththa, Mampe, Piliyandala",
+          "img": "leo_club_of_piliyandala/treasurer.png"
+        },
+        {
+          "designation": "Leo Advisor",
+          "visibility_order": 6,
+          "name": "Lion Mahinlal Kathriarachchi",
+          "gender": "Male",
+          "phone": "771775297",
+          "email": "mahinlalk@yahoo.com",
+          "mylci": "",
+          "address": "No. 256/A, Thumbowila, Piliyandala",
+          "img": "leo_club_of_piliyandala/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
+        }
+      ]
     }
+
   ]
 }

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
+import {MessagesPage} from './messages/messages.page';
+import {PledgesComponent} from './pledges/pledges.component';
 
 const routes: Routes = [
   {
@@ -34,10 +36,12 @@ const routes: Routes = [
   },
   {
     path: 'district-president-logo',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/district-president-logo/district-president-logo.module').then( m => m.DistrictPresidentLogoPageModule)
   },
   {
     path: 'multiple-council-chairman',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/multiple-council-chairman/multiple-council-chairman.module').then( m => m.MultipleCouncilChairmanPageModule)
   },
   {
@@ -50,14 +54,17 @@ const routes: Routes = [
   },
   {
     path: 'multiple-district-president',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/multiple-district-president/multiple-district-president.module').then( m => m.MultipleDistrictPresidentPageModule)
   },
   {
     path: 'immediat-past-district-president',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/immediat-past-district-president/immediat-past-district-president.module').then( m => m.ImmediatPastDistrictPresidentPageModule)
   },
   {
     path: 'district-vice-president',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/district-vice-president/district-vice-president.module').then( m => m.DistrictVicePresidentPageModule)
   },
   {
@@ -65,40 +72,25 @@ const routes: Routes = [
     loadChildren: () => import('../tile-content/district-chairman/district-chairman.module').then( m => m.DistrictChairmanPageModule)
   },
   {
-    path: 'standerd-leo-club-constitution',
-    loadChildren: () => import('../tile-content/standerd-leo-club-constitution/standerd-leo-club-constitution.module').then( m => m.StanderdLeoClubConstitutionPageModule)
-  },
-  {
-    path: 'instalation-of-club-officers',
-    loadChildren: () => import('../tile-content/instalation-of-club-officers/instalation-of-club-officers.module').then( m => m.InstalationOfClubOfficersPageModule)
-  },
-  {
-    path: 'initiation-of-new-members',
-    loadChildren: () => import('../tile-content/initiation-of-new-members/initiation-of-new-members.module').then( m => m.InitiationOfNewMembersPageModule)
-  },
-  {
-    path: 'leo-club-protocol',
-    loadChildren: () => import('../tile-content/leo-club-protocol/leo-club-protocol.module').then( m => m.LeoClubProtocolPageModule)
-  },
-  {
-    path: 'general-meeting-agenda',
-    loadChildren: () => import('../tile-content/general-meeting-agenda/general-meeting-agenda.module').then( m => m.GeneralMeetingAgendaPageModule)
-  },
-  {
-    path: 'board-meeting-agenda',
-    loadChildren: () => import('../tile-content/board-meeting-agenda/board-meeting-agenda.module').then( m => m.BoardMeetingAgendaPageModule)
-  },
-  {
     path: 'editors-note',
     loadChildren: () => import('../tile-content/editors-note/editors-note.module').then( m => m.EditorsNotePageModule)
   },
   {
     path: 'region-and-zone-devision',
+    // tslint:disable-next-line:max-line-length
     loadChildren: () => import('../tile-content/region-and-zone-devision/region-and-zone-devision.module').then( m => m.RegionAndZoneDevisionPageModule)
   },
   {
     path: 'event-calendar',
     loadChildren: () => import('../tile-content/event-calendar/event-calendar.module').then( m => m.EventCalendarPageModule)
+  },
+  {
+    path: 'messages',
+    component: MessagesPage
+  },
+  {
+    path: 'pledges',
+    component: PledgesComponent
   }
 
 ];

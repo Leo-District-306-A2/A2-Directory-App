@@ -68,15 +68,15 @@
 }
 
 .tile-head{
-  font-family: MeriendaOne;
+  font-family: 'Open Sans', Arial, sans-serif;
   // color: white;
   // text-shadow: 0 0 5px black;
   display: table-cell;
   vertical-align: middle;
+  font-family: MeriendaOne;
 }
 
 .tile-content{
-  font-family: MeriendaOne;
   text-align: left;
   font-size: 0.8em;
   padding-bottom: 10px;
@@ -92,26 +92,23 @@
 
 .bg-img{
   background-position:center;
-	background-repeat:no-repeat;
+  background-repeat:no-repeat;
   background-size:cover;
- 
+
 }
 .left-align{
   text-align: left !important;
 }
 
 .designation{
-  font-family: MeriendaOne;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1.1em;
   text-align: left !important;
-  position: relative;
-  top: 40px !important;
-  left: -5px;
+  top: 5px !important;
   display: table-cell;
   color: rgb(255, 248, 248) ;
   text-shadow: 2px 2px 4px #000000;
 }
-
 .right-align{
   text-align: right !important;
   padding-bottom: 10px;
@@ -122,117 +119,109 @@
 }
 .ripple {
   background-position: center;
-  
 }
 
-
-.national_anthem_tile {
-  background-image: url("../../assets/tiles/national_anthem.png");
+.council_chairman_tile {
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(140,22,61,1);
+    border-color: rgb(88, 12, 189);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgba(140,22,61,1) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.leo_history_tile {
-  background-image: url("../../assets/tiles/leo_history.png");
+.district_governer_tile {
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(245, 136, 13);
+    border-color: rgb(88, 12, 189);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(83, 5, 5) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.leo_map_tile {
-  background-image: url("../../assets/tiles/leo_map.png");
+.dp_tile {
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(215, 219, 4);
+    border-color: rgb(88, 12, 189);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(110, 116, 3) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.dp_logo_tile {
+.mdp_tile {
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(131, 0, 178);
+    border-color: rgb(88, 12, 189);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(81, 1, 64) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.region_and_zone_tile{
-  background-image: url("../../assets/tiles/region_and_zone.png");
+.immediate_past_dp_tile {
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(23, 1, 59) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.district_calendar_tile{
-  background-image: url("../../assets/tiles/district_calendar.png");
+.immediate_past_dp_tile {
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(23, 1, 59) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.pledges_tile{
-  background-image: url("../../assets/tiles/editors_note.png");
+.district_vp_tile{
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(23, 1, 59) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
-.messages_tile{
-  background-image: url("../../assets/tiles/editors_note.png");
+.district_chairman_tile{
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255,255,255,0.15);
   }
 
   .tile-head {
-    color: rgb(23, 1, 59) !important;
+    color: rgb(0, 0, 0) !important;
   }
 }
+

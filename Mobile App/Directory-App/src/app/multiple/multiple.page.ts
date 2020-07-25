@@ -4,6 +4,8 @@ import {Router} from '@angular/router';
 import {UtilityService} from '../services/utility.service';
 import {Env} from '../services/env';
 import {MultipleService} from '../services/multiple.service';
+import {Platform} from '@ionic/angular';
+import {AlertService} from '../services/alert.service';
 
 @Component({
   selector: 'app-mutiple',
@@ -15,7 +17,13 @@ export class MultiplePage implements OnInit {
   filteredMultipleData: any;
   searchKeyword: string;
   imgBaseUrl: string;
-  constructor(private multipleService: MultipleService, private router: Router, private utilityService: UtilityService, public env: Env) { }
+  backSubscription;
+  constructor(private multipleService: MultipleService,
+              private router: Router,
+              private utilityService: UtilityService,
+              public env: Env,
+              private platform: Platform,
+              private alertService: AlertService) { }
 
   ngOnInit() {
     this.multipleService.getData().then((data) => {
@@ -23,6 +31,16 @@ export class MultiplePage implements OnInit {
       this.allMultipleData = data.multiple;
       this.imgBaseUrl = data.imgBaseUrl;
     });
+  }
+
+  ionViewDidEnter() {
+    this.backSubscription = this.platform.backButton.subscribe(() => {
+      this.alertService.exitAlert();
+    });
+  }
+
+  ionViewWillLeave() {
+    this.backSubscription.unsubscribe();
   }
 
   viewOfficer(multiple) {
