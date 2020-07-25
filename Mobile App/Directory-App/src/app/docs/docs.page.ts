@@ -41,10 +41,10 @@ export class DocsPage implements OnInit {
     this.router.navigate(['tabs/docs/leo-club-protocol', {data: JSON.stringify(data)}]);
   }
   navigateToGeneralMeetingAgenda(data) {
-    this.router.navigate(['tabs/home/general-meeting-agenda', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/general-meeting-agenda', {data: JSON.stringify(data)}]);
   }
   navigateToBoardMeatingAgenda(data) {
-    this.router.navigate(['tabs/home/board-meeting-agenda', {data: JSON.stringify(data)}]);
+    this.router.navigate(['tabs/docs/board-meeting-agenda', {data: JSON.stringify(data)}]);
   }
 
 }
