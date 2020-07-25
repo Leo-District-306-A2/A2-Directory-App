@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {HomeService} from '../services/home.service';
 import {Router} from '@angular/router';
 import {Env} from '../services/env';
-import {Platform} from '@ionic/angular';
+import { Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
 
 @Component({
@@ -17,7 +17,6 @@ export class HomePage {
     leoPledge: any;
     leoHistory: any;
     environmantalPledge: any;
-    messages: any;
     leoMap: any;
     districtPresidentLogo: any;
     editorsNote: any;
@@ -25,7 +24,11 @@ export class HomePage {
     eventCalendar: any;
     backSubscription;
 
-    constructor(private homeService: HomeService, private router: Router, public env: Env, private platform: Platform, private alertService: AlertService) {
+    constructor(private homeService: HomeService,
+                private router: Router,
+                public env: Env,
+                private platform: Platform,
+                private alertService: AlertService) {
     }
 
     // tslint:disable-next-line:use-lifecycle-interface
@@ -35,7 +38,6 @@ export class HomePage {
         this.homeService.loadStaticData('LeoPledge').then((result) => this.leoPledge = result);
         this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
         this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
-        this.homeService.loadStaticData('Messages').then((result) => this.messages = result);
         this.homeService.loadStaticData('LeoMap').then((result) => this.leoMap = result);
         this.homeService.loadStaticData('DistrictPresidentLogo').then((result) => this.districtPresidentLogo = result);
         this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
@@ -92,35 +94,6 @@ export class HomePage {
     navigateToDPLogo(data) {
         this.router.navigate(['tabs/home/district-president-logo', {data: JSON.stringify(data)}]);
     }
-
-    navigateToMultipleCouncilChairman(data) {
-        this.router.navigate(['tabs/home/multiple-council-chairman', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToDistrictGoverner(data) {
-        this.router.navigate(['tabs/home/district-governer', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToDistrictPresident(data) {
-        this.router.navigate(['tabs/home/district-president', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToMultipleDistrictPresident(data) {
-        this.router.navigate(['tabs/home/multiple-district-president', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToImmediatePasetDistrictPresident(data) {
-        this.router.navigate(['tabs/home/immediat-past-district-president', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToDistrictVicePresident(data) {
-        this.router.navigate(['tabs/home/district-vice-president', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToDistrictChairman(data) {
-        this.router.navigate(['tabs/home/district-chairman', {data: JSON.stringify(data)}]);
-    }
-
     navigateToRegionAndZone(data) {
         this.router.navigate(['tabs/home/region-and-zone-devision', {data: JSON.stringify(data)}]);
     }
@@ -131,5 +104,9 @@ export class HomePage {
 
     navigateToEditorsNote(data) {
         this.router.navigate(['tabs/home/editors-note', {data: JSON.stringify(data)}]);
+    }
+
+    navigateToMessages() {
+        this.router.navigate(['tabs/home/messages']);
     }
 }

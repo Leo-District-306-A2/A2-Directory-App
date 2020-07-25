@@ -47,8 +47,6 @@
             </div>
           </ion-col>
         </ion-row>
-
-
         <ion-row>
           <ion-col>
             <div class="tile center ripple-parent leo_history_tile" (click)="navigateToLeoHistory(leoHistory)">
@@ -69,7 +67,6 @@
             </div>
           </ion-col>
         </ion-row>
-
         <ion-row>
           <ion-col>
             <div class="tile center ripple-parent dp_logo_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + districtPresidentLogo?.imgBaseUrl + '/' + districtPresidentLogo?.tile + '\')' }" (click)="navigateToDPLogo(districtPresidentLogo)">
@@ -79,78 +76,74 @@
             </div>
           </ion-col>
         </ion-row>
-
-        <ion-row>
-          <!-- <ion-col>
-            <div class="tile center ripple-parent council_chairman_tile" [ngStyle]="{ 'background-image' : 'url(' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.multipleCounsilChairman?.tile + ')' }" (click)="messages?.multipleCounsilChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleCouncilChairman(messages?.multipleCounsilChairman)">
-              <div class="inner-tile ion-padding">
-                <div class="designation  font-weight-bold">{{messages?.multipleCounsilChairman.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.multipleCounsilChairman.name}} </div>
-              </div>
-            </div>
-          </ion-col> -->
-          <ion-col>
-            <div class="tile center ripple-parent district_governer_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtGovernor?.tile + '\')' }"
-              (click)="messages?.districtGovernor['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictGoverner(messages?.districtGovernor)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtGovernor.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtGovernor.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-       
-          <ion-col>
-            <div class="tile center ripple-parent dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtPresident?.tile + '\')' }" (click)="messages?.districtPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictPresident(messages?.districtPresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtPresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtPresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent mdp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.MultipleDistrictPresident?.tile + '\')' }"
-              (click)="messages?.MultipleDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleDistrictPresident(messages?.MultipleDistrictPresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.MultipleDistrictPresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.MultipleDistrictPresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-       
-          <ion-col>
-            <div class="tile center ripple-parent immediate_past_dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.immediatePastDistrictPresident?.tile + '\')' }" (click)="messages?.immediatePastDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToImmediatePasetDistrictPresident(messages?.immediatePastDistrictPresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.immediatePastDistrictPresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.immediatePastDistrictPresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent district_vp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtVicePresident?.tile + '\')' }"
-              (click)="messages?.districtVicePresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictVicePresident(messages?.districtVicePresident)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtVicePresident.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtVicePresident.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        
-          <ion-col>
-            <div class="tile center ripple-parent district_chairman_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtChairman?.tile + '\')' }" (click)="messages?.districtChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictChairman(messages?.districtChairman)">
-              <div class="inner-tile ion-padding">
-                <div class="designation font-weight-bold">{{messages?.districtChairman.designation}}</div>
-                <div class="tile-content right-align ">{{messages?.districtChairman.name}} </div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-
+<!--        <ion-row>-->
+<!--          &lt;!&ndash; <ion-col>-->
+<!--            <div class="tile center ripple-parent council_chairman_tile" [ngStyle]="{ 'background-image' : 'url(' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.multipleCounsilChairman?.tile + ')' }" (click)="messages?.multipleCounsilChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleCouncilChairman(messages?.multipleCounsilChairman)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation  font-weight-bold">{{messages?.multipleCounsilChairman.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.multipleCounsilChairman.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col> &ndash;&gt;-->
+<!--          <ion-col>-->
+<!--            <div class="tile center ripple-parent district_governer_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtGovernor?.tile + '\')' }"-->
+<!--              (click)="messages?.districtGovernor['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictGoverner(messages?.districtGovernor)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation font-weight-bold">{{messages?.districtGovernor.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.districtGovernor.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col>-->
+<!--       -->
+<!--          <ion-col>-->
+<!--            <div class="tile center ripple-parent dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtPresident?.tile + '\')' }" (click)="messages?.districtPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictPresident(messages?.districtPresident)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation font-weight-bold">{{messages?.districtPresident.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.districtPresident.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col>-->
+<!--        </ion-row>-->
+<!--        <ion-row>-->
+<!--          <ion-col>-->
+<!--            <div class="tile center ripple-parent mdp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.MultipleDistrictPresident?.tile + '\')' }"-->
+<!--              (click)="messages?.MultipleDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleDistrictPresident(messages?.MultipleDistrictPresident)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation font-weight-bold">{{messages?.MultipleDistrictPresident.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.MultipleDistrictPresident.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col>-->
+<!--       -->
+<!--          <ion-col>-->
+<!--            <div class="tile center ripple-parent immediate_past_dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.immediatePastDistrictPresident?.tile + '\')' }" (click)="messages?.immediatePastDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToImmediatePasetDistrictPresident(messages?.immediatePastDistrictPresident)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation font-weight-bold">{{messages?.immediatePastDistrictPresident.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.immediatePastDistrictPresident.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col>-->
+<!--        </ion-row>-->
+<!--        <ion-row>-->
+<!--          <ion-col>-->
+<!--            <div class="tile center ripple-parent district_vp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtVicePresident?.tile + '\')' }"-->
+<!--              (click)="messages?.districtVicePresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictVicePresident(messages?.districtVicePresident)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation font-weight-bold">{{messages?.districtVicePresident.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.districtVicePresident.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col>-->
+<!--        -->
+<!--          <ion-col>-->
+<!--            <div class="tile center ripple-parent district_chairman_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtChairman?.tile + '\')' }" (click)="messages?.districtChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictChairman(messages?.districtChairman)">-->
+<!--              <div class="inner-tile ion-padding">-->
+<!--                <div class="designation font-weight-bold">{{messages?.districtChairman.designation}}</div>-->
+<!--                <div class="tile-content right-align ">{{messages?.districtChairman.name}} </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </ion-col>-->
+<!--        </ion-row>-->
         <ion-row>
          
           <ion-col>
@@ -169,9 +162,17 @@
             </div>
           </ion-col>
         </ion-row>
-
         <ion-row>
+                  <ion-col>
+                    <div class="tile center ripple-parent editors_note_tile" (click)="navigateToMessages()">
+                      <div class="inner-tile ion-padding">
+                        <div class="tile-head text-secondary font-weight-bold">Messages</div>
+                      </div>
+                    </div>
+                  </ion-col>
+                </ion-row>
 
+<!--        <ion-row>-->
 <!--          <ion-col>-->
 <!--            <div class="tile center ripple-parent editors_note_tile" (click)="navigateToEditorsNote(editorsNote)">-->
 <!--              <div class="inner-tile ion-padding">-->
@@ -179,7 +180,7 @@
 <!--              </div>-->
 <!--            </div>-->
 <!--          </ion-col>-->
-        </ion-row>
+<!--        </ion-row>-->
 
       </ion-grid>
     </div>
