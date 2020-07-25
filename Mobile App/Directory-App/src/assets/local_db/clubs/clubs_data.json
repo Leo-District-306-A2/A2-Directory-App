@@ -1,1043 +1,667 @@
 {
-  "imgBaseUrl" : "clubs/imgs",
+  "imgBaseUrl": "clubs/imgs",
   "clubs": [
     {
-      "clubName": "Leo Club of University of Moratuwa",
+      "clubName": "Leo Club of Baddegama",
       "logo": "default_data/logo.png",
-
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
+          "name": "Leo Narmada Guruge",
+          "gender": "Female",
+          "phone": "0771341940",
+          "email": "narmadaguruge1996@gmail.com",
+          "mylci": "-",
+          "address": "\u201cKethrani\u201d, Hewanagewatta, Hikkaduwa Road, Baddegama",
           "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "default_data/default_male_user.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
           "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
+          "visibility_order": 4,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
           "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
+          "visibility_order": 5,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
           "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
+          "visibility_order": 6,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "default_data/default_male_user.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
           "img": "default_data/default_male_user.png"
         }
       ]
     },
     {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
+      "clubName": "Leo Club of Dehiwala East",
+      "logo": "leo_club_of_dehiwala_east/logo.png",
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Buddhika Abenayake",
+          "gender": "Male",
+          "phone": "0774598115",
+          "email": "buddhikadeshapriya9615@gmail.com",
+          "mylci": 5264851,
+          "address": "No. 292/D, Pepiliyana , Boralesgamuwa",
+          "img": "leo_club_of_dehiwala_east/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Devinda Perera",
+          "gender": "Male",
+          "phone": "0714085967",
+          "email": "devinda2001perera@gmail.com",
+          "mylci": 5264853,
+          "address": "No. 55, Wekanda Rd, Jambugasmulla Mw, Nugegoda",
+          "img": "leo_club_of_dehiwala_east/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "Leo Shavika Malimbadage",
+          "gender": "Female",
+          "phone": "0771890973",
+          "email": "parameerox@gmail.com",
+          "mylci": 5264850,
+          "address": "No. 293, Nugegoda rd, Pepiliyana, Bralesgamuwa",
+          "img": "leo_club_of_dehiwala_east/2nd_vice_president.png"
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 4,
+          "name": "Leo Tharushi Sansala",
+          "gender": "Female",
+          "phone": "0721753312",
+          "email": "dtharushisansala@gmail.com",
+          "mylci": "",
+          "address": "No. 292/2C, Nugegoda Road, Pepiliyana, Boralesgamuwa",
+          "img": "leo_club_of_dehiwala_east/secretary.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 5,
+          "name": "Leo Umayangi De Silva",
+          "gender": "Female",
+          "phone": "0701082398",
+          "email": "umayangidesilva@gmail.com",
+          "mylci": 5264854,
+          "address": "No. 65, Dehiwala Road, Pepiliyana, Boralesgamuwa",
+          "img": "leo_club_of_dehiwala_east/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
+          "visibility_order": 6,
+          "name": "Lion Hansika Prasadini",
+          "gender": "Female",
+          "phone": "0777488002",
+          "email": "disinisetuni@gmail.com",
+          "mylci": "",
+          "address": "No. 237/12, Mithuru Mw, Rattanapitiya",
+          "img": "leo_club_of_dehiwala_east/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
           "img": "default_data/default_male_user.png"
         }
       ]
     },
     {
-      "clubName": "Leo Club of University of Moratuwa",
+      "clubName": "Leo Club of Godigamuwa",
       "logo": "default_data/logo.png",
-
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Irushini Alahakoon",
+          "gender": "Female",
+          "phone": "0717569918",
+          "email": "irushinialahakoon@gmail.com",
+          "mylci": 5068445,
+          "address": "No. 41/5A, Yahampath Mawatha, Maharagama\n",
+          "img": "leo_club_of_godigamuwa/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Minul Wijayasekara",
+          "gender": "Male",
+          "phone": "0775504042",
+          "email": "minulwijaya@gmail.com",
+          "mylci": 5259535,
+          "address": "No. 27, Gramasanwardana Rd, Ambillawatta, Boralesgamuwa",
+          "img": "leo_club_of_godigamuwa/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "Leo Denesha Ramanayek",
+          "gender": "Female",
+          "phone": "0752337246",
+          "email": "deneeshajayathmi1997@gmail.com",
+          "mylci": 5259623,
+          "address": "No: 12, Ananda maithree mawatha, maharagama.",
+          "img": "default_data/default_female_user.png"
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 4,
+          "name": "Leo Sithmini Bandara",
+          "gender": "Female",
+          "phone": "0711585458",
+          "email": "bandarasithmini@gmail.com",
+          "mylci": 5259618,
+          "address": "\"Sithmini\", Gurubelkadawaththa, Erathna Road, Kuruwita",
+          "img": "leo_club_of_godigamuwa/secretary.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 5,
+          "name": "Leo Hashini Kumarasiri",
+          "gender": "Female",
+          "phone": "0763897278",
+          "email": "harshnipiumika@gmail.com",
+          "mylci": 5259617,
+          "address": "No. 634/2 , Eriyandaluwa, Pelmadulla",
+          "img": "leo_club_of_godigamuwa/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
+          "visibility_order": 6,
+          "name": "Lion Missaka Weliwita",
+          "gender": "Male",
+          "phone": "0776669976",
+          "email": "themetravels.int@gmail.com",
+          "mylci": "",
+          "address": "No. 16, Hildon Place, Colombo 04",
+          "img": "leo_club_of_godigamuwa/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "staff_advisor.png"
+        }
+      ]
+    },
+    {
+      "clubName": "Leo Club of Kalubovila",
+      "logo": "default_data/logo.png",
+      "officers": [
+        {
+          "designation": "President",
+          "visibility_order": 1,
+          "name": "Leo Irushini Alahakoon",
+          "gender": "Female",
+          "phone": "0717569918",
+          "email": "irushinialahakoon@gmail.com",
+          "mylci": 5068445,
+          "address": "No. 41/5A, Yahampath Mawatha, Maharagama\n",
+          "img": "leo_club_of_kalubowila/president.png"
+        },
+        {
+          "designation": "Vice President",
+          "visibility_order": 2,
+          "name": "Leo Minul Wijayasekara",
+          "gender": "Male",
+          "phone": "0775504042",
+          "email": "minulwijaya@gmail.com",
+          "mylci": 5259535,
+          "address": "No. 27, Gramasanwardana Rd, Ambillawatta, Boralesgamuwa",
+          "img": "leo_club_of_kalubowila/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "Leo Denesha Ramanayek",
+          "gender": "Female",
+          "phone": "0752337246",
+          "email": "deneeshajayathmi1997@gmail.com",
+          "mylci": 5259623,
+          "address": "No: 12, Ananda maithree mawatha, maharagama.",
+          "img": "default_data/default_female_user.png"
+        },
+        {
+          "designation": "Secretary",
+          "visibility_order": 4,
+          "name": "Leo Sithmini Bandara",
+          "gender": "Female",
+          "phone": "0711585458",
+          "email": "bandarasithmini@gmail.com",
+          "mylci": 5259618,
+          "address": "\"Sithmini\", Gurubelkadawaththa, Erathna Road, Kuruwita",
+          "img": "leo_club_of_kalubowila/secretary.png"
+        },
+        {
+          "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
+          "name": "Leo Hashini Kumarasiri",
+          "gender": "Female",
+          "phone": "0763897278",
+          "email": "harshnipiumika@gmail.com",
+          "mylci": 5259617,
+          "address": "No. 634/2 , Eriyandaluwa, Pelmadulla",
+          "img": "leo_club_of_kalubowila/treasurer.png"
+        },
+        {
+          "designation": "Leo Advisor",
+          "visibility_order": 6,
+          "name": "Lion Missaka Weliwita",
+          "gender": "Male",
+          "phone": "0776669976",
+          "email": "themetravels.int@gmail.com",
+          "mylci": "",
+          "address": "No. 16, Hildon Place, Colombo 04",
+          "img": "leo_club_of_kalubowila/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
           "img": "default_data/default_male_user.png"
         }
       ]
     },
     {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
+      "clubName": "Leo Club of Kesbewa",
+      "logo": "leo_club_of_kesbawa/logo.png",
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Ravindu Thaksara",
+          "gender": "Male",
+          "phone": "0765693382",
+          "email": "thathsara220@gmail.com",
+          "mylci": "",
+          "address": "No. 314/1B, Bokundara, Piliyandala",
+          "img": "leo_club_of_kesbawa/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Nipuna Rambukkanage",
+          "gender": "Male",
+          "phone": "0774664473",
+          "email": "nipunaram@gmail.com",
+          "mylci": "",
+          "address": "No. 32, Pallidora Road, Dehiwala",
+          "img": "leo_club_of_kesbawa/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "/second_vice_president.png"
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 4,
+          "name": "Leo Sashinka Rodrigo",
+          "gender": "Female",
+          "phone": "0767672141",
+          "email": "sashirodrigo98@gmail.com",
+          "mylci": 5144948,
+          "address": "No. 407/3, School Lane, Bokundara, Piliyandala",
+          "img": "leo_club_of_kesbawa/secretary.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 5,
+          "name": "Leo Ushani Randima",
+          "gender": "Female",
+          "phone": "0755273391",
+          "email": "ushanirandima11@gmail.com",
+          "mylci": 5190465,
+          "address": "No. 82/2, Mawiththara, Piliyandala",
+          "img": "leo_club_of_kesbawa/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 6,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "/staff_advisor.png"
         }
       ]
     },
     {
-      "clubName": "Leo Club of University of Moratuwa",
+      "clubName": "Leo Club of Matara Nilwala",
       "logo": "default_data/logo.png",
-
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Lohan Devasurendra",
+          "gender": "Male",
+          "phone": "0779642190",
+          "email": "leolohandevasurendra@gmail.com",
+          "mylci": 5248948,
+          "address": "No. 05, Lorient City, Pamburana, Matara",
+          "img": "leo_club_of_matara_nilwala/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Rushen Samodya",
+          "gender": "Male",
+          "phone": "0769771694",
+          "email": "rushenssamodya@gmail.com",
+          "mylci": 5250151,
+          "address": "No. 1/16, Paramulla Cross Road, Pamburana, Matara",
+          "img": "leo_club_of_matara_nilwala/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 4,
+          "name": "Leo Nishangi Liyanage",
+          "gender": "Female",
+          "phone": "0777723238",
+          "email": "nishangi1999@gmail.com",
+          "mylci": "",
+          "address": "No. 08, Ramya Rd, Issadeen Town, Matara",
+          "img": "leo_club_of_matara_nilwala/secretary.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 5,
+          "name": "Leo Pasan Erathna",
+          "gender": "Male",
+          "phone": "0769164662",
+          "email": "pasanerathna@gmail.com",
+          "mylci": 5250180,
+          "address": "No.28, Akuressa Rd, Thelijjawila, Matara",
+          "img": "leo_club_of_matara_nilwala/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 6,
+          "name": "Lion Nirmal Ilangamge",
+          "gender": "Male",
+          "phone": "0715335135",
+          "email": "mathsnirmal@gmail.com",
+          "mylci": 3723040,
+          "address": "No. 366/29, 3rd Cross Rd, Galle Rd, Pamburana, Matara",
+          "img": "leo_club_of_matara_nilwala/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
         }
       ]
     },
     {
-      "clubName": "Leo Club of Piliyandala",
+      "clubName": "Leo Club of Panadura Alubomulla",
       "logo": "default_data/logo.png",
-
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Naveen Madhusanka",
+          "gender": "Male",
+          "phone": "0716306781",
+          "email": "infornaveen@gmail.com",
+          "mylci": 5058538,
+          "address": "No. 119/C, Weerasinghe Road, Niwandama, Ja Ela",
+          "img": "leo_club_of_panadura_alubomulla/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Ravindu Poornajith",
+          "gender": "Male",
+          "phone": "0713620336",
+          "email": "rpoornajith1997@gmail.com",
+          "mylci": 4847431,
+          "address": "No. 194/1, Kanda Temple Road, Mahawaskaduwa, Waskaduwa",
+          "img": "leo_club_of_panadura_alubomulla/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 4,
+          "name": "Leo Minidu Wickramaarachchi",
+          "gender": "Male",
+          "phone": "0716950344",
+          "email": "miniduwickramaarachchi97@gmail.com",
+          "mylci": 5264145,
+          "address": "No. 129/A, Suwasewa Mawatha, Maha Heenatiyangala, Kaluthara South",
+          "img": "leo_club_of_panadura_alubomulla/secretary.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 5,
+          "name": "Leo Nadini Dinethya Amarakoon",
+          "gender": "Female",
+          "phone": "0718724946",
+          "email": "nadinidinethya@gmail.com",
+          "mylci": 5264127,
+          "address": "No. 38/10, Wijayaraja Mawatha, Nikape Road, Dehiwala",
+          "img": "leo_club_of_panadura_alubomulla/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 6,
+          "name": "Lion Nihal De Silva",
+          "gender": "Male",
+          "phone": "0716386701",
+          "email": "nihaldesilva@gmail.com",
+          "mylci": "",
+          "address": "No. 07, Nimalka Gardens, Panadura",
+          "img": "leo_club_of_panadura_alubomulla/advisor.png"
+        },
+        {
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
         }
       ]
     },
     {
-      "clubName": "Leo Club of University of Moratuwa",
+      "clubName": "Leo Club of Pepiliyana Woodlands",
       "logo": "default_data/logo.png",
-
       "officers": [
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Divanjana Ratnadurai",
+          "gender": "Male",
+          "phone": "0766844625",
+          "email": "divanjana.r@gmail.com",
+          "mylci": 5332121,
+          "address": "No. 60, 3rd Lane, New City Garden , Piliyandala",
+          "img": "leo_club_of_pepiliyana_woodlands/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Tharindu Dananjaya Warnapura",
+          "gender": "Male",
+          "phone": "0765433208",
+          "email": "tharinduwarne@gmail.com",
+          "mylci": 5342930,
+          "address": "No. 367/A, Galle Rd, Ratmalana",
+          "img": "leo_club_of_pepiliyana_woodlands/vice_president.png"
+        },
+        {
+          "designation": "Second Vice President",
+          "visibility_order": 3,
+          "name": "Amandi Pabasara Siriwardhana",
+          "gender": "Female",
+          "phone": "0762606875",
+          "email": "amandipabasara07@gmail.com",
+          "mylci": 5342929,
+          "address": "309/B-1 , Jothikaramaya Rd , Thalawathugoda",
+          "img": "leo_club_of_pepiliyana_woodlands/2nd_vice_president.png"
         },
         {
           "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 4,
+          "name": "Leo Heshani Kaushalya Hettiarachchi",
+          "gender": "Female",
+          "phone": "0718587514",
+          "email": "99heshani@gmail.com",
+          "mylci": 5342928,
+          "address": "No. 265/1, Roston Park, Divulapitiya, Boralesgamuwa",
+          "img": "leo_club_of_panadura_alubomulla/secretary.png"
         },
         {
           "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 5,
+          "name": "Ramith Nekmal Perukanda Gamage",
+          "gender": "Male",
+          "phone": "0766210689",
+          "email": "ramithgamage@gmail.com",
+          "mylci": 5344154,
+          "address": "No.3 , Vihara Mawatha , Pepiliyana , Boralesgamuwa",
+          "img": "leo_club_of_pepiliyana_woodlands/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
+          "visibility_order": 6,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
         },
         {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of University of Moratuwa",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of University of Moratuwa",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of University of Moratuwa",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of University of Moratuwa",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of University of Moratuwa",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of University of Moratuwa",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Sachintha kapuge",
-          "email": "aa@gmail.com",
-          "address": "galle",
-          "phone": "0716185403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        }
-      ]
-    },
-    {
-      "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
-
-      "officers": [
-        {
-          "designation": "President",
-          "visibility_order": 1,
-          "name": "Name of President",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "0716485403",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Vice President",
-          "visibility_order": 2,
-          "name": "Name of VP",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Secretary",
-          "visibility_order": 3,
-          "name": "Name of Secretary",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 4,
-          "name": "Name of Treasurer",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
-        },
-        {
-          "designation": "Leo Advisor",
-          "visibility_order": 5,
-          "name": "Name of Leo Advisor",
-          "email": "Sample Email",
-          "address": "Sample Address",
-          "phone": "Sample Tel",
-          "img": "default_data/default_male_user.png"
+          "designation": "Staff Advisor",
+          "visibility_order": 7,
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": ""
         }
       ]
     }

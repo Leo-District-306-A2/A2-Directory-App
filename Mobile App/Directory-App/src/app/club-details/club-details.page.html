@@ -8,6 +8,7 @@
     <div>
         <div *ngFor="let officer of this.utilityService.sortJsonArrayByVisibilityOrder(clubDetails?.officers)"
              class="col-md-12">
+             <div *ngIf="officer?.name.length>0">
             <div class="card profile-card-3 mb-3">
                 <div class="background-block">
                 </div>
@@ -28,6 +29,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </ion-content>
