@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {HomeService} from '../services/home.service';
 import {Router} from '@angular/router';
 import {Env} from '../services/env';
+import {Platform} from '@ionic/angular';
+import {AlertService} from '../services/alert.service';
 
 @Component({
   selector: 'app-docs',
@@ -16,8 +18,12 @@ export class DocsPage implements OnInit {
   leoClubProtocol: any;
   generalMeetingAgenda: any;
   boardMeatingAgenda: any;
-
-  constructor(private homeService: HomeService, private router: Router, public env: Env) { }
+  backSubscription;
+  constructor(private homeService: HomeService,
+              private router: Router,
+              public env: Env,
+              private platform: Platform,
+              private alertService: AlertService) { }
 
   ngOnInit() {
     this.homeService.loadStaticData('StandardLeoClubConstitution').then((result) => this.standardLeoClubConstitution = result);
@@ -26,6 +32,16 @@ export class DocsPage implements OnInit {
     this.homeService.loadStaticData('LeoClubProtocol').then((result) => this.leoClubProtocol = result);
     this.homeService.loadStaticData('GeneralMeetingAgenda').then((result) => this.generalMeetingAgenda = result);
     this.homeService.loadStaticData('BoardMeetingAgenda').then((result) => this.boardMeatingAgenda = result);
+  }
+
+  ionViewDidEnter() {
+    this.backSubscription = this.platform.backButton.subscribe(() => {
+      this.alertService.exitAlert();
+    });
+  }
+
+  ionViewWillLeave() {
+    this.backSubscription.unsubscribe();
   }
 
   navigateToLeoClubConstitution(data) {
