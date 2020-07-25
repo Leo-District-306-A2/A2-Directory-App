@@ -15,7 +15,7 @@ export class HomePage {
   leoPledge: any;
   leoHistory: any;
   environmantalPledge: any;
-  multipleOfficers: any;
+  messages: any;
   leoMap: any;
   districtPresidentLogo: any;
   editorsNote: any;
@@ -32,7 +32,7 @@ export class HomePage {
     this.homeService.loadStaticData('LeoPledge').then((result) => this.leoPledge = result);
     this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
     this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
-    this.homeService.loadStaticData('MultipleOfficers').then((result) => this.multipleOfficers = result);
+    this.homeService.loadStaticData('Messages').then((result) => this.messages = result);
     this.homeService.loadStaticData('LeoMap').then((result) => this.leoMap = result);
     this.homeService.loadStaticData('DistrictPresidentLogo').then((result) => this.districtPresidentLogo = result);
     this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
