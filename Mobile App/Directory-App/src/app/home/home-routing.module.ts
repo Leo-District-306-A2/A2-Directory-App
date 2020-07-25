@@ -65,30 +65,6 @@ const routes: Routes = [
     loadChildren: () => import('../tile-content/district-chairman/district-chairman.module').then( m => m.DistrictChairmanPageModule)
   },
   {
-    path: 'standerd-leo-club-constitution',
-    loadChildren: () => import('../tile-content/standerd-leo-club-constitution/standerd-leo-club-constitution.module').then( m => m.StanderdLeoClubConstitutionPageModule)
-  },
-  {
-    path: 'instalation-of-club-officers',
-    loadChildren: () => import('../tile-content/instalation-of-club-officers/instalation-of-club-officers.module').then( m => m.InstalationOfClubOfficersPageModule)
-  },
-  {
-    path: 'initiation-of-new-members',
-    loadChildren: () => import('../tile-content/initiation-of-new-members/initiation-of-new-members.module').then( m => m.InitiationOfNewMembersPageModule)
-  },
-  {
-    path: 'leo-club-protocol',
-    loadChildren: () => import('../tile-content/leo-club-protocol/leo-club-protocol.module').then( m => m.LeoClubProtocolPageModule)
-  },
-  {
-    path: 'general-meeting-agenda',
-    loadChildren: () => import('../tile-content/general-meeting-agenda/general-meeting-agenda.module').then( m => m.GeneralMeetingAgendaPageModule)
-  },
-  {
-    path: 'board-meeting-agenda',
-    loadChildren: () => import('../tile-content/board-meeting-agenda/board-meeting-agenda.module').then( m => m.BoardMeetingAgendaPageModule)
-  },
-  {
     path: 'editors-note',
     loadChildren: () => import('../tile-content/editors-note/editors-note.module').then( m => m.EditorsNotePageModule)
   },
