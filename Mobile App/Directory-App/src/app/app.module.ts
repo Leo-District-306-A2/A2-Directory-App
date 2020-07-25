@@ -16,7 +16,6 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
 import {UtilityService} from './services/utility.service';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import {AudioService} from './services/audio.service';
-import {ExpandableComponent} from './common/expandable/expandable.component';
 import {Env} from './services/env';
 import {HttpClientModule} from '@angular/common/http';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
