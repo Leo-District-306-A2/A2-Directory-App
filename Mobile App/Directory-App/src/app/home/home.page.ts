@@ -13,10 +13,7 @@ import {AlertService} from '../services/alert.service';
 export class HomePage {
 
     nationalAnthem: any;
-    pledgeOfAllegiance: any;
-    leoPledge: any;
     leoHistory: any;
-    environmantalPledge: any;
     leoMap: any;
     districtPresidentLogo: any;
     editorsNote: any;
@@ -34,10 +31,7 @@ export class HomePage {
     // tslint:disable-next-line:use-lifecycle-interface
     ngOnInit() {
         this.homeService.loadStaticData('NationalAnthem').then((result) => this.nationalAnthem = result);
-        this.homeService.loadStaticData('PledgeOfAllegiance').then((result) => this.pledgeOfAllegiance = result);
-        this.homeService.loadStaticData('LeoPledge').then((result) => this.leoPledge = result);
         this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
-        this.homeService.loadStaticData('EnvironmentalPledge').then((result) => this.environmantalPledge = result);
         this.homeService.loadStaticData('LeoMap').then((result) => this.leoMap = result);
         this.homeService.loadStaticData('DistrictPresidentLogo').then((result) => this.districtPresidentLogo = result);
         this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
@@ -71,18 +65,6 @@ export class HomePage {
         this.router.navigate(['tabs/home/national-anthem', {data: JSON.stringify(data)}]);
     }
 
-    navigateToPledgeOfAllegiance(data) {
-        this.router.navigate(['tabs/home/pledge-of-alligiance', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToLeoPledge(data) {
-        this.router.navigate(['tabs/home/leo-pledge', {data: JSON.stringify(data)}]);
-    }
-
-    navigateToEnvironmentPledge(data) {
-        this.router.navigate(['tabs/home/environment-pledge', {data: JSON.stringify(data)}]);
-    }
-
     navigateToLeoMap(data) {
         this.router.navigate(['tabs/home/leo-map', {data: JSON.stringify(data)}]);
     }
@@ -108,5 +90,9 @@ export class HomePage {
 
     navigateToMessages() {
         this.router.navigate(['tabs/home/messages']);
+    }
+
+    navigateToPledges() {
+        this.router.navigate(['tabs/home/pledges']);
     }
 }

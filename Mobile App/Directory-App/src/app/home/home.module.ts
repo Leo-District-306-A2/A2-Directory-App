@@ -9,6 +9,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import {MessagesPage} from './messages/messages.page';
 import {LanguageSliderComponent} from '../common/language-slider/language-slider.component';
 import {AudioButtonComponent} from '../common/audio-button/audio-button.component';
+import {PledgesComponent} from './pledges/pledges.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import {AudioButtonComponent} from '../common/audio-button/audio-button.componen
     FormsModule,
     HomeRoutingModule
   ],
-  declarations: [HomePage, MessagesPage],
+  declarations: [HomePage, MessagesPage, PledgesComponent],
   entryComponents: [MessagesPage]
 })
 export class Tab2PageModule {}

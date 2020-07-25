@@ -68,15 +68,15 @@
 }
 
 .tile-head{
-  font-family: MeriendaOne;
+  font-family: 'Open Sans', Arial, sans-serif;
   // color: white;
   // text-shadow: 0 0 5px black;
   display: table-cell;
   vertical-align: middle;
+  font-family: MeriendaOne;
 }
 
 .tile-content{
-  font-family: MeriendaOne;
   text-align: left;
   font-size: 0.8em;
   padding-bottom: 10px;
@@ -92,26 +92,23 @@
 
 .bg-img{
   background-position:center;
-	background-repeat:no-repeat;
+  background-repeat:no-repeat;
   background-size:cover;
- 
+
 }
 .left-align{
   text-align: left !important;
 }
 
 .designation{
-  font-family: MeriendaOne;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1.1em;
   text-align: left !important;
-  position: relative;
-  top: 40px !important;
-  left: -5px;
+  top: 5px !important;
   display: table-cell;
   color: rgb(255, 248, 248) ;
   text-shadow: 2px 2px 4px #000000;
 }
-
 .right-align{
   text-align: right !important;
   padding-bottom: 10px;
@@ -122,117 +119,47 @@
 }
 .ripple {
   background-position: center;
-  
 }
 
-
-.national_anthem_tile {
-  background-image: url("../../assets/tiles/national_anthem.png");
+.pledge_of_allegiance_tile {
+  background-image: url("../../../assets/tiles/pledge_of_alligance.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(140,22,61,1);
+    border-color: rgba(0,105,170,1);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgba(140,22,61,1) !important;
+    color: rgba(0,105,170,1) !important;
   }
 }
 
-.leo_history_tile {
-  background-image: url("../../assets/tiles/leo_history.png");
+.leo_pledge_tile {
+  background-image: url("../../../assets/tiles/leo_pledge.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(245, 136, 13);
+    border-color: rgba(26,75,94,1);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(83, 5, 5) !important;
+    color: rgba(26,75,94,1) !important;
   }
 }
 
-.leo_map_tile {
-  background-image: url("../../assets/tiles/leo_map.png");
+.environmental_pledge_tile {
+  background-image: url("../../../assets/tiles/environmental_pledge.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(215, 219, 4);
+    border-color: rgba(17,55,40,1);
     background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(110, 116, 3) !important;
+    color: rgba(17,55,40,1) !important;
   }
 }
 
-.dp_logo_tile {
-  background-position: center;
-  background-size: cover;
-  .inner-tile{
-    border-color: rgb(131, 0, 178);
-    background-color: rgba(255,255,255,0.09);
-  }
-
-  .tile-head {
-    color: rgb(81, 1, 64) !important;
-  }
-}
-
-.region_and_zone_tile{
-  background-image: url("../../assets/tiles/region_and_zone.png");
-  background-position: center;
-  background-size: cover;
-  .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
-  }
-
-  .tile-head {
-    color: rgb(23, 1, 59) !important;
-  }
-}
-
-.district_calendar_tile{
-  background-image: url("../../assets/tiles/district_calendar.png");
-  background-position: center;
-  background-size: cover;
-  .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
-  }
-
-  .tile-head {
-    color: rgb(23, 1, 59) !important;
-  }
-}
-
-.pledges_tile{
-  background-image: url("../../assets/tiles/editors_note.png");
-  background-position: center;
-  background-size: cover;
-  .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
-  }
-
-  .tile-head {
-    color: rgb(23, 1, 59) !important;
-  }
-}
-
-.messages_tile{
-  background-image: url("../../assets/tiles/editors_note.png");
-  background-position: center;
-  background-size: cover;
-  .inner-tile{
-    border-color: rgba(49, 0, 112,1);
-    background-color: rgba(255,255,255,0.2);
-  }
-
-  .tile-head {
-    color: rgb(23, 1, 59) !important;
-  }
-}

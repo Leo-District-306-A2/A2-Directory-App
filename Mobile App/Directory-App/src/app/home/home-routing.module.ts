@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
 import {MessagesPage} from './messages/messages.page';
+import {PledgesComponent} from './pledges/pledges.component';
 
 const routes: Routes = [
   {
@@ -86,6 +87,10 @@ const routes: Routes = [
   {
     path: 'messages',
     component: MessagesPage
+  },
+  {
+    path: 'pledges',
+    component: PledgesComponent
   }
 
 ];
