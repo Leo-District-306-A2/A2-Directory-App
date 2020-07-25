@@ -1087,6 +1087,62 @@
           "img": "tharini_subhasingha.png"
       }
       ]
+    },
+    {
+      "designationCategory": "Key Cabinet Executives",
+      "logo": "default_data/logo.png",
+      "officers": [
+        {
+          "designation": "District Governor",
+          "visibility_order": 1,
+          "name": "Lion Ajith Liyanage MJF",
+          "club": "Lions Club of Piliyandala",
+          "email": "agaliyanage@gmail.com",
+          "address": "228/A, Walauwatta Road, Kesbawa",
+          "phone": "0714102706",
+          "img": "Lions District 306 A2 - Key Cabinet Executives/lion_ajith_liyanage_mjf.png"
+        },
+        {
+          "designation": "1st Vice District Governor",
+          "visibility_order": 2,
+          "name": "Lion Buddhika Ratnayaka MJF MAF",
+          "club": "Lions Club of Bandaragama",
+          "email": "buddhikaratnayaka@gmail.com",
+          "address": "65/5, Ward Place, Colombo 07",
+          "phone": "0715347669",
+          "img": "Lions District 306 A2 - Key Cabinet Executives/lion_buddhika_ratnayaka.png"
+        },
+        {
+          "designation": "2nd Vice District Governor",
+          "visibility_order": 3,
+          "name": "Lion Thushara Peiris MJF",
+          "club": "Lions Club of Wellawatte Legends",
+          "email": "thusharakumudu@gmail.com",
+          "address": "83/3, Salmal Uyana, Elhena Road, Maharagama",
+          "phone": "0714771358",
+          "img": "Lions District 306 A2 - Key Cabinet Executives/lion_thushara_peiris.png"
+        },
+        {
+          "designation": "District Cabinet Secretary",
+          "visibility_order": 4,
+          "name": "Lion Nuwan Indunil Ballantudawa",
+          "club": "Lions Club of Miriswatta - Piliyandala",
+          "email": "nuwan_ballantudawa@yahoo.com.au",
+          "address": "252, Asiri Mawatha, Siyambalagoda, Polgasowita",
+          "phone": "0773719732",
+          "img": "Lions District 306 A2 - Key Cabinet Executives/lion_nuwan_indunil_ballantudawa.png"
+        },
+        {
+          "designation": "District Cabinet Treasurer",
+          "visibility_order": 5,
+          "name": "Lion Chaminda Samarasekara",
+          "club": "Lions Club of Pepiliyana",
+          "email": "rpcsam8@gmail.com",
+          "address": "57, Wawanawatta Rd, Mampe, Piliyandala Western",
+          "phone": "0777340804",
+          "img": "Lions District 306 A2 - Key Cabinet Executives/lion_chandima_samarasekara.png"
+        }
+      ]
     }
   ]
 }
