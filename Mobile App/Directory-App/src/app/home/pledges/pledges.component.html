@@ -1,44 +1,43 @@
 <ion-content [fullscreen]="true">
-  <div class="header_home">
-    <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
-      <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
+    <div class="header_home">
+        <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
+            <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
+        </div>
+        <div class="scrollable-content_home">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent pledge_of_allegiance_tile"
+                             (click)="navigateToPledgeOfAllegiance(pledgeOfAllegiance)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head font-weight-bold text-secondary">{{ pledgeOfAllegiance?.en.title }}</div>
+                                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToLeoPledge(leoPledge)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold">{{ leoPledge?.en.title }}</div>
+                                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
+                          </div> -->
+                            </div>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div class="tile center ripple-parent environmental_pledge_tile"
+                             (click)="navigateToEnvironmentPledge(environmantalPledge)">
+                            <div class="inner-tile ion-padding">
+                                <div class="tile-head text-secondary font-weight-bold animate__bounce">
+                                    {{ environmantalPledge?.en.title }}</div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
     </div>
-    <div class="scrollable-content_home">
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent pledge_of_allegiance_tile"
-                 (click)="navigateToPledgeOfAllegiance(pledgeOfAllegiance)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head font-weight-bold text-secondary">{{ pledgeOfAllegiance?.en.title }}</div>
-                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
-                <!-- </div> -->
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToLeoPledge(leoPledge)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold">{{ leoPledge?.en.title }}</div>
-                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
-          </div> -->
-              </div>
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="tile center ripple-parent environmental_pledge_tile"
-                 (click)="navigateToEnvironmentPledge(environmantalPledge)">
-              <div class="inner-tile ion-padding">
-                <div class="tile-head text-secondary font-weight-bold animate__bounce">
-                  {{ environmantalPledge?.en.title }}</div>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-  </div>
-
 </ion-content>

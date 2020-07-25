@@ -9,7 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 export class StanderdLeoClubConstitutionPage implements OnInit {
 
   viewData: any;
-
+  lang = 'en';
   constructor(private route: ActivatedRoute) {
     route.paramMap.subscribe((data) => {
       this.viewData = JSON.parse(data.get('data'));
@@ -19,4 +19,7 @@ export class StanderdLeoClubConstitutionPage implements OnInit {
   ngOnInit() {
   }
 
+  langChanged(event) {
+    this.lang = event;
+  }
 }
