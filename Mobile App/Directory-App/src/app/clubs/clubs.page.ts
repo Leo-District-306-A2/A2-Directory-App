@@ -29,7 +29,7 @@ export class ClubsPage {
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
     this.clubService.getData().then((data) => {
-      this.utilityService.sortClubs(data.clubs);//sort clubs according to club name
+      this.utilityService.sortClubs(data.clubs); // sort clubs according to club name
       this.filteredClubData = data.clubs;
       this.allClubsData = data.clubs;
       this.imgBaseUrl = data.imgBaseUrl;
