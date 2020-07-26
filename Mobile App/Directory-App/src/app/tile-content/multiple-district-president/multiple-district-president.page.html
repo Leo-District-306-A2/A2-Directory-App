@@ -9,7 +9,7 @@
       class="mx-auto d-block mb-1 mt-1 officer-image">
     </div>
     <div class="text-center officer-name">{{ viewData?.name }}</div>
-    <div class="logo">
+    <div class="logo" *ngIf="viewData?.logo">
       <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + viewData?.logo }}"
       class="mx-auto d-block mb-1 mt-1 logo-img">
       <div class="text-center logo-name">{{ viewData?.designation }} logo</div>
