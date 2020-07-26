@@ -4,7 +4,7 @@
   "events": [
     {
       "name": "District Bodhi Poojawa",
-      "date": "18/07/2020",
+      "dates": ["18/07/2020"],
       "description": "Bodhi Puja is one of the most important events in Sri Lankans' lives. It is not only a religious ritual but also an experience that makes the happiness and achievement in the things we do to be desired. At the beginning of a Leoistic year, Leo district 306 A2 always conducts a Bodhi Puja to wish the best flow of the events organized during the year and also to receive blessings from the triple gems for the officials as well as the other participants and contributors. The bodhi puja was held on 18th July under the leadership of Leo Osura Perera for the Leoistic year 2020/2021. As always, this was a great experience of happy and spiritual mentalities.",
       "bannerImg": "bodhi_poojawa/banner.png",
       "chairpersons": [
@@ -19,7 +19,7 @@
     },
     {
       "name": "District Installation",
-      "date": "01/08/2020",
+      "dates": ["01/08/2020"],
       "description": "In every Leoistic year, the district installation of Leo district 306 A2 is a mandatory event to name the officials and their duties as well. Upon the deployment, it is not only expected that the officials will be elected, but they will also be given the duties that need to be performed within a year. To inspire the value of serving the community is to build pride and obligation. Fresh or old, all the Leos' main motivation is dedicating their lives as much as possible to volunteering. Under the chairmanship of Leo Raseema Sugandi / Leo Dinendri, the district installation for the Leoistic year 2020/2021 is scheduled for 1st August 2020.",
       "bannerImg": "district_istallation/banner.png",
       "chairpersons": [
@@ -41,7 +41,7 @@
     },
     {
       "name": "Club Officers Workshop",
-      "date": "09/08/2020",
+      "dates": ["09/08/2020"],
       "description": "The workshop of the club officer is a major administrative event and this event is coordinated jointly by 5 Leo Clubs in Leo district 306A2. The main aim of this event is to build up the district 's strong administration body and to disseminate information about club reporting and other club and district admin material, as well as to establish a Leo Leader who is packed with good management and leadership qualities. The workshop of club officers is scheduled for 09 August this year under the chairmanship of Leo Tharini Subhasinghe.",
       "bannerImg": "club_officers_workshop/banner.png",
       "chairpersons": [
@@ -56,7 +56,7 @@
     },
     {
       "name": "Multiple District Council Installation",
-      "date": "23/08/2020",
+      "dates": ["23/08/2020"],
       "description": "The Leos keep steps forward as one team each year. Annual establishment of multiple district councils is a bigger step held every year with the goal of formally defining the responsibilities. This is scheduled to be held on 23rd August 2020 in the Leoistic year 2020/2021 with the impetus to push Leos to the next stage of advances.",
       "bannerImg": "multiple_district_council_installation/banner.png",
       "chairpersons": [
@@ -69,7 +69,7 @@
     },
     {
       "name": "Club Officers & District Officers Symposium",
-      "date": "05/09/2020",
+      "dates": ["05/09/2020", "06/09/2020"],
       "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
       "bannerImg": "multiple_officers_symposium/banner.png",
       "chairpersons": [
@@ -82,22 +82,7 @@
     },
     {
       "name": "President's Camp",
-      "date": "12/09/2020",
-      "description": "Camping is an experience virtually everyone will enjoy. It also contributes to the creation of a thick bond between the president and council members of the Leo district. For the Leoistic year 2020/2021, the President’s camp is scheduled to be held on 12th and 13th September 2020.  Leo Navod Kiriwaththuduwa  will be the chairperson for the event. The camp is usually a one-night camping with various outdoor events, enjoyable sports, biking, and leadership and Leoism sessions.",
-      "bannerImg": "president_camp/banner.png",
-      "chairpersons": [
-        {
-          "name": "Leo Navod Kiriwaththuduwa",
-          "image": "president_camp/navod_kiriwaththuduwa.png",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "navodk@leodistrict306a2.org",
-          "phone": "077-172-3911"
-        }
-      ]
-    },
-    {
-      "name": "President's Camp",
-      "date": "13/09/2020",
+      "dates": ["12/09/2020", "13/09/2020"],
       "description": "Camping is an experience virtually everyone will enjoy. It also contributes to the creation of a thick bond between the president and council members of the Leo district. For the Leoistic year 2020/2021, the President’s camp is scheduled to be held on 12th and 13th September 2020.  Leo Navod Kiriwaththuduwa  will be the chairperson for the event. The camp is usually a one-night camping with various outdoor events, enjoyable sports, biking, and leadership and Leoism sessions.",
       "bannerImg": "president_camp/banner.png",
       "chairpersons": [
@@ -112,7 +97,7 @@
     },
     {
       "name": "Fellowship Event",
-      "date": "09/10/2020",
+      "dates": ["09/10/2020"],
       "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
       "bannerImg": "fellow_ship_event/banner.png",
       "chairpersons": [
@@ -127,7 +112,7 @@
     },
     {
       "name": "Mass Induction",
-      "date": "15/11/2020",
+      "dates": ["15/11/2020"],
       "description": "Acting as a Leo is much more than being a regular social worker. That's because leadership, knowledge, and potential are graved into a Leo 's soul with the word Leo. Leo mass induction is one of the main activities that the Leo district 306 A2 is undertaking to provide the self-esteem earned through social programs for young people. The mass induction is expected to take place on 15th November 2020.",
       "bannerImg": "mass_induction/banner.png",
       "chairpersons": [
@@ -140,7 +125,7 @@
     },
     {
       "name": "Talent Show",
-      "date": "29/11/2020",
+      "dates": ["29/11/2020"],
       "description": "Talents and skills are crucial to opening the door to the novel world for everyone. This is no secret that a heart involved in social services is often packed with multiple abilities that need to be recognized and evaluated. Annual youth talent show is planned with this dimension. All Leo clubs in Leo district 306 A2 are expected to get together for the annual talent show on November 29th, 2020. Remembrance would be a fascinating thought about this event.",
       "bannerImg": "talent_show/banner.png",
       "chairpersons": [
@@ -154,7 +139,7 @@
     },
     {
       "name": "Walk and Leo Day Celebration",
-      "date": "05/12/2020",
+      "dates": ["05/12/2020"],
       "description": "Walking for society is an encouraging example from Leos to the world, instead of walking for the individual wellbeing. Every step forward marks the Leos' uniqueness and reinforces the great purpose behind each move. The Leo walk's main inspiration is to motivate disadvantaged groups that have fewer facilities. The Leo Day celebration is also planned along with the walk, as this is an exemplary event. This occurrence can be witnessed on 5th December 2020.",
       "bannerImg": "walk_and_leo_celebration/banner.png",
       "chairpersons": [
@@ -167,7 +152,7 @@
     },
     {
       "name": "Mid-Year Review",
-      "date": "13/12/2020",
+      "dates": ["13/12/2020"],
       "description": "Reviewing the past provides better choices for future developments. It's a bigger way to recognize the ups and downs to improve service efficiency. The Leo District 306A2 Mid-Year Review fulfills the aforementioned approaches even more efficiently. The mid-year analysis for the Leoistic year 2020/2021 will take place on 13th December and the event chairman will be Leo Savumi Wadduwage.",
       "bannerImg": "mid_year_review/banner.png",
       "chairpersons": [
@@ -182,7 +167,7 @@
     },
     {
       "name": "Pirith Chanting Ceremony",
-      "date": "09/01/2021",
+      "dates": ["09/01/2021"],
       "description": "The religious blessings are the greatest encouragement that anyone may get in leading life toward progress. For this inspiration, Leo District 306 A2 holds the pirith chanting ceremony annually in order to attain merit and wish achievement for services to be conducted within a year. The Pirith chanting ceremony for the Leoistic year 2020/2021 is scheduled for January 9, 2021 under the chairmanship of Leo Dilitha Ranjuna.",
       "bannerImg": "pirith_chanting_ceremony/banner.png",
       "chairpersons": [
@@ -197,7 +182,7 @@
     },
     {
       "name": "Fundraiser",
-      "date": "23/01/2021",
+      "dates": ["23/01/2021"],
       "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
       "bannerImg": "fundraiser/banner.png",
       "chairpersons": [
@@ -219,51 +204,7 @@
     },
     {
       "name": "Leo Youth Camp",
-      "date": "26/02/2021",
-      "description": "Youth are always a main pillar of Leos's power. The key goal behind the Leo youth camp is to motivate youth with multidisciplinary aspects. Problem solving and improving talent strategies are anticipated while establishing strong ties with other Leos. Leo Youth Camp for the Leoistic Year 2020/2021 will take place on February 26 , 27 & 28, 2021 under Leo Kasun Ramanayaka / Leo Dulan's chairmanship.",
-      "bannerImg": "youth_camp/banner.png",
-      "chairpersons": [
-        {
-          "name": "Leo Kasun Ramanayaka",
-          "image": "youth_camp/kasun_ramanayaka.png",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "kasun.ramanayaka@leodistrict306a2.org",
-          "phone": "071-648-6071"
-        },
-        {
-          "name": "Leo Dulan Wickramarathne",
-          "image": "youth_camp/dulan_wickramarathne.png",
-          "club": "Leo Club of Godigamuwa",
-          "email": "dulan@leodistrict306a2.org",
-          "phone": "071-429-9514"
-        }
-      ]
-    },
-    {
-      "name": "Leo Youth Camp",
-      "date": "27/02/2021",
-      "description": "Youth are always a main pillar of Leos's power. The key goal behind the Leo youth camp is to motivate youth with multidisciplinary aspects. Problem solving and improving talent strategies are anticipated while establishing strong ties with other Leos. Leo Youth Camp for the Leoistic Year 2020/2021 will take place on February 26 , 27 & 28, 2021 under Leo Kasun Ramanayaka / Leo Dulan's chairmanship.",
-      "bannerImg": "youth_camp/banner.png",
-      "chairpersons": [
-        {
-          "name": "Leo Kasun Ramanayaka",
-          "image": "youth_camp/kasun_ramanayaka.png",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "kasun.ramanayaka@leodistrict306a2.org",
-          "phone": "071-648-6071"
-        },
-        {
-          "name": "Leo Dulan Wickramarathne",
-          "image": "youth_camp/dulan_wickramarathne.png",
-          "club": "Leo Club of Godigamuwa",
-          "email": "dulan@leodistrict306a2.org",
-          "phone": "071-429-9514"
-        }
-      ]
-    },
-    {
-      "name": "Leo Youth Camp",
-      "date": "28/02/2021",
+      "dates": ["26/02/2021", "27/02/2021", "28/02/2021"],
       "description": "Youth are always a main pillar of Leos's power. The key goal behind the Leo youth camp is to motivate youth with multidisciplinary aspects. Problem solving and improving talent strategies are anticipated while establishing strong ties with other Leos. Leo Youth Camp for the Leoistic Year 2020/2021 will take place on February 26 , 27 & 28, 2021 under Leo Kasun Ramanayaka / Leo Dulan's chairmanship.",
       "bannerImg": "youth_camp/banner.png",
       "chairpersons": [
@@ -285,7 +226,7 @@
     },
     {
       "name": "Sports Day",
-      "date": "20/03/2021",
+      "dates": ["20/03/2021"],
       "description": "Sport is always intended as the main factor in maintaining a healthy life. Life does not just mean physical well-being; it is the individual's mental well-being as well. In order to have mental health, it is essential to have good relations in a life. With the same mentality both victory and defeat have to be considered. One day, defeating is required to win. The Leo district 306 A2 organizes a sports day to achieve all these aspects. It will be held this year on 20th March 2021 with Leo Athila Senal as the event's chairman.",
       "bannerImg": "sport_day/banner.png",
       "chairpersons": [
@@ -300,7 +241,7 @@
     },
     {
       "name": "Leo Olympics",
-      "date": "04/04/2021",
+      "dates": ["04/04/2021"],
       "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
       "bannerImg": "leo_olympics/banner.png",
       "chairpersons": [
@@ -313,7 +254,7 @@
     },
     {
       "name": "Business Session",
-      "date": "06/06/2021",
+      "dates": ["06/06/2021"],
       "description": "Lion Arjun a Charter Member of Lions Club of Dampe began his lionstic career in year 2006 and was the Club President in 2007/2008 Golden Jubilee Year. He was first invited to the District Cabinet in year 2007/2008. He has held number of cabinet positions including District Chairperson, Zone Chairperson, twice as the Cabinet Treasurer and as the Cabinet Secretary. In year 2012/2013 he was elected as the 2 nd Vice District Governor and in year 2013/2014 as the 1 st Vice District Governor. In the lionistic year 2014/2015 he was elected as the District Governor of Lions District 306 A2 and he became the youngest ever District Governor in Sri Lanka. At Present he savers the Chairperson of the Leadership Institute of District 306 A2. At the last Multiple District Convention of Multiple District 306 Lion Arjun was elected as the Council Chairperson for the lionistic year 2019/2020. Lion Arjun is the first ever lion in district 306 A2 to become a Progressive Melvin Johns Fellow (PMJF) and to be graduated from the Senior Lions Leadership Institute. He has also been graduated from the Lions Faculty Development Institute. He has extended 2 new Lions Clubs for the District. He has received number of awards and certificates including The International Presidents Medal, 10 International Presidents Apprehension Certificates and 2 Leadership Medals and also the 100% Club President Award and the District Governor Excellence award. In 2011/2012 lionistic year he won the “Lion of the Year” Award. He is a proud product of Royal College, Colombo and he completed his higher education at Ceylon Hotel School. Currently he serves as the Chairman/C E O of Winsgreat and Winstech International. He is married to Lion Nayomi Abeysinghe an old girl of Anula Vidyalaya, Nugegoda and she currently serves as a Directress of Winstech International. He is blessed with two daughters namely is Ashnika and Sasindi and both of them are students of Lyceum International School Nugegoda.",
       "bannerImg": "business_session/banner.png",
       "chairpersons": [
@@ -328,7 +269,7 @@
     },
     {
       "name": "District Conference",
-      "date": "13/06/2021",
+      "dates": ["13/06/2021"],
       "description": "It is important to give importance to the right people in inspiring them to continue their services to society. All the hardships they experienced towards the benefit of the underprivileged societies has to be highly acclaimed. The District Conference is the forum designed to achieve this goal. The District Conference for the Leoistic Year 2020/2021 will take place on 13 June 2021 with Leo Tikuli Pitigala as the Chairperson.",
       "bannerImg": "district_conference/banner.png",
       "chairpersons": [
@@ -343,7 +284,7 @@
     },
     {
       "name": "Leo Multiple Awards",
-      "date": "20/06/2021",
+      "dates": ["20/06/2021"],
       "description": "The best way to get value is by offering value. The recognition is given to all the volunteers involved in the outstanding social programs with the pure aim of improving the lives of the vulnerable people  through the Leo Multiple District Awards. The Leo Multiple Awards for the Leoistic year 2020/2021 will take place on 20 June 2021 with the ultimate intention to achieve this goal.",
       "bannerImg": "multiple_awards/banner.png",
       "chairpersons": [

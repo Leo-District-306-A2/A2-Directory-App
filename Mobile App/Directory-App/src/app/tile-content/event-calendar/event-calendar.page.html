@@ -1,24 +1,30 @@
 <ion-content>
-  <div class="col-md-12 align-items-center">
-    <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
-    <div>
-      <h4 class="text-center mb-3 meriendaOneFont">{{ viewData?.title }}</h4>
+    <div class="col-md-12 align-items-center">
+        <img src="../../../assets/logos/leo_logo.png" class="mx-auto d-block header-logo mt-5 mb-2">
+        <div>
+            <h4 class="text-center mb-3 meriendaOneFont">{{ viewData?.title }}</h4>
+        </div>
+        <div class="content">
+            <ion-list>
+                <ion-item *ngFor="let eventItem of viewData?.events" class="ion-activatable ripple-parent"
+                          (click)="viewEvent(eventItem, viewData?.imgBaseUrl);">
+                    <ion-avatar slot="start" class="text-center date-wrapper">
+                        <div class="dates">
+                            <div *ngFor="let dateItem of eventItem?.dates;let dateIndex = index;" class="date-item {{'animate-' + (eventItem?.dates).length }}">
+                                <p class="month text-center font-weight-bold">{{ utilityService.getDateFormatted(dateItem, 'm') }}</p>
+                                <h2 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted(dateItem, 'd') }}</h2>
+                                <p class="m-0 year text-center font-weight-bold">{{ utilityService.getDateFormatted(dateItem, 'y') }}</p>
+                            </div>
+                        </div>
+                    </ion-avatar>
+                    <ion-label>
+                        <h2 class="font-weight-bold">{{ eventItem?.name }}</h2>
+                        <p class="chair-name" *ngFor="let chairperson of eventItem?.chairpersons">
+                            Event {{ (chairperson?.designation ? chairperson?.designation : "chairperson") + ": " + chairperson?.name }}</p>
+                    </ion-label>
+                    <ion-ripple-effect></ion-ripple-effect>
+                </ion-item>
+            </ion-list>
+        </div>
     </div>
-    <div class="content">
-      <ion-list>
-        <ion-item *ngFor="let eventItem of viewData?.events" class="ion-activatable ripple-parent" (click)="viewEvent(eventItem, viewData?.imgBaseUrl);">
-          <ion-avatar slot="start" class="text-center date-wrapper">
-            <p class="month text-center font-weight-bold">{{ utilityService.getDateFormatted( eventItem?.date , 'm') }}</p>
-            <h2 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted( eventItem?.date , 'd') }}</h2>
-            <p class="m-0 year text-center font-weight-bold">{{ utilityService.getDateFormatted( eventItem?.date , 'y') }}</p>
-          </ion-avatar>
-          <ion-label>
-            <h2 class="font-weight-bold">{{ eventItem?.name }}</h2>
-            <p class="chair-name" *ngFor="let chairperson of eventItem?.chairpersons">Event {{ (chairperson?.designation ? chairperson?.designation : "chairperson")  + ": " + chairperson?.name }}</p>
-          </ion-label>
-          <ion-ripple-effect></ion-ripple-effect>
-        </ion-item>
-      </ion-list>
-    </div>
-  </div>
 </ion-content>

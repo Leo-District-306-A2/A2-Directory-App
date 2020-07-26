@@ -4,11 +4,23 @@
 }
 
 .date-wrapper {
-  transform: scale(1.5);
   color: white;
   margin-top: 35px;
   background-size: cover;
+  display: table;
+  width: 100vw;
+  padding: 20px;
 }
+
+.date-items {
+  display: table-row;
+}
+
+.date-item {
+  transform: scale(1.5);
+  display: table-cell;
+}
+
 
 .month {
   position: relative;
