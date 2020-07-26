@@ -364,329 +364,6 @@
       ]
     },
     {
-      "designationCategory": "Past District Presidents",
-      "logo": "default_data/logo.png",
-      "officers": [
-        {
-          "visibility_order": 1,
-          "name": "PMDP Mr. Sadeepa Palliyaguru",
-          "club": "Leo Club of Polgasowita",
-          "email": "sadeepa.palliyaguru@gmail.com",
-          "address": "9, Attigala Mawata, Kesbewa",
-          "phone": "0716849706",
-          "img": "pdp/sadeepa_ravinath_palliyaguru.png"
-        },
-        {
-          "visibility_order": 2,
-          "name": "PDP Leo Sameera Wijesinghe",
-          "club": "Leo Club of Dehiwala North",
-          "email": "sam_s20002001@yahoo.com",
-          "address": "United Kingdom",
-          "phone": "447595548814",
-          "img": "pdp/sameera_wijesinghe.png"
-        },
-        {
-          "visibility_order": 3,
-          "name": "PDP Mr. Nadeesha Palliyaguru",
-          "club": "Leo Club of Piliyandala",
-          "email": "nadeesha.palli@gmail.com",
-          "address": "1/1, Vishnu Residencies, Shrubbery Garden, Colombo 04",
-          "phone": "0777160782",
-          "img": "pdp/nadeesha_ranganath_palliyaguru.png"
-        },
-        {
-          "visibility_order": 4,
-          "name": "PDP Lion Chathura Deshapriya",
-          "club": "Leo Club of Moragahahena",
-          "email": "deshapriya.Chathura@yahoo.com",
-          "address": "394, Kottawa Rd, Beruketiya, Kiriwattuduwa",
-          "phone": "0718257627",
-          "img": "pdp/chathura_deshapriya.png"
-        },
-        {
-          "visibility_order": 5,
-          "name": "PMDP Lion Dumindu Jayakody",
-          "club": "Leo Club of Werahera",
-          "email": "dumindu@leodistrict306a2.org",
-          "address": "Australia",
-          "img": "pdp/dumindu_jayakodi.png"
-        },
-        {
-          "visibility_order": 6,
-          "name": "PDP Lion Thilini Manamperi",
-          "club": "Leo Club of Kalubowila",
-          "email": "thilini@leodistrict306a2.org",
-          "address": "219, Old Road, Nawinna, Maharagama",
-          "phone": "0772220004",
-          "img": "pdp/thilini_manamperi.png"
-        },
-        {
-          "visibility_order": 7,
-          "name": "PDP Lion Kasun Pathirana",
-          "club": "Leo Club Of Mattegoda",
-          "email": "kasun@leodistrict306a2.org",
-          "address": "35, Araliya Uyana, Mattegoda",
-          "phone": "0775478857",
-          "img": "pdp/kasun_arunoda_pathirana.png"
-        },
-        {
-          "visibility_order": 8,
-          "name": "PDP Lion Isuru Senadheera",
-          "club": "Leo Club of University of Moratuwa",
-          "email": "isuru@leodistrict306a2.org",
-          "address": "“Dharshika”, Station Road, Balapitiya",
-          "phone": "0777392681",
-          "img": "pdp/isuru_senadheera.png"
-        },
-        {
-          "visibility_order": 9,
-          "name": "PDP Lion Kaneel Maddumage",
-          "club": "Leo Club of Moragahahena",
-          "email": "kaneel@leodistrict306a2.org",
-          "address": "63, Kahatapitiya, Kananwila, Horana",
-          "phone": "0773839947",
-          "img": "pdp/kaneel_maddumage.png"
-        },
-        {
-          "visibility_order": 10,
-          "name": "PDP Leo Chandima Vithanage",
-          "club": "Leo Club of Polgasowita",
-          "email": "chandima@leodistrict306a2.org",
-          "address": "Olaboduwa Eastate, Koralaima, Gonapola Junction",
-          "phone": "0777423309",
-          "img": "pdp/chandima_vithanage.png"
-        },
-        {
-          "visibility_order": 11,
-          "name": "PMDP Leo Lion Pramod Wimalatunga",
-          "club": "Leo Club of Rattanapitiya",
-          "email": "pramod@leodistrict306a2.org",
-          "address": "118/3, Pirivena Road, Boralasgamuwa",
-          "phone": "0771129101",
-          "img": "pdp/pramod_wimalatunga.png"
-        },
-        {
-          "visibility_order": 12,
-          "name": "PMDP Leo Lion Kesari Seneviratne PMJF",
-          "club": "Leo Club of Kalubowila",
-          "email": "kesari@leodistrict306a2.org",
-          "address": "222B, Galvihara Road, Dehiwela",
-          "phone": "0777349305",
-          "img": "pdp/kesari_seneviratne.png"
-        },
-        {
-          "visibility_order": 13,
-          "name": "PDP Leo Lion Kalindu Dissanayake",
-          "club": "Leo Club of Moragahahena",
-          "email": "kalindu@leodistrict306a3.org",
-          "address": "394, Kottawa Road, Beruketiya, Kiriwaththuduwa",
-          "phone": "0773158277",
-          "img": "pdp/kalindu_dissanayake.png"
-        },
-        {
-          "visibility_order": 14,
-          "name": "PDP Leo Lion Kasun Lokugamage",
-          "club": "Leo Club of Piliyandala",
-          "email": "kasunl@leodistrict306a2.org",
-          "address": "212, Kandawala Mawatha, Ratmalana",
-          "phone": "0778608928",
-          "img": "pdp/kasun_lokugamage.png"
-        },
-        {
-          "visibility_order": 15,
-          "name": "IPDP Leo Mudith Jayasekara",
-          "club": "Leo Club of Polgasowita",
-          "email": "mudith@leodistrict306a2.org",
-          "address": "291/42, Mandawila Road, Kesbewa, Piliyandala",
-          "phone": "0777336911",
-          "img": "pdp/mudith_jayasekara.png"
-        }
-      ]
-    },
-    {
-      "designationCategory": "A2 Editorial Panel",
-      "logo": "default_data/logo.png",
-      "officers": [
-        {
-          "visibility_order": 1,
-          "designation": "Chairperson",
-          "name": "Leo Danushi Wijewardana",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "phone": "0772823550",
-          "email": "danushi@leodistrict306a2.org",
-          "img": "danushi_wijewardana.png"
-        },
-        {
-          "visibility_order": 2,
-          "designation": "Advisor",
-          "name": "Leo Yasiru Nilan",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0702132850",
-          "email": "yasirun@leodistrict306a2.org",
-          "img": "yasiru_nilan.png"
-        },
-        {
-          "visibility_order": 3,
-          "designation": "Member",
-          "name": "Leo Janani Wijetunga",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "phone": "0757451963",
-          "email": "janani.wijetunga1997@gmail.com",
-          "img": "janani_wijetunga.png"
-        },
-        {
-          "visibility_order": 4,
-          "designation": "Member",
-          "name": "Leo Chamudi Thennakoon",
-          "club": "Leo Clu of Uragasmanhandiya",
-          "phone": "0770674384",
-          "email": "chamuditennakon@gmail.com",
-          "img": "chamudi_thennakoon.png"
-        },
-        {
-          "visibility_order": 5,
-          "designation": "Member",
-          "name": "Leo Nimshi Ranawana",
-          "club": "Leo Club of University of Sri Jayewardenepura",
-          "phone": "0716216213",
-          "email": "nimshi.leousjp@gmail.com",
-          "img": "nimshi_ranawana.png"
-        },
-        {
-          "visibility_order": 6,
-          "designation": "Member",
-          "name": "Leo Lakshika Swarnamali",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0711607997",
-          "email": "swarnamalial@gmail.com",
-          "img": "lakshika_swarnamali.png"
-        },
-        {
-          "visibility_order": 7,
-          "designation": "Member",
-          "name": "Leo Nethmi Pathegama",
-          "club": "Leo Club of University of Sri Jayewardenepura",
-          "phone": "0711403745",
-          "email": "nethmi.leousjp@gmail.com",
-          "img": "nethmi_pathegama.png"
-        },
-        {
-          "visibility_order": 8,
-          "designation": "Member",
-          "name": "Leo Disali Gunasekara",
-          "club": "Leo Club of Polgasowita",
-          "phone": "0768355413",
-          "email": "gunasekeradisali@gmail.com",
-          "img": "disali_gunasekera.png"
-        },
-        {
-          "visibility_order": 9,
-          "designation": "Member",
-          "name": "Leo Mafaza Wahid",
-          "club": "Leo Club Piliyandala",
-          "phone": "0756322767",
-          "email": "mwahid81@gmail.com",
-          "img": "mafaza_wahid.png"
-        },
-        {
-          "visibility_order": 10,
-          "designation": "Designer",
-          "name": "Leo Kalindu Rajapaksha",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0717296347",
-          "email": "kalindurajapaksha@gmail.com",
-          "img": "kalindu_rajapaksha.png"
-        },
-        {
-          "visibility_order": 11,
-          "designation": "Designer",
-          "name": "Leo Thilina Prasad",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0716485403",
-          "email": "thilina.prasad@leodistrict306a2.org",
-          "img": "thilina_prasad.png"
-        }
-      ]
-    },
-    {
-      "designationCategory": "A2 IT Team",
-      "logo": "default_data/logo.png",
-      "officers": [
-        {
-          "visibility_order": 1,
-          "designation": "Chairman",
-          "name": "Leo Thilina Prasad",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0716485409",
-          "email": "thilina.prasad@leodistrict306a2.org",
-          "img": "thilina_prasad.png"
-        },
-        {
-          "visibility_order": 2.0,
-          "designation": "Advisor",
-          "name": "Leo Buddhi Vikasitha",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0712489789",
-          "email": "92buddhiv@gmail.com",
-          "img": "buddhi_vikasitha.png"
-        },
-        {
-          "visibility_order": 3.0,
-          "designation": "Member",
-          "name": "Leo Kaveen Rathnayake",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "phone": "0717909332",
-          "email": "kaveen@leodistrict306a2.org",
-          "img": "kaveen_rathnayake.png"
-        },
-        {
-          "visibility_order": 4.0,
-          "designation": "Member",
-          "name": "Leo Kalana Tebel",
-          "club": "Leo Club of Panadura Alubomulla",
-          "phone": "0771713114",
-          "email": "kalana@leodistrict306a2.org",
-          "img": "kalana_tebel.png"
-        },
-        {
-          "visibility_order": 5.0,
-          "designation": "Member",
-          "name": "Leo Isuru Gayan",
-          "club": "Leo Club of Piliyandala",
-          "phone": "0772560305",
-          "email": "isapuarachchi@gmail.com",
-          "img": "isuru_gayan.png"
-        },
-        {
-          "visibility_order": 6.0,
-          "designation": "Member",
-          "name": "Leo Imasha Weerakoon Karunatilleke",
-          "club": "Leo Club of Matara Nilwala",
-          "phone": "0767886481",
-          "email": "imashakaru@gmail.com",
-          "img": "imasha_weerakoon.png"
-        },
-        {
-          "visibility_order": 7.0,
-          "designation": "Member",
-          "name": "Leo Kalindu Rajapaksha",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0717296347",
-          "email": "kalindurajapaksha@gmail.com",
-          "img": "kalindu_rajapaksha.png"
-        },
-        {
-          "visibility_order": 8.0,
-          "designation": "Member",
-          "name": "Leo Navindu Deshan",
-          "club": "Leo Club of Matara Nilwala",
-          "phone": "0713676335",
-          "email": "navofficial99@gmail.com",
-          "img": "navindu_deshan.png"
-        }
-      ]
-    },
-    {
       "designationCategory": "Orientation Committee",
       "logo": "default_data/logo.png",
       "officers": [
@@ -828,6 +505,85 @@
       ]
     },
     {
+      "designationCategory": "Administration Team",
+      "logo": "default_data/logo.png",
+      "officers": [
+        {
+          "visibility_order": 1,
+          "designation": "Chairman",
+          "name": "Leo Tikuli Pitigala",
+          "club": "Leo Club of Katuwawala",
+          "phone": "0771138768",
+          "email": "tikuli@leodistrict306a2.org",
+          "img": "tikuli_pitigala.png"
+      },
+      {
+          "visibility_order": 2,
+          "designation": "Advisor",
+          "name": "PMDP Leo Kesari Senevirathne",
+          "club": "Leo Club of Kalubowila",
+          "phone": "0777349305",
+          "email": "kesari@leodistrict306a2.org",
+          "img": "kesari_seneviratne.png"
+      },
+      {
+          "visibility_order": 3,
+          "designation": "Member",
+          "name": "Leo Raseema Sugandi",
+          "club": "Leo Club of Sri Lanka Technological Campus",
+          "phone": "0711122014",
+          "email": "raseema@leodistrict306a2.org",
+          "img": "raseema_sugandi.png"
+      },
+      {
+          "visibility_order": 4,
+          "designation": "Member",
+          "name": "Leo Kasun Ramanayaka",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0716486071",
+          "email": "kasun.ramanayaka@leodistrict306a2.org",
+          "img": "kasun_ramanayaka.png"
+      },
+      {
+          "visibility_order": 5,
+          "designation": "Member",
+          "name": "Leo Isuri Udithamala",
+          "club": "Leo Club of Sri Lanka Technological Campus",
+          "phone": "0766291981",
+          "email": "isuri.udithamala@leodistrict30",
+          "img": "isuri_udithamala.png"
+      },
+      {
+          "visibility_order": 6,
+          "designation": "Member",
+          "name": "Leo Santhrushika De Silva",
+          "club": "Leo Club of Panadura Alubomulla",
+          "phone": "0713544281",
+          "email": "santhrushika@leodistrict306a2.org",
+          "img": "santhrushika_de_silva.png"
+      },
+      {
+          "visibility_order": 7,
+          "designation": "Member",
+          "name": "Leo Shehan Akmeemana",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0712373186",
+          "email": "shehanakmeemana@leodistrict306a2.org",
+          "img": "shehan_akmeemana.png"
+      },
+      {
+          "visibility_order": 8,
+          "designation": "Member",
+          "name": "Leo Tharini Subasinghe",
+          "club": "Leo Club of Baddegama",
+          "phone": "0771269943",
+          "email": "tharini@leodistrict306a2.org",
+          "img": "tharini_subhasingha.png"
+      }
+      ]
+    },
+        
+    {
       "designationCategory": "Fundraising Team",
       "logo": "default_data/logo.png",
       "officers": [
@@ -933,7 +689,191 @@
       ]
     },
     {
-      "designationCategory": "A2 Media Unit",
+      "designationCategory": "Editorial Panel",
+      "logo": "default_data/logo.png",
+      "officers": [
+        {
+          "visibility_order": 1,
+          "designation": "Chairperson",
+          "name": "Leo Danushi Wijewardana",
+          "club": "Leo Club of Sri Lanka Technological Campus",
+          "phone": "0772823550",
+          "email": "danushi@leodistrict306a2.org",
+          "img": "danushi_wijewardana.png"
+        },
+        {
+          "visibility_order": 2,
+          "designation": "Advisor",
+          "name": "Leo Yasiru Nilan",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0702132850",
+          "email": "yasirun@leodistrict306a2.org",
+          "img": "yasiru_nilan.png"
+        },
+        {
+          "visibility_order": 3,
+          "designation": "Member",
+          "name": "Leo Janani Wijetunga",
+          "club": "Leo Club of Sri Lanka Technological Campus",
+          "phone": "0757451963",
+          "email": "janani.wijetunga1997@gmail.com",
+          "img": "janani_wijetunga.png"
+        },
+        {
+          "visibility_order": 4,
+          "designation": "Member",
+          "name": "Leo Chamudi Thennakoon",
+          "club": "Leo Clu of Uragasmanhandiya",
+          "phone": "0770674384",
+          "email": "chamuditennakon@gmail.com",
+          "img": "chamudi_thennakoon.png"
+        },
+        {
+          "visibility_order": 5,
+          "designation": "Member",
+          "name": "Leo Nimshi Ranawana",
+          "club": "Leo Club of University of Sri Jayewardenepura",
+          "phone": "0716216213",
+          "email": "nimshi.leousjp@gmail.com",
+          "img": "nimshi_ranawana.png"
+        },
+        {
+          "visibility_order": 6,
+          "designation": "Member",
+          "name": "Leo Lakshika Swarnamali",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0711607997",
+          "email": "swarnamalial@gmail.com",
+          "img": "lakshika_swarnamali.png"
+        },
+        {
+          "visibility_order": 7,
+          "designation": "Member",
+          "name": "Leo Nethmi Pathegama",
+          "club": "Leo Club of University of Sri Jayewardenepura",
+          "phone": "0711403745",
+          "email": "nethmi.leousjp@gmail.com",
+          "img": "nethmi_pathegama.png"
+        },
+        {
+          "visibility_order": 8,
+          "designation": "Member",
+          "name": "Leo Disali Gunasekara",
+          "club": "Leo Club of Polgasowita",
+          "phone": "0768355413",
+          "email": "gunasekeradisali@gmail.com",
+          "img": "disali_gunasekera.png"
+        },
+        {
+          "visibility_order": 9,
+          "designation": "Member",
+          "name": "Leo Mafaza Wahid",
+          "club": "Leo Club Piliyandala",
+          "phone": "0756322767",
+          "email": "mwahid81@gmail.com",
+          "img": "mafaza_wahid.png"
+        },
+        {
+          "visibility_order": 10,
+          "designation": "Designer",
+          "name": "Leo Kalindu Rajapaksha",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0717296347",
+          "email": "kalindurajapaksha@gmail.com",
+          "img": "kalindu_rajapaksha.png"
+        },
+        {
+          "visibility_order": 11,
+          "designation": "Designer",
+          "name": "Leo Thilina Prasad",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0716485403",
+          "email": "thilina.prasad@leodistrict306a2.org",
+          "img": "thilina_prasad.png"
+        }
+      ]
+    },
+    {
+      "designationCategory": "IT Team",
+      "logo": "default_data/logo.png",
+      "officers": [
+        {
+          "visibility_order": 1,
+          "designation": "Chairman",
+          "name": "Leo Thilina Prasad",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0716485409",
+          "email": "thilina.prasad@leodistrict306a2.org",
+          "img": "thilina_prasad.png"
+        },
+        {
+          "visibility_order": 2.0,
+          "designation": "Advisor",
+          "name": "Leo Buddhi Vikasitha",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0712489789",
+          "email": "92buddhiv@gmail.com",
+          "img": "buddhi_vikasitha.png"
+        },
+        {
+          "visibility_order": 3.0,
+          "designation": "Member",
+          "name": "Leo Kaveen Rathnayake",
+          "club": "Leo Club of Sri Lanka Technological Campus",
+          "phone": "0717909332",
+          "email": "kaveen@leodistrict306a2.org",
+          "img": "kaveen_rathnayake.png"
+        },
+        {
+          "visibility_order": 4.0,
+          "designation": "Member",
+          "name": "Leo Kalana Tebel",
+          "club": "Leo Club of Panadura Alubomulla",
+          "phone": "0771713114",
+          "email": "kalana@leodistrict306a2.org",
+          "img": "kalana_tebel.png"
+        },
+        {
+          "visibility_order": 5.0,
+          "designation": "Member",
+          "name": "Leo Isuru Gayan",
+          "club": "Leo Club of Piliyandala",
+          "phone": "0772560305",
+          "email": "isapuarachchi@gmail.com",
+          "img": "isuru_gayan.png"
+        },
+        {
+          "visibility_order": 6.0,
+          "designation": "Member",
+          "name": "Leo Imasha Weerakoon Karunatilleke",
+          "club": "Leo Club of Matara Nilwala",
+          "phone": "0767886481",
+          "email": "imashakaru@gmail.com",
+          "img": "imasha_weerakoon.png"
+        },
+        {
+          "visibility_order": 7.0,
+          "designation": "Member",
+          "name": "Leo Kalindu Rajapaksha",
+          "club": "Leo Club of University of Moratuwa",
+          "phone": "0717296347",
+          "email": "kalindurajapaksha@gmail.com",
+          "img": "kalindu_rajapaksha.png"
+        },
+        {
+          "visibility_order": 8.0,
+          "designation": "Member",
+          "name": "Leo Navindu Deshan",
+          "club": "Leo Club of Matara Nilwala",
+          "phone": "0713676335",
+          "email": "navofficial99@gmail.com",
+          "img": "navindu_deshan.png"
+        }
+      ]
+    },
+
+    {
+      "designationCategory": "Media Unit",
       "logo": "default_data/logo.png",
       "officers": [
         {
@@ -1011,83 +951,146 @@
       ]
     },
     {
-      "designationCategory": "Administration Team",
+      "designationCategory": "Past District Presidents",
       "logo": "default_data/logo.png",
       "officers": [
         {
           "visibility_order": 1,
-          "designation": "Chairman",
-          "name": "Leo Tikuli Pitigala",
-          "club": "Leo Club of Katuwawala",
-          "phone": "0771138768",
-          "email": "tikuli@leodistrict306a2.org",
-          "img": "tikuli_pitigala.png"
-      },
-      {
+          "name": "PMDP Mr. Sadeepa Palliyaguru",
+          "club": "Leo Club of Polgasowita",
+          "email": "sadeepa.palliyaguru@gmail.com",
+          "address": "9, Attigala Mawata, Kesbewa",
+          "phone": "0716849706",
+          "img": "pdp/sadeepa_ravinath_palliyaguru.png"
+        },
+        {
           "visibility_order": 2,
-          "designation": "Advisor",
-          "name": "PMDP Leo Kesari Senevirathne",
-          "club": "Leo Club of Kalubowila",
-          "phone": "0777349305",
-          "email": "kesari@leodistrict306a2.org",
-          "img": "kesari_seneviratne.png"
-      },
-      {
+          "name": "PDP Leo Sameera Wijesinghe",
+          "club": "Leo Club of Dehiwala North",
+          "email": "sam_s20002001@yahoo.com",
+          "address": "United Kingdom",
+          "phone": "447595548814",
+          "img": "pdp/sameera_wijesinghe.png"
+        },
+        {
           "visibility_order": 3,
-          "designation": "Member",
-          "name": "Leo Raseema Sugandi",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "phone": "0711122014",
-          "email": "raseema@leodistrict306a2.org",
-          "img": "raseema_sugandi.png"
-      },
-      {
+          "name": "PDP Mr. Nadeesha Palliyaguru",
+          "club": "Leo Club of Piliyandala",
+          "email": "nadeesha.palli@gmail.com",
+          "address": "1/1, Vishnu Residencies, Shrubbery Garden, Colombo 04",
+          "phone": "0777160782",
+          "img": "pdp/nadeesha_ranganath_palliyaguru.png"
+        },
+        {
           "visibility_order": 4,
-          "designation": "Member",
-          "name": "Leo Kasun Ramanayaka",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0716486071",
-          "email": "kasun.ramanayaka@leodistrict306a2.org",
-          "img": "kasun_ramanayaka.png"
-      },
-      {
+          "name": "PDP Lion Chathura Deshapriya",
+          "club": "Leo Club of Moragahahena",
+          "email": "deshapriya.Chathura@yahoo.com",
+          "address": "394, Kottawa Rd, Beruketiya, Kiriwattuduwa",
+          "phone": "0718257627",
+          "img": "pdp/chathura_deshapriya.png"
+        },
+        {
           "visibility_order": 5,
-          "designation": "Member",
-          "name": "Leo Isuri Udithamala",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "phone": "0766291981",
-          "email": "isuri.udithamala@leodistrict30",
-          "img": "isuri_udithamala.png"
-      },
-      {
+          "name": "PMDP Lion Dumindu Jayakody",
+          "club": "Leo Club of Werahera",
+          "email": "dumindu@leodistrict306a2.org",
+          "address": "Australia",
+          "img": "pdp/dumindu_jayakodi.png"
+        },
+        {
           "visibility_order": 6,
-          "designation": "Member",
-          "name": "Leo Santhrushika De Silva",
-          "club": "Leo Club of Panadura Alubomulla",
-          "phone": "0713544281",
-          "email": "santhrushika@leodistrict306a2.org",
-          "img": "santhrushika_de_silva.png"
-      },
-      {
+          "name": "PDP Lion Thilini Manamperi",
+          "club": "Leo Club of Kalubowila",
+          "email": "thilini@leodistrict306a2.org",
+          "address": "219, Old Road, Nawinna, Maharagama",
+          "phone": "0772220004",
+          "img": "pdp/thilini_manamperi.png"
+        },
+        {
           "visibility_order": 7,
-          "designation": "Member",
-          "name": "Leo Shehan Akmeemana",
-          "club": "Leo Club of University of Moratuwa",
-          "phone": "0712373186",
-          "email": "shehanakmeemana@leodistrict306a2.org",
-          "img": "shehan_akmeemana.png"
-      },
-      {
+          "name": "PDP Lion Kasun Pathirana",
+          "club": "Leo Club Of Mattegoda",
+          "email": "kasun@leodistrict306a2.org",
+          "address": "35, Araliya Uyana, Mattegoda",
+          "phone": "0775478857",
+          "img": "pdp/kasun_arunoda_pathirana.png"
+        },
+        {
           "visibility_order": 8,
-          "designation": "Member",
-          "name": "Leo Tharini Subasinghe",
-          "club": "Leo Club of Baddegama",
-          "phone": "0771269943",
-          "email": "tharini@leodistrict306a2.org",
-          "img": "tharini_subhasingha.png"
-      }
+          "name": "PDP Lion Isuru Senadheera",
+          "club": "Leo Club of University of Moratuwa",
+          "email": "isuru@leodistrict306a2.org",
+          "address": "“Dharshika”, Station Road, Balapitiya",
+          "phone": "0777392681",
+          "img": "pdp/isuru_senadheera.png"
+        },
+        {
+          "visibility_order": 9,
+          "name": "PDP Lion Kaneel Maddumage",
+          "club": "Leo Club of Moragahahena",
+          "email": "kaneel@leodistrict306a2.org",
+          "address": "63, Kahatapitiya, Kananwila, Horana",
+          "phone": "0773839947",
+          "img": "pdp/kaneel_maddumage.png"
+        },
+        {
+          "visibility_order": 10,
+          "name": "PDP Leo Chandima Vithanage",
+          "club": "Leo Club of Polgasowita",
+          "email": "chandima@leodistrict306a2.org",
+          "address": "Olaboduwa Eastate, Koralaima, Gonapola Junction",
+          "phone": "0777423309",
+          "img": "pdp/chandima_vithanage.png"
+        },
+        {
+          "visibility_order": 11,
+          "name": "PMDP Leo Lion Pramod Wimalatunga",
+          "club": "Leo Club of Rattanapitiya",
+          "email": "pramod@leodistrict306a2.org",
+          "address": "118/3, Pirivena Road, Boralasgamuwa",
+          "phone": "0771129101",
+          "img": "pdp/pramod_wimalatunga.png"
+        },
+        {
+          "visibility_order": 12,
+          "name": "PMDP Leo Lion Kesari Seneviratne PMJF",
+          "club": "Leo Club of Kalubowila",
+          "email": "kesari@leodistrict306a2.org",
+          "address": "222B, Galvihara Road, Dehiwela",
+          "phone": "0777349305",
+          "img": "pdp/kesari_seneviratne.png"
+        },
+        {
+          "visibility_order": 13,
+          "name": "PDP Leo Lion Kalindu Dissanayake",
+          "club": "Leo Club of Moragahahena",
+          "email": "kalindu@leodistrict306a3.org",
+          "address": "394, Kottawa Road, Beruketiya, Kiriwaththuduwa",
+          "phone": "0773158277",
+          "img": "pdp/kalindu_dissanayake.png"
+        },
+        {
+          "visibility_order": 14,
+          "name": "PDP Leo Lion Kasun Lokugamage",
+          "club": "Leo Club of Piliyandala",
+          "email": "kasunl@leodistrict306a2.org",
+          "address": "212, Kandawala Mawatha, Ratmalana",
+          "phone": "0778608928",
+          "img": "pdp/kasun_lokugamage.png"
+        },
+        {
+          "visibility_order": 15,
+          "name": "IPDP Leo Mudith Jayasekara",
+          "club": "Leo Club of Polgasowita",
+          "email": "mudith@leodistrict306a2.org",
+          "address": "291/42, Mandawila Road, Kesbewa, Piliyandala",
+          "phone": "0777336911",
+          "img": "pdp/mudith_jayasekara.png"
+        }
       ]
     },
+    
     {
       "designationCategory": "Key Cabinet Executives",
       "logo": "default_data/logo.png",
