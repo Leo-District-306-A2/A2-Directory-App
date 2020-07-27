@@ -582,7 +582,6 @@
       }
       ]
     },
-        
     {
       "designationCategory": "Fundraising Team",
       "logo": "default_data/logo.png",
@@ -599,7 +598,7 @@
         {
           "visibility_order": 2,
           "designation": "Advisor",
-          "name": "PDP Leo Kasun Lokugamage",
+          "name": "PDP Leo Lion Kasun Lokugamage",
           "club": "Leo Club of Piliyandala",
           "phone": "0778608928",
           "email": "kasunl@leodistrict306a2.org",
@@ -871,7 +870,6 @@
         }
       ]
     },
-
     {
       "designationCategory": "Media Unit",
       "logo": "default_data/logo.png",
@@ -1090,7 +1088,6 @@
         }
       ]
     },
-    
     {
       "designationCategory": "Key Cabinet Executives",
       "logo": "default_data/logo.png",
