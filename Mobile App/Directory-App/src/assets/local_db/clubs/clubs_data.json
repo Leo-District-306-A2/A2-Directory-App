@@ -19,13 +19,13 @@
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "",
-          "gender": "",
+          "name": "Leo Iruki Amaya Salwathura",
+          "gender": "Female",
           "phone": "",
-          "email": "",
+          "email": "irukisalwathura@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "262/A/1, Kammala waththa, Gothatuwa Junction, Baddegama",
+          "img": "default_data/default_female_user.png"
         },
         {
           "designation": "Second Vice President",
@@ -41,34 +41,34 @@
         {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "",
-          "gender": "",
+          "name": "Leo Malsha Madushani",
+          "gender": "Female",
           "phone": "",
-          "email": "",
+          "email": "mmalsha425@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "\u201cMalsha\u201d, Keembiela, Poddala",
+          "img": "default_data/default_female_user.png"
         },
         {
           "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": "Leo Ishini Sewwandhi",
+          "gender": "Female",
+          "phone": "0769044469",
+          "email": "ishinisewwandi97@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "Galle gedara, Keembi-Ela, Poddala",
+          "img": "default_data/default_female_user.png"
         },
         {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "",
-          "gender": "",
+          "name": "Lion Ananda Abeywickrama",
+          "gender": "Male",
           "phone": "",
-          "email": "",
+          "email": "ananda.abeywickrama@gmail.com",
           "mylci": "",
-          "address": "",
+          "address": "Danwala Group, Nayapamula, Baddegama",
           "img": "default_data/default_male_user.png"
         },
         {
@@ -423,67 +423,67 @@
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Leo Irushini Alahakoon",
+          "name": "Leo Natasha Gunatilleke",
           "gender": "Female",
-          "phone": "0717569918",
-          "email": "irushinialahakoon@gmail.com",
-          "mylci": 5068445,
-          "address": "No. 41/5A, Yahampath Mawatha, Maharagama\n",
+          "phone": "0762281100",
+          "email": "natashagunatilleke@gmail.com",
+          "mylci": 5341964,
+          "address": "No. 514, Susilarama Road, Malabe",
           "img": "leo_club_of_kalubowila/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Leo Minul Wijayasekara",
-          "gender": "Male",
-          "phone": "0775504042",
-          "email": "minulwijaya@gmail.com",
-          "mylci": 5259535,
-          "address": "No. 27, Gramasanwardana Rd, Ambillawatta, Boralesgamuwa",
+          "name": "Leo Januki Sihara Wijesekara",
+          "gender": "Female",
+          "phone": "0701211411",
+          "email": "janukiw@gmail.com",
+          "mylci": 5341968,
+          "address": "No. 243/A, Galvihara Road, Dehiwala",
           "img": "leo_club_of_kalubowila/vice_president.png"
         },
         {
           "designation": "Second Vice President",
           "visibility_order": 3,
-          "name": "Leo Denesha Ramanayek",
-          "gender": "Female",
-          "phone": "0752337246",
-          "email": "deneeshajayathmi1997@gmail.com",
-          "mylci": 5259623,
-          "address": "No: 12, Ananda maithree mawatha, maharagama.",
-          "img": "default_data/default_female_user.png"
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
+          "mylci": "",
+          "address": "",
+          "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "Leo Sithmini Bandara",
+          "name": "Leo Hansika Nirmani",
           "gender": "Female",
-          "phone": "0711585458",
-          "email": "bandarasithmini@gmail.com",
-          "mylci": 5259618,
-          "address": "\"Sithmini\", Gurubelkadawaththa, Erathna Road, Kuruwita",
+          "phone": "0769008387",
+          "email": "hansikafdoz@gmail.com",
+          "mylci": "-",
+          "address": "No.78/A, Kaluwarippuwa West, Katana",
           "img": "leo_club_of_kalubowila/secretary.png"
         },
         {
           "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "Leo Hashini Kumarasiri",
+          "name": "Leo Januki Sihara Wijesekara",
           "gender": "Female",
-          "phone": "0763897278",
-          "email": "harshnipiumika@gmail.com",
-          "mylci": 5259617,
-          "address": "No. 634/2 , Eriyandaluwa, Pelmadulla",
+          "phone": "0701211411",
+          "email": "janukiw@gmail.com",
+          "mylci": 5341968,
+          "address": "No.243/A, Galvihara Road, Dehiwala",
           "img": "leo_club_of_kalubowila/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "Lion Missaka Weliwita",
+          "name": "Lion Dimantha Thenuwara",
           "gender": "Male",
-          "phone": "0776669976",
-          "email": "themetravels.int@gmail.com",
-          "mylci": "",
-          "address": "No. 16, Hildon Place, Colombo 04",
+          "phone": "0779433597",
+          "email": "dimantha.dilan@gmail.com",
+          "mylci": 5034151,
+          "address": "No.133/43, Vishwakalawa Road, Mampe East, Piliyandala",
           "img": "leo_club_of_kalubowila/advisor.png"
         },
         {
@@ -1126,7 +1126,7 @@
           "email": "99heshani@gmail.com",
           "mylci": 5342928,
           "address": "No. 265/1, Roston Park, Divulapitiya, Boralesgamuwa",
-          "img": "leo_club_of_panadura_alubomulla/secretary.png"
+          "img": "leo_club_of_pepiliyana_woodlands/secretary.png"
         },
         {
           "designation": "Treasurer",
@@ -1163,7 +1163,6 @@
         }
       ]
     },
-    
     {
       "clubName": "Leo Club of Piliyandala Central",
       "logo": "default_data/logo.png",
@@ -1254,81 +1253,82 @@
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "Leo Visith Rathnayaka",
-          "gender": "Male",
-          "phone": "0705172764",
-          "email": "visithrathnayake@icloud.com",
-          "mylci": 5386382,
-          "address": "No.94, Rahula Road, Matara",
+          "name": "Leo Chanya Ranatunga",
+          "gender": "Female",
+          "phone": "0771228815",
+          "email": "chanyaranatunga@gmail.com",
+          "mylci": 4749118,
+          "address": "No. 654/2, Halgahadeniya, Angoda",
           "img": "leo_club_of_polgasowita/president.png"
-      },
-      {
+        },
+        {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Leo Sandika Ranasinghe",
-          "gender": "Male",
-          "phone": "0715787427",
-          "email": "rsandika100000@gmail.com",
-          "mylci": 5386383,
-          "address": "No.17, Dharmarathne Mawatha, Uyanwaththa, Matara",
+          "name": "Leo Chanakya Ranasinghe",
+          "gender": "Female",
+          "phone": "0757376576",
+          "email": "sindhuranasinghe@gmail.com",
+          "mylci": 5084610,
+          "address": "No. 281/1, Weerasekara Mawatha, Pepiliyana",
           "img": "leo_club_of_polgasowita/vice_president.png"
-      },
-      {
+        },
+        {
           "designation": "Second Vice President",
           "visibility_order": 3,
-          "name": "Leo Vidun Menula",
-          "gender": "Male",
-          "phone": "0716721802",
-          "email": "vidunmenula05@gmail.com",
-          "mylci": 5386384,
-          "address": "271/4, Pantharama Road, Godagama, Matara",
+          "name": "Leo Gayami Weerasinghe",
+          "gender": "Female",
+          "phone": "0773703025",
+          "email": "gayamiweerasinghe@gmail.com",
+          "mylci": 5084609,
+          "address": "Subasiri, Suwarapola, Piliyandala",
           "img": "leo_club_of_polgasowita/second_vice_president.png"
-      },
-      {
+        },
+        {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "Leo Shehara Wickramasinghe",
-          "gender": "Male",
-          "phone": "0712751655",
-          "email": "wshehara621@gmail.com",
-          "mylci": "",
-          "address": "No. 20/A/1, Dharmarathen Road, Uyanwatta, Matara",
+          "name": "Leo Disali Gunasekara",
+          "gender": "Female",
+          "phone": "0711128873",
+          "email": "gunasekeradisali@gmail.com",
+          "mylci": 5084659,
+          "address": "No. 35/1, Jayasewena Mawatha, Kalubowila, Dehiwela",
           "img": "leo_club_of_polgasowita/secretary.png"
-      },
-      {
+        },
+        {
           "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "Leo Chathum Batagoda",
+          "name": "Leo Mahela Ruwan Tharindu Perera",
           "gender": "Male",
-          "phone": "0713630047",
-          "email": "chahumbatagoda@gmail.com",
-          "mylci": "",
-          "address": "No. 28, Galahene Road, Dondra",
+          "phone": "0719312669",
+          "email": "pereratharindu46@hotmail.com",
+          "mylci": 5332463,
+          "address": "No. 1/26, Dias Place, Panadura",
           "img": "leo_club_of_polgasowita/treasurer.png"
-      },
-      {
+        },
+        {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "Lion Sumedha Kulatunga",
+          "name": "Lion Wijayasena Attygalle",
           "gender": "Male",
-          "phone": "07767325",
-          "email": "sumedhakulathunga@gmail.com",
+          "phone": "0771575933",
+          "email": "wartigala@gmail.com",
           "mylci": "",
-          "address": "No. 3/1, Browns Hill, Matara",
+          "address": "Horathuduwa, Polgasowita",
           "img": "default_data/default_male_user.png"
-      },
-      {
+        },
+        {
           "designation": "Staff Advisor",
           "visibility_order": 7,
-          "name": "Mrs.Chandanie Siriwardane",
-          "gender": "Female",
-          "phone": "0703500265",
-          "email": "chansi20@hotmail.com",
+          "name": "",
+          "gender": "",
+          "phone": "",
+          "email": "",
           "mylci": "",
-          "address": "No. 15/1, Saram Mudali Mawatha, Matara",
-          "img": "default_data/default_female_user.png"
-      }
-      ]},
+          "address": "",
+          "img": "default_data/default_male_user.png"
+        }
+      ]
+    },
     {
       "clubName": "Leo Club of Rahula College",
       "logo": "leo_club_of_rahula_college/logo.png",
@@ -1343,8 +1343,8 @@
           "mylci": 5386382,
           "address": "No.94, Rahula Road, Matara",
           "img": "leo_club_of_rahula_college/president.png"
-      },
-      {
+        },
+        {
           "designation": "Vice President",
           "visibility_order": 2,
           "name": "Leo Sandika Ranasinghe",
@@ -1354,8 +1354,8 @@
           "mylci": 5386383,
           "address": "No.17, Dharmarathne Mawatha, Uyanwaththa, Matara",
           "img": "leo_club_of_rahula_college/vice_president.png"
-      },
-      {
+        },
+        {
           "designation": "Second Vice President",
           "visibility_order": 3,
           "name": "Leo Vidun Menula",
@@ -1365,8 +1365,8 @@
           "mylci": 5386384,
           "address": "271/4, Pantharama Road, Godagama, Matara",
           "img": "leo_club_of_rahula_college/second_vice_president.png"
-      },
-      {
+        },
+        {
           "designation": "Secretary",
           "visibility_order": 4,
           "name": "Leo Shehara Wickramasinghe",
@@ -1376,8 +1376,8 @@
           "mylci": "",
           "address": "No. 20/A/1, Dharmarathen Road, Uyanwatta, Matara",
           "img": "leo_club_of_rahula_college/secretary.png"
-      },
-      {
+        },
+        {
           "designation": "Treasurer",
           "visibility_order": 5,
           "name": "Leo Chathum Batagoda",
@@ -1387,8 +1387,8 @@
           "mylci": "",
           "address": "No. 28, Galahene Road, Dondra",
           "img": "leo_club_of_rahula_college/treasurer.png"
-      },
-      {
+        },
+        {
           "designation": "Leo Advisor",
           "visibility_order": 6,
           "name": "Lion Sumedha Kulatunga",
@@ -1398,8 +1398,8 @@
           "mylci": "",
           "address": "No. 3/1, Browns Hill, Matara",
           "img": "leo_club_of_rahula_college/advisor.png"
-      },
-      {
+        },
+        {
           "designation": "Staff Advisor",
           "visibility_order": 7,
           "name": "Mrs.Chandanie Siriwardane",
@@ -1409,8 +1409,9 @@
           "mylci": "",
           "address": "No. 15/1, Saram Mudali Mawatha, Matara",
           "img": "leo_club_of_rahula_college/staff_advisor.png"
-      }
-      ]},
+        }
+      ]
+    },
     {
       "clubName": "Leo Club of Rattanapitiya",
       "logo": "default_data/logo.png",
@@ -1446,7 +1447,7 @@
           "email": "",
           "mylci": "",
           "address": "",
-          "img": "leo_club_of_rattanapitiya/second_vice_president.png"
+          "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Secretary",
@@ -2121,7 +2122,7 @@
           "email": "",
           "mylci": "",
           "address": "",
-          "img": ""
+          "img": "default_data/default_male_user.png"
         },
         {
           "designation": "Treasurer",
@@ -2154,10 +2155,9 @@
           "email": "",
           "mylci": "",
           "address": "",
-          "img": ""
+          "img": "default_data/default_male_user.png"
         }
       ]
     }
-
   ]
 }
