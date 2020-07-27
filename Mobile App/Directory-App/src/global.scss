@@ -77,6 +77,12 @@
   src: url('assets/fonts/Rancho-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url('assets/fonts/CenturyGothicBold.ttf') format('truetype');
+}
+
+
 .kaushanScriptFont {
   font-family: KaushanScript!important;
 }
@@ -91,6 +97,10 @@
 
 .ranchoFont {
   font-family: Rancho;
+}
+
+.centuryGothicBoldFont {
+  font-family: CenturyGothicBold;
 }
 
 .text-shadow {
