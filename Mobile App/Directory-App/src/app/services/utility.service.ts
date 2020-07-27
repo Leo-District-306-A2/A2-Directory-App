@@ -72,7 +72,7 @@ export class UtilityService {
         };
     }
 
-    sortClubs(clubs){
+    sortClubs(clubs) {
         clubs.sort(this.GetSortOrder('clubName'));
     }
 
