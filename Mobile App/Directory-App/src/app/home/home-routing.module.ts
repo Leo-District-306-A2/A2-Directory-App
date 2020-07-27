@@ -40,11 +40,6 @@ const routes: Routes = [
     loadChildren: () => import('../tile-content/district-president-logo/district-president-logo.module').then( m => m.DistrictPresidentLogoPageModule)
   },
   {
-    path: 'multiple-council-chairman',
-    // tslint:disable-next-line:max-line-length
-    loadChildren: () => import('../tile-content/multiple-council-chairman/multiple-council-chairman.module').then( m => m.MultipleCouncilChairmanPageModule)
-  },
-  {
     path: 'district-governer',
     loadChildren: () => import('../tile-content/district-governer/district-governer.module').then( m => m.DistrictGovernerPageModule)
   },
@@ -70,10 +65,6 @@ const routes: Routes = [
   {
     path: 'district-chairman',
     loadChildren: () => import('../tile-content/district-chairman/district-chairman.module').then( m => m.DistrictChairmanPageModule)
-  },
-  {
-    path: 'editors-note',
-    loadChildren: () => import('../tile-content/editors-note/editors-note.module').then( m => m.EditorsNotePageModule)
   },
   {
     path: 'region-and-zone-devision',

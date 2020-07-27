@@ -58,21 +58,22 @@ export class UtilityService {
             return splitted[2];
         }
     }
-    
-    //Comparer Function    
-    GetSortOrder(prop) {    
-        return function(a, b) {    
-            if (a[prop] > b[prop]) {    
-                return 1;    
-            } else if (a[prop] < b[prop]) {    
-                return -1;    
-            }    
-            return 0;    
-        }    
-    } 
+
+    // Comparer Function
+    GetSortOrder(prop) {
+        // tslint:disable-next-line:only-arrow-functions
+        return function(a, b) {
+            if (a[prop] > b[prop]) {
+                return 1;
+            } else if (a[prop] < b[prop]) {
+                return -1;
+            }
+            return 0;
+        };
+    }
 
     sortClubs(clubs){
-        clubs.sort(this.GetSortOrder("clubName"));
+        clubs.sort(this.GetSortOrder('clubName'));
     }
 
 }

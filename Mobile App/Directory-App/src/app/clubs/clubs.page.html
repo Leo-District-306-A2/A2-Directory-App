@@ -3,9 +3,9 @@
         <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
             <img class="mx-auto d-block" src="../../assets/tabs/headers/clubs.png">
         </div>
-
-        <div class="pl-2 pr-2">
-            <ion-searchbar showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
+        <div class="p-0 m-0 w-100 text-right clubs-count"># Clubs: {{ allClubsData?.length }}</div>
+        <div class="pl-2 pr-2 pt-0">
+            <ion-searchbar class="pt-0" showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
                 placeholder="Search by club name, officer"></ion-searchbar>
         </div>
         <div class="scrollable-content">

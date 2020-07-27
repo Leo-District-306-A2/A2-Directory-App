@@ -34,3 +34,33 @@
     margin: 0;
     line-height: 12px;
 }
+
+@keyframes slide-2 {
+    0% {top: 0}
+    50% {top: -74px}
+    100% {top: 0}
+}
+
+@keyframes slide-3 {
+    0% {top: 0}
+    25% {top: -74px}
+    50% {top: -148px}
+    75% {top: -74px}
+    100% {top: 0}
+}
+
+.animate-2 {
+    animation: slide-2 4s linear infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.animate-3 {
+    animation: slide-3 6s linear infinite;
+    position: relative;
+    z-index: 1;
+}
+
+.date-item {
+    background-color: white;
+}
