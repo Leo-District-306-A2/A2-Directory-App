@@ -4,30 +4,36 @@
   "image": "districtPresidentLogo/properties/logo.png",
   "tile": "districtPresidentLogo/tile/dp_tile.png",
   "tile-content": "districtPresidentLogo/tile-contents/background/dp_logo.png",
-  "tag_line": "Prospering Sustainably",
+  "tag_line": "Inspire Innovation",
   "properties": [
     {
-      "property": "Blue Color",
-      "image": "districtPresidentLogo/properties/blue.png",
-      "description": "Represents Lions whom that are the Guiding Light and the Pillars of Strength of the LEO movement.",
+      "property": "Light Bulb",
+      "image": "districtPresidentLogo/properties/1.png",
+      "description": "New/Innovative ideas",
       "visibility_order": 1
     },
     {
-      "property": "Green Color",
-      "image": "districtPresidentLogo/properties/green.png",
-      "description": "Sustainability in Leadership focus and healthy growth in Membership.",
+      "property": "Green plant",
+      "image": "districtPresidentLogo/properties/2.png",
+      "description": "Represents the proper execution of the new ideas/concepts proceeding to bring out sustainable and prosperous outcomes in the future.",
       "visibility_order": 2
     },
     {
       "property": "Gold Color",
-      "image": "districtPresidentLogo/properties/gold.png",
-      "description": "Sustainability focus to Lead, in the ever-changing macro environment.",
+      "image": "districtPresidentLogo/properties/3.png",
+      "description": "The idea/concept being nurtured with success stories, higher ideals and wisdom.",
       "visibility_order": 3
     },
     {
-      "property": "Four Human figures gathered with a hand held high",
-      "image": "districtPresidentLogo/properties/four_human.png",
-      "description": "Intent to achieve the four key focus areas of the program;<br><ul><li>Sustainable Skills</li><li>Sustainable Knowledge</li><li>Sustainable Projects</li><li>Sustainable Social Behavioral Lifestyle</li></ul>",
+      "property": "Water droplet",
+      "image": "districtPresidentLogo/properties/4.png",
+      "description": "Execution of the ideas by the inspiration added through the experiences gained from Leoism. (The plant being watered from Leoism)",
+      "visibility_order": 4
+    },
+    {
+      "property": "Dark Blue Outline",
+      "image": "districtPresidentLogo/properties/5.png",
+      "description": "The strong base which nourishes the entire root system to be strengthened and stabilized represents Lion Leaders and Past Leo Leaders who are the long-standing blessing and the guidance for the Leo movement to standalone throughout.",
       "visibility_order": 4
     }
   ]
