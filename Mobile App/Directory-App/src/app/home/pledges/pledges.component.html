@@ -10,7 +10,7 @@
                         <div class="tile center ripple-parent pledge_of_allegiance_tile"
                              (click)="navigateToPledgeOfAllegiance(pledgeOfAllegiance)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head font-weight-bold text-secondary">{{ pledgeOfAllegiance?.en.title }}</div>
+                                <div class="tile-head font-weight-bold text-secondary shadow">{{ pledgeOfAllegiance?.en.title }}</div>
                                 <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="pledgeOfAllegiance?.en.content"> -->
                                 <!-- </div> -->
                             </div>
@@ -21,7 +21,7 @@
                     <ion-col>
                         <div class="tile center ripple-parent leo_pledge_tile" (click)="navigateToLeoPledge(leoPledge)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold">{{ leoPledge?.en.title }}</div>
+                                <div class="tile-head text-secondary font-weight-bold shadow">{{ leoPledge?.en.title }}</div>
                                 <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
                           </div> -->
                             </div>
@@ -31,7 +31,7 @@
                         <div class="tile center ripple-parent environmental_pledge_tile"
                              (click)="navigateToEnvironmentPledge(environmantalPledge)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold animate__bounce">
+                                <div class="tile-head text-secondary font-weight-bold animate__bounce shadow">
                                     {{ environmantalPledge?.en.title }}</div>
                             </div>
                         </div>
