@@ -20,7 +20,7 @@
                     <ion-label>
                         <h2 class="font-weight-bold">{{ eventItem?.name }}</h2>
                         <p class="chair-name" *ngFor="let chairperson of eventItem?.chairpersons">
-                            Event {{ (chairperson?.designation ? chairperson?.designation : "chairperson") + ": " + chairperson?.name }}</p>
+                            {{ (chairperson?.designation ? chairperson?.designation : "Chairperson") + ": " + chairperson?.name }}</p>
                     </ion-label>
                     <ion-ripple-effect></ion-ripple-effect>
                 </ion-item>
