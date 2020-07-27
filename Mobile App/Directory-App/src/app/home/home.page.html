@@ -8,6 +8,7 @@
                 <ion-row>
                     <ion-col>
                         <div class="tile center ripple-parent dp_logo_tile"
+                             [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + districtPresidentLogo?.imgBaseUrl + '/' + districtPresidentLogo?.tile + '\')' }"
                              (click)="navigateToDPLogo(districtPresidentLogo)">
                             <div class="inner-tile ion-padding">
                                 <div class="tile-head text-secondary font-weight-bold shadow">{{ districtPresidentLogo?.title}}</div>
