@@ -131,12 +131,12 @@
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgba(140,22,61,1);
-    background-color: rgba(255,255,255,0.09);
+    border-color: rgba(49, 0, 112,1);
+    background-color: rgba(255,255,255,0.2);
   }
 
   .tile-head {
-    color: rgba(140,22,61,1) !important;
+    color: rgb(23, 1, 59) !important;
   }
 }
 
@@ -145,12 +145,12 @@
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(245, 136, 13);
-    background-color: rgba(255,255,255,0.09);
+    border-color: rgba(49, 0, 112,1);
+    background-color: rgba(255,255,255,0.2);
   }
 
   .tile-head {
-    color: rgb(83, 5, 5) !important;
+    color: rgb(23, 1, 59) !important;
   }
 }
 
@@ -159,25 +159,26 @@
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(215, 219, 4);
-    background-color: rgba(255,255,255,0.09);
+    border-color: rgba(49, 0, 112,1);
+    background-color: rgba(255,255,255,0.2);
   }
 
   .tile-head {
-    color: rgb(110, 116, 3) !important;
+    color: rgb(23, 1, 59) !important;
   }
 }
 
 .dp_logo_tile {
+  background-image: url("../../assets/tiles/dp_logo.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(131, 0, 178);
-    background-color: rgba(255,255,255,0.09);
+    border-color: rgba(49, 0, 112,1);
+    background-color: rgba(255,255,255,0.2);
   }
 
   .tile-head {
-    color: rgb(81, 1, 64) !important;
+    color: rgb(23, 1, 59) !important;
   }
 }
 
@@ -210,7 +211,7 @@
 }
 
 .pledges_tile{
-  background-image: url("../../assets/tiles/editors_note.png");
+  background-image: url("../../assets/tiles/pledges.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -224,7 +225,7 @@
 }
 
 .messages_tile{
-  background-image: url("../../assets/tiles/editors_note.png");
+  background-image: url("../../assets/tiles/bio_data.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
