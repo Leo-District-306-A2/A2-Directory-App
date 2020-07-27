@@ -29,17 +29,17 @@
           "designation": "Multiple District Vice President",
           "visibility_order": 3,
           "name": "Leo Charith Dilshan Peiris",
-          "club": "Lions District 306 A1",
+          "club": "Leo District 306 A1",
           "email": "dilshan@leomd306.org",
           "address": "12/6, Joseph Place, Katukurunda, Moratuwa",
           "phone": "0715765506",
           "img": "Leo Multiple District 306- Key Executive Committee/dilshan_peiris.png"
         },
         {
-          "designation": "Multiple District Vice President",
+          "designation": "Multiple District Vice Secretary",
           "visibility_order": 4,
           "name": "Leo Mudith Bimsara Jayasekara",
-          "club": "Lions District 306 A2",
+          "club": "Leo District 306 A2",
           "email": "mudith@leomd306.org",
           "address": "291/42, Mandawila Road, Kesbewa, Piliyandala",
           "phone": "0777336911",
@@ -59,7 +59,7 @@
           "designation": "Multiple District Chairman for Leos",
           "visibility_order": 6,
           "name": "Lion Widyakeerthi Dissanayake MJF",
-          "club": "Lions District 306 A2",
+          "club": "Leo District 306 A2",
           "email": "keerthid.it@gmail.com",
           "address": "394, Kottawa Road, Beruketiya, Kiriwaththuduwa",
           "phone": "0773659150",
@@ -79,7 +79,7 @@
           "email": "president@a1.leos.lk",
           "address": "No 315, Uswella, Maggona",
           "phone": "0772133525",
-          "img": "default_data/default_male_user.png"
+          "img": "Leo District 306 A1 - Key Council Executives/malinda_ganewatte.png"
         },
         {
           "designation": "Imm. Past District President",
@@ -99,7 +99,7 @@
           "email": "Uththaravi95@gmail.com",
           "address": "Siridevi,Unawatuna,Galle",
           "phone": "0778430291",
-          "img": "default_data/default_female_user.png"
+          "img": "Leo District 306 A1 - Key Council Executives/gayanga_uththaravi_dias.png"
         },
         {
           "designation": "District Secretary",
@@ -109,7 +109,7 @@
           "email": "Sachiniimalkarajapaksha@gmail.com",
           "address": "60,Rajapaksha Rubber Stores,Seeladola,Morapitiya",
           "phone": "0771041793",
-          "img": "default_data/default_female_user.png"
+          "img": "Leo District 306 A1 - Key Council Executives/sachinie_imalka_rajapaksha.png"
         },
         {
           "designation": "District Treasurer",
@@ -119,7 +119,7 @@
           "email": "randhirsamarasinghr@gmail.com",
           "address": "102/4A, 1st Lane Laxapathiya Moratuwa",
           "phone": "0771975806 ",
-          "img": "default_data/default_male_user.png"
+          "img": "Leo District 306 A1 - Key Council Executives/randeer_samarasinghe.png"
         },
         {
           "designation": "District Chairman for Leos",
@@ -129,7 +129,7 @@
           "email": "nilaufer@ruhunuhospital.lk",
           "address": "",
           "phone": "0772370324",
-          "img": "default_data/default_male_user.png"
+          "img": "Leo District 306 A1 - Key Council Executives/lion_fauzul_nilaufer.png"
         }
       ]
     },
@@ -186,6 +186,16 @@
           "address": "12/3 Athula Mawatha, Templers Road, Mountlavinia",
           "phone": "0774264259",
           "img": "Leo District 306 B1 - Key Council Executives/dushyanthi_pakeerathan.png"
+        },
+        {
+          "designation": "District Chairman for Leos",
+          "visibility_order": 6,
+          "name": "Lion Hasitha Warnakulasuriya",
+          "club": "Lions Club of Pamunugama Grand",
+          "email": "haszy84yahoo.com",
+          "address": "385, Children's Home Road, Bopitiya, Pamunugama",
+          "phone": "0773761761",
+          "img": "Leo District 306 B1 - Key Council Executives/lion_hasitha_warnakulasuriya.png"
         }
       ]
     },
