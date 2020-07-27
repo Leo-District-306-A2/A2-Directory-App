@@ -169,7 +169,6 @@
 }
 
 .dp_logo_tile {
-  background-image: url("../../assets/tiles/dp_logo.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -240,4 +239,7 @@
 
 .shadow-text{
   text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+.shadow{
+  text-shadow: 2px 2px 4px #ffffff;
 }
