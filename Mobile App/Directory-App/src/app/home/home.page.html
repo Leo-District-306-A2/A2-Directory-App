@@ -10,7 +10,7 @@
                         <div class="tile center ripple-parent dp_logo_tile"
                              (click)="navigateToDPLogo(districtPresidentLogo)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow">{{ districtPresidentLogo?.title}}</div>
+                                <div class="tile-head text-secondary font-weight-bold shadow-text">{{ districtPresidentLogo?.title}}</div>
                             </div>
                         </div>
                     </ion-col>
@@ -20,7 +20,7 @@
                         <div class="tile center ripple-parent leo_map_tile"
                              (click)="navigateToLeoMap(leoMap)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold animate__bounce shadow">
+                                <div class="tile-head text-secondary font-weight-bold animate__bounce shadow-text">
                                     {{ leoMap?.title}}</div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                         <div class="tile center ripple-parent region_and_zone_tile"
                              (click)="navigateToRegionAndZone(RegionAndZone)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow">{{ RegionAndZone?.title }}</div>
+                                <div class="tile-head text-secondary font-weight-bold shadow-text">{{ RegionAndZone?.title }}</div>
                             </div>
                         </div>
                     </ion-col>
@@ -39,7 +39,7 @@
                         <div class="tile center ripple-parent district_calendar_tile"
                              (click)="navigateToDistrictCalendar(eventCalendar)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow">{{ eventCalendar?.title }}</div>
+                                <div class="tile-head text-secondary font-weight-bold shadow-text">{{ eventCalendar?.title }}</div>
                             </div>
                         </div>
                     </ion-col>
@@ -49,7 +49,7 @@
                         <div class="tile center ripple-parent national_anthem_tile"
                              (click)="navigateToNationalAnthem(nationalAnthem)">
                             <div class="inner-tile ion-padding text-secondary">
-                                <div class="tile-head font-weight-bold shadow">
+                                <div class="tile-head font-weight-bold shadow-text">
                                     {{ nationalAnthem?.en.title }}
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                         <div class="tile center ripple-parent pledges_tile"
                              (click)="navigateToPledges()">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head font-weight-bold text-secondary shadow">Pledges</div>
+                                <div class="tile-head font-weight-bold text-secondary shadow-text">Pledges</div>
                             </div>
                         </div>
                     </ion-col>
@@ -70,7 +70,7 @@
                         <div class="tile center ripple-parent leo_history_tile"
                              (click)="navigateToLeoHistory(leoHistory)">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow">{{ leoHistory?.title }}</div>
+                                <div class="shadow-text tile-head text-secondary font-weight-bold">{{ leoHistory?.title }}</div>
                                 <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
                           </div> -->
                             </div>
@@ -79,7 +79,7 @@
                     <ion-col>
                         <div class="tile center ripple-parent messages_tile" (click)="navigateToMessages()">
                             <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow">Bio data</div>
+                                <div class="tile-head text-secondary font-weight-bold shadow-text">Bio data</div>
                             </div>
                         </div>
                     </ion-col>
