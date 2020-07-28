@@ -15,9 +15,13 @@ export class InitialSliderService implements CanActivate{
     if (localStorage.getItem('isAppUsed')) {
       return true;
     } else {
-      this.router.navigate(['initial-slider'])
+      this.router.navigate(['initial-slider']);
       return false;
     }
+  }
+
+  isAppUsed() {
+    return !!localStorage.getItem('isAppUsed');
   }
 
   getData() {
@@ -34,6 +38,7 @@ export class InitialSliderService implements CanActivate{
       const headerOptions = new HttpHeaders({
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*' });
+      // tslint:disable-next-line:max-line-length
       return this.http.get(this.env.baseURL + '/getData.php?file=initial_slider/initial_sliders.json',  { headers: headerOptions }).toPromise();
     }
   }
