@@ -7,17 +7,12 @@ import {Env} from './env';
 @Injectable({
   providedIn: 'root'
 })
-export class InitialSliderService implements CanActivate{
+export class InitialSliderService implements CanActivate {
 
   constructor(public router: Router, private env: Env, private http: HttpClient) { }
 
   canActivate(): boolean {
-    if (localStorage.getItem('isAppUsed')) {
-      return true;
-    } else {
-      this.router.navigate(['initial-slider']);
-      return false;
-    }
+    return !localStorage.getItem('isAppUsed');
   }
 
   isAppUsed() {
