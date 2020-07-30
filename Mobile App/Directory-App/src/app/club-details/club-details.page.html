@@ -24,7 +24,7 @@
                     </small>
                     <div class="icon-block">
                         <a *ngIf="officer?.phone" (click)="dial(officer?.phone)"><i class="fas fa-phone"></i></a>
-                        <a *ngIf="isEmailComposable && officer?.email" (click)="openEmail(officer?.email)"><i class="far fa-envelope"></i></a>
+                        <a *ngIf="officer?.email" href="{{ 'mailto:'+officer?.email }}"><i class="far fa-envelope"></i></a>
                         <a *ngIf="officer?.address" (click)="openLocation(officer.address)"><i class="fas fa-directions"></i></a>
                     </div>
                 </div>
