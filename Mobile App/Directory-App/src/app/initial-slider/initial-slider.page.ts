@@ -22,7 +22,7 @@ export class InitialSliderPage implements OnInit {
 
     continue() {
         localStorage.setItem('isAppUsed', 'true');
-        this.router.navigate(['']);
+        this.router.navigate(['authentication']);
     }
 
     generateSliderBackgroundStyle(backgroundImgs) {

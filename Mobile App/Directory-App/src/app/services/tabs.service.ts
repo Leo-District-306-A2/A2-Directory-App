@@ -9,12 +9,7 @@ export class TabsService  implements CanActivate {
   constructor(public router: Router) { }
 
   canActivate(): boolean {
-    if (localStorage.getItem('isAppUsed')) {
       return true;
-    } else {
-      this.router.navigate(['initial-slider']);
-      return false;
-    }
   }
 
 }

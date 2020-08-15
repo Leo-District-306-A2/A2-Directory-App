@@ -12,7 +12,12 @@ export class InitialSliderService implements CanActivate {
   constructor(public router: Router, private env: Env, private http: HttpClient) { }
 
   canActivate(): boolean {
-    return !localStorage.getItem('isAppUsed');
+    if (!localStorage.getItem('isAppUsed')) {
+      return true;
+    } else {
+      this.router.navigate(['authentication']);
+      return false;
+    }
   }
 
   isAppUsed() {

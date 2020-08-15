@@ -1,0 +1,67 @@
+ion-content {
+  //background: url("../../assets/local_db/authentication/imgs/background.png") left top no-repeat;
+  //background-size: 100%;
+  --background: url('../../assets/local_db/authentication/imgs/background.png') left bottom no-repeat;
+  --background-size: cover;
+}
+
+.password, .access-btn {
+  border-radius: 25px;
+}
+
+.password {
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.form-wrapper {
+  margin-top: 22vh;
+  margin-right: 0;
+  transform: scale(0.85);
+}
+
+.logo {
+  width: 80vw;
+}
+
+.header {
+  opacity: 0.65;
+}
+
+.access-btn {
+  background-color: #ffb000!important;
+  text-transform: uppercase;
+  border: none;
+}
+
+.access-btn:focus, .access-btn:hover, .password:focus, .password:hover {
+  outline: none;
+  box-shadow: none;
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.invalid-password {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.invalid-password-text {
+  font-size: 12px;
+}
