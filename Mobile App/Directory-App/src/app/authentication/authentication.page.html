@@ -8,7 +8,7 @@
           <div class="form-group" [ngStyle]="{ 'invalid-password': !isAuthenticated }">
             <input type="password" [(ngModel)]="password" name="password" class="form-control mx-auto d-block password text-center" maxlength="{{ authenticationService.passwordMaxLength }}" autofocus>
           </div>
-          <button type="button" class="btn btn-primary mx-auto d-block w-100 access-btn font-weight-bold" (click)="authenticate()">Access</button>
+          <button type="button" class="btn btn-primary mx-auto d-block w-100 access-btn font-weight-bold" (click)="authenticate()">Submit</button>
         </form>
       </div>
     </diV>

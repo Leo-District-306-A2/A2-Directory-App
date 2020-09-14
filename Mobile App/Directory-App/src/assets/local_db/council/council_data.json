@@ -344,12 +344,12 @@
         {
           "designation": "Director - International Relations",
           "visibility_order": 9,
-          "name": "Leo Kaveen Rathnayake",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "email": "kaveen@leodistrict306a2.org",
-          "address": "No. 68, First Lane, Warakapola",
-          "phone": "0717909332",
-          "img": "kaveen_rathnayake.png"
+          "name": "Leo Vihan Manage",
+          "club": "Leo Club of Godigamuwa",
+          "email": "vihan@leodistrict306a2.org",
+          "address": "No. 49/5A, Colonel Ave, Nikape, Dehiwala",
+          "phone": "0779715355",
+          "img": "vihan_manage.png"
         },
         {
           "designation": "Director - Quality Education & Literacy",
@@ -813,18 +813,9 @@
           "phone": "0712489789",
           "email": "92buddhiv@gmail.com",
           "img": "buddhi_vikasitha.png"
-        },
+        }
         {
           "visibility_order": 3.0,
-          "designation": "Member",
-          "name": "Leo Kaveen Rathnayake",
-          "club": "Leo Club of Sri Lanka Technological Campus",
-          "phone": "0717909332",
-          "email": "kaveen@leodistrict306a2.org",
-          "img": "kaveen_rathnayake.png"
-        },
-        {
-          "visibility_order": 4.0,
           "designation": "Member",
           "name": "Leo Kalana Tebel",
           "club": "Leo Club of Panadura Alubomulla",
@@ -833,7 +824,7 @@
           "img": "kalana_tebel.png"
         },
         {
-          "visibility_order": 5.0,
+          "visibility_order": 4.0,
           "designation": "Member",
           "name": "Leo Isuru Gayan",
           "club": "Leo Club of Piliyandala",
@@ -842,7 +833,7 @@
           "img": "isuru_gayan.png"
         },
         {
-          "visibility_order": 6.0,
+          "visibility_order": 5.0,
           "designation": "Member",
           "name": "Leo Imasha Weerakoon Karunatilleke",
           "club": "Leo Club of Matara Nilwala",
@@ -851,7 +842,7 @@
           "img": "imasha_weerakoon.png"
         },
         {
-          "visibility_order": 7.0,
+          "visibility_order": 6.0,
           "designation": "Member",
           "name": "Leo Kalindu Rajapaksha",
           "club": "Leo Club of University of Moratuwa",
@@ -860,7 +851,7 @@
           "img": "kalindu_rajapaksha.png"
         },
         {
-          "visibility_order": 8.0,
+          "visibility_order": 7.0,
           "designation": "Member",
           "name": "Leo Navindu Deshan",
           "club": "Leo Club of Matara Nilwala",

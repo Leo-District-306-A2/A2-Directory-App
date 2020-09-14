@@ -65,7 +65,7 @@
           "visibility_order": 6,
           "name": "Lion Ananda Abeywickrama",
           "gender": "Male",
-          "phone": "",
+          "phone": "0777755990",
           "email": "ananda.abeywickrama@gmail.com",
           "mylci": "",
           "address": "Danwala Group, Nayapamula, Baddegama",
@@ -1040,7 +1040,7 @@
           "name": "Leo Minidu Wickramaarachchi",
           "gender": "Male",
           "phone": "0716950344",
-          "email": "miniduwickramaarachchi97@gmail.com",
+          "email": "miniduwickramaarchchi97@gmail.com",
           "mylci": 5264145,
           "address": "No. 129/A, Suwasewa Mawatha, Maha Heenatiyangala, Kaluthara South",
           "img": "leo_club_of_panadura_alubomulla/secretary.png"
@@ -1142,12 +1142,12 @@
         {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": "Lion Gamini Amarasinghe",
+          "gender": "Male",
+          "phone": "0779050771",
+          "email": "gamini@isconsultancyltd.com",
           "mylci": "",
-          "address": "",
+          "address": "104 25/1, Nugahena Watta, Polgasowita, Kesbewa",
           "img": "default_data/default_male_user.png"
         },
         {
@@ -1371,7 +1371,7 @@
           "visibility_order": 4,
           "name": "Leo Shehara Wickramasinghe",
           "gender": "Male",
-          "phone": "0712751655",
+          "phone": "0712741655",
           "email": "wshehara621@gmail.com",
           "mylci": "",
           "address": "No. 20/A/1, Dharmarathen Road, Uyanwatta, Matara",
@@ -1383,7 +1383,7 @@
           "name": "Leo Chathum Batagoda",
           "gender": "Male",
           "phone": "0713630047",
-          "email": "chahumbatagoda@gmail.com",
+          "email": "chathumbatagoda@gmail.com",
           "mylci": "",
           "address": "No. 28, Galahene Road, Dondra",
           "img": "leo_club_of_rahula_college/treasurer.png"
@@ -1643,7 +1643,7 @@
           "name": "PGD Lion Kamal Seneviratne PMJF",
           "gender": "Male",
           "phone": "0777349335",
-          "email": "pgdkamals@gmail.com",
+          "email": "pdgkamals@gmail.com",
           "mylci": "",
           "address": "No. 222 B, Galvihara Road, Dehiwala",
           "img": "leo_club_of_saegis_campus/advisor.png"
@@ -1696,7 +1696,7 @@
           "email": "nirmalgu@sltc.edu.lk",
           "mylci": "",
           "address": "No-402/A, St.Anthony's Avenue, Negombo Road, Nittambuwa.",
-          "img": "default_data/default_male_user.png"
+          "img": "leo_club_of_sri_lanka_technological_campus/vice_president_2.png"
         },
         {
           "designation": "Secretary",
