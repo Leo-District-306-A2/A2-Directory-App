@@ -28,6 +28,7 @@
     "@ionic-native/call-number": "^5.26.0",
     "@ionic-native/core": "^5.0.7",
     "@ionic-native/email-composer": "^5.26.0",
+    "@ionic-native/fcm": "^5.28.0",
     "@ionic-native/keyboard": "^5.26.0",
     "@ionic-native/native-geocoder": "^5.26.0",
     "@ionic-native/screen-orientation": "^5.27.0",
@@ -38,17 +39,21 @@
     "bootstrap": "^4.5.0",
     "call-number": "^1.0.1",
     "cordova": "^9.0.0",
-    "cordova-android": "8.1.0",
+    "cordova-android": "^8.1.0",
     "cordova-ios": "5.1.1",
     "cordova-plugin-actionsheet": "^2.3.3",
     "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-androidx": "^3.0.0",
+    "cordova-plugin-androidx-adapter": "^1.1.1",
     "cordova-plugin-dialogs": "^2.0.2",
     "cordova-plugin-email-composer": "^0.9.2",
+    "cordova-plugin-fcm-with-dependecy-updated": "^7.3.1",
     "cordova-plugin-nativegeocoder": "^3.4.1",
     "cordova-plugin-screen-orientation": "^3.0.2",
     "core-js": "^2.5.4",
     "es6-promise-plugin": "^4.2.2",
     "ionic": "^5.4.16",
+    "mx.ferreyra.callnumber": "0.0.2",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
@@ -99,11 +104,15 @@
       "cordova-plugin-email-composer": {
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
       },
-      "cordova-plugin-nativegeocoder": {}
+      "cordova-plugin-nativegeocoder": {},
+      "call-number": {},
+      "cordova-plugin-fcm-with-dependecy-updated": {},
+      "cordova-plugin-androidx": {},
+      "cordova-plugin-androidx-adapter": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

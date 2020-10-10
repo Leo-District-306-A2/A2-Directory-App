@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "900343174951",
+    "firebase_url": "https://a2directory.firebaseio.com",
+    "project_id": "a2directory",
+    "storage_bucket": "a2directory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900343174951:android:46a097858f2de2d9e7bb02",
+        "android_client_info": {
+          "package_name": "a2.it.team.leos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900343174951-07tkhv0aq7f302gldjhep7qfc1gu37k9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn94vUIkjv8Ht-fS1nlgD_Yr5g4CxNlyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900343174951-07tkhv0aq7f302gldjhep7qfc1gu37k9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
