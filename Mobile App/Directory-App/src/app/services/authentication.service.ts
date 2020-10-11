@@ -7,7 +7,7 @@ import {Env} from './env';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticationService implements CanActivate{
+export class AuthenticationService implements CanActivate {
   isLoggedIn = false;
   authData: any;
   passwordMaxLength = 8;

@@ -26,4 +26,18 @@ export class AuthenticationPage implements OnInit {
     }
   }
 
+  autoSubmit() {
+    if (this.password && this.password.length === this.authenticationService.passwordMaxLength) {
+      this.authenticate();
+    }
+  }
+
+  getPlaceHolder() {
+    let placeholder = '';
+    const char = '*';
+    for (let i = 0; i < this.authenticationService.passwordMaxLength; i++) {
+        placeholder += char;
+    }
+    return placeholder;
+  }
 }

@@ -4,9 +4,9 @@
         <img src="assets/local_db/authentication/imgs/logo.png" class="logo mx-auto d-block mb-1">
         <h4 class="text-center pb-1 dancingScriptFont font-weight-bold header">Use access code here</h4>
         <form>
-          <p class="text-danger text-center p-0 mb-0 meriendaOneFont invalid-password-text" [ngStyle]="{ 'opacity': isAuthenticated? '0' : '1' }" (keyup.enter)="authenticate()">Invalid access code!</p>
+          <p class="text-danger text-center p-0 mb-0 meriendaOneFont invalid-password-text" [ngStyle]="{ 'opacity': isAuthenticated? '0' : '1' }" >Invalid access code!</p>
           <div class="form-group" [ngStyle]="{ 'invalid-password': !isAuthenticated }">
-            <input type="password" [(ngModel)]="password" name="password" class="form-control mx-auto d-block password text-center" maxlength="{{ authenticationService.passwordMaxLength }}" autofocus>
+            <input type="password" [(ngModel)]="password" name="password" class="form-control mx-auto d-block password text-center" (keyup)="autoSubmit()" maxlength="{{ authenticationService.passwordMaxLength }}" [placeholder]="getPlaceHolder()" autofocus>
           </div>
           <button type="button" class="btn btn-primary mx-auto d-block w-100 access-btn font-weight-bold" (click)="authenticate()">Submit</button>
         </form>
