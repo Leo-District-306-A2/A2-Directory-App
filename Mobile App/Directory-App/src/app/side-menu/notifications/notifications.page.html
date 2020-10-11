@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+    <div>
+        <div class="w-100 pr-2 pl-2 mb-2 header-top fixed-top">
+            <h4 class="text-center mb-3 meriendaOneFont">Notifications</h4>
+        </div>
+        <div class="scrollable-content">
+            <div class="notification row" *ngFor="let notification of notificationService.notificationsData" [ngClass]="{ 'read': notification?.read === 1 }">
+                <div class="col-3 pr-0">
+                    <img class="notification-img" src="{{ env.baseURL + '/home/imgs/districtPresidentLogo/properties/logo.png' }}">
+                </div>
+                <div class="col-9 pl-0">
+                    <h6 class="font-weight-bolder mb-0">{{ notification?.title }}</h6>
+                    <p class="notification-description mb-0">{{ notification?.description }}</p>
+                    <p class="notification-date mb-0">{{ utilityService.getDateTimeFormatted(notification?.datetime) }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ion-fab class="nav-buttons back-button" vertical="top" horizontal="start" slot="fixed">
+        <ion-fab-button color="light" size="small" (click)="goBack()">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab class="notification-button" vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button color="light">
+            <p class="badge badge-success badge-pill notification-count">{{ notificationService.countUnread() }}</p>
+            <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

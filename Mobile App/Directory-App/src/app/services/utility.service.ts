@@ -58,6 +58,12 @@ export class UtilityService {
         }
     }
 
+    getDateTimeFormatted(date: Date) {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        // tslint:disable-next-line:max-line-length
+        return date.getFullYear() + ' ' + months[date.getMonth()] + ' ' + date.getDay() + ' at ' + date.getHours() + ':' + date.getMinutes();
+    }
+
     // Comparer Function
     GetSortOrder(prop) {
         // tslint:disable-next-line:only-arrow-functions

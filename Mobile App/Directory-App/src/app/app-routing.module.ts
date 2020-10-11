@@ -20,8 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./authentication/authentication.module').then( m => m.AuthenticationPageModule),
     canActivate: [AuthenticationService]
   }
-
-
 ];
 @NgModule({
   imports: [

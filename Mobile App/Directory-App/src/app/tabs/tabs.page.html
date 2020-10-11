@@ -54,6 +54,11 @@
                 <img class="mx-auto d-block" src="../../assets/side-menu/header.png">
             </div>
             <ion-list>
+                <ion-item class="clickable" (click)="navigateToNotifications()">
+                    <ion-icon name="notifications-outline" slot="start"></ion-icon>
+                    <ion-label>Notifications&nbsp;&nbsp;<div class="badge badge-pill badge-success notification-count">{{ notificationService.countUnread() }}</div>
+                    </ion-label>
+                </ion-item>
                 <ion-item class="clickable" (click)="navigateToContactUs()">
                     <ion-icon name="call-outline" slot="start"></ion-icon>
                     <ion-label>Contact Us</ion-label>

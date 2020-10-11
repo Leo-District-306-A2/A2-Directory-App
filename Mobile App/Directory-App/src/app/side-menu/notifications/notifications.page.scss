@@ -1,0 +1,77 @@
+.header-top {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: white;
+  left: -20px;
+}
+
+.nav-buttons {
+  transform: scale(0.7);
+  position: fixed;
+  //bottom: 50px;
+}
+
+.scrollable-content {
+  margin-top: 100px;
+}
+
+.not-found-wrapper{
+  margin-top: 20vh;
+}
+.not-found-logo {
+  width: 15vw;
+  height: 15vw;
+}
+
+.not-found-text {
+  font-size: 12px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.notification {
+  border: 1px solid lightgrey;
+  height: content-box;
+  margin: 5px 15px;
+  border-radius: 12px;
+  padding: 10px 5px;
+}
+
+.notification-img {
+  width: 50px;
+  height: 50px;
+}
+
+.notification-description {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.notification-date {
+  font-size: 10px;
+  color: gray;
+}
+
+.read {
+  opacity: 0.5;
+}
+
+.back-button {
+  z-index: 9999;
+}
+
+.notification-button {
+  right: 60px;
+  z-index: 9000;
+}
+
+.notification-button ion-fab-button ion-icon {
+  position: relative;
+  left: -10px;
+  z-index: 9000;
+}
+
+.notification-count {
+  position: relative;
+  left: 23px;
+  z-index: 999999;
+}

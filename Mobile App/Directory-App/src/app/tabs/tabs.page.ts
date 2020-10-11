@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {MenuController} from '@ionic/angular';
 import {Keyboard} from '@ionic-native/keyboard/ngx';
+import {NotificationService} from '../services/notification.service';
 
 @Component({
     selector: 'app-tabs',
@@ -16,7 +17,8 @@ export class TabsPage {
     // tslint:disable-next-line:max-line-length
     constructor(private router: Router,
                 private menu: MenuController,
-                private keyboard: Keyboard
+                private keyboard: Keyboard,
+                public notificationService: NotificationService
     ) {
         this.keyboard.onKeyboardShow().subscribe((data) => {
             this.hideHomeFab = true;
@@ -56,6 +58,12 @@ export class TabsPage {
     navigateToContactUs() {
         this.closeMenu().then(() => {
             this.router.navigate(['/tabs/contact-us', {data: JSON.stringify(this.router.url)}]);
+        });
+    }
+
+    navigateToNotifications() {
+        this.closeMenu().then(() => {
+            this.router.navigate(['/tabs/notifications', {data: JSON.stringify(this.router.url)}]);
         });
     }
 }

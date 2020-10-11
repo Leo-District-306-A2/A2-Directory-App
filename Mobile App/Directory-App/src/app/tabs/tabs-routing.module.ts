@@ -28,6 +28,10 @@ const routes: Routes = [
         loadChildren: () => import('../side-menu/our-team/our-team.module').then( m => m.OurTeamPageModule)
       },
       {
+        path: 'notifications',
+        loadChildren: () => import('../side-menu/notifications/notifications.module').then( m => m.NotificationsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
