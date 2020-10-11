@@ -20,7 +20,7 @@ import {Env} from './services/env';
 import {HttpClientModule} from '@angular/common/http';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import {AlertService} from './services/alert.service';
-import { FCM } from '@ionic-native/fcm/ngx'
+import { FCM } from '@ionic-native/fcm/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -38,9 +38,8 @@ import { FCM } from '@ionic-native/fcm/ngx'
     NativeGeocoder,
     AudioService,
     Env,
-      AlertService,
-      FCM
-      
+    AlertService,
+    FCM
   ],
   bootstrap: [AppComponent]
 })

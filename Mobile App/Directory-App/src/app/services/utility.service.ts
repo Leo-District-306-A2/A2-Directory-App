@@ -6,7 +6,6 @@ import {NativeGeocoder} from '@ionic-native/native-geocoder/ngx';
 })
 export class UtilityService {
     constructor(private nativeGeocoder: NativeGeocoder) {
-        console.log(this.getDateFormatted('22/05/2020', 'm'));
     }
 
     sortJsonArrayByVisibilityOrder(array) {

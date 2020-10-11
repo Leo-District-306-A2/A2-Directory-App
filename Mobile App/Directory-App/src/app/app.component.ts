@@ -17,7 +17,7 @@ export class AppComponent {
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private screenOrientation: ScreenOrientation,
-        private fcm: FCM    
+        private fcm: FCM
     ) {
         this.initializeApp();
     }
@@ -32,7 +32,7 @@ export class AppComponent {
             console.log(token);
             // send token to the server
           });
-          this.fcm.onNotification().subscribe(data => {
+        this.fcm.onNotification().subscribe(data => {
             console.log(data);
             if (data.wasTapped) {
               console.log('Received in background');

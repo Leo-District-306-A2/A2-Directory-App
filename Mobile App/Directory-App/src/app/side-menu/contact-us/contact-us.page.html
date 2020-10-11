@@ -6,6 +6,18 @@
         </div>
         <div class="w-100 mb-4">
 
+            <h6 class="text-center mb-2 title kaushanScriptFont">Send your thoughts</h6>
+            <div class="social-media text-center" *ngFor="let email of contactData?.feedback_emails">
+                <a href="{{ 'mailto:'+email }}">
+                    <i class="fa fa-envelope mt-2"></i>
+                    <div>
+                        {{ email }}
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="w-100 mb-4">
+
             <h6 class="text-center mb-2 title kaushanScriptFont">Email us</h6>
             <div class="social-media text-center" *ngFor="let email of contactData?.emails">
                 <a href="{{ 'mailto:'+email }}">
