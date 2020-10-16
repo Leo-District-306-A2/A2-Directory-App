@@ -28,7 +28,6 @@ export class NotificationService {
             id: undefined
         };
         notificationDataforView.id = Md5.hashStr(JSON.stringify(notificationDataforView));
-        console.log(notificationDataforView);
         this.saveToLocalStorage(notificationDataforView);
     }
 
@@ -54,7 +53,6 @@ export class NotificationService {
         if (currentNotifications.length > this.env.maxNotificationCount ) {
             currentNotifications.pop();
         }
-        console.log('poped' + currentNotifications.length);
         localStorage.setItem('notifications', JSON.stringify(currentNotifications));
     }
 

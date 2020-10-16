@@ -37,9 +37,7 @@ export class MultipleDetailsPage implements OnInit {
 
   // tslint:disable-next-line:variable-name
   dial(number) {
-    this.callNumber.callNumber(number, true)
-        .then(res => console.log('Launched dialer!', res))
-        .catch(err => console.log('Error launching dialer', err));
+    this.callNumber.callNumber(number, true);
   }
 
   openEmail(email) {
@@ -53,7 +51,6 @@ export class MultipleDetailsPage implements OnInit {
 
   openLocation(address) {
     this.utilityService.getLatLongFromAddress(address).then(data => {
-      console.log(data);
       window.open('geo://' + data[0].latitude + ',' + data[0].longitude + '?q=' + address, '_system');
     });
   }
