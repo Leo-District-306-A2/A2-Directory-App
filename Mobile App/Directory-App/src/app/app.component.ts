@@ -4,9 +4,8 @@ import {Platform} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
-import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
-
-import { NotificationService } from './services/notification.service'
+import {FCM} from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
+import {NotificationService} from './services/notification.service';
 
 @Component({
     selector: 'app-root',
@@ -31,16 +30,16 @@ export class AppComponent {
             this.splashScreen.hide();
             this.notification();
             this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
-            
-        }); 
+        });
     }
 
-    notification(){
-      this.fcm.getToken().then(token => {
-      });
+    notification() {
+        this.fcm.getToken().then(token => {
+        });
 
-      this.fcm.onNotification().subscribe(data => {
-        this.notificationService.addNotification(data);
+        this.fcm.onNotification().subscribe(data => {
+            console.log(data);
+            this.notificationService.addNotification(data);
         });
     }
 }

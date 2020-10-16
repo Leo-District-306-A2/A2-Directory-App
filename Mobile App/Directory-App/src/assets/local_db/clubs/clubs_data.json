@@ -169,7 +169,7 @@
     },
     {
       "clubName": "Leo Club of Godigamuwa",
-      "logo": "default_data/logo.png",
+      "logo": "leo_club_of_godigamuwa/logo.png",
       "officers": [
         {
           "designation": "President",
@@ -1414,7 +1414,7 @@
     },
     {
       "clubName": "Leo Club of Rattanapitiya",
-      "logo": "default_data/logo.png",
+      "logo": "leo_club_of_rattanapitiya/logo.png",
       "officers": [
         {
           "designation": "President",
@@ -1867,12 +1867,12 @@
         {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "Leo Ascharya Sathsarani Ranasinghe",
+          "name": "Leo Anjalika Madhuwanthi Gunawardhana",
           "gender": "Female",
-          "phone": "0775909454",
-          "email": "ascharya.leousj@gmail.com",
-          "mylci": 5332377,
-          "address": "No. 194, Co-operative Road, Honnanthara, Piliyandala",
+          "phone": "0767363848",
+          "email": "anjalika.leousj@gmail.com",
+          "mylci": 5333324,
+          "address": "Temple Road, Tekewa, Hettipola",
           "img": "leo_club_of_university_of_sri_jayewardenepura/secretary.png"
         },
         {

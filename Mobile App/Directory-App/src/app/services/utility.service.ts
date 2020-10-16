@@ -59,10 +59,15 @@ export class UtilityService {
     }
 
     getDateTimeFormatted(dateString) {
-        var date =  new Date(dateString);
+        // tslint:disable-next-line:prefer-const
+        let date =  new Date(dateString);
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         // tslint:disable-next-line:max-line-length
-        return date.getFullYear() + ' ' + months[date.getMonth()] + ' ' + date.getDay() + ' at ' + date.getHours() + ':' + date.getMinutes();
+        return date.getFullYear() + ' ' + months[date.getMonth()] + ' ' + this.convertToTwoDigits(date.getDay()) + ' at ' + this.convertToTwoDigits(date.getHours()) + ':' + this.convertToTwoDigits(date.getMinutes());
+    }
+
+    convertToTwoDigits(val) {
+        return ('0' + val).slice(-2);
     }
 
     // Comparer Function

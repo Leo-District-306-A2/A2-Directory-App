@@ -66,7 +66,7 @@
 
 .notification-button ion-fab-button ion-icon {
   position: relative;
-  left: -10px;
+  left: -11px;
   z-index: 9000;
 }
 
@@ -74,4 +74,18 @@
   position: relative;
   left: 23px;
   z-index: 999999;
+}
+
+.notification-logo {
+  font-size: 30px;
+}
+
+.no-notifications {
+  padding-top: 12px;
+}
+
+.options-info {
+  font-size: 10px;
+  opacity: 0.5;
+  line-height: 10px;
 }

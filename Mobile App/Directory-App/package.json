@@ -55,6 +55,7 @@
     "ionic": "^5.4.16",
     "mx.ferreyra.callnumber": "0.0.2",
     "rxjs": "~6.5.1",
+    "ts-md5": "^1.2.7",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },

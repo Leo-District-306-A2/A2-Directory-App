@@ -3,8 +3,9 @@
         <div class="w-100 pr-2 pl-2 mb-2 header-top fixed-top">
             <h4 class="text-center mb-3 meriendaOneFont">Notifications</h4>
         </div>
-        <div class="scrollable-content">
-            <div class="notification row" *ngFor="let notification of notificationService.notificationsData" [ngClass]="{ 'read': notification?.read === 1 }">
+        <div class="scrollable-content" *ngIf="notificationService.notificationsData?.length != 0">
+            <p class="pl-3 mb-0 options-info text-center">Click on notification to mark as read.<br>Click on notification icon to mark all as read.</p>
+            <div class="notification row" *ngFor="let notification of notificationService.notificationsData" [ngClass]="{ 'read': notification?.read }" (click)="notificationService.markAsRead(notification?.id)">
                 <div class="col-3 pr-0">
                     <img class="notification-img" src="{{ env.baseURL + '/home/imgs/districtPresidentLogo/properties/logo.png' }}">
                 </div>
@@ -12,6 +13,16 @@
                     <h6 class="font-weight-bolder mb-0">{{ notification?.title }}</h6>
                     <p class="notification-description mb-0">{{ notification?.description }}</p>
                     <p class="notification-date mb-0">{{ utilityService.getDateTimeFormatted(notification?.datetime) }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="scrollable-content" *ngIf="notificationService.notificationsData?.length === 0">
+            <div class="notification row read">
+                <div class="col-3 pr-0">
+                    <ion-icon name="notifications-outline" class="notification-icon notification-logo mt-1"></ion-icon>
+                </div>
+                <div class="col-9 pl-0">
+                    <h6 class="font-weight-bolder mb-0 no-notifications">No received notifications!</h6>
                 </div>
             </div>
         </div>
@@ -23,9 +34,9 @@
         </ion-fab-button>
     </ion-fab>
 
-    <ion-fab class="notification-button" vertical="top" horizontal="end" slot="fixed">
-        <ion-fab-button color="light">
-            <p class="badge badge-success badge-pill notification-count">{{ notificationService.countUnread() }}</p>
+    <ion-fab *ngIf="notificationService.notificationsData?.length != 0" class="notification-button" vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button color="light" (click)="notificationService.markAllAsRead()">
+            <p class="badge badge-success badge-pill notification-count">{{ notificationService.notificaionCount }}</p>
             <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
         </ion-fab-button>
     </ion-fab>
