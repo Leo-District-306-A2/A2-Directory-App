@@ -5,25 +5,42 @@ import { Injectable } from '@angular/core';
 })
 export class NotificationService {
   notificationsData: any;
-  constructor() {
-    // Mock data for notification / read:  0 - unread | 1 - read
-    this.notificationsData = [
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Read Notification Test', description: 'test description', datetime: new Date(), read : 1},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Read Notification Test', description: 'test description', datetime: new Date(), read : 1},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Read Notification Test', description: 'test description', datetime: new Date(), read : 1},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-      {title: 'Read Notification Test', description: 'test description', datetime: new Date(), read : 1},
-      {title: 'Unread Notification Test', description: 'test description', datetime: new Date(), read : 0},
-
-    ];
+  notification: any;
+  constructor() {    
+    this.notificationsData = this.getNotifications();
   }
+
+
+addNotification(notificationData){  
+  // read : 1, unread :0
+  var notificationDataforView = {
+    title: notificationData.title,
+    description: notificationData.body,
+    datetime: new Date(),
+    read : 0
+  }
+  this.saveToLocalStorage(notificationDataforView);
+}
+
+getNotifications(): Array<object>{
+  // return notifications array in localStorage
+  var notifications = JSON.parse(localStorage.getItem("notifications"));
+  if (notifications === null){
+    return [];
+  }else{
+    return notifications
+  }
+
+}
+saveToLocalStorage(notification){
+  //save the notification into localStorage
+  var currentNotifications = JSON.parse(localStorage.getItem("notifications"));
+  if (currentNotifications === null){
+    currentNotifications = []
+  }
+  currentNotifications.unshift(notification);
+  localStorage.setItem("notifications", JSON.stringify(currentNotifications));
+}
 
   countUnread(): number {
     if (this.notificationsData) {
@@ -39,4 +56,7 @@ export class NotificationService {
       return 0;
     }
   }
+
+
+  
 }

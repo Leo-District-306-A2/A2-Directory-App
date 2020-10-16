@@ -20,8 +20,7 @@ import {Env} from './services/env';
 import {HttpClientModule} from '@angular/common/http';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import {AlertService} from './services/alert.service';
-import { FCM } from '@ionic-native/fcm/ngx';
-
+import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
