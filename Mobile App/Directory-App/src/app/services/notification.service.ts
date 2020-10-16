@@ -14,7 +14,6 @@ export class NotificationService {
     constructor(public env: Env) {
         this.notificationsData = this.getNotifications();
         this.notificaionCount = this.countUnread();
-        this.addNotification({title: 'test', body: 'asasa'});
     }
 
 
