@@ -7,7 +7,7 @@
             <p class="pl-3 mb-0 options-info text-center">Click on notification to mark as read.<br>Click on notification icon to mark all as read.</p>
             <div class="notification row" *ngFor="let notification of notificationService.notificationsData" [ngClass]="{ 'read': notification?.read }" (click)="notificationService.markAsRead(notification?.id)">
                 <div class="col-3 pr-0">
-                    <img class="notification-img" src="{{ (networkService.isConnectedToInternet && notification.icon) ? notification.icon :env.baseURL + '/home/imgs/districtPresidentLogo/properties/logo.png'}}">
+                    <img class="notification-img" src="{{ (networkService.isConnectedToInternet && notification.icon) ? notification.icon : '../../assets/side-menu/default_notification.png'}}">
                 </div>
                 <div class="col-9 pl-0">
                     <h6 class="font-weight-bolder mb-0">{{ notification?.title }}</h6>

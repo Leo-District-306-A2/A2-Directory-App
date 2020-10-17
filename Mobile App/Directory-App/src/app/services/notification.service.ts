@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Md5} from 'ts-md5/dist/md5';
 import {Env} from './env';
-import {Observable, Observer} from 'rxjs';
 import {FileHandlerService} from './file-handler.service';
 
 
@@ -13,7 +12,7 @@ export class NotificationService {
     notification: any;
     notificaionCount = 0;
     isNewNotification = false;
-    constructor(public env: Env, public fileHandlerService: FileHandlerService) {
+    constructor(public env: Env) {
         this.notificationsData = this.getNotifications();
         this.notificaionCount = this.countUnread();
     }
@@ -35,7 +34,7 @@ export class NotificationService {
 
         setTimeout(() => {
             this.isNewNotification = false;
-        }, 1500);
+        }, 1000);
     }
 
     getNotifications(): Array<object> {
