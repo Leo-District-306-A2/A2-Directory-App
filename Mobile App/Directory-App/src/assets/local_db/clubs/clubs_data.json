@@ -417,7 +417,7 @@
       ]
     },
     {
-      "clubName": "Leo Club of Kalubovila",
+      "clubName": "Leo club of Kalubowila",
       "logo": "default_data/logo.png",
       "officers": [
         {
@@ -750,7 +750,7 @@
     },
     {
       "clubName": "Leo Club of Mattegoda",
-      "logo": "default_data/logo.png",
+      "logo": "leo_club_of_mattegoda/logo.png",
       "officers": [
         {
           "designation": "President",
@@ -2078,7 +2078,7 @@
     },
     {
       "clubName": "Leo Club of Piliyandala",
-      "logo": "default_data/logo.png",
+      "logo": "leo_club_of_piliyandala/logo.png",
       "officers": [
         {
           "designation": "President",
@@ -2127,12 +2127,12 @@
         {
           "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "Leo Teresha Piumi Dias",
-          "gender": "Female",
-          "phone": "0766539939",
-          "email": "piumiteresha@gmail.com",
+          "name": "Leo Sanju Ashan",
+          "gender": "Male",
+          "phone": "0756359842",
+          "email": "sanjuashan12@gmail.com",
           "mylci": 5263808,
-          "address": "No. 294/B, Kurunduwaththa, Mampe, Piliyandala",
+          "address": "131/2/E Batuwandra, North, Madapatha.",
           "img": "leo_club_of_piliyandala/treasurer.png"
         },
         {
