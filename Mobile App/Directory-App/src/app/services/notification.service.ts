@@ -21,6 +21,7 @@ export class NotificationService {
 
     addNotification(notificationData) {
         // read : 1, unread :0
+        this.isNewNotification = true;
         const notificationDataforView = {
             title: notificationData.title,
             description: notificationData.body,
@@ -31,7 +32,7 @@ export class NotificationService {
         };
         notificationDataforView.id = Md5.hashStr(JSON.stringify(notificationDataforView));
         this.saveToLocalStorage(notificationDataforView);
-        console.log(notificationDataforView);
+
         setTimeout(() => {
             this.isNewNotification = false;
         }, 1500);
