@@ -28,18 +28,26 @@ export class AppComponent {
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
-            this.notification();
             this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
+            this.notification();
         });
     }
 
     notification() {
-        this.fcm.getToken().then(token => {
+        this.fcm.getToken().then( token => {
+            console.log(token);
+        });
+
+        this.fcm.onTokenRefresh().subscribe((token) => {
+            console.log(token);
         });
 
         this.fcm.onNotification().subscribe(data => {
-            console.log(data);
-            this.notificationService.addNotification(data);
+            if (data.wasTapped) {
+                this.notificationService.addNotification(data);
+            } else {
+                this.notificationService.addNotification(data);
+            }
         });
     }
 }

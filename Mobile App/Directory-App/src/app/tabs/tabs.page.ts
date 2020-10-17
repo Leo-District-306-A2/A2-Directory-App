@@ -3,6 +3,7 @@ import {Router} from '@angular/router';
 import {MenuController} from '@ionic/angular';
 import {Keyboard} from '@ionic-native/keyboard/ngx';
 import {NotificationService} from '../services/notification.service';
+import {UtilityService} from '../services/utility.service';
 
 @Component({
     selector: 'app-tabs',
@@ -18,7 +19,8 @@ export class TabsPage {
     constructor(private router: Router,
                 private menu: MenuController,
                 private keyboard: Keyboard,
-                public notificationService: NotificationService
+                public notificationService: NotificationService,
+                public utilityService: UtilityService
     ) {
         this.keyboard.onKeyboardShow().subscribe((data) => {
             this.hideHomeFab = true;
@@ -65,6 +67,14 @@ export class TabsPage {
         this.closeMenu().then(() => {
             this.router.navigate(['/tabs/notifications', {data: JSON.stringify(this.router.url)}]);
         });
+    }
+
+    clickNotificationBtn() {
+        if (this.router.url.includes('/tabs/notifications')) {
+            this.notificationService.markAllAsRead();
+        } else {
+            this.router.navigate(['/tabs/notifications', {data: JSON.stringify(this.router.url)}]);
+        }
     }
 }
 

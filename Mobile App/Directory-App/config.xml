@@ -2,7 +2,7 @@
 <widget id="a2.it.team.leos" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>A2 Directory</name>
     <description>Mobile app which includes A2 Directory Data</description>
-    <author email="thilina.prasad@leodistrict306a2.org" href="http://www.leodistrict306a2.org">IT Team, Leo District 306 A2</author>
+    <author email="directory@leodistrict306a2.org" href="http://www.leodistrict306a2.org">IT Team, Leo District 306 A2</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -28,6 +28,7 @@
             <application android:networkSecurityConfig="@xml/network_security_config" />
         </edit-config>
         <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />

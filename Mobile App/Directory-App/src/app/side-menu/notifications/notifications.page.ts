@@ -3,6 +3,8 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {Env} from '../../services/env';
 import {UtilityService} from '../../services/utility.service';
 import {NotificationService} from '../../services/notification.service';
+import { Network } from '@ionic-native/network/ngx';
+import {NetworkService} from '../../services/network.service';
 
 @Component({
   selector: 'app-notifications',
@@ -15,7 +17,8 @@ export class NotificationsPage implements OnInit {
               private route: ActivatedRoute,
               public env: Env,
               public utilityService: UtilityService,
-              public notificationService: NotificationService) {
+              public notificationService: NotificationService,
+              public networkService: NetworkService) {
     route.paramMap.subscribe((data) => {
       if (data) {
         this.backRoute = JSON.parse(data.get('data'));
@@ -33,4 +36,5 @@ export class NotificationsPage implements OnInit {
       this.router.navigate(['/tabs/home']);
     });
   }
+
 }

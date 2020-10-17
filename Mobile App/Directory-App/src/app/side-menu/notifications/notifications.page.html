@@ -7,7 +7,7 @@
             <p class="pl-3 mb-0 options-info text-center">Click on notification to mark as read.<br>Click on notification icon to mark all as read.</p>
             <div class="notification row" *ngFor="let notification of notificationService.notificationsData" [ngClass]="{ 'read': notification?.read }" (click)="notificationService.markAsRead(notification?.id)">
                 <div class="col-3 pr-0">
-                    <img class="notification-img" src="{{ env.baseURL + '/home/imgs/districtPresidentLogo/properties/logo.png' }}">
+                    <img class="notification-img" src="{{ (networkService.isConnectedToInternet && notification.icon) ? notification.icon :env.baseURL + '/home/imgs/districtPresidentLogo/properties/logo.png'}}">
                 </div>
                 <div class="col-9 pl-0">
                     <h6 class="font-weight-bolder mb-0">{{ notification?.title }}</h6>
@@ -34,10 +34,4 @@
         </ion-fab-button>
     </ion-fab>
 
-    <ion-fab *ngIf="notificationService.notificationsData?.length != 0" class="notification-button" vertical="top" horizontal="end" slot="fixed">
-        <ion-fab-button color="light" (click)="notificationService.markAllAsRead()">
-            <p class="badge badge-success badge-pill notification-count">{{ notificationService.notificaionCount }}</p>
-            <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
-        </ion-fab-button>
-    </ion-fab>
 </ion-content>

@@ -92,3 +92,51 @@ ion-tab-button {
     position: relative;
     top: -2.5px;
 }
+
+.notification-button {
+    right: 55px;
+    transform: scale(0.7);
+}
+
+.notification-button ion-fab-button ion-icon {
+    position: relative;
+    left: -9px;
+    z-index: 9000;
+}
+
+.notification-count-btn {
+    position: relative;
+    left: 22px;
+    z-index: 999999;
+}
+
+.notify {
+    animation: ring 1s ease;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(35deg);
+    }
+    12.5% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    37.5% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    62.5% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

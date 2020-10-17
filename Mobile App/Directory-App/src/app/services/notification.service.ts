@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Md5} from 'ts-md5/dist/md5';
 import {Env} from './env';
+import {Observable, Observer} from 'rxjs';
+import {FileHandlerService} from './file-handler.service';
 
 
 @Injectable({
@@ -10,8 +12,8 @@ export class NotificationService {
     notificationsData: any;
     notification: any;
     notificaionCount = 0;
-
-    constructor(public env: Env) {
+    isNewNotification = false;
+    constructor(public env: Env, public fileHandlerService: FileHandlerService) {
         this.notificationsData = this.getNotifications();
         this.notificaionCount = this.countUnread();
     }
@@ -23,11 +25,16 @@ export class NotificationService {
             title: notificationData.title,
             description: notificationData.body,
             datetime: new Date(),
+            icon:  notificationData.icon,
             read: 0,
             id: undefined
         };
         notificationDataforView.id = Md5.hashStr(JSON.stringify(notificationDataforView));
         this.saveToLocalStorage(notificationDataforView);
+        console.log(notificationDataforView);
+        setTimeout(() => {
+            this.isNewNotification = false;
+        }, 1500);
     }
 
     getNotifications(): Array<object> {
@@ -43,16 +50,17 @@ export class NotificationService {
 
     saveToLocalStorage(notification) {
         // save the notification into localStorage
-        let currentNotifications = JSON.parse(localStorage.getItem('notifications'));
-        if (currentNotifications === null) {
-            currentNotifications = [];
+        this.notificationsData = JSON.parse(localStorage.getItem('notifications'));
+        if (this.notificationsData === null) {
+            this.notificationsData = [];
         }
-        currentNotifications.unshift(notification);
-
-        if (currentNotifications.length > this.env.maxNotificationCount ) {
-            currentNotifications.pop();
+        this.notificationsData.unshift(notification);
+        console.log(this.notificationsData);
+        if (this.notificationsData.length > this.env.maxNotificationCount ) {
+            this.notificationsData.pop();
         }
-        localStorage.setItem('notifications', JSON.stringify(currentNotifications));
+        localStorage.setItem('notifications', JSON.stringify(this.notificationsData));
+        this.notificaionCount = this.countUnread();
     }
 
     countUnread(): number {

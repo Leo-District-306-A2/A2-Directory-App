@@ -21,6 +21,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import {AlertService} from './services/alert.service';
 import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
+import { Network } from '@ionic-native/network/ngx';
+import {NetworkService} from './services/network.service';
+import {FileHandlerService} from './services/file-handler.service';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -32,13 +36,16 @@ import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
     {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
     CallNumber,
     EmailComposer,
+    Network,
     Keyboard,
     UtilityService,
     NativeGeocoder,
     AudioService,
     Env,
     AlertService,
-    FCM
+    FCM,
+    NetworkService,
+    FileHandlerService
   ],
   bootstrap: [AppComponent]
 })
