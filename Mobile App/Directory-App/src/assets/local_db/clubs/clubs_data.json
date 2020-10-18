@@ -3,7 +3,7 @@
   "clubs": [
     {
       "clubName": "Leo Club of Baddegama",
-      "logo": "default_data/logo.png",
+      "logo": "leo_club_of_baddegama/logo.png",
       "officers": [
         {
           "designation": "President",
@@ -417,7 +417,7 @@
       ]
     },
     {
-      "clubName": "Leo club of Kalubowila",
+      "clubName": "Leo Club of Kalubowila",
       "logo": "default_data/logo.png",
       "officers": [
         {
@@ -600,12 +600,12 @@
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "Leo Nipuna Rambukkanage",
-          "gender": "Male",
-          "phone": "0774664473",
-          "email": "nipunaram@gmail.com",
+          "name": "Leo Nayana Dilrukshi",
+          "gender": "Female",
+          "phone": "0717603480",
+          "email": "nayanadil98@gmail.com",
           "mylci": "",
-          "address": "No. 32, Pallidora Road, Dehiwala",
+          "address": "470, Galhenwaththa Road, Katuwawala, Werahera, Boralesgamuwa",
           "img": "leo_club_of_kesbawa/vice_president.png"
         },
         {
@@ -755,24 +755,24 @@
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
-          "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Dulith Fernando",
+          "gender": "Male",
+          "phone": "0719803684",
+          "email": "dulith.fernando@gmail.com",
+          "mylci": "5080481",
+          "address": "891/2B , Rukmale Road, Kottawa, Pannipitiya",
+          "img": "leo_club_of_mattegoda/president.png"
         },
         {
           "designation": "Vice President",
           "visibility_order": 2,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
-          "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Malki Paranawithana",
+          "gender": "Female",
+          "phone": "0713292816",
+          "email": "anjmalankavin@gmail.com",
+          "mylci": "5090157",
+          "address": "29/A, Kirigampamunuwa, Polgasowita",
+          "img": "leo_club_of_mattegoda/vice_president.png"
         },
         {
           "designation": "Second Vice President",
@@ -788,35 +788,35 @@
         {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
-          "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Mishani Tharukie",
+          "gender": "Female",
+          "phone": "0714590808",
+          "email": "mishanitharukie40@gmail.com",
+          "mylci": "5445195",
+          "address": "20/17/E, Thalagahawatta Road, Pelenwatta, Pannipitiya",
+          "img": "leo_club_of_mattegoda/secretary.png"
         },
         {
           "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
-          "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "name": "Leo Poorna Balasooriya",
+          "gender": "Male",
+          "phone": "0718977083",
+          "email": "poornabalasuriya1997@gmail.com",
+          "mylci": "5012676",
+          "address": "136/3,1st Lane. Salgas Mawath, Mattegoda",
+          "img": "leo_club_of_mattegoda/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
-          "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "name": "Lion Hettige Niroshana Perera",
+          "gender": "Female",
+          "phone": "0715874810",
+          "email": "hniroshanaperera@gmail.com",
+          "mylci": "3972253",
+          "address": "No 62, Jayathilakawaththa, Munagam, Horana",
+          "img": "leo_club_of_mattegoda/advisor.png"
         },
         {
           "designation": "Staff Advisor",
