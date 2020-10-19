@@ -47,7 +47,7 @@
     <ion-fab *ngIf="notificationService.notificationsData?.length != 0" class="notification-button" vertical="top" horizontal="end" slot="fixed">
         <ion-fab-button color="light" (click)="clickNotificationBtn()">
             <p class="badge badge-success badge-pill notification-count-btn">{{ notificationService.notificaionCount }}</p>
-            <ion-icon name="notifications-outline" class="notification-icon" [ngClass]="{'notify': notificationService.isNewNotification}"></ion-icon>
+            <ion-icon name="notifications-outline" class="notification-icon" [ngClass]="{'notify': notificationService.isNewNotification, 'one_digit_bell' : notificationService.notificaionCount < 10, 'two_digits_bell' : notificationService.notificaionCount >= 10}"></ion-icon>
         </ion-fab-button>
     </ion-fab>
 

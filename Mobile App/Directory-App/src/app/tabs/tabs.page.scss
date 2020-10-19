@@ -100,8 +100,15 @@ ion-tab-button {
 
 .notification-button ion-fab-button ion-icon {
     position: relative;
-    left: -9px;
     z-index: 9000;
+}
+
+.one_digit_bell {
+    left: -9px;
+}
+
+.two_digits_bell {
+    left: -11.75px;
 }
 
 .notification-count-btn {
