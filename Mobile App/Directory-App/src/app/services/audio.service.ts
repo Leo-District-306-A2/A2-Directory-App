@@ -8,7 +8,9 @@ export class AudioService {
   audioUrl;
   isAudioLoaded = false;
   audio = new Audio();
-  constructor() { }
+
+  constructor() {
+  }
 
   playStopAudio() {
     if (!this.isAudioLoaded) {
@@ -29,5 +31,11 @@ export class AudioService {
     this.isAudioLoaded = false;
     this.audioUrl = null;
     this.isAudioPlaying = false;
+  }
+
+  playFromUrl(url) {
+    this.audio.src = url;
+    this.audio.load();
+    this.audio.play();
   }
 }

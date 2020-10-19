@@ -8,7 +8,6 @@ import {Env} from './env';
   providedIn: 'root'
 })
 export class AuthenticationService implements CanActivate {
-  isLoggedIn = false;
   authData: any;
   passwordMaxLength = 8;
   constructor(public router: Router, private env: Env, private http: HttpClient) {
@@ -20,15 +19,18 @@ export class AuthenticationService implements CanActivate {
 
   // tslint:disable-next-line:max-line-length
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (this.isLoggedIn) {
+    if (localStorage.getItem('isAuthenticated')) {
       this.router.navigate(['tabs']);
     }
-    return !this.isLoggedIn;
+    return !(localStorage.getItem('isAuthenticated'));
   }
 
   authenticate(password) {
-    this.isLoggedIn = password.toUpperCase() === (this.authData.password).toUpperCase();
-    return this.isLoggedIn;
+    const isLoggedIn = password.toUpperCase() === (this.authData.password).toUpperCase();
+    if (isLoggedIn) {
+      localStorage.setItem('isAuthenticated', String(true));
+    }
+    return isLoggedIn;
   }
 
   getData() {

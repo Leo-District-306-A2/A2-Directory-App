@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Md5} from 'ts-md5/dist/md5';
 import {Env} from './env';
-import {FileHandlerService} from './file-handler.service';
+import {AudioService} from './audio.service';
 
 
 @Injectable({
@@ -12,15 +12,17 @@ export class NotificationService {
     notification: any;
     notificaionCount = 0;
     isNewNotification = false;
-    constructor(public env: Env) {
+    constructor(public env: Env, public audioService: AudioService) {
         this.notificationsData = this.getNotifications();
         this.notificaionCount = this.countUnread();
+
     }
 
 
     addNotification(notificationData) {
         // read : 1, unread :0
         this.isNewNotification = true;
+        this.audioService.playFromUrl(this.env.notificationSound);
         const notificationDataforView = {
             title: notificationData.title,
             description: notificationData.body,
@@ -34,6 +36,7 @@ export class NotificationService {
 
         setTimeout(() => {
             this.isNewNotification = false;
+            this.audioService.stop();
         }, 1000);
     }
 
@@ -55,7 +58,6 @@ export class NotificationService {
             this.notificationsData = [];
         }
         this.notificationsData.unshift(notification);
-        console.log(this.notificationsData);
         if (this.notificationsData.length > this.env.maxNotificationCount ) {
             this.notificationsData.pop();
         }

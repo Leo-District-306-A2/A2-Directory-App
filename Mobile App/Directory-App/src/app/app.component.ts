@@ -34,6 +34,10 @@ export class AppComponent {
     }
 
     notification() {
+
+        this.fcm.subscribeToTopic('a2');
+
+
         this.fcm.getToken().then( token => {
             console.log(token);
         });
@@ -43,11 +47,7 @@ export class AppComponent {
         });
 
         this.fcm.onNotification().subscribe(data => {
-            if (data.wasTapped) {
                 this.notificationService.addNotification(data);
-            } else {
-                this.notificationService.addNotification(data);
-            }
         });
     }
 }
