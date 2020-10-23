@@ -11,6 +11,8 @@ import {UtilityService} from '../../services/utility.service';
 })
 export class GuestIntroductionsPage implements OnInit {
   guestIntroData: any;
+  filteredGuestIntroData: any;
+  searchKeyword: any;
   constructor(private homeService: HomeService,
               private router: Router,
               public utilityService: UtilityService,
@@ -20,6 +22,7 @@ export class GuestIntroductionsPage implements OnInit {
   ngOnInit() {
     this.homeService.loadStaticData('GuestIntroductions').then((result) => {
       this.guestIntroData = result;
+      this.filteredGuestIntroData = result.content;
       console.log(result);
     });
   }
@@ -38,5 +41,9 @@ export class GuestIntroductionsPage implements OnInit {
 
   viewIntro(data) {
     this.router.navigate(['tabs/home/guest-introductions/intro', {data: JSON.stringify(data)}]);
+  }
+
+  filterData(){
+    this.filteredGuestIntroData = this.utilityService.searchGuest(this.guestIntroData.content,this.searchKeyword)
   }
 }

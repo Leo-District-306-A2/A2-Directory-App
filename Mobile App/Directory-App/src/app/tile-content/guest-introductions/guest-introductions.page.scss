@@ -9,7 +9,7 @@
 }
 
 .scrollable-content {
-  margin-top: 180px;
+  margin-top: 220px;
 }
 
 .notification {
@@ -29,5 +29,18 @@
 .notification-description {
   font-size: 12px;
   text-align: justify;
+}
+
+.not-found-wrapper{
+  margin-top: 20vh;
+}
+.not-found-logo {
+  width: 15vw;
+  height: 15vw;
+}
+
+.not-found-text {
+  font-size: 12px;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 

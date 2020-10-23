@@ -27,6 +27,12 @@ export class UtilityService {
         });
     }
 
+    searchGuest(guestData, searchKeyword){
+        return guestData.filter((guest) => {
+            return (guest.name.toLowerCase().indexOf(searchKeyword.toLowerCase()) >-1 )
+        });        
+    }
+
     searchByOfficerProperties(officers, searchKeyword) {
         // tslint:disable-next-line:prefer-const
         let officerList = officers.filter((officer) => {
