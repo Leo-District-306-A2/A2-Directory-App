@@ -1,0 +1,12 @@
+<ion-content>
+  <div class="col-md-12 align-items-center">
+    <img src="{{ env.baseURL + '/' + getGuestImg(viewData) }}" class="guest-img mx-auto d-block header-logo mt-5 mb-2">
+    <div class="mb-3">
+      <h4 class="text-center mb-0 meriendaOneFont">{{ viewData?.name }}</h4>
+      <div class="text-center logo-name">{{ viewData?.designation }}</div>
+    </div>
+    <h6 class="text-center meriendaOneFont font-weight-bold">Introduction</h6>
+    <div [innerHTML]="viewData?.intro" class="description text-justify mb-4">
+    </div>
+  </div>
+</ion-content>

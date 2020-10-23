@@ -82,7 +82,11 @@ const routes: Routes = [
   {
     path: 'pledges',
     component: PledgesComponent
+  },  {
+    path: 'guest-introductions',
+    loadChildren: () => import('./guest-introductions/guest-introductions.module').then( m => m.GuestIntroductionsPageModule)
   }
+
 
 ];
 

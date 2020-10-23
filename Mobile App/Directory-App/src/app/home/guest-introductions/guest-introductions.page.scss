@@ -1,0 +1,33 @@
+.header-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.fixed-head {
+  background-color: white;
+  z-index: 500;
+}
+
+.scrollable-content {
+  margin-top: 180px;
+}
+
+.notification {
+  border: 1px solid lightgrey;
+  height: content-box;
+  margin-right: 1px;
+  border-radius: 12px;
+  padding: 10px 5px;
+}
+
+.notification-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.notification-description {
+  font-size: 12px;
+  text-align: justify;
+}
+

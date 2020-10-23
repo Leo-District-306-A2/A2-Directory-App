@@ -43,5 +43,7 @@ export class MessagesPage implements OnInit {
     this.router.navigate(['tabs/home/district-chairman', {data: JSON.stringify(data)}]);
   }
 
-
+  navigateToGuestIntro() {
+    this.router.navigate(['tabs/home/guest-introductions']);
+  }
 }

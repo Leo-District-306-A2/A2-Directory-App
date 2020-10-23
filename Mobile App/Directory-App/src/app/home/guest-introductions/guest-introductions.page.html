@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+    <div class="col-md-12 align-items-center" *ngIf="guestIntroData">
+        <div class="fixed-top fixed-head">
+            <img src="{{ env.baseURL + '/' + guestIntroData['logo'] }}" class="mx-auto d-block header-logo mt-5 mb-2">
+            <div>
+                <h4 class="text-center mb-3 meriendaOneFont">{{ guestIntroData['title'] }}</h4>
+            </div>
+        </div>
+        <div class="scrollable-content">
+            <div class="notification ion-activatable ripple-parent row mt-0 ml-0" *ngFor="let guestIntro of utilityService.sortJsonArrayByVisibilityOrder(guestIntroData['content'])" (click)="viewIntro(guestIntro)">
+                <div class="col-3 pr-0">
+                    <img class="notification-img" src="{{ env.baseURL + '/' + getGuestImg(guestIntro) }}">
+                </div>
+                <div class="col-9 pl-0">
+                    <h6 class="font-weight-bolder mb-0 mt-2">{{ guestIntro['name'] }}</h6>
+                    <p class="notification-description mb-0">{{  guestIntro['designation'] }}</p>
+                </div>
+                <ion-ripple-effect></ion-ripple-effect>
+            </div>
+        </div>
+    </div>
+</ion-content>

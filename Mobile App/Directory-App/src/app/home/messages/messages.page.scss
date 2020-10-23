@@ -224,3 +224,20 @@
   }
 }
 
+
+.guest_intro_tile {
+  background-image: url("../../../assets/tiles/guest_introductions.png");
+  background-position: center;
+  background-size: cover;
+  .inner-tile{
+    border-color: rgba(49, 0, 112,1);
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .tile-head {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    color: rgb(255, 248, 248) ;
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
