@@ -43,7 +43,7 @@ export class GuestIntroductionsPage implements OnInit {
     this.router.navigate(['tabs/home/guest-introductions/intro', {data: JSON.stringify(data)}]);
   }
 
-  filterData(){
-    this.filteredGuestIntroData = this.utilityService.searchGuest(this.guestIntroData.content,this.searchKeyword)
+  filterData() {
+    this.filteredGuestIntroData = this.utilityService.searchGuest(this.guestIntroData.content, this.searchKeyword);
   }
 }
