@@ -622,32 +622,32 @@
         {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "Leo Sashinka Rodrigo",
-          "gender": "Female",
-          "phone": "0767672141",
-          "email": "sashirodrigo98@gmail.com",
-          "mylci": 5144948,
-          "address": "No. 407/3, School Lane, Bokundara, Piliyandala",
-          "img": "leo_club_of_kesbawa/secretary.png"
-        },
-        {
-          "designation": "Treasurer",
-          "visibility_order": 5,
           "name": "Leo Ushani Randima",
           "gender": "Female",
           "phone": "0755273391",
           "email": "ushanirandima11@gmail.com",
           "mylci": 5190465,
           "address": "No. 82/2, Mawiththara, Piliyandala",
+          "img": "leo_club_of_kesbawa/secretary.png"
+        },
+        {
+          "designation": "Treasurer",
+          "visibility_order": 5,
+          "name": "Leo Sashinka Rodrigo",
+          "gender": "Female",
+          "phone": "0767672141",
+          "email": "sashirodrigo98@gmail.com",
+          "mylci": 5144948,
+          "address": "No. 407/3, School Lane, Bokundara, Piliyandala",
           "img": "leo_club_of_kesbawa/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": " Lion L. Premakumara Rodrigo",
+          "gender": "Male",
+          "phone": "0777389094",
+          "email": "lpkrodrigo@gmail.com",
           "mylci": "",
           "address": "",
           "img": "default_data/default_male_user.png"
