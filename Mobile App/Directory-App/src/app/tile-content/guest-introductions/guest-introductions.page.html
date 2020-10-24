@@ -8,22 +8,24 @@
 
             <!-- Search bar -->
             <div class="pl-2 pr-2 pt-0">
-                <ion-searchbar class="pt-0" showCancelButton="focus" (ionChange)="filterData()" [(ngModel)]="searchKeyword"
-                    placeholder="Search by Name"></ion-searchbar>
+                <ion-searchbar class="pt-0" showCancelButton="focus" (ionChange)="filterData()"
+                               [(ngModel)]="searchKeyword"
+                               placeholder="Search by Name"></ion-searchbar>
             </div>
         </div>
 
         <!-- guest data content -->
-        <div class="scrollable-content pt-4">    
-            <div class="notification ion-activatable ripple-parent row mt-0 ml-0" *ngFor="let guestIntro of utilityService.sortJsonArrayByVisibilityOrder(filteredGuestIntroData)" (click)="viewIntro(guestIntro)">
-                <div class="col-3 pr-0">
-                    <img class="notification-img" src="{{ env.baseURL + '/' + getGuestImg(guestIntro) }}">
-                </div>
-                <div class="col-9 pl-0">
-                    <h6 class="font-weight-bolder mb-0 mt-2">{{ guestIntro['name'] }}</h6>
-                    <p class="notification-description mb-0">{{  guestIntro['designation'] }}</p>
-                </div>
-                <ion-ripple-effect></ion-ripple-effect>
+        <div class="scrollable-content pt-4">
+            <div class="notification row mb-1 ml-0"
+                 *ngFor="let guestIntro of utilityService.sortJsonArrayByVisibilityOrder(filteredGuestIntroData)"
+                 (click)="viewIntro(guestIntro)">
+                    <div class="col-3 pr-0">
+                        <img class="notification-img" src="{{ env.baseURL + '/' + getGuestImg(guestIntro) }}">
+                    </div>
+                    <div class="col-9 pl-0">
+                        <h6 class="font-weight-bolder mb-0 mt-2">{{ guestIntro['name'] }}</h6>
+                        <p class="notification-description mb-0">{{  guestIntro['designation'] }}</p>
+                    </div>
             </div>
 
             <!-- guest not found msg -->
