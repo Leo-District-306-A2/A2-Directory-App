@@ -1,5 +1,4 @@
 <ion-content [fullscreen]="true">
-    
     <div class="col-md-12 align-items-center" *ngIf="guestIntroData">
         <div class="fixed-top fixed-head">
             <img src="{{ env.baseURL + '/' + guestIntroData['logo'] }}" class="mx-auto d-block header-logo mt-5 mb-2">
@@ -26,7 +25,7 @@
                 </div>
                 <ion-ripple-effect></ion-ripple-effect>
             </div>
-            
+
             <!-- guest not found msg -->
             <div class="not-found-wrapper text-center" *ngIf="filteredGuestIntroData?.length === 0">
                 <img src="../../assets/logos/gray_leo_logo.png" class="not-found-logo">
