@@ -35,9 +35,6 @@ export class AppComponent {
 
     notification() {
 
-        this.fcm.subscribeToTopic('a2');
-
-
         this.fcm.getToken().then( token => {
             console.log(token);
         });
