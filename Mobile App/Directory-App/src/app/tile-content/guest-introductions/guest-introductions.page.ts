@@ -23,7 +23,6 @@ export class GuestIntroductionsPage implements OnInit {
     this.homeService.loadStaticData('GuestIntroductions').then((result) => {
       this.guestIntroData = result;
       this.filteredGuestIntroData = result.content;
-      console.log(result);
     });
   }
 
