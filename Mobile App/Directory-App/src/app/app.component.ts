@@ -13,13 +13,14 @@ import {NotificationService} from './services/notification.service';
     styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+    token;
     constructor(
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private screenOrientation: ScreenOrientation,
         private notificationService: NotificationService,
-        private fcm: FCM
+        public fcm: FCM
     ) {
         this.initializeApp();
       }
@@ -33,18 +34,28 @@ export class AppComponent {
         });
     }
 
-    notification() {
+    async notification() {
+        await this.fcm.requestPushPermission({
+            ios9Support: {
+                timeout: 10,
+                interval: 0.3
+            }
+        });
 
         this.fcm.getToken().then( token => {
-            console.log(token);
+            this.token = token;
         });
 
         this.fcm.onTokenRefresh().subscribe((token) => {
-            console.log(token);
+            this.token = token;
         });
 
         this.fcm.onNotification().subscribe(data => {
+            if (data.wasTapped) {
                 this.notificationService.addNotification(data);
+            } else {
+                this.notificationService.addNotification(data);
+            }
         });
     }
 }

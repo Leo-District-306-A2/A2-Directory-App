@@ -41,8 +41,8 @@
     "bootstrap": "^4.5.0",
     "call-number": "^1.0.1",
     "cordova": "^9.0.0",
-    "cordova-android": "^8.1.0",
-    "cordova-ios": "5.1.1",
+    "cordova-android": "^9.0.0",
+    "cordova-ios": "^6.0.0",
     "cordova-plugin-actionsheet": "^2.3.3",
     "cordova-plugin-add-swift-support": "^2.0.2",
     "cordova-plugin-androidx": "^3.0.0",
@@ -116,7 +116,6 @@
       "cordova-plugin-network-information": {}
     },
     "platforms": [
-      "ios",
       "android"
     ]
   }
