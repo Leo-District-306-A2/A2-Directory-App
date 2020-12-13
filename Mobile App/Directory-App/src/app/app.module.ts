@@ -25,10 +25,24 @@ import { Network } from '@ionic-native/network/ngx';
 import {NetworkService} from './services/network.service';
 import {FileHandlerService} from './services/file-handler.service';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { firebaseConfig } from './firebase-config';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, CommonModule, ReactiveFormsModule, HttpClientModule],
+  imports: [
+      BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    FormsModule,
+    CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
