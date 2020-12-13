@@ -6,6 +6,7 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {ScreenOrientation} from '@ionic-native/screen-orientation/ngx';
 import {FCM} from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
 import {NotificationService} from './services/notification.service';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -20,7 +21,8 @@ export class AppComponent {
         private statusBar: StatusBar,
         private screenOrientation: ScreenOrientation,
         private notificationService: NotificationService,
-        public fcm: FCM
+        public fcm: FCM,
+        private router: Router
     ) {
         this.initializeApp();
       }
@@ -42,6 +44,14 @@ export class AppComponent {
             }
         });
 
+        this.fcm.getInitialPushPayload().then((res) => {
+            if (res) {
+                this.router.navigate(['/tabs/notifications']);
+            }
+        });
+
+        this.fcm.subscribeToTopic('general');
+
         this.fcm.getToken().then( token => {
             this.token = token;
         });
@@ -52,6 +62,7 @@ export class AppComponent {
 
         this.fcm.onNotification().subscribe(data => {
             if (data.wasTapped) {
+                this.router.navigate(['/tabs/notifications']);
                 this.notificationService.addNotification(data);
             } else {
                 this.notificationService.addNotification(data);
