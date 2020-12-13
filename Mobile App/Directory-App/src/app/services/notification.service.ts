@@ -4,6 +4,7 @@ import {Env} from './env';
 import {AudioService} from './audio.service';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {element} from 'protractor';
+import {Network} from '@ionic-native/network/ngx';
 
 
 @Injectable({
@@ -15,10 +16,17 @@ export class NotificationService {
     notificaionCount = 0;
     isNewNotification = false;
     syncedNotificationsEvent = new EventEmitter();
-    constructor(public env: Env, public audioService: AudioService, private firestore: AngularFirestore) {
+    constructor(public env: Env, public audioService: AudioService, public firestore: AngularFirestore, public network: Network) {
         this.notificationsData = this.getNotifications();
+        this.sortNotificaions(this.notificationsData);
         this.notificaionCount = this.countUnread();
-        this.syncNotifications();
+        if (this.network.type !== network.Connection.NONE) {
+            this.syncNotifications();
+        } else {
+            this.network.onConnect().subscribe(() => {
+                this.syncNotifications();
+            });
+        }
     }
 
     syncNotifications() {
@@ -26,23 +34,13 @@ export class NotificationService {
             this.sortNotificaions(data);
             // tslint:disable-next-line:max-line-length
             const received = data.slice(0, this.env.maxNotificationCount + 1).map((notification) => this.notificationToLocalFormat(notification));
-            let synced = this.notificationsData;
-            if (synced.length === 0) {
-                synced = received;
-            } else {
-                // tslint:disable-next-line:no-unused-expression prefer-for-of
-                for (let i = 0; i < received.length; i++) {
-                    // tslint:disable-next-line:prefer-for-of
-                    for (let j = 0; j < synced.length; j++) {
-                        if (received[i].datetime === synced[j].datetime) {
-                            continue;
-                        }
-                        synced.push(received[i]);
-                    }
+            if (this.notificationsData.length < received.length) {
+                for (let i = this.notificationsData.length; i < received.length; i++) {
+                    this.notificationsData.push(received[i]);
+                    this.saveToLocalStorage(received[i]);
                 }
             }
-            this.sortNotificaions(synced);
-            localStorage.setItem('notifications', JSON.stringify(synced));
+            this.notificaionCount = this.countUnread();
         });
     }
 
@@ -81,7 +79,7 @@ export class NotificationService {
         const notificationDataforView = {
             title: notification.title,
             description: notification.body,
-            datetime: notification.timeCreated,
+            datetime: Date.parse(notification.datetime),
             icon:  notification.icon,
             read: 0,
             id: undefined
@@ -143,12 +141,7 @@ export class NotificationService {
     GetSortOrder(prop) {
         // tslint:disable-next-line:only-arrow-functions
         return function(a, b) {
-            if (Date.parse(a[prop]) > Date.parse(b[prop])) {
-                return 1;
-            } else if (a[prop] > b[prop]) {
-                return -1;
-            }
-            return 0;
+            return Date.parse(a[prop]) > Date.parse(b[prop]) ? 1 : Date.parse(a[prop]) < Date.parse((b[prop])) ? -1 : 0;
         };
     }
 
