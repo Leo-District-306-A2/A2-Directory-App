@@ -63,7 +63,7 @@
             <ion-list>
                 <ion-item class="clickable" (click)="navigateToNotifications()">
                     <ion-icon name="notifications-outline" slot="start"></ion-icon>
-                    <ion-label>Notifications&nbsp;&nbsp;<div class="badge badge-pill badge-success notification-count">{{ notificationService.notificaionCount }}</div>
+                    <ion-label>Notifications&nbsp;&nbsp;<div class="badge badge-pill badge-success notification-count" *ngIf="notificationService.notificaionCount > 0">{{ notificationService.notificaionCount }}</div>
                     </ion-label>
                 </ion-item>
                 <ion-item class="clickable" (click)="navigateToContactUs()">

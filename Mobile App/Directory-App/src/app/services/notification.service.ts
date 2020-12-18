@@ -3,7 +3,6 @@ import {Md5} from 'ts-md5/dist/md5';
 import {Env} from './env';
 import {AudioService} from './audio.service';
 import {AngularFirestore} from '@angular/fire/firestore';
-import {element} from 'protractor';
 import {Network} from '@ionic-native/network/ngx';
 
 
@@ -18,6 +17,7 @@ export class NotificationService {
     notificaionCount = 0;
     isNewNotification = false;
     syncedNotificationsEvent = new EventEmitter();
+
     constructor(public env: Env, public audioService: AudioService, public firestore: AngularFirestore, public network: Network) {
         this.notificationsData = this.getNotifications();
         this.sortNotificaions(this.notificationsData);
@@ -37,10 +37,16 @@ export class NotificationService {
             // tslint:disable-next-line:max-line-length
             const received = data.slice(0, this.env.maxNotificationCount + 1).map((notification) => this.notificationToLocalFormat(notification));
             if (this.notificationsData.length < received.length) {
+                this.isNewNotification = true;
+                this.audioService.playFromUrl(this.env.notificationSound);
                 for (let i = this.notificationsData.length; i < received.length; i++) {
                     this.notificationsData.push(received[i]);
                     this.saveToLocalStorage(received[i]);
                 }
+                setTimeout(() => {
+                    this.isNewNotification = false;
+                    this.audioService.stop();
+                }, 1000);
             }
             this.notificaionCount = this.countUnread();
         });
@@ -54,7 +60,7 @@ export class NotificationService {
             title: notificationData.title,
             description: notificationData.body,
             datetime: new Date(),
-            icon:  notificationData.icon,
+            icon: notificationData.icon,
             read: 0,
             id: undefined
         };
@@ -69,7 +75,7 @@ export class NotificationService {
 
     getNotifications(): Array<object> {
         const notifications = JSON.parse(localStorage.getItem('notifications'));
-        if (notifications === null ) {
+        if (notifications === null) {
             return [];
         } else {
             return notifications;
@@ -82,7 +88,7 @@ export class NotificationService {
             title: notification.title,
             description: notification.body,
             datetime: Date.parse(notification.datetime),
-            icon:  notification.icon,
+            icon: notification.icon,
             read: 0,
             id: undefined
         };
@@ -97,7 +103,7 @@ export class NotificationService {
             this.notificationsData = [];
         }
         this.notificationsData.unshift(notification);
-        if (this.notificationsData.length > this.env.maxNotificationCount ) {
+        if (this.notificationsData.length > this.env.maxNotificationCount) {
             this.notificationsData.pop();
         }
         localStorage.setItem('notifications', JSON.stringify(this.notificationsData));
