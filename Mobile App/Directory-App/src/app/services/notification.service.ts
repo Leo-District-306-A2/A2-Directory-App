@@ -10,6 +10,8 @@ import {Network} from '@ionic-native/network/ngx';
     providedIn: 'root'
 })
 export class NotificationService {
+
+
     notificationsData: any;
     notification: any;
     notificaionCount = 0;

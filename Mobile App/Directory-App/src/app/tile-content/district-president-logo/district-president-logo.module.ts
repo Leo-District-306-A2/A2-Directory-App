@@ -18,7 +18,7 @@ import {ExpandableComponent} from '../../common/expandable/expandable.component'
     DistrictPresidentLogoPageRoutingModule,
     CommonElementsModule
   ],
-  declarations: [DistrictPresidentLogoPage, ExpandableComponent],
-  exports: [ExpandableComponent]
+  declarations: [DistrictPresidentLogoPage],
+
 })
 export class DistrictPresidentLogoPageModule {}

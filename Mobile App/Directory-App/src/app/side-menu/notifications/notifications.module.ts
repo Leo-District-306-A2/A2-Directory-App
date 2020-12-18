@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { NotificationsPageRoutingModule } from './notifications-routing.module';
+import {CommonElementsModule} from '../../common/common-elements/common-elements.module';
 
 import { NotificationsPage } from './notifications.page';
 
@@ -13,8 +14,11 @@ import { NotificationsPage } from './notifications.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    NotificationsPageRoutingModule
+    NotificationsPageRoutingModule,
+    CommonElementsModule
+    
   ],
   declarations: [NotificationsPage]
+ 
 })
 export class NotificationsPageModule {}

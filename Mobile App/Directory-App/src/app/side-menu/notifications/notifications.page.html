@@ -5,17 +5,22 @@
         </div>
         <div class="scrollable-content" *ngIf="notificationService.notificationsData?.length != 0">
             <p class="pl-3 mb-0 options-info text-center">Click on notification to mark as read.<br>Click on notification icon to mark all as read.</p>
-            <div class="notification row" *ngFor="let notification of notificationService.notificationsData" [ngClass]="{ 'read': notification?.read }" (click)="notificationService.markAsRead(notification?.id)">
-                <div class="col-3 pr-0">
+            <div class="notification row" *ngFor="let notification of notificationService.notificationsData; let i = index;" [ngClass]="{ 'read': notification?.read }" (click)="notificationService.markAsRead(notification?.id); toggleCollapsing(i+1)">
+                <div class="col-3 pr-0 vetical-align">
                     <img class="notification-img" src="{{ (networkService.isConnectedToInternet && notification.icon) ? notification.icon : '../../assets/side-menu/default_notification.png'}}">
                 </div>
                 <div class="col-9 pl-0">
                     <h6 class="font-weight-bolder mb-0">{{ notification?.title }}</h6>
-                    <p class="notification-description mb-0">{{ notification?.description }}</p>
                     <p class="notification-date mb-0">{{ utilityService.getDateTimeFormatted(notification?.datetime) }}</p>
+                    <p [ngClass]="{ 'invisible' : (i+1) === collapseditemId}" class="notification-description sample-description mb-0">{{ notification?.description }}</p>
+                    <app-expandable [expanded]="(i+1) === collapseditemId" class="description" [content]="notification?.description"></app-expandable>
                 </div>
             </div>
         </div>
+
+
+
+
         <div class="scrollable-content" *ngIf="notificationService.notificationsData?.length === 0">
             <div class="notification row read">
                 <div class="col-3 pr-0">
