@@ -72,3 +72,19 @@
   opacity: 0.5;
   line-height: 10px;
 }
+
+.invisible {
+  opacity: 0;
+}
+.description {
+  color: #666666;
+  font-size: 14px;
+}
+.sample-description {
+  transition: 0.5s linear !important;
+}
+.vetical-align{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+

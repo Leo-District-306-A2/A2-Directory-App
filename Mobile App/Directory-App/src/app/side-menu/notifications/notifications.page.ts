@@ -13,6 +13,7 @@ import {NetworkService} from '../../services/network.service';
 })
 export class NotificationsPage implements OnInit {
   backRoute = '/tabs/home';
+  collapseditemId = 0;
   constructor(private router: Router,
               private route: ActivatedRoute,
               public env: Env,
@@ -26,6 +27,9 @@ export class NotificationsPage implements OnInit {
         this.backRoute = '/tabs/home';
       }
     });
+
+    
+
   }
 
   ngOnInit() {
@@ -35,6 +39,14 @@ export class NotificationsPage implements OnInit {
     this.router.navigate([this.backRoute]).catch(() => {
       this.router.navigate(['/tabs/home']);
     });
+  }
+
+  toggleCollapsing(id){
+    if(this.collapseditemId === id){
+      this.collapseditemId = 0;
+    }else{
+      this.collapseditemId = id;
+    }
   }
 
 }
