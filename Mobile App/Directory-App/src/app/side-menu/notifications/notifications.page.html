@@ -12,8 +12,8 @@
                 <div class="col-9 pl-0">
                     <h6 class="font-weight-bolder mb-0">{{ notification?.title }}</h6>
                     <p class="notification-date mb-0">{{ utilityService.getDateTimeFormatted(notification?.datetime) }}</p>
-                    <p [ngClass]="{ 'invisible' : (i+1) === collapseditemId}" class="notification-description sample-description mb-0">{{ notification?.description }}</p>
-                    <app-expandable [expanded]="(i+1) === collapseditemId" class="description" [content]="notification?.description"></app-expandable>
+                    <p [ngClass]="{ 'invisible' : (i+1) === collapsibleItemId}" class="notification-description sample-description mb-0">{{ notification?.description }}</p>
+                    <app-expandable [expanded]="(i+1) === collapsibleItemId" class="description" [content]="notification?.description"></app-expandable>
                 </div>
             </div>
         </div>
