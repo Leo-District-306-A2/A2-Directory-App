@@ -14,7 +14,7 @@
             <ion-list class="mb-2">
                 <ion-item
                         *ngFor="let property of utilityService.sortJsonArrayByVisibilityOrder(viewData?.properties); let i = index;"
-                        (click)="toggleCollapsing(i+1)">
+                        (click)="toggleCollapsing(i+1, property)">
                     <ion-avatar slot="start">
                         <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + property?.image }}">
                     </ion-avatar>
