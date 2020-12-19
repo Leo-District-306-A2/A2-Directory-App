@@ -12,7 +12,6 @@ import {NetworkService} from '../../services/network.service';
 })
 export class NotificationsPage implements OnInit {
     backRoute = '/tabs/home';
-    collapsibleItemId = 0;
 
     constructor(private router: Router,
                 private route: ActivatedRoute,
@@ -37,14 +36,6 @@ export class NotificationsPage implements OnInit {
             this.router.navigate([this.backRoute]);
         } else {
             this.router.navigate(['/tabs/home']);
-        }
-    }
-
-    toggleCollapsing(id) {
-        if (this.collapsibleItemId === id) {
-            this.collapsibleItemId = 0;
-        } else {
-            this.collapsibleItemId = id;
         }
     }
 
