@@ -1,5 +1,4 @@
-import {EventEmitter, Injectable} from '@angular/core';
-import {Md5} from 'ts-md5/dist/md5';
+import {Injectable} from '@angular/core';
 import {Env} from './env';
 import {AudioService} from './audio.service';
 import {AngularFirestore} from '@angular/fire/firestore';
@@ -11,17 +10,15 @@ import {Network} from '@ionic-native/network/ngx';
 })
 export class NotificationService {
 
-
     notificationsData: any;
     notification: any;
-    notificaionCount = 0;
+    notificationCount = 0;
     isNewNotification = false;
-    syncedNotificationsEvent = new EventEmitter();
 
     constructor(public env: Env, public audioService: AudioService, public firestore: AngularFirestore, public network: Network) {
         this.notificationsData = this.getNotifications();
-        this.sortNotificaions(this.notificationsData);
-        this.notificaionCount = this.countUnread();
+        this.sortNotifications(this.notificationsData);
+        this.notificationCount = this.countUnread();
         if (this.network.type !== network.Connection.NONE) {
             this.syncNotifications();
         } else {
@@ -33,44 +30,32 @@ export class NotificationService {
 
     syncNotifications() {
         this.firestore.collection('notifications').valueChanges().subscribe((data) => {
-            this.sortNotificaions(data);
+            this.sortNotifications(data);
             // tslint:disable-next-line:max-line-length
             const received = data.slice(0, this.env.maxNotificationCount + 1).map((notification) => this.notificationToLocalFormat(notification));
             if (this.notificationsData.length < received.length) {
-                this.isNewNotification = true;
-                this.audioService.playFromUrl(this.env.notificationSound);
+                // tslint:disable-next-line:prefer-for-of
                 for (let i = this.notificationsData.length; i < received.length; i++) {
                     this.notificationsData.push(received[i]);
                     this.saveToLocalStorage(received[i]);
                 }
-                setTimeout(() => {
-                    this.isNewNotification = false;
-                    this.audioService.stop();
-                }, 1000);
             }
-            this.notificaionCount = this.countUnread();
+            this.notificationCount = this.countUnread();
         });
     }
 
     addNotification(notificationData) {
         // read : 1, unread :0
-        this.isNewNotification = true;
-        this.audioService.playFromUrl(this.env.notificationSound);
         const notificationDataforView = {
             title: notificationData.title,
             description: notificationData.body,
-            datetime: new Date(),
+            datetime: notificationData.datetime,
+            sentBy: notificationData.sentBy,
             icon: notificationData.icon,
             read: 0,
-            id: undefined
+            id: notificationData.id
         };
-        notificationDataforView.id = Md5.hashStr(JSON.stringify(notificationDataforView));
         this.saveToLocalStorage(notificationDataforView);
-
-        setTimeout(() => {
-            this.isNewNotification = false;
-            this.audioService.stop();
-        }, 1000);
     }
 
     getNotifications(): Array<object> {
@@ -84,30 +69,37 @@ export class NotificationService {
     }
 
     notificationToLocalFormat(notification) {
-        const notificationDataforView = {
+        return {
             title: notification.title,
             description: notification.body,
-            datetime: Date.parse(notification.datetime),
+            datetime: notification.datetime,
             icon: notification.icon,
             read: 0,
-            id: undefined
+            id: notification.id,
+            sentBy: notification.sentBy
         };
-        notificationDataforView.id = Md5.hashStr(JSON.stringify(notificationDataforView));
-        return notificationDataforView;
     }
 
     saveToLocalStorage(notification) {
         // save the notification into localStorage
-        this.notificationsData = JSON.parse(localStorage.getItem('notifications'));
-        if (this.notificationsData === null) {
-            this.notificationsData = [];
+        this.notificationsData = this.getNotifications();
+        if (!this.isNotificationStored(notification, this.notificationsData)) {
+            this.isNewNotification = true;
+            this.audioService.playFromUrl(this.env.notificationSound);
+
+            this.notificationsData.unshift(notification);
+            if (this.notificationsData.length > this.env.maxNotificationCount) {
+                this.notificationsData.pop();
+            }
+
+            localStorage.setItem('notifications', JSON.stringify(this.notificationsData));
+            this.notificationCount = this.countUnread();
+
+            setTimeout(() => {
+                this.isNewNotification = false;
+                this.audioService.stop();
+            }, 1000);
         }
-        this.notificationsData.unshift(notification);
-        if (this.notificationsData.length > this.env.maxNotificationCount) {
-            this.notificationsData.pop();
-        }
-        localStorage.setItem('notifications', JSON.stringify(this.notificationsData));
-        this.notificaionCount = this.countUnread();
     }
 
     countUnread(): number {
@@ -133,7 +125,7 @@ export class NotificationService {
                 break;
             }
         }
-        this.notificaionCount = this.countUnread();
+        this.notificationCount = this.countUnread();
         localStorage.setItem('notifications', JSON.stringify(this.notificationsData));
     }
 
@@ -142,7 +134,7 @@ export class NotificationService {
         for (let i = 0; i < this.notificationsData.length; i++) {
             this.notificationsData[i].read = 1;
         }
-        this.notificaionCount = 0;
+        this.notificationCount = 0;
         localStorage.setItem('notifications', JSON.stringify(this.notificationsData));
     }
 
@@ -153,8 +145,14 @@ export class NotificationService {
         };
     }
 
-    sortNotificaions(notifications) {
+    sortNotifications(notifications) {
         notifications.sort(this.GetSortOrder('datetime'));
+    }
+
+    isNotificationStored(notification, notificationList) {
+        return notificationList.find((not) => {
+            return (notification.id === not.id);
+        });
     }
 
 }

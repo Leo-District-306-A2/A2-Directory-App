@@ -46,8 +46,8 @@
 
     <ion-fab *ngIf="notificationService.notificationsData?.length != 0" class="notification-button" vertical="top" horizontal="end" slot="fixed">
         <ion-fab-button color="light" (click)="clickNotificationBtn()">
-            <p class="badge badge-success badge-pill notification-count-btn">{{ notificationService.notificaionCount }}</p>
-            <ion-icon name="notifications-outline" class="notification-icon" [ngClass]="{'notify': notificationService.isNewNotification, 'one_digit_bell' : notificationService.notificaionCount < 10, 'two_digits_bell' : notificationService.notificaionCount >= 10}"></ion-icon>
+            <p class="badge badge-success badge-pill notification-count-btn">{{ notificationService.notificationCount }}</p>
+            <ion-icon name="notifications-outline" class="notification-icon" [ngClass]="{'notify': notificationService.isNewNotification, 'one_digit_bell' : notificationService.notificationCount < 10, 'two_digits_bell' : notificationService.notificationCount >= 10}"></ion-icon>
         </ion-fab-button>
     </ion-fab>
 
@@ -63,7 +63,7 @@
             <ion-list>
                 <ion-item class="clickable" (click)="navigateToNotifications()">
                     <ion-icon name="notifications-outline" slot="start"></ion-icon>
-                    <ion-label>Notifications&nbsp;&nbsp;<div class="badge badge-pill badge-success notification-count" *ngIf="notificationService.notificaionCount > 0">{{ notificationService.notificaionCount }}</div>
+                    <ion-label>Notifications&nbsp;&nbsp;<div class="badge badge-pill badge-success notification-count" *ngIf="notificationService.notificationCount > 0">{{ notificationService.notificationCount }}</div>
                     </ion-label>
                 </ion-item>
                 <ion-item class="clickable" (click)="navigateToContactUs()">

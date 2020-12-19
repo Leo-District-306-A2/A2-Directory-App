@@ -63,7 +63,6 @@ export class AppComponent {
         this.fcm.onNotification().subscribe(data => {
             if (data.wasTapped) {
                 this.router.navigate(['/tabs/notifications']);
-                this.notificationService.addNotification(data);
             } else {
                 this.notificationService.addNotification(data);
             }
