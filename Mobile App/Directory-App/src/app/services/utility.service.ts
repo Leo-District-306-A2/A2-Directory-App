@@ -27,10 +27,10 @@ export class UtilityService {
         });
     }
 
-    searchGuest(guestData, searchKeyword){
+    searchGuest(guestData, searchKeyword) {
         return guestData.filter((guest) => {
-            return (guest.name.toLowerCase().indexOf(searchKeyword.toLowerCase()) >-1 )
-        });        
+            return (guest.name.toLowerCase().indexOf(searchKeyword.toLowerCase()) > -1 );
+        });
     }
 
     searchByOfficerProperties(officers, searchKeyword) {
@@ -69,7 +69,7 @@ export class UtilityService {
         let date =  new Date(dateString);
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         // tslint:disable-next-line:max-line-length
-        return date.getFullYear() + ' ' + months[date.getMonth()] + ' ' + this.convertToTwoDigits(date.getDay()) + ' at ' + this.convertToTwoDigits(date.getHours()) + ':' + this.convertToTwoDigits(date.getMinutes());
+        return date.getFullYear() + ' ' + months[date.getMonth()] + ' ' + this.convertToTwoDigits(date.getDate()) + ' at ' + this.convertToTwoDigits(date.getHours()) + ':' + this.convertToTwoDigits(date.getMinutes());
     }
 
     convertToTwoDigits(val) {

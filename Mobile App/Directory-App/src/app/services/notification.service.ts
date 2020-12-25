@@ -21,11 +21,10 @@ export class NotificationService {
         this.notificationCount = this.countUnread();
         if (this.network.type !== network.Connection.NONE) {
             this.syncNotifications();
-        } else {
-            this.network.onConnect().subscribe(() => {
-                this.syncNotifications();
-            });
         }
+        this.network.onConnect().subscribe(() => {
+            this.syncNotifications();
+        });
     }
 
     syncNotifications() {
@@ -33,13 +32,11 @@ export class NotificationService {
             this.sortNotifications(data);
             // tslint:disable-next-line:max-line-length
             const received = data.slice(0, this.env.maxNotificationCount + 1).map((notification) => this.notificationToLocalFormat(notification));
-            if (this.notificationsData.length !== received.length) {
+            if (this.notificationsData.length < received.length) {
                 // tslint:disable-next-line:prefer-for-of
-                for (let i = 0; i < received.length; i++) {
-                    if (this.isNotificationStored(received[i], this.notificationsData)) {
+                for (let i = this.notificationsData.length; i < received.length; i++) {
                         this.notificationsData.push(received[i]);
                         this.saveToLocalStorage(received[i]);
-                    }
                 }
             }
             this.notificationCount = this.countUnread();
