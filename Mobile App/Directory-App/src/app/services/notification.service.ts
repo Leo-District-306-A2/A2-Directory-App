@@ -140,7 +140,7 @@ export class NotificationService {
     GetSortOrder(prop) {
         // tslint:disable-next-line:only-arrow-functions
         return function(a, b) {
-            return Date.parse(a[prop]) > Date.parse(b[prop]) ? 1 : Date.parse(a[prop]) < Date.parse((b[prop])) ? -1 : 0;
+            return Date.parse(a[prop]) < Date.parse(b[prop]) ? 1 : Date.parse(a[prop]) > Date.parse((b[prop])) ? -1 : 0;
         };
     }
 
