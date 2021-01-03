@@ -209,7 +209,7 @@
           "visibility_order": 4,
           "name": "Leo Sithmini Bandara",
           "gender": "Female",
-          "phone": "0711585458",
+          "phone": "0711588458",
           "email": "bandarasithmini@gmail.com",
           "mylci": 5259618,
           "address": "\"Sithmini\", Gurubelkadawaththa, Erathna Road, Kuruwita",
@@ -838,13 +838,13 @@
         {
           "designation": "President",
           "visibility_order": 1,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": "Leo Pasindu Jayasinghe",
+          "gender": "Male",
+          "phone": "0717246534",
+          "email": "pasindu.jayasingha@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "Vijitha Plant Nursary, Ballanthudava, Bandaragama",
+          "img": "leo_club_of_milleniya/president.png"
         },
         {
           "designation": "Vice President",
@@ -871,35 +871,35 @@
         {
           "designation": "Secretary",
           "visibility_order": 4,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": "Leo Durga Hashini Aushadharathna",
+          "gender": "Female",
+          "phone": "0769813839",
+          "email": "durgahashini9@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "No.19, Temple rd, Yalagala, Halthota",
+          "img": "leo_club_of_milleniya/secretary.png"
         },
         {
           "designation": "Treasurer",
           "visibility_order": 5,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": "Leo Sasanka Harshan Udugahapaththuwa",
+          "gender": "Male",
+          "phone": "0775884067",
+          "email": "sasankaudu1@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "1/70, Madampe, Halthota",
+          "img": "leo_club_of_milleniya/treasurer.png"
         },
         {
           "designation": "Leo Advisor",
           "visibility_order": 6,
-          "name": "",
-          "gender": "",
-          "phone": "",
-          "email": "",
+          "name": "Lion P.G.K. Nidhani",
+          "gender": "Female",
+          "phone": "0777597244",
+          "email": "nidhani1234@gmail.com",
           "mylci": "",
-          "address": "",
-          "img": "default_data/default_male_user.png"
+          "address": "Pawana, Wewa Road, Labugama, Horana",
+          "img": "leo_club_of_milleniya/advisor.png"
         },
         {
           "designation": "Staff Advisor",
