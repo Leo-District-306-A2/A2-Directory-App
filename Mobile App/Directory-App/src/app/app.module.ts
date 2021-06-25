@@ -28,6 +28,10 @@ import {FileHandlerService} from './services/file-handler.service';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { firebaseConfig } from './firebase-config';
+import {UpdateService} from './services/update.service';
+
+import {File} from '@ionic-native/file/ngx';
+import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -59,7 +63,10 @@ import { firebaseConfig } from './firebase-config';
     AlertService,
     FCM,
     NetworkService,
-    FileHandlerService
+    FileHandlerService,
+    File,
+    FileTransfer,
+    UpdateService
   ],
   bootstrap: [AppComponent]
 })
