@@ -5,6 +5,7 @@ import {UtilityService} from '../services/utility.service';
 import {Env} from '../services/env';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import {UpdateService} from '../services/update.service';
 
 
 @Component({
@@ -23,7 +24,8 @@ export class ClubsPage {
               private utilityService: UtilityService,
               public env: Env,
               private platform: Platform,
-              private alertService: AlertService) {
+              private alertService: AlertService
+              ) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
@@ -52,5 +54,8 @@ export class ClubsPage {
 
   filterData() {
     this.filteredClubData = this.utilityService.searchClub(this.allClubsData, this.searchKeyword);
+  }
+  async readImageAsUrl(path){
+    return await this.clubService.readImage(path);
   }
 }

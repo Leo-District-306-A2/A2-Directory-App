@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import {InitialSliderService} from './services/initial-slider.service';
 import {TabsService} from './services/tabs.service';
 import {AuthenticationService} from './services/authentication.service';
+import {UpdateService} from './services/update.service';
 
 const routes: Routes = [
   {
@@ -11,7 +12,7 @@ const routes: Routes = [
     canActivate: [TabsService]
   },
   {
-    path: '',
+    path: 'slider',
     loadChildren: () => import('./initial-slider/initial-slider.module').then( m => m.InitialSliderPageModule),
     canActivate : [InitialSliderService]
   },
@@ -19,7 +20,13 @@ const routes: Routes = [
     path: 'authentication',
     loadChildren: () => import('./authentication/authentication.module').then( m => m.AuthenticationPageModule),
     canActivate: [AuthenticationService]
+  },
+  {
+    path: '',
+    loadChildren: () => import('./update/update.module').then( m => m.UpdatePageModule),
+    canActivate: [UpdateService]
   }
+
 ];
 @NgModule({
   imports: [

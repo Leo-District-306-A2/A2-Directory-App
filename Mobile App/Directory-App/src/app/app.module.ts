@@ -32,6 +32,8 @@ import {UpdateService} from './services/update.service';
 
 import {File} from '@ionic-native/file/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
+import { Zip } from '@ionic-native/zip/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -66,7 +68,9 @@ import { FileTransfer } from '@ionic-native/file-transfer/ngx';
     FileHandlerService,
     File,
     FileTransfer,
-    UpdateService
+    UpdateService,
+    Zip,
+    HTTP
   ],
   bootstrap: [AppComponent]
 })
