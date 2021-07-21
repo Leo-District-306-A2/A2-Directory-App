@@ -11,16 +11,25 @@ export class ClubService {
     }
 
     async getData() {
-        if (this.env.baseURLType === 'local') {
-            // return fetch(this.env.baseURL + '/clubs/clubs_data.json').then(res => res.json())
-            //     .then(result => {
-            //         return result;
+        if (this.env.isUseDataDirectory) {
 
-            //     })
-            //     .catch(err => {
-            //         return false;
-            //     });
-            return await this.readFile('local_db/local_db/clubs/clubs_data.json')
+            return this.readFile(this.env.dataDirectoryBaseUrl + '/clubs/clubs_data.json')
+                .then(data=>{
+                    return data;
+                })
+                .catch(error=>{
+                    return false;
+                })
+        
+        }else if(this.env.baseURLType === 'local'){
+            return fetch(this.env.baseURL + '/clubs/clubs_data.json').then(res => res.json())
+                .then(result => {
+                    return result;
+
+                })
+                .catch(err => {
+                    return false;
+                });
         } else if (this.env.baseURLType === 'http') {
             const headerOptions = new HttpHeaders({
                 'Content-Type': 'application/json',
@@ -41,8 +50,7 @@ export class ClubService {
 
     async readImage(path){
         try{
-            const imageUrl = await this.file.readAsDataURL(this.file.dataDirectory, path);
-            return imageUrl;
+            return await this.file.readAsDataURL(this.file.dataDirectory, path);
         }catch(e){
             return null;
         }

@@ -9,5 +9,9 @@ export class Env {
     // Notification Settings
     public maxNotificationCount = 50;
     public notificationSound = '../../assets/sounds/notification.mp3';
+
+    // Update Settings
     public configUrl = 'https://uomleos.org/test_data/update_config.json';
+    public isUseDataDirectory = true;
+    public dataDirectoryBaseUrl = 'local_db/local_db'
 }

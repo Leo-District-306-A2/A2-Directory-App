@@ -19,6 +19,8 @@ export class ClubsPage {
   searchKeyword: string;
   imgBaseUrl: string;
   backSubscription;
+  imgurl;
+
   constructor(private clubService: ClubService,
               private router: Router,
               private utilityService: UtilityService,
@@ -29,13 +31,19 @@ export class ClubsPage {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
-  ngOnInit() {
-    this.clubService.getData().then((data) => {
-      this.utilityService.sortClubs(data.clubs); // sort clubs according to club name
-      this.filteredClubData = data.clubs;
-      this.allClubsData = data.clubs;
-      this.imgBaseUrl = data.imgBaseUrl;
-    });
+  async ngOnInit() {
+    var data = await this.clubService.getData()
+    this.utilityService.sortClubs(data.clubs); // sort clubs according to club name
+    this.filteredClubData = data.clubs;
+    this.allClubsData = data.clubs;
+    this.imgBaseUrl = data.imgBaseUrl;
+
+    for (let i = 0; i < this.filteredClubData.length; i++) {
+      this.filteredClubData[i].imgUrl = await this.clubService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredClubData[i].logo
+      );
+    }
+
   }
 
   ionViewDidEnter() {
@@ -55,7 +63,5 @@ export class ClubsPage {
   filterData() {
     this.filteredClubData = this.utilityService.searchClub(this.allClubsData, this.searchKeyword);
   }
-  async readImageAsUrl(path){
-    return await this.clubService.readImage(path);
-  }
+  
 }
