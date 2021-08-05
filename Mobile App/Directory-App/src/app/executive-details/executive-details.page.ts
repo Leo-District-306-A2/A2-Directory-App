@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
 import { UtilityService } from '../services/utility.service';
+import { CouncilService } from '../services/council.service';
 import {Env} from '../services/env';
 
 @Component({
@@ -14,10 +15,12 @@ export class ExecutiveDetailsPage implements OnInit {
     isEmailComposable = false;
     executiveDetails: any;
     imgBaseUrl: string;
+    sortedOfficers:any;
     constructor(private route: ActivatedRoute,
                 private callNumber: CallNumber,
                 private emailComposer: EmailComposer,
                 public utilityService: UtilityService,
+                private counsilService: CouncilService,
                 public env: Env) {
         // read router params
         route.paramMap.subscribe((data) => {
@@ -31,7 +34,14 @@ export class ExecutiveDetailsPage implements OnInit {
         });
     }
 
-    ngOnInit() {
+    async ngOnInit() {
+        this.sortedOfficers = this.utilityService.sortJsonArrayByVisibilityOrder(this.executiveDetails.officers);
+        for (let i = 0; i < this.sortedOfficers.length; i++) {
+            this.sortedOfficers[i].officerImageUrl = await this.counsilService.readImage(
+              this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.sortedOfficers[i].img
+              );
+          }
+
     }
 
     // tslint:disable-next-line:variable-name

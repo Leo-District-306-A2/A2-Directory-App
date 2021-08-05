@@ -25,12 +25,18 @@ export class MultiplePage implements OnInit {
               private platform: Platform,
               private alertService: AlertService) { }
 
-  ngOnInit() {
-    this.multipleService.getData().then((data) => {
-      this.filteredMultipleData = data.multiple;
-      this.allMultipleData = data.multiple;
-      this.imgBaseUrl = data.imgBaseUrl;
-    });
+  async ngOnInit() {
+    var data = await this.multipleService.getData();
+    console.log("multiple data: ", data)
+    this.filteredMultipleData = data.multiple;
+    this.allMultipleData = data.multiple;
+    this.imgBaseUrl = data.imgBaseUrl;
+
+    for (let i = 0; i < this.filteredMultipleData.length; i++) {
+      this.filteredMultipleData[i].imgUrl = await this.multipleService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredMultipleData[i].logo
+      );
+    }
   }
 
   ionViewDidEnter() {

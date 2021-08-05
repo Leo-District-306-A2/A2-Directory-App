@@ -16,7 +16,7 @@
         <ion-item *ngFor="let multiple of filteredMultipleData" (click)=" viewOfficer(multiple)"
                   class="ion-activatable ripple-parent">
           <ion-avatar slot="start">
-            <img src="{{ env.baseURL + '/' + imgBaseUrl + '/' + multiple?.logo }}" />
+            <img [src]="multiple.imgUrl ? multiple.imgUrl : '../../assets/logos/gray_leo_logo.png'" />
           </ion-avatar>
           <ion-label>{{multiple?.designationCategory}}</ion-label>
           <ion-ripple-effect></ion-ripple-effect>

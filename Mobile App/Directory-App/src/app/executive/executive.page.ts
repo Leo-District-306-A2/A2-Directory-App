@@ -29,12 +29,17 @@ export class ExecutivePage {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
-  ngOnInit() {
-    this.councilService.getData().then((data) => {
-      this.filteredCouncilData = data.council;
-      this.allCouncilData = data.council;
-      this.imgBaseUrl = data.imgBaseUrl;
-    });
+  async ngOnInit() {
+    var data = await this.councilService.getData();
+    this.filteredCouncilData = data.council;
+    this.allCouncilData = data.council;
+    this.imgBaseUrl = data.imgBaseUrl;
+
+    for (let i = 0; i < this.filteredCouncilData.length; i++) {
+      this.filteredCouncilData[i].imgUrl = await this.councilService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredCouncilData[i].logo
+      );
+    }
   }
 
   ionViewDidEnter() {
