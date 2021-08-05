@@ -6,6 +6,7 @@ import {Env} from '../services/env';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
 import {UpdateService} from '../services/update.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 
 @Component({
@@ -26,7 +27,8 @@ export class ClubsPage {
               private utilityService: UtilityService,
               public env: Env,
               private platform: Platform,
-              private alertService: AlertService
+              private alertService: AlertService,
+              private dataDirectoryService: DataDirectoryService
               ) {
   }
 
@@ -39,7 +41,7 @@ export class ClubsPage {
     this.imgBaseUrl = data.imgBaseUrl;
 
     for (let i = 0; i < this.filteredClubData.length; i++) {
-      this.filteredClubData[i].imgUrl = await this.clubService.readImage(
+      this.filteredClubData[i].imgUrl = await this.dataDirectoryService.readImage(
         this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredClubData[i].logo
       );
     }

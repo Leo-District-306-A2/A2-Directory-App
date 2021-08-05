@@ -6,6 +6,7 @@ import {Env} from '../services/env';
 import {MultipleService} from '../services/multiple.service';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 @Component({
   selector: 'app-mutiple',
@@ -23,6 +24,7 @@ export class MultiplePage implements OnInit {
               private utilityService: UtilityService,
               public env: Env,
               private platform: Platform,
+              private dataDirectoryService: DataDirectoryService,
               private alertService: AlertService) { }
 
   async ngOnInit() {
@@ -33,7 +35,7 @@ export class MultiplePage implements OnInit {
     this.imgBaseUrl = data.imgBaseUrl;
 
     for (let i = 0; i < this.filteredMultipleData.length; i++) {
-      this.filteredMultipleData[i].imgUrl = await this.multipleService.readImage(
+      this.filteredMultipleData[i].imgUrl = await this.dataDirectoryService.readImage(
         this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredMultipleData[i].logo
       );
     }

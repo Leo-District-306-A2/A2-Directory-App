@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
 import { UtilityService } from '../services/utility.service';
-import { CouncilService } from '../services/council.service';
 import {Env} from '../services/env';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 @Component({
     selector: 'app-executive-details',
@@ -20,7 +20,7 @@ export class ExecutiveDetailsPage implements OnInit {
                 private callNumber: CallNumber,
                 private emailComposer: EmailComposer,
                 public utilityService: UtilityService,
-                private counsilService: CouncilService,
+                private dataDirectoryService: DataDirectoryService,
                 public env: Env) {
         // read router params
         route.paramMap.subscribe((data) => {
@@ -37,7 +37,7 @@ export class ExecutiveDetailsPage implements OnInit {
     async ngOnInit() {
         this.sortedOfficers = this.utilityService.sortJsonArrayByVisibilityOrder(this.executiveDetails.officers);
         for (let i = 0; i < this.sortedOfficers.length; i++) {
-            this.sortedOfficers[i].officerImageUrl = await this.counsilService.readImage(
+            this.sortedOfficers[i].officerImageUrl = await this.dataDirectoryService.readImage(
               this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.sortedOfficers[i].img
               );
           }

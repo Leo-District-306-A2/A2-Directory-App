@@ -4,7 +4,7 @@ import {CallNumber} from '@ionic-native/call-number/ngx';
 import {EmailComposer} from '@ionic-native/email-composer/ngx';
 import {UtilityService} from '../services/utility.service';
 import {Env} from '../services/env';
-import { ClubService } from '../services/club.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 
 @Component({
@@ -23,7 +23,7 @@ export class ClubDetailsPage implements OnInit {
               private callNumber: CallNumber,
               private emailComposer: EmailComposer,
               public utilityService: UtilityService,
-              public clubService: ClubService,
+              public dataDirectoryService: DataDirectoryService,
               public env: Env) {
     // read router params
     route.paramMap.subscribe((data) => {
@@ -40,11 +40,11 @@ export class ClubDetailsPage implements OnInit {
   async ngOnInit() {
     this.sortedOfficers = this.utilityService.sortJsonArrayByVisibilityOrder(this.clubDetails.officers);
     for (let i = 0; i < this.sortedOfficers.length; i++) {
-      this.sortedOfficers[i].officerImageUrl = await this.clubService.readImage(
+      this.sortedOfficers[i].officerImageUrl = await this.dataDirectoryService.readImage(
         this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.sortedOfficers[i].img
         );
     }
-    this.clubLogoImageUrl = await this.clubService.readImage(
+    this.clubLogoImageUrl = await this.dataDirectoryService.readImage(
       this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.clubDetails.logo
     );
 
