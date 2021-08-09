@@ -5,13 +5,12 @@
       <h4 class="text-center mb-3 meriendaOneFont">{{ viewData?.designation }}</h4>
     </div>
     <div>
-      <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + viewData?.image }}"
+      <img [src]="ipdpImgUrl ? ipdpImgUrl : '../../../assets/default_data/default_male_user.png'"
       class="mx-auto d-block mb-1 mt-1 officer-image">
     </div>
     <div class="text-center officer-name">{{ viewData?.name }}</div>
-    <div class="logo">
-      <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + viewData?.logo }}"
-      class="mx-auto d-block mb-1 mt-1 logo-img">
+    <div *ngIf="ipdpLogo" class="logo">
+      <img [src]="ipdpLogo" class="mx-auto d-block mb-1 mt-1 logo-img">
       <div class="text-center logo-name">{{ viewData?.designation }}'s logo</div>
     </div> 
     <div [innerHTML]="viewData?.description" class="description text-justify mb-4">

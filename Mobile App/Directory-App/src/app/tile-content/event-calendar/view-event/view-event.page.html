@@ -6,7 +6,7 @@
         </div>
         <div class="content">
             <div class="text-center date-wrapper"
-                 [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + viewData?.imgBaseUrl + '/' + viewData?.bannerImg + '\')' }">
+                 [ngStyle]="{ 'background-image' : 'url(\'' + eventImgUrl + '\')' }">
                 <div class="date-items">
                     <div class="date-item" *ngFor="let dateItem of viewData?.dates">
                         <p class="month text-center font-weight-bold">{{ utilityService.getDateFormatted(dateItem, 'm') }}</p>
@@ -22,7 +22,7 @@
             <ion-list class="mt-0">
                 <ion-item *ngFor="let chair of viewData?.chairpersons">
                     <ion-avatar slot="start" class="chair-img-wrapper">
-                        <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' +chair?.image }}" class="chair-img">
+                        <img [src]="chair?.imgUrl" class="chair-img">
                     </ion-avatar>
                     <ion-label>
                         <h3 class="font-weight-bold">{{ chair?.name }}</h3>

@@ -3,6 +3,7 @@ import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTre
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Env} from './env';
+import { DataDirectoryService } from './data-directory.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import {Env} from './env';
 export class AuthenticationService implements CanActivate {
   authData: any;
   passwordMaxLength = 8;
-  constructor(public router: Router, private env: Env, private http: HttpClient) {
+  constructor(public router: Router, private env: Env, private http: HttpClient, private dataDirectoryService: DataDirectoryService) {
     this.getData().then((data: any) => {
       this.authData = data;
       this.passwordMaxLength = data.password.length;
@@ -34,7 +35,15 @@ export class AuthenticationService implements CanActivate {
   }
 
   getData() {
-    if (this.env.baseURLType === 'local') {
+    if (this.env.isUseDataDirectory) {
+      return this.dataDirectoryService.readFile(this.env.dataDirectoryBaseUrl +'/authentication/auth_data.json')
+          .then(data=>{
+              return data;
+          })
+          .catch(error=>{
+              return false;
+          })        
+  }else if (this.env.baseURLType === 'local') {
       return fetch(this.env.baseURL + '/authentication/auth_data.json').then(res => res.json())
           .then(result => {
             return result;

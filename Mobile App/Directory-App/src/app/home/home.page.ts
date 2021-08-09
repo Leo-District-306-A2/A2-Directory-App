@@ -4,6 +4,7 @@ import {Router} from '@angular/router';
 import {Env} from '../services/env';
 import { Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 @Component({
     selector: 'app-tab2',
@@ -20,23 +21,27 @@ export class HomePage {
     RegionAndZone: any;
     eventCalendar: any;
     backSubscription;
+    dpLogoTileImg:any;
 
     constructor(private homeService: HomeService,
                 private router: Router,
                 public env: Env,
                 private platform: Platform,
+                private dataDirectoryService: DataDirectoryService,
                 private alertService: AlertService) {
     }
 
     // tslint:disable-next-line:use-lifecycle-interface
-    ngOnInit() {
-        this.homeService.loadStaticData('NationalAnthem').then((result) => this.nationalAnthem = result);
-        this.homeService.loadStaticData('LeoHistory').then((result) => this.leoHistory = result);
-        this.homeService.loadStaticData('LeoMap').then((result) => this.leoMap = result);
-        this.homeService.loadStaticData('DistrictPresidentLogo').then((result) => this.districtPresidentLogo = result);
-        this.homeService.loadStaticData('EditorsNote').then((result) => this.editorsNote = result);
-        this.homeService.loadStaticData('RegionAndZoneDivision').then((result) => this.RegionAndZone = result);
-        this.homeService.loadStaticData('DistrictCalendarOfEvents').then((result) => this.eventCalendar = result);
+    async ngOnInit() {
+        this.nationalAnthem = await this.homeService.loadStaticData('NationalAnthem');
+        this.leoHistory = await this.homeService.loadStaticData('LeoHistory');
+        this.leoMap = await this.homeService.loadStaticData('LeoMap');
+        this.districtPresidentLogo = await this.homeService.loadStaticData('DistrictPresidentLogo');
+        this.editorsNote = await this.homeService.loadStaticData('EditorsNote');
+        this.RegionAndZone = await this.homeService.loadStaticData('RegionAndZoneDivision');
+        this.eventCalendar = await this.homeService.loadStaticData('DistrictCalendarOfEvents');
+
+        this.dpLogoTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' +this.districtPresidentLogo.imgBaseUrl + '/' + this.districtPresidentLogo.tile)
     }
 
     ionViewDidEnter() {

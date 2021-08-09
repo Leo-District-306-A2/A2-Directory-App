@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {SideMenuService} from '../../services/side-menu.service';
 import {UtilityService} from '../../services/utility.service';
 import {ActivatedRoute, Router} from '@angular/router';
+import { DataDirectoryService } from 'src/app/services/data-directory.service';
+import {Env} from '../../services/env';
+
 
 @Component({
   selector: 'app-our-team',
@@ -14,8 +17,19 @@ export class OurTeamPage implements OnInit {
   constructor(private sideMenuService: SideMenuService,
               public utilityService: UtilityService,
               private router: Router,
+              private env: Env,
+              private dataDirectoryService: DataDirectoryService,
               private route: ActivatedRoute) {
-    this.sideMenuService.loadStaticData('our_team').then((result) => this.ourTeam = result);
+    this.sideMenuService.loadStaticData('our_team').then((result) => {
+      this.ourTeam = result
+      for(let i=0;this.ourTeam.team.length;i++){
+        console.log(this.env.dataDirectoryBaseUrl + '/' + this.ourTeam.imgBaseUrl + '/' + this.ourTeam.team[i].image, "image path of team")
+        this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.ourTeam.imgBaseUrl + '/' + this.ourTeam.team[i].image)
+        .then(img=>{
+          this.ourTeam.team[i].imgUrl = img;
+        })
+      }
+    });
 
     route.paramMap.subscribe((data) => {
       if (data) {
@@ -26,7 +40,9 @@ export class OurTeamPage implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
+    
+
   }
 
   goBack() {

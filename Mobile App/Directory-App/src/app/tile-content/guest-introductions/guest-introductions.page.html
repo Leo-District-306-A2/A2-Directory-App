@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
     <div class="col-md-12 align-items-center" *ngIf="guestIntroData">
         <div class="fixed-top fixed-head">
-            <img src="{{ env.baseURL + '/' + guestIntroData['logo'] }}" class="mx-auto d-block header-logo mt-5 mb-2">
+            <img [src]="dpLogo ? dpLogo : '../../assets/logos/leo_logo.png'" class="mx-auto d-block header-logo mt-5 mb-2">
             <div>
                 <h4 class="text-center mb-3 meriendaOneFont">{{ guestIntroData['title'] }}</h4>
             </div>
@@ -17,10 +17,10 @@
         <!-- guest data content -->
         <div class="scrollable-content pt-4">
             <div class="notification row mb-1 ml-0"
-                 *ngFor="let guestIntro of utilityService.sortJsonArrayByVisibilityOrder(filteredGuestIntroData)"
+                 *ngFor="let guestIntro of filteredGuestIntroData"
                  (click)="viewIntro(guestIntro)">
                     <div class="col-3 pr-0">
-                        <img class="notification-img" src="{{ env.baseURL + '/' + getGuestImg(guestIntro) }}">
+                        <img class="notification-img" [src]="guestIntro.imgUrl">
                     </div>
                     <div class="col-9 pl-0">
                         <h6 class="font-weight-bolder mb-0 mt-2">{{ guestIntro['name'] }}</h6>

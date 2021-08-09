@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Env} from './env';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { DataDirectoryService } from './data-directory.service';
 
 
 @Injectable({
@@ -8,11 +9,19 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class HomeService {
 
-    constructor(private env: Env, private http: HttpClient) {
+    constructor(private env: Env, private http: HttpClient, private dataDirectoryService: DataDirectoryService) {
     }
 
     loadStaticData(dataName) {
-        if (this.env.baseURLType === 'local') {
+        if (this.env.isUseDataDirectory) {
+            return this.dataDirectoryService.readFile(this.env.dataDirectoryBaseUrl + '/home/' + dataName + '.json')
+                .then(data=>{
+                    return data;
+                })
+                .catch(error=>{
+                    return false;
+                })        
+        }else if (this.env.baseURLType === 'local') {
             return fetch(this.env.baseURL + '/home/' + dataName + '.json').then(res => res.json())
             .then(result => {
                 return result;

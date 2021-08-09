@@ -3,13 +3,14 @@ import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTre
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Env} from './env';
+import { DataDirectoryService } from './data-directory.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InitialSliderService implements CanActivate {
 
-  constructor(public router: Router, private env: Env, private http: HttpClient) { }
+  constructor(public router: Router, private env: Env, private http: HttpClient, private dataDirectoryService: DataDirectoryService) { }
 
   canActivate(): boolean {
     if (!localStorage.getItem('isAppUsed')) {
@@ -25,7 +26,15 @@ export class InitialSliderService implements CanActivate {
   }
 
   getData() {
-    if (this.env.baseURLType === 'local') {
+    if (this.env.isUseDataDirectory) {
+      return this.dataDirectoryService.readFile(this.env.dataDirectoryBaseUrl + '/initial_slider/initial_sliders.json')
+          .then(data=>{
+              return data;
+          })
+          .catch(error=>{
+              return false;
+          })        
+  } else if (this.env.baseURLType === 'local') {
       return fetch(this.env.baseURL + '/initial_slider/initial_sliders.json').then(res => res.json())
           .then(result => {
             return result;
