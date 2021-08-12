@@ -12,12 +12,13 @@ import { DataDirectoryService } from 'src/app/services/data-directory.service';
 export class MessagesPage implements OnInit {
 
   messages: any;
-  districtGovernerTileImg = '../../../assets/default_data/default_male_user.png'
-  districtPresidentTileImg = '../../../assets/default_data/default_male_user.png'
-  mulipleDistrictPresidentTileImg = '../../../assets/default_data/default_male_user.png'
-  immediatepastDistrictPresidentTileImg = '../../../assets/default_data/default_male_user.png'
-  districtVicePresidentTileImg = '../../../assets/default_data/default_male_user.png'
-  districtChairmanTileImg = '../../../assets/default_data/default_male_user.png'
+  districtGovernerTileImg = '../../../assets/default_data/default_male_user.png';
+  districtPresidentTileImg = '../../../assets/default_data/default_male_user.png';
+  mulipleDistrictPresidentTileImg = '../../../assets/default_data/default_male_user.png';
+  immediatepastDistrictPresidentTileImg = '../../../assets/default_data/default_male_user.png';
+  districtVicePresidentTileImg = '../../../assets/default_data/default_male_user.png';
+  districtChairmanTileImg = '../../../assets/default_data/default_male_user.png';
+  guestIntoCount:any;
 
   constructor(private homeService: HomeService,
               private router: Router,
@@ -25,7 +26,9 @@ export class MessagesPage implements OnInit {
               public env: Env) { }
 
   async ngOnInit() {
-    this.messages = await this.homeService.loadStaticData('Messages');    
+    this.messages = await this.homeService.loadStaticData('Messages');  
+    var guestIntro = await this.homeService.loadStaticData('GuestIntroductions');
+    this.guestIntoCount = guestIntro.content.length;
     this.districtGovernerTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.districtGovernor.tile);
     this.districtPresidentTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.districtPresident.tile);
     this.mulipleDistrictPresidentTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.MultipleDistrictPresident.tile);

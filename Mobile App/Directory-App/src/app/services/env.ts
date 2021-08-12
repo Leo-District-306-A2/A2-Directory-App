@@ -11,7 +11,7 @@ export class Env {
     public notificationSound = '../../assets/sounds/notification.mp3';
 
     // Update Settings
-    public configUrl = 'https://uomleos.org/test_data/update_config.json';
+    public configUrl = 'https://leodistrict306a2.org/a2_directory_app_data/update_config.json';
     public isUseDataDirectory = true;
     public dataDirectoryBaseUrl = 'local_db/local_db'
 }

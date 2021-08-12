@@ -36,6 +36,7 @@ export class UpdatePage implements OnInit, OnDestroy {
         const updates = await this.updateService.downloadUpdate();
         if (updates.downloadState) {
           //Update completed.
+          sessionStorage.setItem('isAppOppend', String(true));
           this.router.navigate(['slider']);
         } else {
           this.error.hasError = true;
@@ -44,10 +45,12 @@ export class UpdatePage implements OnInit, OnDestroy {
         }
       } else {
         //No updates available.
+        sessionStorage.setItem('isAppOppend', String(true));
         this.router.navigate(['slider']);
       }
 
     } else if (localStorage.getItem('appUpdateVersion')) {
+      sessionStorage.setItem('isAppOppend', String(true));
       this.router.navigate(['slider']);
     } else {
       this.error.hasError = true;
@@ -78,6 +81,7 @@ export class UpdatePage implements OnInit, OnDestroy {
   }
 
   continue() {
+    sessionStorage.setItem('isAppOppend', String(true));
     this.router.navigate(['slider']);
   }
 

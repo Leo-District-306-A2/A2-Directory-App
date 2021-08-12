@@ -24,6 +24,7 @@ export class UpdateService implements CanActivate{
   constructor(private file: File, 
     private transfer: FileTransfer, 
     private zip: Zip, 
+    public router: Router,
     private http: HTTP,
     private env: Env
   ) {
@@ -31,7 +32,10 @@ export class UpdateService implements CanActivate{
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
+    if(sessionStorage.getItem('isAppOppend')){
+      this.router.navigate(['slider']);
+    }
+    return !(sessionStorage.getItem('isAppOppend'));
   }
 
   async checkForUpdate() {

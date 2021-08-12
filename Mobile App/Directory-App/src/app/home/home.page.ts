@@ -22,6 +22,8 @@ export class HomePage {
     eventCalendar: any;
     backSubscription;
     dpLogoTileImg:any;
+    isLoading = true;
+    commonData: any;
 
     constructor(private homeService: HomeService,
                 private router: Router,
@@ -33,15 +35,18 @@ export class HomePage {
 
     // tslint:disable-next-line:use-lifecycle-interface
     async ngOnInit() {
+        this.isLoading = true
+        this.districtPresidentLogo = await this.homeService.loadStaticData('DistrictPresidentLogo');
+        this.commonData = await this.homeService.loadStaticData('CommonDetails');
+        this.dpLogoTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' +this.districtPresidentLogo.imgBaseUrl + '/' + this.districtPresidentLogo.tile)
         this.nationalAnthem = await this.homeService.loadStaticData('NationalAnthem');
         this.leoHistory = await this.homeService.loadStaticData('LeoHistory');
         this.leoMap = await this.homeService.loadStaticData('LeoMap');
-        this.districtPresidentLogo = await this.homeService.loadStaticData('DistrictPresidentLogo');
         this.editorsNote = await this.homeService.loadStaticData('EditorsNote');
         this.RegionAndZone = await this.homeService.loadStaticData('RegionAndZoneDivision');
         this.eventCalendar = await this.homeService.loadStaticData('DistrictCalendarOfEvents');
+        this.isLoading = false
 
-        this.dpLogoTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' +this.districtPresidentLogo.imgBaseUrl + '/' + this.districtPresidentLogo.tile)
     }
 
     ionViewDidEnter() {

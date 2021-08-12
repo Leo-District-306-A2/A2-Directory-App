@@ -1,4 +1,5 @@
 <ion-content [fullscreen]="true">
+  
   <div class="header_home">
     <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
       <img class="mx-auto d-block" src="../../assets/tabs/headers/bio_data.png">
@@ -69,7 +70,7 @@
           </ion-col>
         </ion-row>
 
-        <ion-row>
+        <ion-row *ngIf="guestIntoCount>0">
           <ion-col>
             <div class="tile center ripple-parent guest_intro_tile" (click)="navigateToGuestIntro()">
               <div class="inner-tile ion-padding">

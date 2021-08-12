@@ -13,6 +13,10 @@
                         <h2 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted(dateItem, 'd') }}</h2>
                         <p class="m-0 year text-center font-weight-bold">{{ utilityService.getDateFormatted(dateItem, 'y') }}</p>
                     </div>
+                    <div *ngIf="viewData?.dates.length===0">
+                        <p class="month text-center font-weight-bold">Date</p>
+                        <h2 class="font-weight-bold date mb-0 mt-0">TBD</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,8 +39,10 @@
                     </ion-label>
                 </ion-item>
             </ion-list>
-            <h5 class="text-center mb-2 mt-3 font-weight-bold">About {{ viewData?.name }}</h5>
-            <div [innerHTML]="viewData?.description" class="description text-justify mb-4"></div>
+            <div *ngIf="viewData?.description">
+                <h5 class="text-center mb-2 mt-3 font-weight-bold">About {{ viewData?.name }}</h5>
+                <div [innerHTML]="viewData?.description" class="description text-justify mb-4"></div>
+            </div>
         </div>
     </div>
 </ion-content>

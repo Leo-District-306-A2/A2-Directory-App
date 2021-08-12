@@ -243,3 +243,32 @@
 .shadow{
   text-shadow: 2px 2px 4px #ffffff;
 }
+
+
+.header-logo {
+  width: 15vw;
+  height: 15vw;
+}
+
+.vertical-alignment {
+  position: relative;
+  top: -8vh;
+}
+
+.message-text{
+    font-size: 1.5vh;
+    color:rgba(0,0,0,0.7);
+}
+.error-text{
+    font-size: 1.5vh;
+    color:rgba(248, 2, 2, 0.7);
+}
+.leoistic-year {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a4b5e!important;
+  position: relative;
+  right: 20px!important;
+  padding: 0!important;
+  margin-top: -5px!important;
+}
