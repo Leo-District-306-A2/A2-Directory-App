@@ -44,7 +44,14 @@ export class UpdateService implements CanActivate{
     const currentUpdateVersion = localStorage.getItem('appUpdateVersion');
     console.log('checkForUpdate():: Current Update Version', currentUpdateVersion);
     if (currentUpdateVersion === null || parseFloat(currentUpdateVersion) === 0.0) {
-      return true;
+      try{
+        await this.downloadFile(this.env.configUrl, 'update_config.json');
+        const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
+        const versionConfigJson = JSON.parse(versionConfig);
+        return {hasUpdates:true, updateDescription: versionConfigJson.description};
+      }catch(error){
+        return {hasUpdates:false, updateDescription: null}
+      }      
     } else {
       const hasUpdateConfig = await this.checkFile('update_config.json');
       console.log('checkForUpdate():: Has Config Json? ', hasUpdateConfig);
@@ -57,12 +64,12 @@ export class UpdateService implements CanActivate{
         const versionConfigJson = JSON.parse(versionConfig);
         console.log('checkForUpdate():: Config Json', versionConfigJson);
         if (parseFloat(versionConfigJson.version) > parseFloat(currentUpdateVersion)) {
-          return true;
+          return {hasUpdates:true, updateDescription: versionConfigJson.description};
         } else {
-          return false;
+          return {hasUpdates:false, updateDescription: null};
         }
       } catch (error) {
-        return false;
+        return {hasUpdates:false, updateDescription: null};
       };
     }
   }

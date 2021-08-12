@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UpdateService } from '../services/update.service';
 import { Subscription } from 'rxjs';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-update',
@@ -15,6 +16,7 @@ export class UpdatePage implements OnInit, OnDestroy {
     errorMessage: 'Error in updating'
   }
   displayMsg = '';
+  updateDescription = '';
   showContinueBtn = false;
   public hasInternet: boolean
 
@@ -31,8 +33,9 @@ export class UpdatePage implements OnInit, OnDestroy {
     })
     if (this.hasInternet) {
       this.displayMsg = 'Cheking for Updates';
-      const hasUpdates = await this.updateService.checkForUpdate();
-      if (hasUpdates) {
+      const updateConfig = await this.updateService.checkForUpdate();
+      this.updateDescription = updateConfig.updateDescription;
+      if (updateConfig.hasUpdates) {
         const updates = await this.updateService.downloadUpdate();
         if (updates.downloadState) {
           //Update completed.
