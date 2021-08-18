@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { DocsPageRoutingModule } from './docs-routing.module';
 
 import { DocsPage } from './docs.page';
+import { CommonElementsModule } from '../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DocsPageRoutingModule
+    DocsPageRoutingModule, CommonElementsModule
   ],
   declarations: [DocsPage]
 })

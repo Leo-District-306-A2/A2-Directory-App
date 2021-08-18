@@ -10,13 +10,15 @@ import {MessagesPage} from './messages/messages.page';
 import {LanguageSliderComponent} from '../common/language-slider/language-slider.component';
 import {AudioButtonComponent} from '../common/audio-button/audio-button.component';
 import {PledgesComponent} from './pledges/pledges.component';
+import { CommonElementsModule } from '../common/common-elements/common-elements.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    CommonElementsModule
   ],
   declarations: [HomePage, MessagesPage, PledgesComponent],
   entryComponents: [MessagesPage]

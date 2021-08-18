@@ -19,6 +19,9 @@ export class MessagesPage implements OnInit {
   districtVicePresidentTileImg = '../../../assets/default_data/default_male_user.png';
   districtChairmanTileImg = '../../../assets/default_data/default_male_user.png';
   guestIntoCount:any;
+  tiles:any;
+  guestIntroTileImg:any;
+  loading = true;
 
   constructor(private homeService: HomeService,
               private router: Router,
@@ -26,8 +29,10 @@ export class MessagesPage implements OnInit {
               public env: Env) { }
 
   async ngOnInit() {
+    this.loading = true;
     this.messages = await this.homeService.loadStaticData('Messages');  
     var guestIntro = await this.homeService.loadStaticData('GuestIntroductions');
+    this.tiles = await this.homeService.loadStaticData('tiles');
     this.guestIntoCount = guestIntro.content.length;
     this.districtGovernerTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.districtGovernor.tile);
     this.districtPresidentTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.districtPresident.tile);
@@ -35,7 +40,8 @@ export class MessagesPage implements OnInit {
     this.immediatepastDistrictPresidentTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.immediatePastDistrictPresident.tile);
     this.districtVicePresidentTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.districtVicePresident.tile);
     this.districtChairmanTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.messages.imgBaseUrl+'/'+this.messages.districtChairman.tile);
-
+    this.guestIntroTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl+'/'+this.tiles.guestIntro)
+    this.loading = false
   }
 
   navigateToDistrictGoverner(data) {
