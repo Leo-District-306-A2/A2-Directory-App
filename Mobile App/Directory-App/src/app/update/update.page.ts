@@ -57,7 +57,7 @@ export class UpdatePage implements OnInit, OnDestroy {
       this.router.navigate(['slider']);
     } else {
       this.error.hasError = true;
-      this.error.errorMessage = "No Internet Connection";
+      this.error.errorMessage = "Please connect your device to the internet!";
       this.showContinueBtn = false;
     }
 

@@ -25,3 +25,9 @@
 .update-description{
   color: rgba(0,0,0,0.7);
 }
+
+ion-content.update-screen{
+  background-image: url("../../assets/update/background.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}

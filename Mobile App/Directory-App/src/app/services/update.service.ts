@@ -42,8 +42,9 @@ export class UpdateService implements CanActivate{
     //return true if has updates; otherwise false;
     console.log('checkForUpdate():: Check hasUpdates');
     const currentUpdateVersion = localStorage.getItem('appUpdateVersion');
+    const currentYear = localStorage.getItem('leoisticYear')
     console.log('checkForUpdate():: Current Update Version', currentUpdateVersion);
-    if (currentUpdateVersion === null || parseFloat(currentUpdateVersion) === 0.0) {
+    if (currentUpdateVersion === null || currentYear === null ||  parseFloat(currentUpdateVersion) === 0.0) {
       try{
         await this.downloadFile(this.env.configUrl, 'update_config.json');
         const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
@@ -63,9 +64,13 @@ export class UpdateService implements CanActivate{
         const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
         const versionConfigJson = JSON.parse(versionConfig);
         console.log('checkForUpdate():: Config Json', versionConfigJson);
-        if (parseFloat(versionConfigJson.version) > parseFloat(currentUpdateVersion)) {
+        const year = parseInt(versionConfigJson.dataVersion.slice(0,4));
+        const versionNumber = parseFloat(versionConfigJson.dataVersion.slice(5));
+        if( year > parseInt(currentYear)){
           return {hasUpdates:true, updateDescription: versionConfigJson.description};
-        } else {
+        }else if(versionNumber > parseFloat(currentUpdateVersion)){
+          return {hasUpdates:true, updateDescription: versionConfigJson.description};
+        }else{
           return {hasUpdates:false, updateDescription: null};
         }
       } catch (error) {
@@ -83,6 +88,7 @@ export class UpdateService implements CanActivate{
       this.updateDownloadingProgress.next('Finalizing Files');
       if(extraction){
         localStorage.setItem('appUpdateVersion', downloadedZip.downloadedVersion.toString());
+        localStorage.setItem('leoisticYear', downloadedZip.leoisticYear.toString());
         this.updateDownloadingProgress.next('Update Complete');
         return {
           downloadState: true,
@@ -136,7 +142,8 @@ export class UpdateService implements CanActivate{
     const isDownloaded = await this.downloadFile(updateZipLink,'local_db.zip');
     console.log('downloadZip():: zip downloaded', isDownloaded);
     return {
-      downloadedVersion: versionConfigJson.version
+      downloadedVersion: versionConfigJson.dataVersion.slice(5),
+      leoisticYear: versionConfigJson.dataVersion.slice(0,4)
     };
   }
 
