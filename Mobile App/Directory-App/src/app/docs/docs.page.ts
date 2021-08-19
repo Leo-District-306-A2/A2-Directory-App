@@ -39,7 +39,6 @@ export class DocsPage implements OnInit {
     this.loading = true;
     this.standardLeoClubConstitution = await this.homeService.loadStaticData('StandardLeoClubConstitution');
     this.instalationOfClubOfficers = await this.homeService.loadStaticData('InstallationCeremonyOfLeoClubOfficers');
-    console.log(this.instalationOfClubOfficers.en.title)
     this.initiationOfNewMembers = await this.homeService.loadStaticData('InitiationCeremonyOfNewMembers');
     this.leoClubProtocol =await this.homeService.loadStaticData('LeoClubProtocol');
     this.generalMeetingAgenda = await this.homeService.loadStaticData('GeneralMeetingAgenda');

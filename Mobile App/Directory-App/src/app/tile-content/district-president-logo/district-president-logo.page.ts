@@ -24,8 +24,6 @@ export class DistrictPresidentLogoPage implements OnInit {
         route.paramMap.subscribe((data) => {
             this.viewData = JSON.parse(data.get('data'));
             this.logoUrl = this.viewData.image;
-            console.log(this.logoUrl);
-            console.log(this.viewData);
         });
     }
 

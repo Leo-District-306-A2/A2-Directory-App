@@ -40,10 +40,8 @@ export class UpdateService implements CanActivate{
 
   async checkForUpdate() {
     //return true if has updates; otherwise false;
-    console.log('checkForUpdate():: Check hasUpdates');
     const currentUpdateVersion = localStorage.getItem('appUpdateVersion');
     const currentYear = localStorage.getItem('leoisticYear')
-    console.log('checkForUpdate():: Current Update Version', currentUpdateVersion);
     if (currentUpdateVersion === null || currentYear === null ||  parseFloat(currentUpdateVersion) === 0.0) {
       try{
         await this.downloadFile(this.env.configUrl, 'update_config.json');
@@ -55,7 +53,6 @@ export class UpdateService implements CanActivate{
       }      
     } else {
       const hasUpdateConfig = await this.checkFile('update_config.json');
-      console.log('checkForUpdate():: Has Config Json? ', hasUpdateConfig);
       if (hasUpdateConfig) {
         await this.file.removeFile(this.file.dataDirectory, 'update_config.json');
       }
@@ -63,7 +60,6 @@ export class UpdateService implements CanActivate{
         await this.downloadFile(this.env.configUrl, 'update_config.json');
         const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
         const versionConfigJson = JSON.parse(versionConfig);
-        console.log('checkForUpdate():: Config Json', versionConfigJson);
         const year = parseInt(versionConfigJson.dataVersion.slice(0,4));
         const versionNumber = parseFloat(versionConfigJson.dataVersion.slice(5));
         if( year > parseInt(currentYear)){
@@ -117,22 +113,18 @@ export class UpdateService implements CanActivate{
     //Download file using file transfer
     try{
       const download = await this.fileTransfer.download(link, this.file.dataDirectory + fileName,);
-      console.log('download():: file Downloaded', download);
       return true;
     }catch(error){
-      console.log('download():: Error in Downloading', error);
       return false;
     }
   }
 
   async downloadZip(){
     const hasZip = await this.checkFile('local_db.zip');
-    console.log('downloadZip():: Has Zip', hasZip);
     if(hasZip){
       await this.file.removeFile(this.file.dataDirectory, 'local_db.zip');
     }
     const hasUpdateConfig = await this.checkFile('update_config.json');
-    console.log('downloadZip():: has upload config', hasUpdateConfig);
     if(!hasUpdateConfig){
       await this.downloadFile(this.env.configUrl, 'update_config.json');
     }
@@ -140,7 +132,6 @@ export class UpdateService implements CanActivate{
     const versionConfigJson = JSON.parse(versionConfig);
     const updateZipLink = versionConfigJson.downloadUrl;
     const isDownloaded = await this.downloadFile(updateZipLink,'local_db.zip');
-    console.log('downloadZip():: zip downloaded', isDownloaded);
     return {
       downloadedVersion: versionConfigJson.dataVersion.slice(5),
       leoisticYear: versionConfigJson.dataVersion.slice(0,4)
@@ -151,7 +142,6 @@ export class UpdateService implements CanActivate{
     const hasZip = await this.checkFile('local_db.zip');
     if(hasZip){
       const deleted = await this.file.removeFile(this.file.dataDirectory, 'local_db.zip');
-      console.log('is deleted', deleted);
     }
   }
 
@@ -159,7 +149,6 @@ export class UpdateService implements CanActivate{
     const hasFile = await this.checkDirectory('local_db');
     if(hasFile){
       const deleted = await this.file.removeRecursively(this.file.dataDirectory, 'local_db');
-      console.log('removeExtracted():: ', deleted);
     }
   }
 
@@ -178,7 +167,6 @@ export class UpdateService implements CanActivate{
             );
           }
         );
-    console.log('extraxtZip():: extract result', extractResult);
     if(extractResult === 0){
       await this.deleteZipFile();
       return true;
@@ -192,10 +180,8 @@ export class UpdateService implements CanActivate{
   async checkDirectory(path){
     try{
       const hasPath = await this.file.checkDir(this.file.dataDirectory, path);
-      console.log('checkDirectory():: check Directory', hasPath);
       return hasPath;
     }catch (e) {
-      console.log('checkDirectory():: No Directory', e);
       return false;
     }
   }
@@ -203,10 +189,8 @@ export class UpdateService implements CanActivate{
   async checkFile(path){
     try{
       const hasFile = await this.file.checkFile(this.file.dataDirectory, path);
-      console.log('checkFile():: check File', hasFile);
       return hasFile;
     }catch (e) {
-      console.log('checkFile():: No File',e);
       return false;
     }
   }
