@@ -13,12 +13,14 @@ export class AuthenticationPage implements OnInit {
   password;
   isAuthenticated = true;
   authImageUrl = null;
+  authBgUrl = null;
   constructor(public authenticationService: AuthenticationService, public router: Router, private dataDirectoryService: DataDirectoryService, public env: Env,) {
 
   }
 
   async ngOnInit() {
     this.authImageUrl = await this.dataDirectoryService.readImage( this.env.dataDirectoryBaseUrl+'/authentication/imgs/logo.png');
+    // this.authBgUrl = await this.dataDirectoryService.readImage( this.env.dataDirectoryBaseUrl+'/authentication/imgs/background.png');
   }
 
   authenticate() {

@@ -1,3 +1,9 @@
+
+ion-content{
+  --background: url("../../assets/update/background.png")  left bottom no-repeat;
+  --background-size: cover;
+}
+
 .header-logo {
     width: 80vw;
     height: auto;
@@ -26,8 +32,3 @@
   color: rgba(0,0,0,0.7);
 }
 
-ion-content.update-screen{
-  background-image: url("../../assets/update/background.png");
-  background-position: bottom left;
-  background-repeat: no-repeat;
-}
