@@ -57,7 +57,7 @@ export class UpdatePage implements OnInit, OnDestroy {
       this.router.navigate(['slider']);
     } else {
       this.error.hasError = true;
-      this.error.errorMessage = "Please connect your device to the internet!";
+      this.error.errorMessage = "A2 Directory need to download initial data<br>Please connect your device to the internet!";
       this.showContinueBtn = false;
     }
 
