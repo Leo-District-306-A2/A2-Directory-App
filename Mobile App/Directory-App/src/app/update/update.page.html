@@ -15,10 +15,9 @@
             <ion-button class="retry-btn" (click)="retryForUpdate()" color="danger" shape="round" fill="outline" size="small">Retry</ion-button>
             <ion-button *ngIf="showContinueBtn" (click)="continue()" class="retry-btn" color="medium" shape="round" fill="outline" size="small">Continue</ion-button>
           </div>
-        </ng-template>
-  
-        <div [innerHTML]="updateDescription" class="mt-3 mx-3 text-center meriendaOneFont update-description"></div>
-        
+        </ng-template>  
+        <div *ngIf="updateDescription" [innerHTML]="updateDescription" class="mt-3 mx-3 text-center meriendaOneFont update-description"></div>
+        <div *ngIf="size" class="mt-3 mx-3 text-center meriendaOneFont file-size">Update Size: {{size}}</div>        
       </div>
     </div>
 

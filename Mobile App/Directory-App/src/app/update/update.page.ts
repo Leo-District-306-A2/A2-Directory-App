@@ -17,6 +17,7 @@ export class UpdatePage implements OnInit, OnDestroy {
   }
   displayMsg = '';
   updateDescription = '';
+  size:string;
   showContinueBtn = false;
   public hasInternet: boolean
 
@@ -33,8 +34,9 @@ export class UpdatePage implements OnInit, OnDestroy {
     })
     if (this.hasInternet) {
       this.displayMsg = 'Cheking for Updates';
-      const updateConfig = await this.updateService.checkForUpdate();
+      const updateConfig = await this.updateService.checkForUpdate();      
       this.updateDescription = updateConfig.updateDescription;
+      this.size = updateConfig.size;
       if (updateConfig.hasUpdates) {
         const updates = await this.updateService.downloadUpdate();
         if (updates.downloadState) {
@@ -71,6 +73,9 @@ export class UpdatePage implements OnInit, OnDestroy {
     this.error.hasError = false;
     this.error.errorMessage = '';
     this.showContinueBtn = false;
+    const updateConfig = await this.updateService.checkForUpdate();      
+    this.updateDescription = updateConfig.updateDescription;
+    this.size = updateConfig.size;
     const updates = await this.updateService.downloadUpdate();
     if (updates.downloadState) {
       //Update completed.

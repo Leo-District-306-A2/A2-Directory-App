@@ -41,15 +41,15 @@ export class UpdateService implements CanActivate{
   async checkForUpdate() {
     //return true if has updates; otherwise false;
     const currentUpdateVersion = localStorage.getItem('appUpdateVersion');
-    const currentYear = localStorage.getItem('leoisticYear')
+    const currentYear = localStorage.getItem('leoisticYear');
     if (currentUpdateVersion === null || currentYear === null ||  parseFloat(currentUpdateVersion) === 0.0) {
       try{
         await this.downloadFile(this.env.configUrl, 'update_config.json');
         const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
         const versionConfigJson = JSON.parse(versionConfig);
-        return {hasUpdates:true, updateDescription: versionConfigJson.description};
+        return {hasUpdates:true, updateDescription: versionConfigJson.description, size: versionConfigJson.size};
       }catch(error){
-        return {hasUpdates:false, updateDescription: null}
+        return {hasUpdates:false, updateDescription: null, size:null};
       }      
     } else {
       const hasUpdateConfig = await this.checkFile('update_config.json');
@@ -63,15 +63,15 @@ export class UpdateService implements CanActivate{
         const year = parseInt(versionConfigJson.dataVersion.slice(0,4));
         const versionNumber = parseFloat(versionConfigJson.dataVersion.slice(5));
         if( year > parseInt(currentYear)){
-          return {hasUpdates:true, updateDescription: versionConfigJson.description};
+          return {hasUpdates:true, updateDescription: versionConfigJson.description, size: versionConfigJson.size};
         }else if(versionNumber > parseFloat(currentUpdateVersion)){
-          return {hasUpdates:true, updateDescription: versionConfigJson.description};
+          return {hasUpdates:true, updateDescription: versionConfigJson.description, size: versionConfigJson.size};
         }else{
-          return {hasUpdates:false, updateDescription: null};
+          return {hasUpdates:false, updateDescription: null, size:null};
         }
       } catch (error) {
-        return {hasUpdates:false, updateDescription: null};
-      };
+        return {hasUpdates:false, updateDescription: null,size:null};
+      }
     }
   }
 
