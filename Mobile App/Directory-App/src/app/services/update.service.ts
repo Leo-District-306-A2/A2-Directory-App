@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HTTP, HTTPResponse } from '@ionic-native/http/ngx';
+import {Platform} from '@ionic/angular';
 import {File} from '@ionic-native/file/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { Zip } from '@ionic-native/zip/ngx';
@@ -23,12 +24,16 @@ export class UpdateService implements CanActivate{
 
   constructor(private file: File, 
     private transfer: FileTransfer, 
+    private platform: Platform,
     private zip: Zip, 
     public router: Router,
     private http: HTTP,
     private env: Env
   ) {
-    this.fileTransfer = this.transfer.create();
+    //plugin is ready after platform ready
+    this.platform.ready().then(() => {
+      this.fileTransfer = this.transfer.create();
+    });
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
