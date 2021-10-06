@@ -19,6 +19,7 @@
                 <div class="card-content">
                     <small class="text-secondary font-weight-bold text-uppercase">{{ officer?.designation }}</small>
                     <h6 class="pb-0 font-weight-bold mb-0">{{officer?.name}}</h6>
+                    <h6 *ngIf="officer?.club" class="pb-0 text-secondary font-weight-bold mb-0">{{officer?.leoisticYear}}</h6>
                     <small *ngIf="officer?.club" class="d-block text-secondary font-weight-bold mt-0">{{officer?.club}}</small>
                     <small *ngIf="officer?.email" class="d-block text-secondary"><i class="fas fa-envelope mr-1"></i>{{officer?.email}}</small>
                     <small *ngIf="officer?.phone" class="d-block text-secondary"><i class="fas fa-phone mr-1"></i>{{officer?.phone}}</small>

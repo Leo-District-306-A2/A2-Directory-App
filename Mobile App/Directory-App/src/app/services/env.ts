@@ -1,6 +1,6 @@
 export class Env {
     //App version
-    public appVersion = '2.0.1';
+    public appVersion = '2.0.2';
 
     // General Settings
     public baseURL = '../../assets/local_db';

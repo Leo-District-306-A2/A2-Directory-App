@@ -22,7 +22,7 @@ export class OurTeamPage implements OnInit {
               private route: ActivatedRoute) {
     this.sideMenuService.loadStaticData('our_team').then((result) => {
       this.ourTeam = result
-      for(let i=0;this.ourTeam.team.length;i++){
+      for(let i=0;i<this.ourTeam.team.length;i++){
         this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.ourTeam.imgBaseUrl + '/' + this.ourTeam.team[i].image)
         .then(img=>{
           this.ourTeam.team[i].imgUrl = img;

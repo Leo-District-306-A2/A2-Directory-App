@@ -21,6 +21,8 @@ export class UpdatePage implements OnInit, OnDestroy {
   size:string;
   showContinueBtn = false;
   public hasInternet: boolean = false;
+  public updateConfermation: boolean = false;
+  public resetLocalVariables = []
 
   updateDownloadingProgressSubscription: Subscription;
 
@@ -42,22 +44,25 @@ export class UpdatePage implements OnInit, OnDestroy {
         const updateConfig = await this.updateService.checkForUpdate();
         this.updateDescription = updateConfig.updateDescription;
         this.size = updateConfig.size;
-        if (updateConfig.hasUpdates) {
-          const updates = await this.updateService.downloadUpdate();
-          if (updates.downloadState) {
-            //Update completed.
+        if(!updateConfig.error){
+          // remove local storage
+          this.resetLocalVariables = updateConfig.resetLocalData;          
+          if (updateConfig.hasUpdates && updateConfig.mustUpdate) { 
+            this.updateConfermation = false
+            await this.updateNow();
+          }else if(updateConfig.hasUpdates){
+            this.displayMsg = '';
+            this.updateConfermation = true;
+          }else {
+            //No updates available.
             sessionStorage.setItem('isAppOppend', String(true));
             this.router.navigate(['slider']);
-          } else {
-            this.error.hasError = true;
-            this.error.errorMessage = updates.message;
-            this.showContinueBtn = true;
           }
-        } else {
-          //No updates available.
-          sessionStorage.setItem('isAppOppend', String(true));
-          this.router.navigate(['slider']);
-        }
+        }else{
+          this.error.hasError = true;
+          this.error.errorMessage = updateConfig.error;
+          this.showContinueBtn = !updateConfig.mustUpdate;
+        }       
 
       } else if (localStorage.getItem('appUpdateVersion')) {
         sessionStorage.setItem('isAppOppend', String(true));
@@ -80,24 +85,63 @@ export class UpdatePage implements OnInit, OnDestroy {
     this.error.hasError = false;
     this.error.errorMessage = '';
     this.showContinueBtn = false;
-    const updateConfig = await this.updateService.checkForUpdate();      
-    this.updateDescription = updateConfig.updateDescription;
-    this.size = updateConfig.size;
+    const updateConfig = await this.updateService.checkForUpdate(); 
+    if(!updateConfig.error){
+      this.updateDescription = updateConfig.updateDescription;
+      this.size = updateConfig.size;
+      const updates = await this.updateService.downloadUpdate();
+      if (updates.downloadState) {
+        //Update completed.
+        this.router.navigate(['slider']);
+      } else {
+        this.error.hasError = true;
+        this.error.errorMessage = updates.message;
+        this.showContinueBtn = !updateConfig.mustUpdate;
+      }
+    }else{
+      this.error.hasError = true;
+      this.error.errorMessage = updateConfig.error;
+      this.showContinueBtn = !updateConfig.mustUpdate;
+    }    
+    
+
+  }
+
+  continue() {
+    this,this.updateConfermation = false;
+    sessionStorage.setItem('isAppOppend', String(true));
+    this.router.navigate(['slider']);
+  }
+
+  async updateNow(){
+    await this.cleanLocalVariable(this.resetLocalVariables);
+    this.updateConfermation = false;
     const updates = await this.updateService.downloadUpdate();
     if (updates.downloadState) {
       //Update completed.
+      sessionStorage.setItem('isAppOppend', String(true));
       this.router.navigate(['slider']);
     } else {
       this.error.hasError = true;
       this.error.errorMessage = updates.message;
       this.showContinueBtn = true;
     }
-
   }
 
-  continue() {
-    sessionStorage.setItem('isAppOppend', String(true));
-    this.router.navigate(['slider']);
+  async cleanLocalVariable(keyList){
+    console.log("Local Storage Array: ", keyList);
+    if(keyList.includes("all")){
+      localStorage.clear();
+      console.log("Clear all data")
+      return;
+    }
+    for (var x=0; x<keyList.length; x++){
+      try{
+        localStorage.removeItem(keyList[x]);
+        console.log("Deleted Keys() ", keyList[x])
+      }catch(error){ }
+    }
+    return;
   }
 
 

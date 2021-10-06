@@ -49,12 +49,25 @@ export class UpdateService implements CanActivate{
     const currentYear = localStorage.getItem('leoisticYear');
     if (currentUpdateVersion === null || currentYear === null ||  parseFloat(currentUpdateVersion) === 0.0) {
       try{
-        await this.downloadFile(this.env.configUrl, 'update_config.json');
+        const isDownloadedConfig = await this.downloadFile(this.env.configUrl, 'update_config.json');
         const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
         const versionConfigJson = JSON.parse(versionConfig);
-        return {hasUpdates:true, updateDescription: versionConfigJson.description, size: versionConfigJson.size};
+        return {
+          hasUpdates:true, 
+          mustUpdate: true, 
+          updateDescription: versionConfigJson.description, 
+          size: versionConfigJson.size, 
+          error: isDownloadedConfig ? null: "Sorry, We can't download updates. Please try again later",
+          resetLocalData: versionConfigJson.resetLocalData};
       }catch(error){
-        return {hasUpdates:false, updateDescription: null, size:null};
+        return {
+          hasUpdates:false, 
+          mustUpdate: false, 
+          updateDescription: null, 
+          size:null, 
+          error: "Sorry, We can't download updates. Please try again later",
+          resetLocalData:[]
+        };
       }      
     } else {
       const hasUpdateConfig = await this.checkFile('update_config.json');
@@ -68,14 +81,30 @@ export class UpdateService implements CanActivate{
         const year = parseInt(versionConfigJson.dataVersion.slice(0,4));
         const versionNumber = parseFloat(versionConfigJson.dataVersion.slice(5));
         if( year > parseInt(currentYear)){
-          return {hasUpdates:true, updateDescription: versionConfigJson.description, size: versionConfigJson.size};
+          return {
+            hasUpdates:true, 
+            mustUpdate: false, 
+            updateDescription: 
+            versionConfigJson.description, 
+            size: versionConfigJson.size, 
+            error: null,
+            resetLocalData: versionConfigJson.resetLocalData
+          };
         }else if(versionNumber > parseFloat(currentUpdateVersion)){
-          return {hasUpdates:true, updateDescription: versionConfigJson.description, size: versionConfigJson.size};
+          return {
+            hasUpdates:true, 
+            mustUpdate: false, 
+            updateDescription: 
+            versionConfigJson.description, 
+            size: versionConfigJson.size, 
+            error: null,
+            resetLocalData: versionConfigJson.resetLocalData
+          };
         }else{
-          return {hasUpdates:false, updateDescription: null, size:null};
+          return {hasUpdates:false, mustUpdate: false, updateDescription: null, size:null, error: null, resetLocalData:[]};
         }
       } catch (error) {
-        return {hasUpdates:false, updateDescription: null,size:null};
+        return {hasUpdates:false, mustUpdate: false, updateDescription: null,size:null, error: "Sorry, We can't download updates. Please try again later", resetLocalData:[]};
       }
     }
   }
@@ -116,10 +145,16 @@ export class UpdateService implements CanActivate{
 
   async downloadFile(link, fileName) {
     //Download file using file transfer
-    try{
-      const download = await this.fileTransfer.download(link, this.file.dataDirectory + fileName,);
-      return true;
-    }catch(error){
+    if (link){
+      try{
+        const download = await this.fileTransfer.download(link, this.file.dataDirectory + fileName,);
+        console.log("Success File Download")
+        return true;
+      }catch(error){
+        console.log("Error in file Download",error)
+        return false;
+      }
+    }else{
       return false;
     }
   }
@@ -131,16 +166,33 @@ export class UpdateService implements CanActivate{
     }
     const hasUpdateConfig = await this.checkFile('update_config.json');
     if(!hasUpdateConfig){
-      await this.downloadFile(this.env.configUrl, 'update_config.json');
+      var isConfigDownloaded = await this.downloadFile(this.env.configUrl, 'update_config.json');
+      if (!isConfigDownloaded){
+        return {
+          isDownloaded:false,
+          downloadedVersion: null,
+          leoisticYear: null
+        };
+      }
     }
     const versionConfig = await this.file.readAsText(this.file.dataDirectory, 'update_config.json');
     const versionConfigJson = JSON.parse(versionConfig);
     const updateZipLink = versionConfigJson.downloadUrl;
     const isDownloaded = await this.downloadFile(updateZipLink,'local_db.zip');
-    return {
-      downloadedVersion: versionConfigJson.dataVersion.slice(5),
-      leoisticYear: versionConfigJson.dataVersion.slice(0,4)
-    };
+    if(isDownloaded){
+      return {
+        isDownloaded:true,
+        downloadedVersion: versionConfigJson.dataVersion.slice(5),
+        leoisticYear: versionConfigJson.dataVersion.slice(0,4)
+      };
+    }else{
+      return {
+        isDownloaded:false,
+        downloadedVersion: null,
+        leoisticYear: null
+      };
+    }
+    
   }
 
   async deleteZipFile(){
