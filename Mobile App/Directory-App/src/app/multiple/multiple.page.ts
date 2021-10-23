@@ -6,6 +6,7 @@ import {Env} from '../services/env';
 import {MultipleService} from '../services/multiple.service';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 @Component({
   selector: 'app-mutiple',
@@ -23,14 +24,21 @@ export class MultiplePage implements OnInit {
               private utilityService: UtilityService,
               public env: Env,
               private platform: Platform,
+              private dataDirectoryService: DataDirectoryService,
               private alertService: AlertService) { }
 
-  ngOnInit() {
-    this.multipleService.getData().then((data) => {
-      this.filteredMultipleData = data.multiple;
-      this.allMultipleData = data.multiple;
-      this.imgBaseUrl = data.imgBaseUrl;
-    });
+  async ngOnInit() {
+    var data = await this.multipleService.getData();
+    console.log("multiple data: ", data)
+    this.filteredMultipleData = data.multiple;
+    this.allMultipleData = data.multiple;
+    this.imgBaseUrl = data.imgBaseUrl;
+
+    for (let i = 0; i < this.filteredMultipleData.length; i++) {
+      this.filteredMultipleData[i].imgUrl = await this.dataDirectoryService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredMultipleData[i].logo
+      );
+    }
   }
 
   ionViewDidEnter() {

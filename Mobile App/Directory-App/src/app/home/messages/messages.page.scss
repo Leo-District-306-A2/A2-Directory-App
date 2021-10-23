@@ -215,18 +215,17 @@
   background-position: center;
   background-size: cover;
   .inner-tile{
-    border-color: rgb(0, 0, 0);
-    background-color: rgba(255,255,255,0.15);
+    border-color: rgb(88, 12, 189);
+    background-color: rgba(255,255,255,0.09);
   }
 
   .tile-head {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(162, 129, 214) !important;
   }
 }
 
 
 .guest_intro_tile {
-  background-image: url("../../../assets/tiles/guest_introductions.png");
   background-position: center;
   background-size: cover;
   .inner-tile{

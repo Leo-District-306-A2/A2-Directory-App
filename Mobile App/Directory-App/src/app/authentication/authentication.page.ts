@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthenticationService} from '../services/authentication.service';
 import {Router} from '@angular/router';
+import { DataDirectoryService } from '../services/data-directory.service';
+import {Env} from '../services/env';
 
 @Component({
   selector: 'app-authentication',
@@ -10,11 +12,15 @@ import {Router} from '@angular/router';
 export class AuthenticationPage implements OnInit {
   password;
   isAuthenticated = true;
-  constructor(public authenticationService: AuthenticationService, public router: Router) {
+  authImageUrl = null;
+  authBgUrl = null;
+  constructor(public authenticationService: AuthenticationService, public router: Router, private dataDirectoryService: DataDirectoryService, public env: Env,) {
 
   }
 
-  ngOnInit() {
+  async ngOnInit() {
+    this.authImageUrl = await this.dataDirectoryService.readImage( this.env.dataDirectoryBaseUrl+'/authentication/imgs/logo.png');
+    // this.authBgUrl = await this.dataDirectoryService.readImage( this.env.dataDirectoryBaseUrl+'/authentication/imgs/background.png');
   }
 
   authenticate() {

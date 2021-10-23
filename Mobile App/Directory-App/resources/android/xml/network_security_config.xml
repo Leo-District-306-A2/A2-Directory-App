@@ -7,5 +7,7 @@
     </base-config>
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">www.leodistrict306a2.org</domain>
+        <domain includeSubdomains="true">leodistrict306a2.org</domain>
     </domain-config>
 </network-security-config>

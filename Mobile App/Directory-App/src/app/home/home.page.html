@@ -1,92 +1,119 @@
 <ion-content [fullscreen]="true">
-    <div class="header_home">
-        <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
-            <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
-        </div>
-        <div class="scrollable-content_home">
-            <ion-grid>
-                <ion-row>
-                    <ion-col>
-                        <div class="tile center ripple-parent dp_logo_tile"
-                             [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + districtPresidentLogo?.imgBaseUrl + '/' + districtPresidentLogo?.tile + '\')' }"
-                             (click)="navigateToDPLogo(districtPresidentLogo)">
-                            <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow-text">{{ districtPresidentLogo?.title}}</div>
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <div class="tile center ripple-parent leo_map_tile"
-                             (click)="navigateToLeoMap(leoMap)">
-                            <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold animate__bounce shadow-text">
-                                    {{ leoMap?.title}}</div>
-                            </div>
-                        </div>
-                    </ion-col>
-                    <ion-col>
-                        <div class="tile center ripple-parent region_and_zone_tile"
-                             (click)="navigateToRegionAndZone(RegionAndZone)">
-                            <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow-text">{{ RegionAndZone?.title }}</div>
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <div class="tile center ripple-parent district_calendar_tile"
-                             (click)="navigateToDistrictCalendar(eventCalendar)">
-                            <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow-text">{{ eventCalendar?.title }}</div>
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <div class="tile center ripple-parent national_anthem_tile"
-                             (click)="navigateToNationalAnthem(nationalAnthem)">
-                            <div class="inner-tile ion-padding text-secondary">
-                                <div class="tile-head font-weight-bold shadow-text">
-                                    {{ nationalAnthem?.en.title }}
-                                </div>
-                            </div>
-                            <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div> -->
-                        </div>
-                    </ion-col>
-                    <ion-col>
-                        <div class="tile center ripple-parent pledges_tile"
-                             (click)="navigateToPledges()">
-                            <div class="inner-tile ion-padding">
-                                <div class="tile-head font-weight-bold text-secondary shadow-text">Pledges</div>
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <div class="tile center ripple-parent leo_history_tile"
-                             (click)="navigateToLeoHistory(leoHistory)">
-                            <div class="inner-tile ion-padding">
-                                <div class="shadow-text tile-head text-secondary font-weight-bold">{{ leoHistory?.title }}</div>
-                                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
-                          </div> -->
-                            </div>
-                        </div>
-                    </ion-col>
-                    <ion-col>
-                        <div class="tile center ripple-parent messages_tile" (click)="navigateToMessages()">
-                            <div class="inner-tile ion-padding">
-                                <div class="tile-head text-secondary font-weight-bold shadow-text">Bio data</div>
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
+    <div *ngIf="isLoading; else showHome" class="row center-loading align-items-center h-100">
+        <div class="col-md-12">
+            <!-- <div class="mt-3 p-1">
+                <img src="../../assets/logos/app_icon.png" class="mx-auto d-block header-logo mb-1 mt-3">
+            </div>
+            <div class="mt-1 mb-2 mx-3">
+                <ion-progress-bar type="indeterminate"></ion-progress-bar>
+            </div>
+            <div>
+                <p class="meriendaOneFont text-center message-text">Opening Leo Directory</p>
+            </div> -->
+            <app-loading class="vertical-alignment" [loadingMsg]="'Opening Leo Directory'"></app-loading>
         </div>
     </div>
+
+    <ng-template #showHome>
+        <div class="header_home">
+            <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
+                <img class="mx-auto d-block" src="../../assets/tabs/headers/home.png">
+            </div>
+            <div class="pt-0 pb-2 m-0 w-100 text-right leoistic-year">{{commonData?.leoisticYear}}</div>
+            <div class="scrollable-content_home">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <div class="tile center ripple-parent dp_logo_tile"
+                                [ngStyle]="{ 'background-image' : 'url(\'' + dpLogoTileImg + '\')' }"
+                                (click)="navigateToDPLogo(districtPresidentLogo)">
+                                <div class="inner-tile ion-padding">
+                                    <div class="tile-head text-secondary font-weight-bold shadow-text">{{
+                                        districtPresidentLogo?.title}}</div>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div class="tile center ripple-parent leo_map_tile" (click)="navigateToLeoMap(leoMap)"
+                            [ngStyle]="{ 'background-image' : 'url(\'' + leoMapTileImg + '\')' }">
+                                <div class="inner-tile ion-padding">
+                                    <div class="tile-head text-secondary font-weight-bold animate__bounce shadow-text">
+                                        {{ leoMap?.title}}</div>
+                                </div>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div class="tile center ripple-parent region_and_zone_tile"
+                                (click)="navigateToRegionAndZone(RegionAndZone)"
+                                [ngStyle]="{ 'background-image' : 'url(\'' + regionTileImg + '\')' }">
+                                <div class="inner-tile ion-padding">
+                                    <div class="tile-head text-secondary font-weight-bold shadow-text">{{
+                                        RegionAndZone?.title }}</div>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div class="tile center ripple-parent district_calendar_tile"
+                                (click)="navigateToDistrictCalendar(eventCalendar)"
+                                [ngStyle]="{ 'background-image' : 'url(\'' + districtCalenderTileImg + '\')' }">
+                                <div class="inner-tile ion-padding">
+                                    <div class="tile-head text-secondary font-weight-bold shadow-text">{{
+                                        eventCalendar?.title }}</div>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div class="tile center ripple-parent national_anthem_tile"
+                                (click)="navigateToNationalAnthem(nationalAnthem)"
+                                [ngStyle]="{ 'background-image' : 'url(\'' + nationalAnthenTileImg + '\')' }">
+                                <div class="inner-tile ion-padding text-secondary">
+                                    <div class="tile-head font-weight-bold shadow-text">
+                                        {{ nationalAnthem?.en.title }}
+                                    </div>
+                                </div>
+                                <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="nationalAnthem?.en.content"></div> -->
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div class="tile center ripple-parent pledges_tile" (click)="navigateToPledges()"
+                            [ngStyle]="{ 'background-image' : 'url(\'' + pledgesTileImg + '\')' }">
+                                <div class="inner-tile ion-padding">
+                                    <div class="tile-head font-weight-bold text-secondary shadow-text">Pledges</div>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div class="tile center ripple-parent leo_history_tile"
+                                (click)="navigateToLeoHistory(leoHistory)"
+                                [ngStyle]="{ 'background-image' : 'url(\'' + leoHistoryTileImg + '\')' }">
+                                <div class="inner-tile ion-padding">
+                                    <div class="shadow-text tile-head text-secondary font-weight-bold">{{
+                                        leoHistory?.title }}</div>
+                                    <!-- <div class="tile-content ion-padding-top ion-padding-bottom" [innerHTML]="leoPledge?.en.content">
+                          </div> -->
+                                </div>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div class="tile center ripple-parent messages_tile" (click)="navigateToMessages()"
+                            [ngStyle]="{ 'background-image' : 'url(\'' + bioDataTileImg + '\')' }">
+                                <div class="inner-tile ion-padding">
+                                    <div class="tile-head text-secondary font-weight-bold shadow-text">Bio data</div>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+        </div>
+    </ng-template>
 
 </ion-content>

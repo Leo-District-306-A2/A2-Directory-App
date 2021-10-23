@@ -1,6 +1,6 @@
 <ion-content>
   <div class="col-md-12 align-items-center">
-    <img src="{{ env.baseURL + '/' + getGuestImg(viewData) }}" class="guest-img mx-auto d-block header-logo mt-5 mb-2">
+    <img [src]="viewData.imgUrl" class="guest-img mx-auto d-block header-logo mt-5 mb-2">
     <div class="mb-3">
       <h4 class="text-center mb-0 meriendaOneFont">{{ viewData?.name }}</h4>
       <div class="text-center logo-name">{{ viewData?.designation }}</div>

@@ -4,6 +4,7 @@ import {CallNumber} from '@ionic-native/call-number/ngx';
 import {EmailComposer} from '@ionic-native/email-composer/ngx';
 import {UtilityService} from '../services/utility.service';
 import {Env} from '../services/env';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 @Component({
   selector: 'app-multiple-details',
@@ -14,10 +15,12 @@ export class MultipleDetailsPage implements OnInit {
   isEmailComposable = false;
   executiveDetails: any;
   imgBaseUrl: string;
+  sortedMultipleOfficers:any;
   constructor(private route: ActivatedRoute,
               private callNumber: CallNumber,
               private emailComposer: EmailComposer,
               public utilityService: UtilityService,
+              public dataDirectoryService: DataDirectoryService,
               public env: Env) {
 
     // read router params
@@ -32,7 +35,14 @@ export class MultipleDetailsPage implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
+    this.sortedMultipleOfficers = this.utilityService.sortJsonArrayByVisibilityOrder(this.executiveDetails.officers);
+    for (let i = 0; i < this.sortedMultipleOfficers.length; i++) {
+      this.sortedMultipleOfficers[i].officerImageUrl = await this.dataDirectoryService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.sortedMultipleOfficers[i].img
+        );
+    }
+
   }
 
   // tslint:disable-next-line:variable-name

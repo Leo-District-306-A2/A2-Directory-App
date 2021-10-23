@@ -127,7 +127,6 @@
 
 
 .national_anthem_tile {
-  background-image: url("../../assets/tiles/national_anthem.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -141,7 +140,6 @@
 }
 
 .leo_history_tile {
-  background-image: url("../../assets/tiles/leo_history.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -155,7 +153,6 @@
 }
 
 .leo_map_tile {
-  background-image: url("../../assets/tiles/leo_map.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -182,7 +179,6 @@
 }
 
 .region_and_zone_tile{
-  background-image: url("../../assets/tiles/region_and_zone.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -196,7 +192,6 @@
 }
 
 .district_calendar_tile{
-  background-image: url("../../assets/tiles/district_calendar.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -210,7 +205,6 @@
 }
 
 .pledges_tile{
-  background-image: url("../../assets/tiles/pledges.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -224,7 +218,6 @@
 }
 
 .messages_tile{
-  background-image: url("../../assets/tiles/bio_data.png");
   background-position: center;
   background-size: cover;
   .inner-tile{
@@ -242,4 +235,39 @@
 }
 .shadow{
   text-shadow: 2px 2px 4px #ffffff;
+}
+
+
+.header-logo {
+  width: 15vw;
+  height: 15vw;
+}
+
+.vertical-alignment {
+  position: relative;
+  top: -8vh;
+}
+
+.message-text{
+    font-size: 1.5vh;
+    color:rgba(0,0,0,0.7);
+}
+.error-text{
+    font-size: 1.5vh;
+    color:rgba(248, 2, 2, 0.7);
+}
+.leoistic-year {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a4b5e!important;
+  position: relative;
+  right: 20px!important;
+  padding: 0!important;
+  margin-top: -5px!important;
+}
+
+
+.center-loading{
+  margin-left: auto;
+  margin-right: auto;
 }

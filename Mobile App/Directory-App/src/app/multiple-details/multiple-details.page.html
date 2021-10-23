@@ -6,13 +6,13 @@
     <!-- <h3 class="text-center badge badge-pill badge-secondary mx-auto d-block pt-2 pb-2">{{executiveDetails?.designationCategory}}</h3> -->
   </div>
   <div>
-    <div *ngFor="let officer of this.utilityService.sortJsonArrayByVisibilityOrder(executiveDetails?.officers)"
+    <div *ngFor="let officer of sortedMultipleOfficers"
          class="col-md-12">
       <div class="card profile-card-3 mb-3">
         <div class="background-block">
         </div>
         <div class="profile-thumb-block">
-          <img src="{{ env.baseURL + '/' + imgBaseUrl + '/' + officer?.img }}" alt="profile-image" class="profile"/>
+          <img [src]="officer.officerImageUrl ? officer.officerImageUrl : '../../assets/default_data/default_male_user.png'" alt="profile-image" class="profile"/>
         </div>
         <div class="card-content">
           <small class="text-secondary font-weight-bold text-uppercase">{{ officer?.designation }}</small>

@@ -12,10 +12,15 @@
                         <div class="dates">
                             <div *ngFor="let dateItem of eventItem?.dates;let dateIndex = index;" class="date-item {{'animate-' + (eventItem?.dates).length }}">
                                 <p class="month text-center font-weight-bold">{{ utilityService.getDateFormatted(dateItem, 'm') }}</p>
-<!--                     for ios           <h4 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted(dateItem, 'd') }}</h4>-->
-                                <h2 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted(dateItem, 'd') }}</h2>
+                                <!-- for ios -->
+                                <h4 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted(dateItem, 'd') }}</h4>
+                                <!-- for android -->
+                                <!-- <h2 class="font-weight-bold date mb-0 mt-0">{{ utilityService.getDateFormatted(dateItem, 'd') }}</h2> -->
                                 <p class="m-0 year text-center font-weight-bold">{{ utilityService.getDateFormatted(dateItem, 'y') }}</p>
-                            </div>
+                            </div>                            
+                        </div>
+                        <div class="dates" *ngIf="eventItem?.dates.length===0">
+                            <p class="font-weight-bold tbd">TBD</p>
                         </div>
                     </ion-avatar>
                     <ion-label>

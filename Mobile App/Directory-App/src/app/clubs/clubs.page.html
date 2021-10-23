@@ -10,10 +10,11 @@
         </div>
         <div class="scrollable-content">
             <ion-list *ngIf="filteredClubData?.length >0">
-                <ion-item *ngFor="let club of filteredClubData" (click)="viewClub(club)"
+                <ion-item *ngFor="let club of filteredClubData; let i = index" (click)="viewClub(club)"
                     class="ion-activatable ripple-parent">
                     <ion-avatar slot="start">
-                        <ion-img src="{{ env.baseURL + '/' + imgBaseUrl +'/' +club?.logo }}"></ion-img>
+                        <ion-img [src]="club.imgUrl ? club.imgUrl : '../../assets/logos/gray_leo_logo.png'"></ion-img>
+                        <!-- <ion-img  src="{{ env.baseURL + '/' + imgBaseUrl +'/' +club?.logo }}"></ion-img> -->
                     </ion-avatar>
                     <ion-label>{{club?.clubName}}</ion-label>
                     <ion-ripple-effect></ion-ripple-effect>

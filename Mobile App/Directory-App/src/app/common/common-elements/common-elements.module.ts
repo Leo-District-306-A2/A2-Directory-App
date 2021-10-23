@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {LanguageSliderComponent} from '../language-slider/language-slider.component';
 import {AudioButtonComponent} from '../audio-button/audio-button.component';
 import {ExpandableComponent} from '../expandable/expandable.component';
+import { LoadingComponent } from '../loading/loading.component';
 import {FormsModule} from '@angular/forms';
 import {IonicModule} from '@ionic/angular';
 
@@ -12,12 +13,14 @@ import {IonicModule} from '@ionic/angular';
   declarations: [
     LanguageSliderComponent, 
     AudioButtonComponent,
-    ExpandableComponent
+    ExpandableComponent,
+    LoadingComponent
   ],
   exports: [
     LanguageSliderComponent,
     AudioButtonComponent,
-    ExpandableComponent
+    ExpandableComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,

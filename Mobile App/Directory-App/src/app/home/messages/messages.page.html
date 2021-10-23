@@ -1,4 +1,19 @@
 <ion-content [fullscreen]="true">
+  <div *ngIf="loading; else showMsg" class="row center-loading align-items-center h-100">
+        <div class="col-md-12">
+            <!-- <div class="mt-3 p-1">
+                <img src="../../assets/logos/app_icon.png" class="mx-auto d-block header-logo mb-1 mt-3">
+            </div>
+            <div class="mt-1 mb-2 mx-3">
+                <ion-progress-bar type="indeterminate"></ion-progress-bar>
+            </div>
+            <div>
+                <p class="meriendaOneFont text-center message-text">Opening Leo Directory</p>
+            </div> -->
+            <app-loading class="vertical-alignment" [loadingMsg]="'Opening Bio Data'"></app-loading>
+        </div>
+    </div>
+    <ng-template #showMsg>
   <div class="header_home">
     <div class="w-100 pr-2 pl-2 mt-5 mb-2 header-top">
       <img class="mx-auto d-block" src="../../assets/tabs/headers/bio_data.png">
@@ -8,7 +23,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent district_governer_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtGovernor?.tile + '\')' }"
+            <div class="tile center ripple-parent district_governer_tile" [ngStyle]="{ 'background-image' : 'url(\'' + districtGovernerTileImg + '\')' }"
                  (click)="messages?.districtGovernor['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictGoverner(messages?.districtGovernor)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{messages?.districtGovernor.designation}}</div>
@@ -18,7 +33,7 @@
           </ion-col>
 
           <ion-col>
-            <div class="tile center ripple-parent dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtPresident?.tile + '\')' }" (click)="messages?.districtPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictPresident(messages?.districtPresident)">
+            <div class="tile center ripple-parent dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + districtPresidentTileImg + '\')' }" (click)="messages?.districtPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictPresident(messages?.districtPresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{messages?.districtPresident.designation}}</div>
                 <div class="tile-content right-align ">{{messages?.districtPresident.name}} </div>
@@ -29,7 +44,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent mdp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.MultipleDistrictPresident?.tile + '\')' }"
+            <div class="tile center ripple-parent mdp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + mulipleDistrictPresidentTileImg + '\')' }"
                  (click)="messages?.MultipleDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToMultipleDistrictPresident(messages?.MultipleDistrictPresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{messages?.MultipleDistrictPresident.designation}}</div>
@@ -39,7 +54,7 @@
           </ion-col>
 
           <ion-col>
-            <div class="tile center ripple-parent immediate_past_dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.immediatePastDistrictPresident?.tile + '\')' }" (click)="messages?.immediatePastDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToImmediatePasetDistrictPresident(messages?.immediatePastDistrictPresident)">
+            <div class="tile center ripple-parent immediate_past_dp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + immediatepastDistrictPresidentTileImg + '\')' }" (click)="messages?.immediatePastDistrictPresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToImmediatePasetDistrictPresident(messages?.immediatePastDistrictPresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{messages?.immediatePastDistrictPresident.designation}}</div>
                 <div class="tile-content right-align ">{{messages?.immediatePastDistrictPresident.name}} </div>
@@ -50,7 +65,7 @@
 
         <ion-row>
           <ion-col>
-            <div class="tile center ripple-parent district_vp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtVicePresident?.tile + '\')' }"
+            <div class="tile center ripple-parent district_vp_tile" [ngStyle]="{ 'background-image' : 'url(\'' + districtVicePresidentTileImg + '\')' }"
                  (click)="messages?.districtVicePresident['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictVicePresident(messages?.districtVicePresident)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{messages?.districtVicePresident.designation}}</div>
@@ -60,7 +75,7 @@
           </ion-col>
 
           <ion-col>
-            <div class="tile center ripple-parent district_chairman_tile" [ngStyle]="{ 'background-image' : 'url(\'' + env.baseURL + '/' + messages?.imgBaseUrl + '/' + messages?.districtChairman?.tile + '\')' }" (click)="messages?.districtChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictChairman(messages?.districtChairman)">
+            <div class="tile center ripple-parent district_chairman_tile" [ngStyle]="{ 'background-image' : 'url(\'' + districtChairmanTileImg + '\')' }" (click)="messages?.districtChairman['imgBaseUrl'] = messages?.imgBaseUrl;navigateToDistrictChairman(messages?.districtChairman)">
               <div class="inner-tile ion-padding">
                 <div class="designation font-weight-bold">{{messages?.districtChairman.designation}}</div>
                 <div class="tile-content right-align ">{{messages?.districtChairman.name}} </div>
@@ -69,9 +84,10 @@
           </ion-col>
         </ion-row>
 
-        <ion-row>
+        <ion-row *ngIf="guestIntoCount>0">
           <ion-col>
-            <div class="tile center ripple-parent guest_intro_tile" (click)="navigateToGuestIntro()">
+            <div class="tile center ripple-parent guest_intro_tile" (click)="navigateToGuestIntro()"
+            [ngStyle]="{ 'background-image' : 'url(\'' + guestIntroTileImg + '\')' }">
               <div class="inner-tile ion-padding">
                 <div class="tile-head font-weight-bold shadow-text">Guest Introductions</div>
               </div>
@@ -82,5 +98,6 @@
       </ion-grid>
     </div>
   </div>
+</ng-template>
 
 </ion-content>

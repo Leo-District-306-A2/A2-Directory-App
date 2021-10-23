@@ -5,6 +5,8 @@ import {UtilityService} from '../services/utility.service';
 import {Env} from '../services/env';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import {UpdateService} from '../services/update.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 
 @Component({
@@ -18,22 +20,32 @@ export class ClubsPage {
   searchKeyword: string;
   imgBaseUrl: string;
   backSubscription;
+  imgurl;
+
   constructor(private clubService: ClubService,
               private router: Router,
               private utilityService: UtilityService,
               public env: Env,
               private platform: Platform,
-              private alertService: AlertService) {
+              private alertService: AlertService,
+              private dataDirectoryService: DataDirectoryService
+              ) {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
-  ngOnInit() {
-    this.clubService.getData().then((data) => {
-      this.utilityService.sortClubs(data.clubs); // sort clubs according to club name
-      this.filteredClubData = data.clubs;
-      this.allClubsData = data.clubs;
-      this.imgBaseUrl = data.imgBaseUrl;
-    });
+  async ngOnInit() {
+    var data = await this.clubService.getData()
+    this.utilityService.sortClubs(data.clubs); // sort clubs according to club name
+    this.filteredClubData = data.clubs;
+    this.allClubsData = data.clubs;
+    this.imgBaseUrl = data.imgBaseUrl;
+
+    for (let i = 0; i < this.filteredClubData.length; i++) {
+      this.filteredClubData[i].imgUrl = await this.dataDirectoryService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredClubData[i].logo
+      );
+    }
+
   }
 
   ionViewDidEnter() {
@@ -53,4 +65,5 @@ export class ClubsPage {
   filterData() {
     this.filteredClubData = this.utilityService.searchClub(this.allClubsData, this.searchKeyword);
   }
+  
 }

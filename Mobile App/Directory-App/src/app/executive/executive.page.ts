@@ -5,6 +5,7 @@ import {UtilityService} from '../services/utility.service';
 import {Env} from '../services/env';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 
 @Component({
@@ -24,17 +25,23 @@ export class ExecutivePage {
               private utilityService: UtilityService,
               public env: Env,
               private platform: Platform,
+              private dataDirectoryService: DataDirectoryService,
               private alertService: AlertService)
   {
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
-  ngOnInit() {
-    this.councilService.getData().then((data) => {
-      this.filteredCouncilData = data.council;
-      this.allCouncilData = data.council;
-      this.imgBaseUrl = data.imgBaseUrl;
-    });
+  async ngOnInit() {
+    var data = await this.councilService.getData();
+    this.filteredCouncilData = data.council;
+    this.allCouncilData = data.council;
+    this.imgBaseUrl = data.imgBaseUrl;
+
+    for (let i = 0; i < this.filteredCouncilData.length; i++) {
+      this.filteredCouncilData[i].imgUrl = await this.dataDirectoryService.readImage(
+        this.env.dataDirectoryBaseUrl + '/' + this.imgBaseUrl + '/' + this.filteredCouncilData[i].logo
+      );
+    }
   }
 
   ionViewDidEnter() {

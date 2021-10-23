@@ -4,6 +4,7 @@ import {Router} from '@angular/router';
 import {Env} from '../services/env';
 import {Platform} from '@ionic/angular';
 import {AlertService} from '../services/alert.service';
+import { DataDirectoryService } from '../services/data-directory.service';
 
 @Component({
   selector: 'app-docs',
@@ -19,19 +20,37 @@ export class DocsPage implements OnInit {
   generalMeetingAgenda: any;
   boardMeatingAgenda: any;
   backSubscription;
+  tiles:any;
+  leoClubConstitutionTileImg:any;
+  installationCeremonyTileImg:any;
+  initationCeremonyTileImg:any;
+  leoClubProtocolTileImg:any;
+  gmAgendaTileImg:any;
+  bmAgendaTileImg:any;
+  loading = true;
   constructor(private homeService: HomeService,
               private router: Router,
               public env: Env,
               private platform: Platform,
+              private dataDirectoryService: DataDirectoryService,
               private alertService: AlertService) { }
 
-  ngOnInit() {
-    this.homeService.loadStaticData('StandardLeoClubConstitution').then((result) => this.standardLeoClubConstitution = result);
-    this.homeService.loadStaticData('InstallationCeremonyOfLeoClubOfficers').then((result) => this.instalationOfClubOfficers = result);
-    this.homeService.loadStaticData('InitiationCeremonyOfNewMembers').then((result) => this.initiationOfNewMembers = result);
-    this.homeService.loadStaticData('LeoClubProtocol').then((result) => this.leoClubProtocol = result);
-    this.homeService.loadStaticData('GeneralMeetingAgenda').then((result) => this.generalMeetingAgenda = result);
-    this.homeService.loadStaticData('BoardMeetingAgenda').then((result) => this.boardMeatingAgenda = result);
+  async ngOnInit() {
+    this.loading = true;
+    this.standardLeoClubConstitution = await this.homeService.loadStaticData('StandardLeoClubConstitution');
+    this.instalationOfClubOfficers = await this.homeService.loadStaticData('InstallationCeremonyOfLeoClubOfficers');
+    this.initiationOfNewMembers = await this.homeService.loadStaticData('InitiationCeremonyOfNewMembers');
+    this.leoClubProtocol =await this.homeService.loadStaticData('LeoClubProtocol');
+    this.generalMeetingAgenda = await this.homeService.loadStaticData('GeneralMeetingAgenda');
+    this.boardMeatingAgenda = await this.homeService.loadStaticData('BoardMeetingAgenda');
+    this.tiles = await this.homeService.loadStaticData('tiles');
+    this.leoClubConstitutionTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.tiles.leoClubConstitution);
+    this.installationCeremonyTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.tiles.instalationCeremony);
+    this.initationCeremonyTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.tiles.initiationCeremony);
+    this.leoClubProtocolTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.tiles.protocols);
+    this.gmAgendaTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.tiles.generalMeetingAgenda);
+    this.bmAgendaTileImg = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.tiles.boardMeetingAgenda);
+    this.loading = false;
   }
 
   ionViewDidEnter() {

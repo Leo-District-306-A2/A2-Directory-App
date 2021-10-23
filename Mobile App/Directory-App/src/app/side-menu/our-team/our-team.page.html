@@ -16,7 +16,7 @@
             <div class="background-block">
             </div>
             <div class="profile-thumb-block">
-                <img [src]="member?.image" class="profile">
+                <img [src]="member?.imgUrl? member.imgUrl : '../../../assets/default_data/default_male_user.png'" class="profile">
             </div>
             <div class="card-content">
                 <small class="text-success font-weight-bold text-uppercase">{{ member?.designation }}</small>

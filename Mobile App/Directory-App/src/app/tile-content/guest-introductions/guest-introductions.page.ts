@@ -3,6 +3,7 @@ import {HomeService} from '../../services/home.service';
 import {Router} from '@angular/router';
 import {Env} from '../../services/env';
 import {UtilityService} from '../../services/utility.service';
+import { DataDirectoryService } from 'src/app/services/data-directory.service';
 
 @Component({
   selector: 'app-guest-introductions',
@@ -13,17 +14,22 @@ export class GuestIntroductionsPage implements OnInit {
   guestIntroData: any;
   filteredGuestIntroData: any;
   searchKeyword: any;
+  dpLogo = null;
   constructor(private homeService: HomeService,
               private router: Router,
               public utilityService: UtilityService,
+              public dataDirectoryService: DataDirectoryService,
               public env: Env) {
   }
 
-  ngOnInit() {
-    this.homeService.loadStaticData('GuestIntroductions').then((result) => {
-      this.guestIntroData = result;
-      this.filteredGuestIntroData = result.content;
-    });
+  async ngOnInit() {
+    this.guestIntroData = await this.homeService.loadStaticData('GuestIntroductions');
+    this.dpLogo = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl +'/' + this.guestIntroData.logo);
+    for (let i=0; i<this.guestIntroData.content.length; i++){
+      this.guestIntroData.content[i].imgUrl = await this.dataDirectoryService.readImage(this.env.dataDirectoryBaseUrl + '/' + this.getGuestImg(this.guestIntroData.content[i]));
+    }
+    this.filteredGuestIntroData = this.utilityService.sortJsonArrayByVisibilityOrder(this.guestIntroData.content);
+
   }
 
   getGuestImg(guest: any) {
@@ -43,6 +49,6 @@ export class GuestIntroductionsPage implements OnInit {
   }
 
   filterData() {
-    this.filteredGuestIntroData = this.utilityService.searchGuest(this.guestIntroData.content, this.searchKeyword);
+    this.filteredGuestIntroData = this.utilityService.searchGuest(this.utilityService.sortJsonArrayByVisibilityOrder(this.guestIntroData.content), this.searchKeyword);
   }
 }

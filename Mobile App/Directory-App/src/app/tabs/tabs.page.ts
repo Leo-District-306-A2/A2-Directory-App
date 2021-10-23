@@ -4,6 +4,7 @@ import {MenuController} from '@ionic/angular';
 import {Keyboard} from '@ionic-native/keyboard/ngx';
 import {NotificationService} from '../services/notification.service';
 import {UtilityService} from '../services/utility.service';
+import {Env} from '../services/env';
 
 @Component({
     selector: 'app-tabs',
@@ -14,14 +15,20 @@ export class TabsPage {
 
     isHome = true;
     hideHomeFab = false;
+    appVersion:string;
+    dataVersion:string;
 
     // tslint:disable-next-line:max-line-length
     constructor(private router: Router,
                 private menu: MenuController,
                 private keyboard: Keyboard,
                 public notificationService: NotificationService,
-                public utilityService: UtilityService
+                public utilityService: UtilityService,
+                private env:Env
     ) {
+        this.appVersion = this.env.appVersion;
+        this.dataVersion = localStorage.getItem('leoisticYear') + "." +localStorage.getItem('appUpdateVersion');
+        
         this.keyboard.onKeyboardShow().subscribe((data) => {
             this.hideHomeFab = true;
         });

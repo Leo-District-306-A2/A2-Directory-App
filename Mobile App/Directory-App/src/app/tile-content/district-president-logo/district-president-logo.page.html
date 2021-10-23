@@ -4,7 +4,7 @@
         <div class="mt-5 pt-3">
             <h5 class="text-center meriendaOneFont">{{ viewData?.title }}</h5>
         </div>
-        <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + logoUrl }}" class="mx-auto d-block pl-4 pr-4 mt-2 dp-logo">
+        <img [src]="logoUrl" class="mx-auto d-block pl-4 pr-4 mt-2 dp-logo">
         <div>
             <div class="text-center">
 <!--                <h6 class="m-0 font-weight-bold">{{ viewData?.title }} Details</h6>-->
@@ -13,10 +13,10 @@
             </div>
             <ion-list class="mb-2">
                 <ion-item
-                        *ngFor="let property of utilityService.sortJsonArrayByVisibilityOrder(viewData?.properties); let i = index;"
+                        *ngFor="let property of logoProperties; let i = index;"
                         (click)="toggleCollapsing(i+1, property)">
                     <ion-avatar slot="start">
-                        <img src="{{ env.baseURL + '/' + viewData?.imgBaseUrl + '/' + property?.image }}">
+                        <img [src]="property.imageUrl">
                     </ion-avatar>
                     <ion-label>
                         <h3 class="font-weight-bold">{{ property?.property }}</h3>
